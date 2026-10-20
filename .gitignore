@@ -12,4 +12,5 @@ dist/
 !/results/release-validation/
 !/results/eight-experiments/
 !/results/parameter-response/
+!/results/deep-response/
 

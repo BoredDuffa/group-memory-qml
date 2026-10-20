@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "external_seconds": 26.247706249996554,
+  "command": "python -m pytest -q",
+  "scope": "Entire local test suite, one thread; separate from performance benchmark"
+}

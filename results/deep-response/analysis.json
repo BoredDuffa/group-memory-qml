@@ -1,0 +1,768 @@
+{
+  "planned": 540,
+  "successful": 540,
+  "validation_planned": 90,
+  "validation_passed": 90,
+  "maximum_absolute_error": 6.689093723366568e-14,
+  "tolerance": 1e-10,
+  "conditions": [
+    {
+      "id": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      }
+    },
+    {
+      "id": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      }
+    },
+    {
+      "id": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      }
+    },
+    {
+      "id": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      }
+    },
+    {
+      "id": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      }
+    },
+    {
+      "id": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      }
+    }
+  ],
+  "status": {
+    "status": "COMPLETE",
+    "completed_attempts": 540,
+    "planned_attempts": 540,
+    "deadline_unix": 1792504248.3712041,
+    "last_invocation_wall_s": 1026.0646807919838,
+    "elapsed_since_first_start_s": 1026.092679977417,
+    "unattempted": 0
+  },
+  "sum_process_wall_s": 1024.3828477845527,
+  "summary": [
+    {
+      "condition": "deep_sensor-2",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 1.6111033330089413,
+      "application_s": 1.3237627919879742,
+      "accuracy": 0.5375,
+      "evaluations": 32,
+      "total_cx": 384
+    },
+    {
+      "condition": "deep_sensor-2",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 1.6070992500171997,
+      "application_s": 1.3200699160224758,
+      "accuracy": 0.5375,
+      "evaluations": 32,
+      "total_cx": 384
+    },
+    {
+      "condition": "deep_sensor-2",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 1.5851674169534817,
+      "application_s": 1.3224552919855341,
+      "accuracy": 0.5375,
+      "evaluations": 128,
+      "total_cx": 1536
+    },
+    {
+      "condition": "deep_sensor-2",
+      "method": "qiskit_blocks",
+      "seeds": 5,
+      "process_wall_s": 1.7750359579804353,
+      "application_s": 1.448405749979429,
+      "accuracy": 0.5375,
+      "evaluations": 32,
+      "total_cx": 384
+    },
+    {
+      "condition": "deep_sensor-2",
+      "method": "classical_direct",
+      "seeds": 5,
+      "process_wall_s": 1.3200672499951907,
+      "application_s": 1.0935290000052191,
+      "accuracy": 0.5375,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "deep_sensor-2",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.3060005419538356,
+      "application_s": 1.070205625030212,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "deep_sensor-8",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 1.5875500409747474,
+      "application_s": 1.3264357500011101,
+      "accuracy": 0.95,
+      "evaluations": 32,
+      "total_cx": 1536
+    },
+    {
+      "condition": "deep_sensor-8",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 1.586229500011541,
+      "application_s": 1.2963256249786355,
+      "accuracy": 0.95,
+      "evaluations": 32,
+      "total_cx": 1536
+    },
+    {
+      "condition": "deep_sensor-8",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 1.6489619999774732,
+      "application_s": 1.3528212500386871,
+      "accuracy": 0.95,
+      "evaluations": 320,
+      "total_cx": 15360
+    },
+    {
+      "condition": "deep_sensor-8",
+      "method": "qiskit_blocks",
+      "seeds": 5,
+      "process_wall_s": 1.6805066660162993,
+      "application_s": 1.3804654160048813,
+      "accuracy": 0.95,
+      "evaluations": 32,
+      "total_cx": 1536
+    },
+    {
+      "condition": "deep_sensor-8",
+      "method": "classical_direct",
+      "seeds": 5,
+      "process_wall_s": 1.3457105419947766,
+      "application_s": 1.108393500035163,
+      "accuracy": 0.95,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "deep_sensor-8",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.2688395419972949,
+      "application_s": 1.0475125830271281,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "deep_sensor-16",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 1.6538921250030398,
+      "application_s": 1.344018082949333,
+      "accuracy": 0.7125,
+      "evaluations": 32,
+      "total_cx": 3072
+    },
+    {
+      "condition": "deep_sensor-16",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 1.5834107090486214,
+      "application_s": 1.315955917001702,
+      "accuracy": 0.7125,
+      "evaluations": 32,
+      "total_cx": 3072
+    },
+    {
+      "condition": "deep_sensor-16",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 1.9667049999698065,
+      "application_s": 1.683659665985033,
+      "accuracy": 0.7125,
+      "evaluations": 576,
+      "total_cx": 55296
+    },
+    {
+      "condition": "deep_sensor-16",
+      "method": "qiskit_blocks",
+      "seeds": 5,
+      "process_wall_s": 1.8741509579704143,
+      "application_s": 1.6056890419567935,
+      "accuracy": 0.7125,
+      "evaluations": 32,
+      "total_cx": 3072
+    },
+    {
+      "condition": "deep_sensor-16",
+      "method": "classical_direct",
+      "seeds": 5,
+      "process_wall_s": 1.3386550419963896,
+      "application_s": 1.11233979096869,
+      "accuracy": 0.7125,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "deep_sensor-16",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.2684703329578042,
+      "application_s": 1.0442214580252767,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "deep_shared-2",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 1.6120479170349427,
+      "application_s": 1.3398792080115527,
+      "accuracy": 1.0,
+      "evaluations": 32,
+      "total_cx": 512
+    },
+    {
+      "condition": "deep_shared-2",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 1.5950120000052266,
+      "application_s": 1.3367257909849286,
+      "accuracy": 1.0,
+      "evaluations": 32,
+      "total_cx": 512
+    },
+    {
+      "condition": "deep_shared-2",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 1.5911154170171358,
+      "application_s": 1.3445246249902993,
+      "accuracy": 1.0,
+      "evaluations": 144,
+      "total_cx": 2304
+    },
+    {
+      "condition": "deep_shared-2",
+      "method": "qiskit_blocks",
+      "seeds": 5,
+      "process_wall_s": 1.86873770901002,
+      "application_s": 1.5773701659636572,
+      "accuracy": 1.0,
+      "evaluations": 32,
+      "total_cx": 512
+    },
+    {
+      "condition": "deep_shared-2",
+      "method": "classical_direct",
+      "seeds": 5,
+      "process_wall_s": 1.3526577499578707,
+      "application_s": 1.0949710410204716,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "deep_shared-2",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.2825267080334015,
+      "application_s": 1.0585712500032969,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "deep_shared-8",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 1.608081083977595,
+      "application_s": 1.3516659580054693,
+      "accuracy": 0.975,
+      "evaluations": 32,
+      "total_cx": 2048
+    },
+    {
+      "condition": "deep_shared-8",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 1.6110107920248993,
+      "application_s": 1.3474672500160523,
+      "accuracy": 0.975,
+      "evaluations": 32,
+      "total_cx": 2048
+    },
+    {
+      "condition": "deep_shared-8",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 1.7232134169898927,
+      "application_s": 1.4584762079757638,
+      "accuracy": 0.975,
+      "evaluations": 336,
+      "total_cx": 21504
+    },
+    {
+      "condition": "deep_shared-8",
+      "method": "qiskit_blocks",
+      "seeds": 5,
+      "process_wall_s": 2.7144966250052676,
+      "application_s": 2.455522625008598,
+      "accuracy": 0.975,
+      "evaluations": 32,
+      "total_cx": 2048
+    },
+    {
+      "condition": "deep_shared-8",
+      "method": "classical_direct",
+      "seeds": 5,
+      "process_wall_s": 1.3625821250025183,
+      "application_s": 1.1510221249773167,
+      "accuracy": 0.975,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "deep_shared-8",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.273759042029269,
+      "application_s": 1.0427013340522535,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "deep_shared-16",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 1.7126531670219265,
+      "application_s": 1.4351381249725819,
+      "accuracy": 1.0,
+      "evaluations": 32,
+      "total_cx": 4096
+    },
+    {
+      "condition": "deep_shared-16",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 1.7564813750213943,
+      "application_s": 1.4693537499988452,
+      "accuracy": 1.0,
+      "evaluations": 32,
+      "total_cx": 4096
+    },
+    {
+      "condition": "deep_shared-16",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 2.156451290997211,
+      "application_s": 1.8715065410360694,
+      "accuracy": 1.0,
+      "evaluations": 592,
+      "total_cx": 75776
+    },
+    {
+      "condition": "deep_shared-16",
+      "method": "qiskit_blocks",
+      "seeds": 5,
+      "process_wall_s": 5.967890625004657,
+      "application_s": 5.635434125026222,
+      "accuracy": 1.0,
+      "evaluations": 32,
+      "total_cx": 4096
+    },
+    {
+      "condition": "deep_shared-16",
+      "method": "classical_direct",
+      "seeds": 5,
+      "process_wall_s": 1.4616093750228174,
+      "application_s": 1.2314893750008196,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "deep_shared-16",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.2921511250315234,
+      "application_s": 1.072557625011541,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    }
+  ],
+  "comparisons": [
+    {
+      "condition": "deep_sensor-2",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0089891015478742,
+      "minimum_seed_speedup": 0.9741194700854896,
+      "maximum_seed_speedup": 1.22105477643037,
+      "median_paired_saving": 0.008909017485009718,
+      "application_speedup": 1.0040995067248775,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_sensor-2",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 0.9964816960284137,
+      "minimum_seed_speedup": 0.9467453978716173,
+      "maximum_seed_speedup": 1.1799405033466337,
+      "median_paired_saving": -0.0035307261393850986,
+      "application_speedup": 1.0059139218545528,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_sensor-2",
+      "baseline": "qiskit_blocks",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0995478258512241,
+      "minimum_seed_speedup": 1.0078594160907761,
+      "maximum_seed_speedup": 1.1814677322162024,
+      "median_paired_saving": 0.09053523958738063,
+      "application_speedup": 1.0851803126844952,
+      "descriptive_win": true
+    },
+    {
+      "condition": "deep_sensor-2",
+      "baseline": "classical_direct",
+      "matched_seeds": 5,
+      "paired_speedup": 0.819477069943023,
+      "minimum_seed_speedup": 0.7972030633937444,
+      "maximum_seed_speedup": 0.8534201931275706,
+      "median_paired_saving": -0.22029039820422125,
+      "application_speedup": 0.8260762476659439,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_sensor-2",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7834484116225433,
+      "minimum_seed_speedup": 0.7752766081098726,
+      "maximum_seed_speedup": 0.846034064264997,
+      "median_paired_saving": -0.2764082295207828,
+      "application_speedup": 0.7862161667523133,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_sensor-8",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 0.9970283712421134,
+      "minimum_seed_speedup": 0.9821131109176789,
+      "maximum_seed_speedup": 1.0238939869377661,
+      "median_paired_saving": -0.002980485654770826,
+      "application_speedup": 0.9933685013766284,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_sensor-8",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0292802384425115,
+      "minimum_seed_speedup": 1.0083130392844655,
+      "maximum_seed_speedup": 1.0794449431586775,
+      "median_paired_saving": 0.028447294865796557,
+      "application_speedup": 1.0269399822494871,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_sensor-8",
+      "baseline": "qiskit_blocks",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0585535086405697,
+      "minimum_seed_speedup": 1.000430259826912,
+      "maximum_seed_speedup": 1.10993002544029,
+      "median_paired_saving": 0.055314642257212165,
+      "application_speedup": 1.0581789709796636,
+      "descriptive_win": true
+    },
+    {
+      "condition": "deep_sensor-8",
+      "baseline": "classical_direct",
+      "matched_seeds": 5,
+      "paired_speedup": 0.8530414305576034,
+      "minimum_seed_speedup": 0.794652674486266,
+      "maximum_seed_speedup": 0.9349318744815007,
+      "median_paired_saving": -0.1722760046324301,
+      "application_speedup": 0.8356179332728595,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_sensor-8",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.8133650444086915,
+      "minimum_seed_speedup": 0.7568224632209317,
+      "maximum_seed_speedup": 0.8260373388575312,
+      "median_paired_saving": -0.22946026126189167,
+      "application_speedup": 0.7958028053983577,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_sensor-16",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0034424847281678,
+      "minimum_seed_speedup": 0.8753743461650185,
+      "maximum_seed_speedup": 1.0671018127179988,
+      "median_paired_saving": 0.0034306746829644297,
+      "application_speedup": 0.9866419520846902,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_sensor-16",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.2306408897717747,
+      "minimum_seed_speedup": 1.1161293999230106,
+      "maximum_seed_speedup": 1.276081767324899,
+      "median_paired_saving": 0.18741526605259118,
+      "application_speedup": 1.2307829933351984,
+      "descriptive_win": true
+    },
+    {
+      "condition": "deep_sensor-16",
+      "baseline": "qiskit_blocks",
+      "matched_seeds": 5,
+      "paired_speedup": 1.1683047690590949,
+      "minimum_seed_speedup": 1.0549921341757045,
+      "maximum_seed_speedup": 1.2299619616538808,
+      "median_paired_saving": 0.14405895920003875,
+      "application_speedup": 1.2034064408071294,
+      "descriptive_win": true
+    },
+    {
+      "condition": "deep_sensor-16",
+      "baseline": "classical_direct",
+      "matched_seeds": 5,
+      "paired_speedup": 0.8108495891087891,
+      "minimum_seed_speedup": 0.7565398636681931,
+      "maximum_seed_speedup": 0.8533592486718283,
+      "median_paired_saving": -0.23327435005437636,
+      "application_speedup": 0.8231695536780184,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_sensor-16",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7796703947168149,
+      "minimum_seed_speedup": 0.7603875572702177,
+      "maximum_seed_speedup": 0.9687880736385439,
+      "median_paired_saving": -0.28259326861219525,
+      "application_speedup": 0.7818057398577063,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_shared-2",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 0.975419025915269,
+      "minimum_seed_speedup": 0.7647613076762262,
+      "maximum_seed_speedup": 1.0299972716897738,
+      "median_paired_saving": -0.02520042508056064,
+      "application_speedup": 0.9669079005768475,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_shared-2",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0058140437023106,
+      "minimum_seed_speedup": 0.7451200076627921,
+      "maximum_seed_speedup": 1.0196808283406438,
+      "median_paired_saving": 0.005780435994818256,
+      "application_speedup": 1.0117079591235332,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_shared-2",
+      "baseline": "qiskit_blocks",
+      "matched_seeds": 5,
+      "paired_speedup": 1.059045856500921,
+      "minimum_seed_speedup": 0.8608270542176527,
+      "maximum_seed_speedup": 1.1942932994825668,
+      "median_paired_saving": 0.055753824197951385,
+      "application_speedup": 1.0652129680356002,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_shared-2",
+      "baseline": "classical_direct",
+      "matched_seeds": 5,
+      "paired_speedup": 0.8390927686850828,
+      "minimum_seed_speedup": 0.5871921524168174,
+      "maximum_seed_speedup": 1.01076417770186,
+      "median_paired_saving": -0.1917633393111826,
+      "application_speedup": 0.8375886751780743,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_shared-2",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7738971260457481,
+      "minimum_seed_speedup": 0.5907911435129802,
+      "maximum_seed_speedup": 0.8161618685025404,
+      "median_paired_saving": -0.2921614079503456,
+      "application_speedup": 0.7769045163233678,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_shared-8",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0104504290645824,
+      "minimum_seed_speedup": 0.9955336173082422,
+      "maximum_seed_speedup": 1.0424146634046025,
+      "median_paired_saving": 0.010342347099854043,
+      "application_speedup": 1.0127493074530511,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_shared-8",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.069594800372895,
+      "minimum_seed_speedup": 1.0335671283553272,
+      "maximum_seed_speedup": 1.166890021413565,
+      "median_paired_saving": 0.06506650962460936,
+      "application_speedup": 1.0624859149076722,
+      "descriptive_win": true
+    },
+    {
+      "condition": "deep_shared-8",
+      "baseline": "qiskit_blocks",
+      "matched_seeds": 5,
+      "paired_speedup": 1.7062959569059566,
+      "minimum_seed_speedup": 1.5843409618373803,
+      "maximum_seed_speedup": 1.7350502582207419,
+      "median_paired_saving": 0.4139351992527076,
+      "application_speedup": 1.8377453238418024,
+      "descriptive_win": true
+    },
+    {
+      "condition": "deep_shared-8",
+      "baseline": "classical_direct",
+      "matched_seeds": 5,
+      "paired_speedup": 0.8504228120557267,
+      "minimum_seed_speedup": 0.7803705420466525,
+      "maximum_seed_speedup": 0.8729496481681432,
+      "median_paired_saving": -0.1758856721901667,
+      "application_speedup": 0.8588544574079174,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_shared-8",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7972034011356451,
+      "minimum_seed_speedup": 0.7097678763884717,
+      "maximum_seed_speedup": 0.8848129700411234,
+      "median_paired_saving": -0.25438501463423746,
+      "application_speedup": 0.7931093217853455,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_shared-16",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0240453298382408,
+      "minimum_seed_speedup": 0.9930350606447088,
+      "maximum_seed_speedup": 1.030830090340447,
+      "median_paired_saving": 0.023480727988905548,
+      "application_speedup": 1.0264254200057108,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_shared-16",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.235980884996933,
+      "minimum_seed_speedup": 1.1961707755223319,
+      "maximum_seed_speedup": 1.3408743824386067,
+      "median_paired_saving": 0.19092599882523142,
+      "application_speedup": 1.2904902723100624,
+      "descriptive_win": true
+    },
+    {
+      "condition": "deep_shared-16",
+      "baseline": "qiskit_blocks",
+      "matched_seeds": 5,
+      "paired_speedup": 3.4948264101148006,
+      "minimum_seed_speedup": 3.409020803865946,
+      "maximum_seed_speedup": 4.104422726316508,
+      "median_paired_saving": 0.7138627552127399,
+      "application_speedup": 3.909921310352026,
+      "descriptive_win": true
+    },
+    {
+      "condition": "deep_shared-16",
+      "baseline": "classical_direct",
+      "matched_seeds": 5,
+      "paired_speedup": 0.870613582926499,
+      "minimum_seed_speedup": 0.8353862554046544,
+      "maximum_seed_speedup": 1.010801554455541,
+      "median_paired_saving": -0.14861520611541423,
+      "application_speedup": 0.8753382177795833,
+      "descriptive_win": false
+    },
+    {
+      "condition": "deep_shared-16",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7590185904721111,
+      "minimum_seed_speedup": 0.7319358000359908,
+      "maximum_seed_speedup": 0.8567047325502494,
+      "median_paired_saving": -0.31749078685674625,
+      "application_speedup": 0.747685291267807,
+      "descriptive_win": false
+    }
+  ]
+}

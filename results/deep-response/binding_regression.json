@@ -1,0 +1,118 @@
+{
+  "scope": "Exact local CPU fixture; not a universal Aer or parameter-binding claim",
+  "n_qubits": 4,
+  "layers": 3,
+  "input_seed": 9,
+  "inputs": [
+    [
+      -0.8028369359828766,
+      0.2428499070790021,
+      -1.656345427042233,
+      0.656104877556666
+    ],
+    [
+      1.1434530226920894,
+      -0.45261100300789897,
+      0.4304857455543092,
+      0.25093256908418204
+    ]
+  ],
+  "theta": [
+    0.317,
+    -0.583
+  ],
+  "native_mean_z": [
+    0.5581691958997277,
+    0.6961398054516511
+  ],
+  "source_sha256": "222b8dba2f8683140825c29b95537ffec2e8cd493132731963fa88fccc97cc3e",
+  "native_sha256": "2a2b72017076451306ab86c24122391713a7102f2484d01c58963c5961b1eba9",
+  "fixed_block_sha256": [
+    "3035071d80c08e29a762788e53410ad30f96619ac8c0efc50a7161d2e346ea25",
+    "13f5b9ef7f8a5cc2864b782ea56007e9841b320a2c9bb5832d270adefabd508b"
+  ],
+  "versions": {
+    "numpy": "2.5.4",
+    "qiskit": "2.6.0",
+    "qiskit-aer": "0.17.2"
+  },
+  "output_atol": 1e-10,
+  "state_fidelity_minimum": 0.9999999999,
+  "readonly_failure_reproduced": true,
+  "writable_copy_passes": true,
+  "results": [
+    {
+      "readonly_matrix": true,
+      "runtime_parameter_bind_enable": false,
+      "mean_z": [
+        0.5219865366554375,
+        0.6785717710589256
+      ],
+      "max_mean_z_error": 0.036182659244290205,
+      "state_fidelity": [
+        0.9592939666281881,
+        0.9735989907857543
+      ],
+      "probability_tv": [
+        0.07083922790803175,
+        0.06496445435006558
+      ],
+      "passed": false
+    },
+    {
+      "readonly_matrix": true,
+      "runtime_parameter_bind_enable": true,
+      "mean_z": [
+        0.5219865366554375,
+        0.6785717710589256
+      ],
+      "max_mean_z_error": 0.036182659244290205,
+      "state_fidelity": [
+        0.9592939666281881,
+        0.9735989907857543
+      ],
+      "probability_tv": [
+        0.07083922790803175,
+        0.06496445435006558
+      ],
+      "passed": false
+    },
+    {
+      "readonly_matrix": false,
+      "runtime_parameter_bind_enable": false,
+      "mean_z": [
+        0.5581691958997275,
+        0.6961398054516508
+      ],
+      "max_mean_z_error": 3.3306690738754696e-16,
+      "state_fidelity": [
+        0.9999999999999996,
+        0.9999999999999987
+      ],
+      "probability_tv": [
+        3.167496646916401e-16,
+        3.7035499179157577e-16
+      ],
+      "passed": true
+    },
+    {
+      "readonly_matrix": false,
+      "runtime_parameter_bind_enable": true,
+      "mean_z": [
+        0.5581691958997275,
+        0.6961398054516508
+      ],
+      "max_mean_z_error": 3.3306690738754696e-16,
+      "state_fidelity": [
+        0.9999999999999996,
+        0.9999999999999987
+      ],
+      "probability_tv": [
+        3.167496646916401e-16,
+        3.7035499179157577e-16
+      ],
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 0.09225266601424664
+}

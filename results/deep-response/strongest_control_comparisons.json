@@ -1,0 +1,338 @@
+[
+  {
+    "condition": "deep_sensor-2",
+    "paired_speedup": 0.9964816960284137,
+    "min_seed": 0.9467453978716173,
+    "max_seed": 1.1799405033466337,
+    "median_paired_saving": -0.0035307261393850986,
+    "descriptive_win": false,
+    "seeds": [
+      {
+        "seed": 942101,
+        "medians": {
+          "group_spectral": 1.590764208987821,
+          "qiskit_response": 1.5851674169534817,
+          "qiskit_blocks": 1.7750359579804353
+        },
+        "best_control_speedup": 0.9964816960284137
+      },
+      {
+        "seed": 942102,
+        "medians": {
+          "group_spectral": 1.5436737090349197,
+          "qiskit_response": 1.5762282079667784,
+          "qiskit_blocks": 1.5558060830226168
+        },
+        "best_control_speedup": 1.0078594160907761
+      },
+      {
+        "seed": 942103,
+        "medians": {
+          "group_spectral": 1.6464110829983838,
+          "qiskit_response": 1.6049584160209633,
+          "qiskit_blocks": 1.7789330829982646
+        },
+        "best_control_speedup": 0.9748224077173191
+      },
+      {
+        "seed": 942104,
+        "medians": {
+          "group_spectral": 1.7723001660197042,
+          "qiskit_response": 2.091208749974612,
+          "qiskit_blocks": 2.093915457953699
+        },
+        "best_control_speedup": 1.1799405033466337
+      },
+      {
+        "seed": 942105,
+        "medians": {
+          "group_spectral": 1.6111033330089413,
+          "qiskit_response": 1.5253046660218388,
+          "qiskit_blocks": 1.771485167031642
+        },
+        "best_control_speedup": 0.9467453978716173
+      }
+    ],
+    "scope": "Conservative extra readout: faster of two Qiskit seed medians, separately per seed"
+  },
+  {
+    "condition": "deep_sensor-8",
+    "paired_speedup": 1.0149262753307902,
+    "min_seed": 1.000430259826912,
+    "max_seed": 1.0794449431586775,
+    "median_paired_saving": 0.014706758208546056,
+    "descriptive_win": false,
+    "seeds": [
+      {
+        "seed": 942101,
+        "medians": {
+          "group_spectral": 1.6099756670300849,
+          "qiskit_response": 1.6233594579971395,
+          "qiskit_blocks": 1.6438924159738235
+        },
+        "best_control_speedup": 1.0083130392844655
+      },
+      {
+        "seed": 942102,
+        "medians": {
+          "group_spectral": 1.536055916978512,
+          "qiskit_response": 1.65808779199142,
+          "qiskit_blocks": 1.7049145830096677
+        },
+        "best_control_speedup": 1.0794449431586775
+      },
+      {
+        "seed": 942103,
+        "medians": {
+          "group_spectral": 1.5731728340033442,
+          "qiskit_response": 1.6489619999774732,
+          "qiskit_blocks": 1.683068541053217
+        },
+        "best_control_speedup": 1.0481759946116436
+      },
+      {
+        "seed": 942104,
+        "medians": {
+          "group_spectral": 1.5875500409747474,
+          "qiskit_response": 1.6112462499877438,
+          "qiskit_blocks": 1.6805066660162993
+        },
+        "best_control_speedup": 1.0149262753307902
+      },
+      {
+        "seed": 942105,
+        "medians": {
+          "group_spectral": 1.6070707920007408,
+          "qiskit_response": 1.6541262079845183,
+          "qiskit_blocks": 1.6077622500015423
+        },
+        "best_control_speedup": 1.000430259826912
+      }
+    ],
+    "scope": "Conservative extra readout: faster of two Qiskit seed medians, separately per seed"
+  },
+  {
+    "condition": "deep_sensor-16",
+    "paired_speedup": 1.1683047690590949,
+    "min_seed": 1.0549921341757045,
+    "max_seed": 1.2299619616538808,
+    "median_paired_saving": 0.14405895920003875,
+    "descriptive_win": true,
+    "seeds": [
+      {
+        "seed": 942101,
+        "medians": {
+          "group_spectral": 1.6681174999685027,
+          "qiskit_response": 1.9667049999698065,
+          "qiskit_blocks": 1.9591752500273287
+        },
+        "best_control_speedup": 1.1744827627935812
+      },
+      {
+        "seed": 942102,
+        "medians": {
+          "group_spectral": 1.7055848329910077,
+          "qiskit_response": 2.1764657080057077,
+          "qiskit_blocks": 1.7993785829748958
+        },
+        "best_control_speedup": 1.0549921341757045
+      },
+      {
+        "seed": 942103,
+        "medians": {
+          "group_spectral": 1.6037654579849914,
+          "qiskit_response": 1.9777392920223065,
+          "qiskit_blocks": 1.8736868330161087
+        },
+        "best_control_speedup": 1.1683047690590949
+      },
+      {
+        "seed": 942104,
+        "medians": {
+          "group_spectral": 1.5779785420163535,
+          "qiskit_response": 1.941924916987773,
+          "qiskit_blocks": 1.9408535829861648
+        },
+        "best_control_speedup": 1.2299619616538808
+      },
+      {
+        "seed": 942105,
+        "medians": {
+          "group_spectral": 1.6538921250030398,
+          "qiskit_response": 1.8459576250170358,
+          "qiskit_blocks": 1.8741509579704143
+        },
+        "best_control_speedup": 1.1161293999230106
+      }
+    ],
+    "scope": "Conservative extra readout: faster of two Qiskit seed medians, separately per seed"
+  },
+  {
+    "condition": "deep_shared-2",
+    "paired_speedup": 1.0058140437023106,
+    "min_seed": 0.7451200076627921,
+    "max_seed": 1.0196808283406438,
+    "median_paired_saving": 0.005780435994818367,
+    "descriptive_win": false,
+    "seeds": [
+      {
+        "seed": 942101,
+        "medians": {
+          "group_spectral": 1.5460795409744605,
+          "qiskit_response": 1.5765076670213602,
+          "qiskit_blocks": 1.6864935000194237
+        },
+        "best_control_speedup": 1.0196808283406438
+      },
+      {
+        "seed": 942102,
+        "medians": {
+          "group_spectral": 2.135381415951997,
+          "qiskit_response": 1.5911154170171358,
+          "qiskit_blocks": 1.9651270000031218
+        },
+        "best_control_speedup": 0.7451200076627921
+      },
+      {
+        "seed": 942103,
+        "medians": {
+          "group_spectral": 2.1708631250075996,
+          "qiskit_response": 1.7216364169726148,
+          "qiskit_blocks": 1.86873770901002
+        },
+        "best_control_speedup": 0.7930653928107917
+      },
+      {
+        "seed": 942104,
+        "medians": {
+          "group_spectral": 1.5794299999834038,
+          "qiskit_response": 1.5886128750280477,
+          "qiskit_blocks": 1.8863026659819297
+        },
+        "best_control_speedup": 1.0058140437023106
+      },
+      {
+        "seed": 942105,
+        "medians": {
+          "group_spectral": 1.6120479170349427,
+          "qiskit_response": 1.6349143330007792,
+          "qiskit_blocks": 1.7072326670167968
+        },
+        "best_control_speedup": 1.0141846999237436
+      }
+    ],
+    "scope": "Conservative extra readout: faster of two Qiskit seed medians, separately per seed"
+  },
+  {
+    "condition": "deep_shared-8",
+    "paired_speedup": 1.069594800372895,
+    "min_seed": 1.0335671283553272,
+    "max_seed": 1.166890021413565,
+    "median_paired_saving": 0.06506650962460925,
+    "descriptive_win": true,
+    "seeds": [
+      {
+        "seed": 942101,
+        "medians": {
+          "group_spectral": 1.608081083977595,
+          "qiskit_response": 1.7199951660004444,
+          "qiskit_blocks": 2.7901014999952167
+        },
+        "best_control_speedup": 1.069594800372895
+      },
+      {
+        "seed": 942102,
+        "medians": {
+          "group_spectral": 1.6672486669849604,
+          "qiskit_response": 1.7232134169898927,
+          "qiskit_blocks": 2.7144966250052676
+        },
+        "best_control_speedup": 1.0335671283553272
+      },
+      {
+        "seed": 942103,
+        "medians": {
+          "group_spectral": 1.5295781669556163,
+          "qiskit_response": 1.7848494999925606,
+          "qiskit_blocks": 2.6099130420479923
+        },
+        "best_control_speedup": 1.166890021413565
+      },
+      {
+        "seed": 942104,
+        "medians": {
+          "group_spectral": 1.7583300830447115,
+          "qiskit_response": 1.8198159579769708,
+          "qiskit_blocks": 2.785794374998659
+        },
+        "best_control_speedup": 1.0349683347428094
+      },
+      {
+        "seed": 942105,
+        "medians": {
+          "group_spectral": 1.5449763750075363,
+          "qiskit_response": 1.720215083041694,
+          "qiskit_blocks": 2.6547109999810345
+        },
+        "best_control_speedup": 1.1134248464047245
+      }
+    ],
+    "scope": "Conservative extra readout: faster of two Qiskit seed medians, separately per seed"
+  },
+  {
+    "condition": "deep_shared-16",
+    "paired_speedup": 1.235980884996933,
+    "min_seed": 1.1961707755223319,
+    "max_seed": 1.3408743824386067,
+    "median_paired_saving": 0.19092599882523142,
+    "descriptive_win": true,
+    "seeds": [
+      {
+        "seed": 942101,
+        "medians": {
+          "group_spectral": 1.6450013749999925,
+          "qiskit_response": 2.156451290997211,
+          "qiskit_blocks": 5.7489942500251345
+        },
+        "best_control_speedup": 1.3109115431573548
+      },
+      {
+        "seed": 942102,
+        "medians": {
+          "group_spectral": 1.661279208958149,
+          "qiskit_response": 2.0489654159755446,
+          "qiskit_blocks": 5.718719333002809
+        },
+        "best_control_speedup": 1.233366074123403
+      },
+      {
+        "seed": 942103,
+        "medians": {
+          "group_spectral": 1.7126531670219265,
+          "qiskit_response": 2.0486256669973955,
+          "qiskit_blocks": 6.261497542029247
+        },
+        "best_control_speedup": 1.1961707755223319
+      },
+      {
+        "seed": 942104,
+        "medians": {
+          "group_spectral": 1.7506172500434332,
+          "qiskit_response": 2.1637294579995796,
+          "qiskit_blocks": 5.967890625004657
+        },
+        "best_control_speedup": 1.235980884996933
+      },
+      {
+        "seed": 942105,
+        "medians": {
+          "group_spectral": 1.741192250046879,
+          "qiskit_response": 2.334720082988497,
+          "qiskit_blocks": 7.1465890419785865
+        },
+        "best_control_speedup": 1.3408743824386067
+      }
+    ],
+    "scope": "Conservative extra readout: faster of two Qiskit seed medians, separately per seed"
+  }
+]

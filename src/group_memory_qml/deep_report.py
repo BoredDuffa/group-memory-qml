@@ -230,7 +230,7 @@ def report(directory):
         "source and block construction, compilation, response construction and checking, "
         "data handling, cache planning, training, prediction, serialization and exit. "
         "Separate receipts record parent overhead, preflight, pilot and reports.", "",
-        "| Workload | Method | Full process (s) | Accuracy | Aer evaluations |",
+        "| Workload | Method | Full process (s) | Accuracy | Native-basis Aer evaluations only |",
         "|---|---|---:|---:|---:|",
     ]
     for r in result["summary"]:

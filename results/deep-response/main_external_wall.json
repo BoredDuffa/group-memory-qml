@@ -1,0 +1,5 @@
+{
+  "seconds": 1026.3548283329583,
+  "returncode": 0,
+  "scope": "Entire main parent process including all fresh workers, serialization and exit; external perf_counter"
+}

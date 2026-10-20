@@ -1,0 +1,16 @@
+{
+  "main_external_wall_s": 1026.3548283329583,
+  "main_worker_wall_sum_s": 1024.3828477845527,
+  "main_parent_overhead_s": 1.9719805484055541,
+  "main_loop_wall_s": 1026.0646807919838,
+  "preflight_external_s": 26.247706249996554,
+  "pilot_elapsed_including_resume_pause_s": 78.07096910476685,
+  "pilot_worker_wall_sum_s": 66.01550395903178,
+  "main_report_s": 1.4474888329859823,
+  "pilot_report_s": 1.3993261249852367,
+  "binding_regression_s_excluding_imports": 0.09225266601424664,
+  "scope": "Full parent and fresh-worker process clocks. Per-method times include imports, data, compilation, fixed-block construction and copies, response construction/checks, bookkeeping, training, prediction, serialization and shutdown. Preflight, pilot, quick validation and readout are separate. Installation and development excluded. Notebook/export and final packaging have separate receipts.",
+  "quick_external_wall_s": 23.12786595802754,
+  "quick_report_s": 0.5607339999987744,
+  "initial_packaging_s": 0.5975171669851989
+}

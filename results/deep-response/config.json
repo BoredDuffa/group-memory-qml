@@ -1,0 +1,6572 @@
+{
+  "conditions": [
+    {
+      "id": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      }
+    },
+    {
+      "id": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      }
+    },
+    {
+      "id": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      }
+    },
+    {
+      "id": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      }
+    },
+    {
+      "id": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      }
+    },
+    {
+      "id": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      }
+    }
+  ],
+  "seeds": [
+    942101,
+    942102,
+    942103,
+    942104,
+    942105
+  ],
+  "repeats": 3,
+  "budget_s": 1800.0,
+  "plan": [
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942102,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942104,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-2",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-8",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 1,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_sensor-16",
+      "experiment": "deep_sensor",
+      "config": {
+        "n_qubits": 6,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942103,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-8",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 8,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 2,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical_direct"
+    },
+    {
+      "condition": "deep_shared-2",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 2,
+        "updates": 12
+      },
+      "seed": 942101,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_grid"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "group_spectral"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_blocks"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "qiskit_response"
+    },
+    {
+      "condition": "deep_shared-16",
+      "experiment": "deep_shared",
+      "config": {
+        "n_qubits": 8,
+        "layers": 16,
+        "updates": 12
+      },
+      "seed": 942105,
+      "repeat": 0,
+      "method": "classical_direct"
+    }
+  ],
+  "source_hashes": {
+    "__init__.py": "357d76b0788782c58d7d668d4ad980ef4a0ed640e24959f156665a67b28df90b",
+    "benchmark_suite.py": "6c3882ff02fd762cbf85d5d94f0e0c21335872dedf0c5269b8722ab4685dfa21",
+    "data.py": "25d10e1679b7f43a73e31de2a065908e7b30214861a8ed1dcb2abde1dbc261ed",
+    "deep_report.py": "69dd40489fc565f7516a9703bc8a26bb06849ca4a5c77fecc51f7a1e4b475e74",
+    "deep_response.py": "23fcae361fc75986d3dc125dca289c91386fde171ac58737511f927530297128",
+    "deep_suite.py": "e6743bc0ca04b13fac2389ee210773450ceffdcc56491bcd9e44ebeea38d5638",
+    "deep_training.py": "1ffec0f9d6b0700c59aaf83844084142ed0f060080dfb0deaa70f5ebb865bea4",
+    "demo.py": "543052b9959fea0319b71fb9ddf1921abb572d375dc85e4135e47cd946c6b7fc",
+    "engine.py": "143d1d60d4b4dafa33f4286d0d5d9d3e541c2bafd5327f9bf1b22d2db7382da4",
+    "experiment_report.py": "201d0907817b2caeec9506cb5697a9ff64fb0dc4e8efc77ed8d2f8d5260eb5f3",
+    "experiments/__init__.py": "79100597c471da2d3d5e51b9d9fedf213e82a55c52fb09752aea503c01788e4d",
+    "experiments/derivatives.py": "c37e96f4dc83f546183f92fe546c710c4abdab94367b55afea76cf5396f67340",
+    "experiments/kernels.py": "eb4eb8bb6ad467235ed8ffcc10c1640631711e05f87e6758bb506306ead2063d",
+    "experiments/local.py": "e272f3eeb53ba2beeed6f9d74484b3a7773e505efb8e7ad4cf3556fe1849322e",
+    "experiments/sensors.py": "564490a157c8f975f71ec446bb88d5e37139ea9d350bf2936a46db9d53be4eca",
+    "response_report.py": "bed75989e757061ebd176b2c7c084fb6092caf132725bee73037bcf5c608b53e",
+    "response_suite.py": "d761f6225d28eb21ac9f553f211d2415236fe070c51c07e5f900d4074030c7af",
+    "response_training.py": "2df3be8150e02d21fd7df5292523ed90addf78eddd6d3170a419a042b7ce8d48",
+    "sensor_response.py": "0b3d2e3ec2fc457f351a8a7f7d92341baa4dfc1c477cc70d7d818335ecd0749c",
+    "spin_response.py": "f10bff4bb04ff118eb28128a6461e157cbbcf2f2d58f5f3ccfe4fd6f1f5feb4f",
+    "training.py": "932f42fc9ba416553757e56fce67f039b725f9647087fddfaa00246876a0fc74"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "completed_attempts": 540,
+  "planned_attempts": 540,
+  "deadline_unix": 1792504248.3712041,
+  "last_invocation_wall_s": 1026.0646807919838,
+  "elapsed_since_first_start_s": 1026.092679977417,
+  "unattempted": 0
+}

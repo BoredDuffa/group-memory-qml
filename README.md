@@ -46,6 +46,85 @@ The command writes a new results directory with `summary.md`, `summary.csv`, acc
 
 Use `--broken-symmetry` with a new output directory to make the circuit's site gains unequal and verify that orbit reuse is disabled. `python -m group_memory_qml.demo --help` lists the bounded run options.
 
+## Deeper circuits with equally informed response controls — 2026-10-20
+
+**GroupMemory now meets the descriptive runtime-win rule in three of six workloads
+against the faster of two Qiskit response controls, including all per-method overhead.**
+The new engine propagates Fourier state coefficients through repeated fixed blocks,
+then caches the exact output function and its derivative across training updates.
+Both Qiskit controls receive the same response degree, cache lifetime and correctness
+checks. One uses native L3 circuits with fast Aer runtime binding; the other also
+receives the same cached block matrices.
+
+These are new interleaved circuits with **one shared trainable angle**, a classical
+classifier head, and 12 training updates. They use 6 qubits for sensor classification
+and 8 for shared-weight training. Layers alternate fixed noncommuting blocks and
+trainable rotations; depth is not inflated with identity pairs.
+
+| Workload | GroupMemory | Qiskit native response | Qiskit cached blocks | Direct state/tangent | Classical task model | Same-model accuracy |
+|---|---:|---:|---:|---:|---:|---:|
+| Sensor, 2 layers | 1.611 s | 1.585 s | 1.775 s | 1.320 s | 1.306 s | 53.75% |
+| Sensor, 8 layers | 1.588 s | 1.649 s | 1.681 s | 1.346 s | 1.269 s | 95.00% |
+| Sensor, 16 layers | 1.654 s | 1.967 s | 1.874 s | 1.339 s | 1.268 s | 71.25% |
+| Shared, 2 layers | 1.612 s | 1.591 s | 1.869 s | 1.353 s | 1.283 s | 100.00% |
+| Shared, 8 layers | 1.608 s | 1.723 s | 2.714 s | 1.363 s | 1.274 s | 97.50% |
+| Shared, 16 layers | 1.713 s | 2.156 s | 5.968 s | 1.462 s | 1.292 s | 100.00% |
+
+Times are medians of seed medians, enclosing fresh-process startup, imports, data,
+operator construction, compilation, calibration and checks, caching, training,
+prediction, serialization and shutdown. The local Apple M1 benchmark used five
+fresh data seeds, three repeats and one thread per sequential worker. Seeds vary
+the data, not the fixed circuit architecture.
+
+Selecting the faster Qiskit control separately for each seed gives qualifying
+paired speedups of **1.168× for 16-layer sensors**, **1.070× for 8-layer shared
+training**, and **1.236× for 16-layer shared training**: respectively **14.4%,
+6.5% and 19.1% less time**. The other three workloads fail the rule. A descriptive
+win requires all five seed medians faster, three matching repeats each, and at
+least 5% median paired saving. These are observed results, not confidence intervals
+or a universal crossover. Paired ratios need not equal ratios of displayed times.
+
+**The spectral engine did not establish an advantage over the simpler batched-grid
+ablation:** none of the six conditions establishes an additional qualifying
+spectral win over batching.
+The evidence supports specialized classical response construction, without
+isolating coefficient sharing as the cause of every speed gain. The identical-model
+direct state/tangent control has a lower median time in all six conditions.
+The task-specific classical model achieves 100% accuracy throughout. Deeper sensor
+circuits do not consistently learn better.
+
+All **540/540 attempts** and **90/90 matched training comparisons** passed, with
+maximum trajectory error **6.69e-14** against the unchanged **1e-10** tolerance.
+All **274 local tests** passed. The full measurement campaign took **17.11 minutes**;
+tests, the separate checkpoint/resume pilot, quick smoke run and reporting have
+separate timing receipts. Installation and development are excluded. An Aer 0.17.2
+fixture required writable copies of cached unitary buffers; this repair is tested
+and its setup cost is included.
+
+This is ideal **CPU simulation**, with no physical CNOT savings or QPU advantage.
+Dense operators require exponential storage in qubit count; the implementation
+does not scale this approach to hundreds of general entangled qubits.
+
+```bash
+python -m group_memory_qml.deep_suite run \
+  --conditions benchmarks/deep_quick.json \
+  --output results/deep-quick-local \
+  --seeds 942001 --repeats 1 --budget-seconds 300
+python -m group_memory_qml.deep_report results/deep-quick-local
+```
+
+The quick command validates functionality, not a performance claim.
+
+- [Method, equations, limits and full reproduction command](docs/deep_response.md)
+- [Executed results notebook with independent raw-record audit](examples/deep_response_results.ipynb)
+- [All comparisons and ablations](results/deep-response/summary.md), [strongest-control comparison](results/deep-response/strongest_control_comparisons.json), and [independent audit](results/deep-response/independent_audit.json)
+- [Raw attempts](results/deep-response/raw_attempts.zip), [frozen source snapshot](results/deep-response/source_snapshot.zip), and [full timing ledger](results/deep-response/wall_accounting.json)
+
+![Full-process runtime on deeper QML circuits](results/deep-response/notebook_absolute_runtime.png)
+
+Both panels share the same vertical scale. Historical results below use different
+architectures and workloads and are not pooled with this benchmark.
+
 ## Reusing computations across training updates
 
 The new response engines cache an **exact function of the trainable weights**.

@@ -1,0 +1,29 @@
+{
+  "external_wall_s": 23.12786595802754,
+  "report_s": 0.5607339999987744,
+  "successful": 12,
+  "planned": 12,
+  "matched_blocks": 2,
+  "maximum_absolute_error": 1.687538997430238e-14,
+  "resume_before": {
+    "authorization_sha256": "427f88d1b960fcdee23c84af8f053ebc3aa9d94ec1cfc7821ead4782e04db847",
+    "first_attempt_sha256": "698e43285fc011d9350402878d3aade6070eae8d7a0121240d7a7f6503400f49",
+    "manifest": {
+      "completed_attempts": 1,
+      "latest": "checkpoint-1.json",
+      "previous": null,
+      "latest_sha256": "e7938098513b9fce061e6656d7ce866a76e504b089a2877c3d4548e4cb0e2af8",
+      "deadline_unix": 1792503820.0828722
+    }
+  },
+  "authorization_and_first_attempt_unchanged": true,
+  "source_and_config_unchanged": true,
+  "final_manifest": {
+    "completed_attempts": 12,
+    "latest": "checkpoint-0.json",
+    "previous": "checkpoint-1.json",
+    "latest_sha256": "980622a3948022d8c67869945d0b3fa7476b3467b69a9a5c0b43670b53fbcc79",
+    "deadline_unix": 1792503820.0828722
+  },
+  "scope": "Documented quick functionality run, with recorded checkpoint/resume proof. Not pooled with main timing."
+}

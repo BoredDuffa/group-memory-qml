@@ -1,0 +1,9 @@
+{
+  "phase": "campaign",
+  "seconds": 2427.5540781250456,
+  "start_unix": 1792507123.37995,
+  "end_unix": 1792509550.8170319,
+  "hard_deadline_unix": 1792510331.885418,
+  "returncode": 0,
+  "scope": "Complete external phase process including parent and all fresh workers; other phases separate"
+}

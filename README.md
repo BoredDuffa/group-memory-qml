@@ -46,6 +46,92 @@ The command writes a new results directory with `summary.md`, `summary.csv`, acc
 
 Use `--broken-symmetry` with a new output directory to make the circuit's site gains unequal and verify that orbit reuse is disabled. `python -m group_memory_qml.demo --help` lists the bounded run options.
 
+## Larger statevectors and independent trainable angles — 2026-10-20
+
+**GroupMemory meets the descriptive runtime-win rule in 6 of eight conditions against the faster of two equally informed Qiskit controls.**
+
+The new implementation propagates multivariate Fourier coefficients through local
+gates, avoiding dense fixed-block matrices. The Qiskit controls also cache the
+CZ/RZ diagonal blocks and use Aer runtime binding: one reconstructs the same
+response, while the other computes exact occurrence-shift gradients directly.
+The comparison gives Qiskit the faster control separately for each paired seed.
+
+The eight conditions use **8, 12 or 14 qubits**, **1, 2 or 4 independently
+trainable angles**, eight interleaved trainable-gate layers and 12 updates.
+Four-angle cases reach 12 qubits; the 14-qubit case uses two angles.
+Each method trains on just **four synthetic examples**. Sensor evaluation has
+four held-out examples from two related pairs; shared-task evaluation has
+16 held-out examples. These are deliberately small runtime/memory scaling
+fixtures; accuracy does not establish practical learning or generalization.
+
+| Task, qubits, independent angles | GroupMemory | Faster Qiskit | Direct adjoint | Classical task model | Paired speedup | QML / classical accuracy |
+|---|---:|---:|---:|---:|---:|---:|
+| Sensor, 8q, p=1 | 1.583 s | 1.523 s | 1.257 s | 1.222 s | 1.032× | 100.00% / 100.00% |
+| Sensor, 8q, p=2 | 1.505 s | 1.686 s | 1.260 s | 1.216 s | 1.077× | 100.00% / 100.00% |
+| Sensor, 8q, p=4 | 1.491 s | 1.773 s | 1.255 s | 1.208 s | 1.133× | 100.00% / 100.00% |
+| Sensor, 12q, p=2 | 1.853 s | 2.147 s | 1.668 s | 1.223 s | 1.159× | 100.00% / 100.00% |
+| Sensor, 12q, p=4 | 2.620 s | 3.317 s | 1.973 s | 1.405 s | 1.217× | 100.00% / 100.00% |
+| Sensor, 14q, p=2 | 3.284 s | 4.116 s | 3.336 s | 1.241 s | 1.264× | 100.00% / 100.00% |
+| Shared, 12q, p=2 | 1.925 s | 2.188 s | 1.713 s | 1.208 s | 1.160× | 90.00% / 100.00% |
+| Shared, 12q, p=4 | 2.372 s | 3.058 s | 1.968 s | 1.540 s | 1.305× | 90.00% / 100.00% |
+
+Times are medians of seed medians. The Qiskit column takes the median of the
+faster Qiskit time selected separately per seed. Paired speedups use those same
+seeds and can differ from ratios of displayed times. Accuracy is averaged across
+seeds; the same-model outputs, every gradient and full training trajectories
+are checked at `1e-10`, rather than accepting matching accuracy alone.
+
+Qualifying conditions: `sensor-n8-p4`, `sensor-n12-p2`, `sensor-n12-p4`, `sensor-n14-p2`, `shared-n12-p2`, `shared-n12-p4`. Conditions without a qualifying result:
+`sensor-n8-p1`, `sensor-n8-p2`. Incomplete five-seed coverage: none.
+A descriptive win requires at least five complete paired seeds, all three
+matching repeats per seed, every seed median faster, and at least 5% median
+paired saving. This is an observed-workload rule, not a confidence interval
+or a universal crossover claim.
+
+The direct identical-model adjoint has a lower median time in
+**7/8** conditions; the task-specific
+classical learner does in **8/8**.
+GroupMemory meets the same descriptive rule against its batched-grid ablation
+in **6/8** conditions. These controls separate
+response reuse, ordinary batching and the cost of simulating the model.
+
+**Complete coverage:** 720/720 successful
+attempts and 120/120 passing
+matched comparisons; maximum absolute trajectory error
+**1.77e-14**, against **`1e-10`**.
+All **448 local tests passed**.
+There are 0 unattempted records; any errors, timeouts and
+missing coverage remain in the saved report. Five fresh data seeds and three
+repeats use serial, fresh worker processes on the local Apple M1.
+
+The process clock includes startup, imports, data preparation, circuit and
+diagonal construction, compilation, response calibration, native verification,
+cache bookkeeping, every training update, head fitting, prediction,
+serialization and shutdown. Worker clocks sum to
+**40.43 minutes**; the last parent invocation took
+**40.46 minutes**. The
+[timing ledger](results/multi-parameter/wall_accounting.json) separately records
+preflight (28.20 seconds), pilots, orchestration and
+reporting. Installation and development are excluded. The
+101 preliminary native-only attempts are
+preserved separately and excluded from these timings and comparisons.
+
+This is **ideal CPU simulation**, with no QPU execution, physical CNOT/shot
+saving claim, or practical ML/LLM training result. Local gates remove dense
+`4^n` operators, but states still cost `2^n` storage. Independent angles expand
+the exact response grid: at eight occurrences it has 17, 81 and 625 points
+for one, two and four angles respectively. More parameters can erase reuse's
+benefit. Resource guards fail explicitly rather than approximate the response.
+
+- [Method, scope and reproduction commands](docs/multi_response.md)
+- [Executed results notebook](examples/multi_parameter_scaling.ipynb)
+- [Complete results and negative cases](results/multi-parameter/summary.md), [strongest Qiskit comparisons](results/multi-parameter/strongest_qiskit.json), and [independent audit](results/multi-parameter/independent_audit.json)
+- [Raw attempts](results/multi-parameter/raw_attempts.zip), [frozen sources](results/multi-parameter/source_snapshot.zip), and [resource limits](results/multi-parameter/resource_limits.json)
+
+The historical results below use different workloads and controls; their
+timings are not pooled with this campaign.
+
+
 ## Deeper circuits with equally informed response controls — 2026-10-20
 
 **GroupMemory now meets the descriptive runtime-win rule in three of six workloads

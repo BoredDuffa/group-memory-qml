@@ -1,0 +1,5 @@
+{
+  "external_seconds": 28.20230862504104,
+  "returncode": 0,
+  "scope": "Full local correctness suite after stronger diagonal controls; unchanged 1e-10 tolerance"
+}

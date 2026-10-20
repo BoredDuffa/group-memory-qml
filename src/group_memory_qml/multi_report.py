@@ -311,7 +311,7 @@ def report(directory):
         lines.append(f"| {c['id']} | {cfg['n_qubits']} | {p} | {r} | {p*r} | "
                      f"{(r+1)**p} | {(2*r+1)**p} |")
     lines += [
-        "", "| Condition | Method | Full process (s) | Accuracy | Native Aer evaluations |",
+        "", "| Condition | Method | Full process (s) | Accuracy | Aer circuit evaluations |",
         "|---|---|---:|---:|---:|",
     ]
     for row in result["summary"]:
@@ -348,7 +348,7 @@ def report(directory):
         "input identities, cache lifetime and native off-grid checks. Spatial input "
         "equivalence is not assumed.", "",
         "The additional Qiskit control batches occurrence-local parameter shifts and "
-        "sums them per independent parameter, using native runtime binding and exact "
+        "sums them per independent parameter, using cached diagonals and runtime binding and exact "
         "job reuse. It avoids full response reconstruction and supplies a stronger "
         "alternative when the response table grows expensive.", "",
         "Local-gate propagation removes the old dense 4^n block operators, but state "

@@ -1,0 +1,1452 @@
+{
+  "audit": "PASS",
+  "scope": "Independent saved-data arithmetic and integrity audit; no project imports or new simulations",
+  "source": {
+    "commit": "f86f94e876e16aa3d224fc432d3d42b6dd32024e",
+    "frozen_source_files": 25,
+    "source_archives_verified": 1
+  },
+  "preflight_tests": 448,
+  "planned": 720,
+  "attempted": 720,
+  "successful": 720,
+  "matched_blocks": 120,
+  "maximum_same_model_error": 1.765254609153999e-14,
+  "coverage": {
+    "sensor-n8-p1": {
+      "SUCCESS": 90
+    },
+    "sensor-n8-p2": {
+      "SUCCESS": 90
+    },
+    "sensor-n8-p4": {
+      "SUCCESS": 90
+    },
+    "sensor-n12-p2": {
+      "SUCCESS": 90
+    },
+    "sensor-n12-p4": {
+      "SUCCESS": 90
+    },
+    "sensor-n14-p2": {
+      "SUCCESS": 90
+    },
+    "shared-n12-p2": {
+      "SUCCESS": 90
+    },
+    "shared-n12-p4": {
+      "SUCCESS": 90
+    }
+  },
+  "parameter_motion": {
+    "sensor-n8-p1": {
+      "minimum_moved_parameters": 1,
+      "maximum_moved_parameters": 1,
+      "median_displacement_norm": 0.12043495369670065,
+      "median_maximum_optimizer_gradient": [
+        0.21186638669904206
+      ]
+    },
+    "sensor-n8-p2": {
+      "minimum_moved_parameters": 2,
+      "maximum_moved_parameters": 2,
+      "median_displacement_norm": 0.09188971290249673,
+      "median_maximum_optimizer_gradient": [
+        0.1521626188999696,
+        0.048673752830116296
+      ]
+    },
+    "sensor-n8-p4": {
+      "minimum_moved_parameters": 4,
+      "maximum_moved_parameters": 4,
+      "median_displacement_norm": 0.06653002695657244,
+      "median_maximum_optimizer_gradient": [
+        0.07156052439014032,
+        0.00919097860369875,
+        0.08483056683950134,
+        0.011503065194743015
+      ]
+    },
+    "sensor-n12-p2": {
+      "minimum_moved_parameters": 2,
+      "maximum_moved_parameters": 2,
+      "median_displacement_norm": 0.052493297409365466,
+      "median_maximum_optimizer_gradient": [
+        0.0304617421011084,
+        0.09121156034065961
+      ]
+    },
+    "sensor-n12-p4": {
+      "minimum_moved_parameters": 4,
+      "maximum_moved_parameters": 4,
+      "median_displacement_norm": 0.040543967311964864,
+      "median_maximum_optimizer_gradient": [
+        0.029414214751205953,
+        0.06011474462032112,
+        0.019698261995619422,
+        0.004026394948605029
+      ]
+    },
+    "sensor-n14-p2": {
+      "minimum_moved_parameters": 2,
+      "maximum_moved_parameters": 2,
+      "median_displacement_norm": 0.053659695239688214,
+      "median_maximum_optimizer_gradient": [
+        0.011711536284061436,
+        0.095881050710373
+      ]
+    },
+    "shared-n12-p2": {
+      "minimum_moved_parameters": 2,
+      "maximum_moved_parameters": 2,
+      "median_displacement_norm": 0.06216438188702618,
+      "median_maximum_optimizer_gradient": [
+        0.08424960450163733,
+        0.07241064847899245
+      ]
+    },
+    "shared-n12-p4": {
+      "minimum_moved_parameters": 4,
+      "maximum_moved_parameters": 4,
+      "median_displacement_norm": 0.04001649868847137,
+      "median_maximum_optimizer_gradient": [
+        0.05285701447884687,
+        0.018641517535475056,
+        0.0196430608454662,
+        0.035712119166943376
+      ]
+    }
+  },
+  "strongest_qiskit": {
+    "sensor-n8-p1": {
+      "matched_seeds": 5,
+      "paired_speedup": 1.03195403318482,
+      "minimum_seed_speedup": 0.922668647241598,
+      "maximum_seed_speedup": 1.0618687515145768,
+      "median_paired_saving": 0.03096458965929272,
+      "descriptive_win": false,
+      "details": [
+        {
+          "seed": 944101,
+          "selected_control": "qiskit_response",
+          "speedup": 1.03195403318482
+        },
+        {
+          "seed": 944102,
+          "selected_control": "qiskit_response",
+          "speedup": 1.0527008173700874
+        },
+        {
+          "seed": 944103,
+          "selected_control": "qiskit_response",
+          "speedup": 0.922668647241598
+        },
+        {
+          "seed": 944104,
+          "selected_control": "qiskit_response",
+          "speedup": 0.9621150055305552
+        },
+        {
+          "seed": 944105,
+          "selected_control": "qiskit_response",
+          "speedup": 1.0618687515145768
+        }
+      ]
+    },
+    "sensor-n8-p2": {
+      "matched_seeds": 5,
+      "paired_speedup": 1.0769385486945113,
+      "minimum_seed_speedup": 0.9426899571183764,
+      "maximum_seed_speedup": 1.1362176441355243,
+      "median_paired_saving": 0.07144191169289826,
+      "descriptive_win": false,
+      "details": [
+        {
+          "seed": 944101,
+          "selected_control": "qiskit_response",
+          "speedup": 1.1310381515010652
+        },
+        {
+          "seed": 944102,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.0769385486945113
+        },
+        {
+          "seed": 944103,
+          "selected_control": "qiskit_response",
+          "speedup": 0.9426899571183764
+        },
+        {
+          "seed": 944104,
+          "selected_control": "qiskit_response",
+          "speedup": 1.1362176441355243
+        },
+        {
+          "seed": 944105,
+          "selected_control": "qiskit_response",
+          "speedup": 1.0486478928838632
+        }
+      ]
+    },
+    "sensor-n8-p4": {
+      "matched_seeds": 5,
+      "paired_speedup": 1.1325324267710692,
+      "minimum_seed_speedup": 1.074610220307962,
+      "maximum_seed_speedup": 1.2162478988664929,
+      "median_paired_saving": 0.11702307469370099,
+      "descriptive_win": true,
+      "details": [
+        {
+          "seed": 944101,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.1469589290001077
+        },
+        {
+          "seed": 944102,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.074610220307962
+        },
+        {
+          "seed": 944103,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.1325324267710692
+        },
+        {
+          "seed": 944104,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.2162478988664929
+        },
+        {
+          "seed": 944105,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.077718767251893
+        }
+      ]
+    },
+    "sensor-n12-p2": {
+      "matched_seeds": 5,
+      "paired_speedup": 1.1587763128284785,
+      "minimum_seed_speedup": 1.1361104749721174,
+      "maximum_seed_speedup": 1.19840486856618,
+      "median_paired_saving": 0.1370206752336165,
+      "descriptive_win": true,
+      "details": [
+        {
+          "seed": 944101,
+          "selected_control": "qiskit_response",
+          "speedup": 1.19840486856618
+        },
+        {
+          "seed": 944102,
+          "selected_control": "qiskit_response",
+          "speedup": 1.1587763128284785
+        },
+        {
+          "seed": 944103,
+          "selected_control": "qiskit_response",
+          "speedup": 1.1862944539946136
+        },
+        {
+          "seed": 944104,
+          "selected_control": "qiskit_response",
+          "speedup": 1.1361104749721174
+        },
+        {
+          "seed": 944105,
+          "selected_control": "qiskit_response",
+          "speedup": 1.1562817218597377
+        }
+      ]
+    },
+    "sensor-n12-p4": {
+      "matched_seeds": 5,
+      "paired_speedup": 1.217144171037618,
+      "minimum_seed_speedup": 1.1664622776226974,
+      "maximum_seed_speedup": 1.266010442683563,
+      "median_paired_saving": 0.178404642773339,
+      "descriptive_win": true,
+      "details": [
+        {
+          "seed": 944101,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.217144171037618
+        },
+        {
+          "seed": 944102,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.2310709045041563
+        },
+        {
+          "seed": 944103,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.1664622776226974
+        },
+        {
+          "seed": 944104,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.2011297662623006
+        },
+        {
+          "seed": 944105,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.266010442683563
+        }
+      ]
+    },
+    "sensor-n14-p2": {
+      "matched_seeds": 5,
+      "paired_speedup": 1.263898832574699,
+      "minimum_seed_speedup": 1.1760007131666699,
+      "maximum_seed_speedup": 1.3658429683385214,
+      "median_paired_saving": 0.20879743360242564,
+      "descriptive_win": true,
+      "details": [
+        {
+          "seed": 944101,
+          "selected_control": "qiskit_response",
+          "speedup": 1.3658429683385214
+        },
+        {
+          "seed": 944102,
+          "selected_control": "qiskit_response",
+          "speedup": 1.2208265014761601
+        },
+        {
+          "seed": 944103,
+          "selected_control": "qiskit_response",
+          "speedup": 1.2954248021563477
+        },
+        {
+          "seed": 944104,
+          "selected_control": "qiskit_response",
+          "speedup": 1.263898832574699
+        },
+        {
+          "seed": 944105,
+          "selected_control": "qiskit_response",
+          "speedup": 1.1760007131666699
+        }
+      ]
+    },
+    "shared-n12-p2": {
+      "matched_seeds": 5,
+      "paired_speedup": 1.1596455761484457,
+      "minimum_seed_speedup": 1.1039625967793059,
+      "maximum_seed_speedup": 1.2399282076308893,
+      "median_paired_saving": 0.13766755932332342,
+      "descriptive_win": true,
+      "details": [
+        {
+          "seed": 944101,
+          "selected_control": "qiskit_response",
+          "speedup": 1.1039625967793059
+        },
+        {
+          "seed": 944102,
+          "selected_control": "qiskit_response",
+          "speedup": 1.1596455761484457
+        },
+        {
+          "seed": 944103,
+          "selected_control": "qiskit_response",
+          "speedup": 1.2399282076308893
+        },
+        {
+          "seed": 944104,
+          "selected_control": "qiskit_response",
+          "speedup": 1.1717295329849757
+        },
+        {
+          "seed": 944105,
+          "selected_control": "qiskit_response",
+          "speedup": 1.1365722810823218
+        }
+      ]
+    },
+    "shared-n12-p4": {
+      "matched_seeds": 5,
+      "paired_speedup": 1.3045620015656105,
+      "minimum_seed_speedup": 1.2892087170096038,
+      "maximum_seed_speedup": 1.3328571080046825,
+      "median_paired_saving": 0.2334592002527318,
+      "descriptive_win": true,
+      "details": [
+        {
+          "seed": 944101,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.3255864426237358
+        },
+        {
+          "seed": 944102,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.2892087170096038
+        },
+        {
+          "seed": 944103,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.3023032094058462
+        },
+        {
+          "seed": 944104,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.3045620015656105
+        },
+        {
+          "seed": 944105,
+          "selected_control": "qiskit_shift",
+          "speedup": 1.3328571080046825
+        }
+      ]
+    }
+  },
+  "qualifying_conditions_by_baseline": {
+    "group_grid": [
+      "sensor-n8-p4",
+      "sensor-n12-p2",
+      "sensor-n12-p4",
+      "sensor-n14-p2",
+      "shared-n12-p2",
+      "shared-n12-p4"
+    ],
+    "qiskit_response": [
+      "sensor-n8-p4",
+      "sensor-n12-p2",
+      "sensor-n12-p4",
+      "sensor-n14-p2",
+      "shared-n12-p2",
+      "shared-n12-p4"
+    ],
+    "qiskit_shift": [
+      "sensor-n8-p1",
+      "sensor-n8-p2",
+      "sensor-n8-p4",
+      "sensor-n12-p2",
+      "sensor-n12-p4",
+      "sensor-n14-p2",
+      "shared-n12-p2",
+      "shared-n12-p4"
+    ],
+    "classical_adjoint": [],
+    "classical": []
+  },
+  "comparisons": [
+    {
+      "condition": "sensor-n8-p1",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 1.000432800058539,
+      "minimum_seed_speedup": 0.9149665627814497,
+      "maximum_seed_speedup": 1.0664630070764431,
+      "median_paired_saving": 0.0004326128236835647,
+      "descriptive_win": false,
+      "application_speedup": 1.001394699435764
+    },
+    {
+      "condition": "sensor-n8-p1",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.03195403318482,
+      "minimum_seed_speedup": 0.922668647241598,
+      "maximum_seed_speedup": 1.0618687515145768,
+      "median_paired_saving": 0.03096458965929272,
+      "descriptive_win": false,
+      "application_speedup": 1.0210646308856575
+    },
+    {
+      "condition": "sensor-n8-p1",
+      "baseline": "qiskit_shift",
+      "matched_seeds": 5,
+      "paired_speedup": 1.1522108707505054,
+      "minimum_seed_speedup": 1.109034029525048,
+      "maximum_seed_speedup": 1.2826532257876175,
+      "median_paired_saving": 0.1321033107866455,
+      "descriptive_win": true,
+      "application_speedup": 1.2020085620384093
+    },
+    {
+      "condition": "sensor-n8-p1",
+      "baseline": "classical_adjoint",
+      "matched_seeds": 5,
+      "paired_speedup": 0.8054105682156845,
+      "minimum_seed_speedup": 0.7608442065258084,
+      "maximum_seed_speedup": 0.844983173088804,
+      "median_paired_saving": -0.24160277933205054,
+      "descriptive_win": false,
+      "application_speedup": 0.8537301188455524
+    },
+    {
+      "condition": "sensor-n8-p1",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7923278930333295,
+      "minimum_seed_speedup": 0.7531106268822294,
+      "maximum_seed_speedup": 0.8352126149251635,
+      "median_paired_saving": -0.26210374365544986,
+      "descriptive_win": false,
+      "application_speedup": 0.7899393930588019
+    },
+    {
+      "condition": "sensor-n8-p2",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0175000160532899,
+      "minimum_seed_speedup": 0.8980620416474673,
+      "maximum_seed_speedup": 1.1374768345696002,
+      "median_paired_saving": 0.0171990327048539,
+      "descriptive_win": false,
+      "application_speedup": 1.0199796255113733
+    },
+    {
+      "condition": "sensor-n8-p2",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0976374566964295,
+      "minimum_seed_speedup": 0.9426899571183764,
+      "maximum_seed_speedup": 1.1362176441355243,
+      "median_paired_saving": 0.08895237320917415,
+      "descriptive_win": false,
+      "application_speedup": 1.1045023917090473
+    },
+    {
+      "condition": "sensor-n8-p2",
+      "baseline": "qiskit_shift",
+      "matched_seeds": 5,
+      "paired_speedup": 1.135865035220248,
+      "minimum_seed_speedup": 1.0349098870226314,
+      "maximum_seed_speedup": 1.1461402292253633,
+      "median_paired_saving": 0.11961371378414098,
+      "descriptive_win": true,
+      "application_speedup": 1.1758718639578827
+    },
+    {
+      "condition": "sensor-n8-p2",
+      "baseline": "classical_adjoint",
+      "matched_seeds": 5,
+      "paired_speedup": 0.8427039980081547,
+      "minimum_seed_speedup": 0.6753745478677962,
+      "maximum_seed_speedup": 0.9153180820868916,
+      "median_paired_saving": -0.18665629018449637,
+      "descriptive_win": false,
+      "application_speedup": 0.8464297970564036
+    },
+    {
+      "condition": "sensor-n8-p2",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.8075826360802801,
+      "minimum_seed_speedup": 0.7487362860106083,
+      "maximum_seed_speedup": 0.8186384441391547,
+      "median_paired_saving": -0.23826337432618105,
+      "descriptive_win": false,
+      "application_speedup": 0.8056193422876415
+    },
+    {
+      "condition": "sensor-n8-p4",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 1.3006102316344106,
+      "minimum_seed_speedup": 1.2059913147092143,
+      "maximum_seed_speedup": 1.3439616144967041,
+      "median_paired_saving": 0.2311301451601292,
+      "descriptive_win": true,
+      "application_speedup": 1.349101371918313
+    },
+    {
+      "condition": "sensor-n8-p4",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.5092168469851395,
+      "minimum_seed_speedup": 1.3864073019525012,
+      "maximum_seed_speedup": 1.5795035976091933,
+      "median_paired_saving": 0.3374046930382255,
+      "descriptive_win": true,
+      "application_speedup": 1.600873685729815
+    },
+    {
+      "condition": "sensor-n8-p4",
+      "baseline": "qiskit_shift",
+      "matched_seeds": 5,
+      "paired_speedup": 1.1325324267710692,
+      "minimum_seed_speedup": 1.074610220307962,
+      "maximum_seed_speedup": 1.2162478988664929,
+      "median_paired_saving": 0.11702307469370099,
+      "descriptive_win": true,
+      "application_speedup": 1.1559321740056294
+    },
+    {
+      "condition": "sensor-n8-p4",
+      "baseline": "classical_adjoint",
+      "matched_seeds": 5,
+      "paired_speedup": 0.8394397969715004,
+      "minimum_seed_speedup": 0.755294686488681,
+      "maximum_seed_speedup": 0.8932327986102093,
+      "median_paired_saving": -0.19127065884624805,
+      "descriptive_win": false,
+      "application_speedup": 0.8352994577832451
+    },
+    {
+      "condition": "sensor-n8-p4",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7969303088570623,
+      "minimum_seed_speedup": 0.7146382526715843,
+      "maximum_seed_speedup": 0.8414907190464385,
+      "median_paired_saving": -0.2548148676063975,
+      "descriptive_win": false,
+      "application_speedup": 0.7903104167481542
+    },
+    {
+      "condition": "sensor-n12-p2",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 1.9869854312685424,
+      "minimum_seed_speedup": 1.8391280953203903,
+      "maximum_seed_speedup": 2.0632251908384855,
+      "median_paired_saving": 0.49672504676515195,
+      "descriptive_win": true,
+      "application_speedup": 2.168481409301751
+    },
+    {
+      "condition": "sensor-n12-p2",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.1587763128284785,
+      "minimum_seed_speedup": 1.1361104749721174,
+      "maximum_seed_speedup": 1.19840486856618,
+      "median_paired_saving": 0.1370206752336165,
+      "descriptive_win": true,
+      "application_speedup": 1.1773238261696235
+    },
+    {
+      "condition": "sensor-n12-p2",
+      "baseline": "qiskit_shift",
+      "matched_seeds": 5,
+      "paired_speedup": 1.6076720522474854,
+      "minimum_seed_speedup": 1.4760245643486691,
+      "maximum_seed_speedup": 1.7059735208006164,
+      "median_paired_saving": 0.37798259377462906,
+      "descriptive_win": true,
+      "application_speedup": 1.709633988162169
+    },
+    {
+      "condition": "sensor-n12-p2",
+      "baseline": "classical_adjoint",
+      "matched_seeds": 5,
+      "paired_speedup": 0.8936698525144033,
+      "minimum_seed_speedup": 0.8415676433188707,
+      "maximum_seed_speedup": 0.9556706868589059,
+      "median_paired_saving": -0.11898146411275845,
+      "descriptive_win": false,
+      "application_speedup": 0.9202680563388818
+    },
+    {
+      "condition": "sensor-n12-p2",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.6701976447455749,
+      "minimum_seed_speedup": 0.6331609250212331,
+      "maximum_seed_speedup": 0.6944921268730617,
+      "median_paired_saving": -0.4920971564733372,
+      "descriptive_win": false,
+      "application_speedup": 0.6308668569919023
+    },
+    {
+      "condition": "sensor-n12-p4",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 7.67648035555801,
+      "minimum_seed_speedup": 7.005606249008827,
+      "maximum_seed_speedup": 7.796668921050423,
+      "median_paired_saving": 0.8697319665156221,
+      "descriptive_win": true,
+      "application_speedup": 8.443581285521452
+    },
+    {
+      "condition": "sensor-n12-p4",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 2.4021862424259464,
+      "minimum_seed_speedup": 2.280899013145759,
+      "maximum_seed_speedup": 2.471117762750389,
+      "median_paired_saving": 0.5837125438741548,
+      "descriptive_win": true,
+      "application_speedup": 2.602954831839776
+    },
+    {
+      "condition": "sensor-n12-p4",
+      "baseline": "qiskit_shift",
+      "matched_seeds": 5,
+      "paired_speedup": 1.217144171037618,
+      "minimum_seed_speedup": 1.1664622776226974,
+      "maximum_seed_speedup": 1.266010442683563,
+      "median_paired_saving": 0.178404642773339,
+      "descriptive_win": true,
+      "application_speedup": 1.2435505467491643
+    },
+    {
+      "condition": "sensor-n12-p4",
+      "baseline": "classical_adjoint",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7444253118139702,
+      "minimum_seed_speedup": 0.5810265666890814,
+      "maximum_seed_speedup": 0.8066351539215663,
+      "median_paired_saving": -0.3433181061015522,
+      "descriptive_win": false,
+      "application_speedup": 0.7393097287194611
+    },
+    {
+      "condition": "sensor-n12-p4",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.5503472357922127,
+      "minimum_seed_speedup": 0.4479347856717109,
+      "maximum_seed_speedup": 0.5845617836850053,
+      "median_paired_saving": -0.8170346555125731,
+      "descriptive_win": false,
+      "application_speedup": 0.4945478528885643
+    },
+    {
+      "condition": "sensor-n14-p2",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 4.063860747341588,
+      "minimum_seed_speedup": 3.882998107127184,
+      "maximum_seed_speedup": 4.255080728548502,
+      "median_paired_saving": 0.7539285762549419,
+      "descriptive_win": true,
+      "application_speedup": 4.314588518706447
+    },
+    {
+      "condition": "sensor-n14-p2",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.263898832574699,
+      "minimum_seed_speedup": 1.1760007131666699,
+      "maximum_seed_speedup": 1.3658429683385214,
+      "median_paired_saving": 0.20879743360242564,
+      "descriptive_win": true,
+      "application_speedup": 1.2841053281133412
+    },
+    {
+      "condition": "sensor-n14-p2",
+      "baseline": "qiskit_shift",
+      "matched_seeds": 5,
+      "paired_speedup": 2.354597053583793,
+      "minimum_seed_speedup": 2.2308583400775355,
+      "maximum_seed_speedup": 2.5368971012962733,
+      "median_paired_saving": 0.5752988824657029,
+      "descriptive_win": true,
+      "application_speedup": 2.48628465107313
+    },
+    {
+      "condition": "sensor-n14-p2",
+      "baseline": "classical_adjoint",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0158687301047509,
+      "minimum_seed_speedup": 0.9359479021604422,
+      "maximum_seed_speedup": 1.0652061155719144,
+      "median_paired_saving": 0.01562084709814282,
+      "descriptive_win": false,
+      "application_speedup": 1.0318285967531826
+    },
+    {
+      "condition": "sensor-n14-p2",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.37758139497943344,
+      "minimum_seed_speedup": 0.3518844637749283,
+      "maximum_seed_speedup": 0.44227159930074356,
+      "median_paired_saving": -1.6484355778559197,
+      "descriptive_win": false,
+      "application_speedup": 0.34662275627237354
+    },
+    {
+      "condition": "shared-n12-p2",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 1.9960930218898028,
+      "minimum_seed_speedup": 1.9307154631421504,
+      "maximum_seed_speedup": 2.0569996414464478,
+      "median_paired_saving": 0.4990213436780371,
+      "descriptive_win": true,
+      "application_speedup": 2.139623431931243
+    },
+    {
+      "condition": "shared-n12-p2",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.1596455761484457,
+      "minimum_seed_speedup": 1.1039625967793059,
+      "maximum_seed_speedup": 1.2399282076308893,
+      "median_paired_saving": 0.13766755932332342,
+      "descriptive_win": true,
+      "application_speedup": 1.1774447561781811
+    },
+    {
+      "condition": "shared-n12-p2",
+      "baseline": "qiskit_shift",
+      "matched_seeds": 5,
+      "paired_speedup": 1.650136244418507,
+      "minimum_seed_speedup": 1.5715506482144508,
+      "maximum_seed_speedup": 1.6642741553733564,
+      "median_paired_saving": 0.39398943367104156,
+      "descriptive_win": true,
+      "application_speedup": 1.7524505604961127
+    },
+    {
+      "condition": "shared-n12-p2",
+      "baseline": "classical_adjoint",
+      "matched_seeds": 5,
+      "paired_speedup": 0.9025112652168599,
+      "minimum_seed_speedup": 0.8819771049803542,
+      "maximum_seed_speedup": 0.9443163310090852,
+      "median_paired_saving": -0.10801941043884367,
+      "descriptive_win": false,
+      "application_speedup": 0.9207664905694875
+    },
+    {
+      "condition": "shared-n12-p2",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.6247358979748103,
+      "minimum_seed_speedup": 0.6232339742867854,
+      "maximum_seed_speedup": 0.6803770581129942,
+      "median_paired_saving": -0.6006763870007683,
+      "descriptive_win": false,
+      "application_speedup": 0.6033562154202188
+    },
+    {
+      "condition": "shared-n12-p4",
+      "baseline": "group_grid",
+      "matched_seeds": 5,
+      "paired_speedup": 8.307097231938386,
+      "minimum_seed_speedup": 7.795345911516392,
+      "maximum_seed_speedup": 8.882899852025737,
+      "median_paired_saving": 0.879621006943883,
+      "descriptive_win": true,
+      "application_speedup": 9.206036230941947
+    },
+    {
+      "condition": "shared-n12-p4",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 2.528382939304625,
+      "minimum_seed_speedup": 2.3368669400575435,
+      "maximum_seed_speedup": 2.6434564614148015,
+      "median_paired_saving": 0.604490291223438,
+      "descriptive_win": true,
+      "application_speedup": 2.7268273953923874
+    },
+    {
+      "condition": "shared-n12-p4",
+      "baseline": "qiskit_shift",
+      "matched_seeds": 5,
+      "paired_speedup": 1.3045620015656105,
+      "minimum_seed_speedup": 1.2892087170096038,
+      "maximum_seed_speedup": 1.3328571080046825,
+      "median_paired_saving": 0.2334592002527318,
+      "descriptive_win": true,
+      "application_speedup": 1.3388100112876749
+    },
+    {
+      "condition": "shared-n12-p4",
+      "baseline": "classical_adjoint",
+      "matched_seeds": 5,
+      "paired_speedup": 0.8295252721264604,
+      "minimum_seed_speedup": 0.6679385360960336,
+      "maximum_seed_speedup": 0.8698961023922217,
+      "median_paired_saving": -0.20550878147031404,
+      "descriptive_win": false,
+      "application_speedup": 0.7919295813899735
+    },
+    {
+      "condition": "shared-n12-p4",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.5977928224914283,
+      "minimum_seed_speedup": 0.4993652893881803,
+      "maximum_seed_speedup": 0.832883328728156,
+      "median_paired_saving": -0.6728203524296061,
+      "descriptive_win": false,
+      "application_speedup": 0.540264948294106
+    }
+  ],
+  "process_medians": [
+    {
+      "condition": "sensor-n8-p1",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 1.5831685829907656,
+      "application_s": 1.2549499160377309,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 512
+    },
+    {
+      "condition": "sensor-n8-p1",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 1.4966544579947367,
+      "application_s": 1.2536515410174616,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 512
+    },
+    {
+      "condition": "sensor-n8-p1",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 1.5231902499799617,
+      "application_s": 1.2691514580510557,
+      "accuracy": 1.0,
+      "evaluations": 80,
+      "total_cx": 512
+    },
+    {
+      "condition": "sensor-n8-p1",
+      "method": "qiskit_shift",
+      "seeds": 5,
+      "process_wall_s": 1.7557878330117092,
+      "application_s": 1.4981942090089433,
+      "accuracy": 1.0,
+      "evaluations": 824,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n8-p1",
+      "method": "classical_adjoint",
+      "seeds": 5,
+      "process_wall_s": 1.2566363750374876,
+      "application_s": 1.060284707986284,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n8-p1",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.222119708021637,
+      "application_s": 1.0149008330190554,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n8-p2",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 1.505376957997214,
+      "application_s": 1.2388593329815194,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 512
+    },
+    {
+      "condition": "sensor-n8-p2",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 1.562784791982267,
+      "application_s": 1.3193731250357814,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 512
+    },
+    {
+      "condition": "sensor-n8-p2",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 1.685770375013817,
+      "application_s": 1.441980459028855,
+      "accuracy": 1.0,
+      "evaluations": 336,
+      "total_cx": 512
+    },
+    {
+      "condition": "sensor-n8-p2",
+      "method": "qiskit_shift",
+      "seeds": 5,
+      "process_wall_s": 1.706409041013103,
+      "application_s": 1.4584542909869924,
+      "accuracy": 1.0,
+      "evaluations": 824,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n8-p2",
+      "method": "classical_adjoint",
+      "seeds": 5,
+      "process_wall_s": 1.2597759579657577,
+      "application_s": 1.0622310410253704,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n8-p2",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.2157162920339033,
+      "application_s": 0.9980490410234779,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n8-p4",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 1.4910189170041122,
+      "application_s": 1.2536048329784535,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 512
+    },
+    {
+      "condition": "sensor-n8-p4",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 1.9842540419776924,
+      "application_s": 1.7186024999828078,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 512
+    },
+    {
+      "condition": "sensor-n8-p4",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 2.3082986670196988,
+      "application_s": 2.0387059999629855,
+      "accuracy": 1.0,
+      "evaluations": 2512,
+      "total_cx": 512
+    },
+    {
+      "condition": "sensor-n8-p4",
+      "method": "qiskit_shift",
+      "seeds": 5,
+      "process_wall_s": 1.7732033340143971,
+      "application_s": 1.526441124966368,
+      "accuracy": 1.0,
+      "evaluations": 824,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n8-p4",
+      "method": "classical_adjoint",
+      "seeds": 5,
+      "process_wall_s": 1.254794375039637,
+      "application_s": 1.0491258749971166,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n8-p4",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.2076119999983348,
+      "application_s": 1.000288459006697,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n12-p2",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 1.8528689999948256,
+      "application_s": 1.584059790999163,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 768
+    },
+    {
+      "condition": "sensor-n12-p2",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 3.6816237090388313,
+      "application_s": 3.435004208004102,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 768
+    },
+    {
+      "condition": "sensor-n12-p2",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 2.147060707968194,
+      "application_s": 1.8649513340205885,
+      "accuracy": 1.0,
+      "evaluations": 336,
+      "total_cx": 768
+    },
+    {
+      "condition": "sensor-n12-p2",
+      "method": "qiskit_shift",
+      "seeds": 5,
+      "process_wall_s": 3.004692208021879,
+      "application_s": 2.752175332978368,
+      "accuracy": 1.0,
+      "evaluations": 824,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n12-p2",
+      "method": "classical_adjoint",
+      "seeds": 5,
+      "process_wall_s": 1.668236625031568,
+      "application_s": 1.4667403339990415,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n12-p2",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.2231931250425987,
+      "application_s": 1.0095949589740485,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n12-p4",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 2.620210417022463,
+      "application_s": 2.3129820409812964,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 768
+    },
+    {
+      "condition": "sensor-n12-p4",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 20.00964170799125,
+      "application_s": 19.71358679200057,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 768
+    },
+    {
+      "condition": "sensor-n12-p4",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 6.307049209019169,
+      "application_s": 6.0114210420288146,
+      "accuracy": 1.0,
+      "evaluations": 2512,
+      "total_cx": 768
+    },
+    {
+      "condition": "sensor-n12-p4",
+      "method": "qiskit_shift",
+      "seeds": 5,
+      "process_wall_s": 3.3172137499786913,
+      "application_s": 3.038151916989591,
+      "accuracy": 1.0,
+      "evaluations": 824,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n12-p4",
+      "method": "classical_adjoint",
+      "seeds": 5,
+      "process_wall_s": 1.9727072920068167,
+      "application_s": 1.724053499987349,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n12-p4",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.4046546670142561,
+      "application_s": 1.1689502919907682,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n14-p2",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 3.284066124993842,
+      "application_s": 3.0261315829702653,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 896
+    },
+    {
+      "condition": "sensor-n14-p2",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 13.420102833013516,
+      "application_s": 13.075796958000865,
+      "accuracy": 1.0,
+      "evaluations": 8,
+      "total_cx": 896
+    },
+    {
+      "condition": "sensor-n14-p2",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 4.1159789160010405,
+      "application_s": 3.8414959579822607,
+      "accuracy": 1.0,
+      "evaluations": 336,
+      "total_cx": 896
+    },
+    {
+      "condition": "sensor-n14-p2",
+      "method": "qiskit_shift",
+      "seeds": 5,
+      "process_wall_s": 7.780213417019695,
+      "application_s": 7.476944709022064,
+      "accuracy": 1.0,
+      "evaluations": 824,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n14-p2",
+      "method": "classical_adjoint",
+      "seeds": 5,
+      "process_wall_s": 3.336180083977524,
+      "application_s": 3.0809152919682674,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-n14-p2",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.2409067500266246,
+      "application_s": 1.019473917025607,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "shared-n12-p2",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 1.9247155420016497,
+      "application_s": 1.6639650000142865,
+      "accuracy": 0.9,
+      "evaluations": 8,
+      "total_cx": 768
+    },
+    {
+      "condition": "shared-n12-p2",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 3.742459917033557,
+      "application_s": 3.468062750005629,
+      "accuracy": 0.9,
+      "evaluations": 8,
+      "total_cx": 768
+    },
+    {
+      "condition": "shared-n12-p2",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 2.187578334007412,
+      "application_s": 1.9448557500145398,
+      "accuracy": 0.9,
+      "evaluations": 348,
+      "total_cx": 768
+    },
+    {
+      "condition": "shared-n12-p2",
+      "method": "qiskit_shift",
+      "seeds": 5,
+      "process_wall_s": 3.0462620830512606,
+      "application_s": 2.7770513750147074,
+      "accuracy": 0.9,
+      "evaluations": 836,
+      "total_cx": 0
+    },
+    {
+      "condition": "shared-n12-p2",
+      "method": "classical_adjoint",
+      "seeds": 5,
+      "process_wall_s": 1.7132290420122445,
+      "application_s": 1.511569167021662,
+      "accuracy": 0.9,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "shared-n12-p2",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.208064167003613,
+      "application_s": 1.002585124981124,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "shared-n12-p4",
+      "method": "group_spectral",
+      "seeds": 5,
+      "process_wall_s": 2.3721226250054315,
+      "application_s": 2.110202458978165,
+      "accuracy": 0.9,
+      "evaluations": 8,
+      "total_cx": 768
+    },
+    {
+      "condition": "shared-n12-p4",
+      "method": "group_grid",
+      "seeds": 5,
+      "process_wall_s": 20.082586458011065,
+      "application_s": 19.75220950000221,
+      "accuracy": 0.9,
+      "evaluations": 8,
+      "total_cx": 768
+    },
+    {
+      "condition": "shared-n12-p4",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 6.0203014590078965,
+      "application_s": 5.769163916993421,
+      "accuracy": 0.9,
+      "evaluations": 2524,
+      "total_cx": 768
+    },
+    {
+      "condition": "shared-n12-p4",
+      "method": "qiskit_shift",
+      "seeds": 5,
+      "process_wall_s": 3.058161165972706,
+      "application_s": 2.8197214999818243,
+      "accuracy": 0.9,
+      "evaluations": 836,
+      "total_cx": 0
+    },
+    {
+      "condition": "shared-n12-p4",
+      "method": "classical_adjoint",
+      "seeds": 5,
+      "process_wall_s": 1.9677356660249643,
+      "application_s": 1.671131749986671,
+      "accuracy": 0.9,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "shared-n12-p4",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.5400504580466077,
+      "application_s": 1.2469697919441387,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    }
+  ],
+  "median_peak_rss_bytes": {
+    "sensor-n8-p1/group_spectral": 230178816,
+    "sensor-n8-p1/group_grid": 230014976,
+    "sensor-n8-p1/qiskit_response": 233029632,
+    "sensor-n8-p1/qiskit_shift": 227328000,
+    "sensor-n8-p1/classical_adjoint": 182894592,
+    "sensor-n8-p1/classical": 182222848,
+    "sensor-n8-p2/group_spectral": 230506496,
+    "sensor-n8-p2/group_grid": 233275392,
+    "sensor-n8-p2/qiskit_response": 236797952,
+    "sensor-n8-p2/qiskit_shift": 227131392,
+    "sensor-n8-p2/classical_adjoint": 182829056,
+    "sensor-n8-p2/classical": 182157312,
+    "sensor-n8-p4/group_spectral": 235012096,
+    "sensor-n8-p4/group_grid": 276168704,
+    "sensor-n8-p4/qiskit_response": 237109248,
+    "sensor-n8-p4/qiskit_shift": 227360768,
+    "sensor-n8-p4/classical_adjoint": 182894592,
+    "sensor-n8-p4/classical": 182288384,
+    "sensor-n12-p2/group_spectral": 300679168,
+    "sensor-n12-p2/group_grid": 311001088,
+    "sensor-n12-p2/qiskit_response": 242941952,
+    "sensor-n12-p2/qiskit_shift": 232177664,
+    "sensor-n12-p2/classical_adjoint": 186499072,
+    "sensor-n12-p2/classical": 182255616,
+    "sensor-n12-p4/group_spectral": 421249024,
+    "sensor-n12-p4/group_grid": 384729088,
+    "sensor-n12-p4/qiskit_response": 238944256,
+    "sensor-n12-p4/qiskit_shift": 229081088,
+    "sensor-n12-p4/classical_adjoint": 186580992,
+    "sensor-n12-p4/classical": 182321152,
+    "sensor-n14-p2/group_spectral": 503513088,
+    "sensor-n14-p2/group_grid": 393183232,
+    "sensor-n14-p2/qiskit_response": 254230528,
+    "sensor-n14-p2/qiskit_shift": 244187136,
+    "sensor-n14-p2/classical_adjoint": 199671808,
+    "sensor-n14-p2/classical": 182304768,
+    "shared-n12-p2/group_spectral": 300613632,
+    "shared-n12-p2/group_grid": 321028096,
+    "shared-n12-p2/qiskit_response": 243040256,
+    "shared-n12-p2/qiskit_shift": 228982784,
+    "shared-n12-p2/classical_adjoint": 188317696,
+    "shared-n12-p2/classical": 182140928,
+    "shared-n12-p4/group_spectral": 427606016,
+    "shared-n12-p4/group_grid": 383942656,
+    "shared-n12-p4/qiskit_response": 239026176,
+    "shared-n12-p4/qiskit_shift": 229113856,
+    "shared-n12-p4/classical_adjoint": 188547072,
+    "shared-n12-p4/classical": 182206464
+  },
+  "deadline": {
+    "original": {
+      "start_unix": 1792506131.885418,
+      "deadline_unix": 1792510331.885418,
+      "scope": "Local CPU-only benchmark; no remote VM or QPU"
+    },
+    "final": {
+      "start_unix": 1792507123.447736,
+      "deadline_unix": 1792510331.885418,
+      "scope": "Local CPU-only benchmark; no remote VM or QPU"
+    },
+    "hard_deadline": 1792510331.885418,
+    "preliminary_stop": {
+      "reason": "Strengthen Qiskit controls with the same ring-wide diagonal aggregation before making equally-informed performance claims. Partial native-only timing is not pooled with final comparison.",
+      "terminated_owned_pgid": 23364,
+      "termination_unix": 1792506626.578449,
+      "original_deadline_unix": 1792510331.885418,
+      "authorization_elapsed_s": 494.6930310726166,
+      "completed_attempts": 101,
+      "scope": "Authorization elapsed includes all partial workers and parent time after authorization. The in-progress attempt was interrupted, not counted as a fast result.",
+      "owned_helper_exit_code": 143,
+      "exit_confirmation": "Exec session 72616 returned final exit code 143 after the owned process-group SIGTERM."
+    },
+    "excluded_preliminary_attempts": 101,
+    "between_preliminary_stop_and_final_start_s": 496.86928701400757,
+    "allowance_elapsed_at_final_completion_s": 3418.9228410720825,
+    "note": "Per-attempt Unix start timestamps were not recorded; fixed-deadline controller source, immutable receipts and final elapsed time are checked. No independent per-attempt deadline claim."
+  },
+  "timing": {
+    "main_parent_seconds": 2427.5540781250456,
+    "worker_seconds": 2425.5264690296026,
+    "parent_remainder_seconds": 2.02760909544304,
+    "cost_ledger": null
+  },
+  "package": {
+    "checked": true,
+    "manifest_files": 40,
+    "raw_records": 720
+  },
+  "limitations": [
+    "Four training examples; sensor holdout consists of two matched pairs.",
+    "Ideal CPU simulations, no physical QPU, shot or CNOT-saving claim.",
+    "Per-seed best-Qiskit comparison is an optimistic analysis control, not a zero-cost deployed selector.",
+    "Pilot, old architectures, and native-only preliminary timings are excluded from final paired statistics."
+  ],
+  "audit_seconds": 0.9480445000226609
+}

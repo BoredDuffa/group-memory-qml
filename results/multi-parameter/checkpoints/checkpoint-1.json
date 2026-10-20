@@ -1,0 +1,22 @@
+{
+  "completed_attempts": 719,
+  "next_spec": {
+    "condition": "sensor-n8-p4",
+    "experiment": "multi_sensor",
+    "config": {
+      "n_qubits": 8,
+      "n_parameters": 4,
+      "occurrences": 2,
+      "updates": 12,
+      "bases": 4,
+      "views": 1
+    },
+    "seed": 944101,
+    "repeat": 2,
+    "method": "classical_adjoint"
+  },
+  "config_sha256": "e2786102ab4d03903ee721622d684ad9c5cae64933301450e76f41e587bf707f",
+  "deadline_unix": 1792510331.885418,
+  "journal_last_index": 718,
+  "last_result_sha256": "ef435ee29f0e7f84b4d88abdaa29e538ae86daec5e327f96d30091c1cedc71e8"
+}

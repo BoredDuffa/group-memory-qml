@@ -1,0 +1,7 @@
+{
+  "phase": "quick",
+  "seconds": 20.311389124952257,
+  "returncode": 0,
+  "scope": "Complete external phase process including parent and all fresh workers; other phases separate",
+  "resume_preserved_authorization_and_first_attempt": true
+}

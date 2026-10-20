@@ -1,0 +1,5 @@
+{
+  "start_unix": 1792506131.885418,
+  "deadline_unix": 1792510331.885418,
+  "scope": "Local CPU-only benchmark; no remote VM or QPU"
+}

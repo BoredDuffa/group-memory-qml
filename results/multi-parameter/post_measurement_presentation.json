@@ -1,0 +1,8 @@
+[
+  {
+    "file": "multi_report.py",
+    "measured_sha256": "17e240a68cf397fad546335d34086db7338277e9e20f4a592f8a3049cd06920a",
+    "current_sha256": "dfd959be99782d4a735e0ce718f3123a98ad95bd174beb85d054c0fe9d9c324b",
+    "scope": "Presentation labels only: distinguish all Aer evaluations from native verification and name diagonal runtime binding. No measured engine or timings changed."
+  }
+]

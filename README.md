@@ -2,7 +2,7 @@
 
 **Reuse equivalent forward and gradient computations in a small quantum machine learning experiment—and measure whether the bookkeeping pays for itself.**
 
-GroupMemory is an experimental **classical cache around quantum computations**. This release supports a fixed, symmetric ring circuit and the known rotations and reflections of its inputs. It does not discover the symmetry of arbitrary circuits.
+GroupMemory is an experimental **classical cache around quantum computations**. The original demo supports a symmetric ring circuit and known rotations and reflections of its inputs. The eight-experiment suite extends this to valid derivative shifts, quantum kernels, image patches and exact local subcircuits. It does not discover the symmetry of arbitrary circuits.
 
 The runnable sensor classifier compares:
 
@@ -45,6 +45,33 @@ python -m group_memory_qml.demo \
 The command writes a new results directory with `summary.md`, `summary.csv`, accuracy/runtime and learning plots, full `results.json`, `validation.json`, `environment.json`, and `wall_accounting.json`. It refuses to overwrite a nonempty directory. For an interactive walkthrough, open [the sensor classifier notebook](examples/sensor_classifier.ipynb). Existing saved results are evidence, not a substitute for running the command on your machine.
 
 Use `--broken-symmetry` with a new output directory to make the circuit's site gains unequal and verify that orbit reuse is disabled. `python -m group_memory_qml.demo --help` lists the bounded run options.
+
+## Eight QML experiments
+
+Run all eight small experiments, each against equally informed Qiskit, ordinary exact caching, and an application-specific classical model:
+
+```bash
+python -m group_memory_qml.benchmark_suite run \
+  --conditions benchmarks/eight_quick.json \
+  --output results/eight-quick \
+  --seeds 930101 --repeats 1 --budget-seconds 300
+python -m group_memory_qml.experiment_report results/eight-quick
+```
+
+This quick command is a runnable demonstration, not enough repetitions to establish a performance advantage. For the full 16-condition comparison (two workloads per experiment):
+
+```bash
+python -m group_memory_qml.benchmark_suite run \
+  --conditions benchmarks/eight_experiments.json \
+  --output results/eight-full \
+  --seeds 930101 930102 930103 930104 930105 \
+  --repeats 3 --budget-seconds 3600
+python -m group_memory_qml.experiment_report results/eight-full
+```
+
+The full plan contains 960 fresh-process attempts. Each process clock includes interpreter startup, imports, setup, compilation, reuse bookkeeping, simulation, learning, prediction, result writing and shutdown. Runtime depends on the machine; the budget is a cap. Resume uses the same command and preserves the original deadline.
+
+Read [the exact experiment definitions and limitations](docs/eight_experiments.md). These are synthetic, ideal CPU experiments. The 64/256-site case evaluates exact three-qubit causal cones; its classical control computes the same model analytically. No full 256-qubit statevector or QPU execution is claimed.
 
 ## What the demo learns
 

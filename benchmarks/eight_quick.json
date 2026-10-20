@@ -1,0 +1,10 @@
+[
+  {"id":"1A-quick","experiment":"1A","config":{"n_qubits":6,"views":2,"bases":8,"updates":1}},
+  {"id":"1B-quick","experiment":"1B","config":{"n_qubits":6,"views":2,"bases":8}},
+  {"id":"2A-quick","experiment":"2A","config":{"steps":1,"n_train":4,"n_test":4}},
+  {"id":"2B-quick","experiment":"2B","config":{"steps":1,"n_train":4,"n_test":4}},
+  {"id":"3A-quick","experiment":"3A","config":{"n_qubits":6,"pairs":2,"views":2}},
+  {"id":"3B-quick","experiment":"3B","config":{"n_qubits":6,"pairs":2,"views":2}},
+  {"id":"4A-quick","experiment":"4A","config":{"patch_side":2}},
+  {"id":"4B-quick","experiment":"4B","config":{"n_global":64}}
+]

@@ -29,8 +29,21 @@ jobs:
       - run: python -m pip check
       - run: python -m pytest -q
       - run: python -m group_memory_qml.demo --qubits 6 --updates 1 --output results/ci
+      - run: python -m group_memory_qml.benchmark_suite run --conditions benchmarks/eight_quick.json --output results/eight-ci --seeds 930101 --repeats 1 --budget-seconds 300
+      - run: python -m group_memory_qml.experiment_report results/eight-ci
+      - name: Require complete eight-experiment smoke coverage
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          result = json.loads(Path("results/eight-ci/analysis.json").read_text())
+          assert result["successful"] == result["planned"] == 32
+          assert result["validation_passed"] == result["validation_planned"] == 8
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: demo-python-${{ matrix.python }}
-          path: results/ci
+          path: |
+            results/ci
+            results/eight-ci

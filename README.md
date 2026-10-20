@@ -1,6 +1,6 @@
 # GroupMemory QML
 
-**Reuse equivalent forward and gradient computations in a small quantum machine learning experiment—and measure whether the bookkeeping pays for itself.**
+**Reuse equivalent computations in small quantum machine learning experiments—and measure whether the bookkeeping pays for itself.**
 
 GroupMemory is an experimental **classical cache around quantum computations**. The original demo supports a symmetric ring circuit and known rotations and reflections of its inputs. The eight-experiment suite extends this to valid derivative shifts, quantum kernels, image patches and exact local subcircuits. It does not discover the symmetry of arbitrary circuits.
 
@@ -73,6 +73,39 @@ The full plan contains 960 fresh-process attempts. Each process clock includes i
 
 Read [the exact experiment definitions and limitations](docs/eight_experiments.md). These are synthetic, ideal CPU experiments. The 64/256-site case evaluates exact three-qubit causal cones; its classical control computes the same model analytically. No full 256-qubit statevector or QPU execution is claimed.
 
+## Eight-experiment reference result — 2026-10-20
+
+**All 960 attempts and all 240 matched quantum blocks passed. None of the 16 conditions met the predefined win rule against equally informed Qiskit.** The largest saved-output disagreement was `2.31e-13`, below the unchanged `1e-10` tolerance. The local suite passed **89 tests**, and the quick command passed all 32 attempts.
+
+The following are the larger workload in each experiment, measured on an Apple M1 with one thread per sequential worker. Times are medians of seed-level medians, including full process overhead. Scores average five data seeds.
+
+| Experiment | GroupMemory | Symmetry Qiskit | Classical | Held-out score: quantum / classical |
+|---|---:|---:|---:|---|
+| 1A Sensor training, 10 qubits | 3.108 s | 3.005 s | 1.529 s | Accuracy 92.5% / 100% |
+| 1B Sensor denoising, 12 qubits | 1.878 s | 1.736 s | 1.297 s | MSE 0.01448 / 0.01358 |
+| 2A Shared-weight gradients, 8 qubits | 0.720 s | 0.739 s | 1.307 s | Accuracy 100% / 100% |
+| 2B Hessian training, 6 qubits | 0.966 s | 0.981 s | 1.480 s | MSE 0.02206 / 0.00332 |
+| 3A Joint-symmetry kernel, 8 qubits | 1.840 s | 1.839 s | 1.301 s | Accuracy 100% / 97.5% |
+| 3B Group-averaged kernel, 8 qubits | 2.044 s | 2.051 s | 1.293 s | Accuracy 100% / 97.5% |
+| 4A Image patches, 9 qubits per filter | 1.824 s | 1.567 s | 1.309 s | Accuracy 100% / 100% |
+| 4B 256-site ring, three-qubit cones | 1.559 s | 1.566 s | 1.260 s | Accuracy 96.7% / 96.7% |
+
+MSE is lower-is-better. These are small synthetic tasks; related test views are not independent examples. The criterion requires five complete seeds, every seed median faster, and at least 5% median paired saving. Paired speed ratios need not equal the ratio of the marginal times in this table.
+
+The strongest symmetry-reuse cases were **sensor training** and **shared-weight gradients**: respectively **3.46×** and **2.84×** faster than ordinary exact caching, with **87.5%** and **80.5%** less simulated CNOT work. Equally informed Qiskit receives the same work savings. Scaled denoising and averaged kernels also beat ordinary exact caching, while raw joint-symmetry kernels became slower and required more state preparations. Image patches and local cones did not establish a qualifying total-runtime win.
+
+The cold-start derivative timings should not be presented as quantum learning advantage over classical models. In a [separate one-seed startup diagnostic](results/eight-experiments/startup_diagnostic.json), after importing dependencies, the shared-gradient classical application took **28 ms** versus **410 ms** for GroupMemory, both scoring 100%. This diagnostic is not pooled with the benchmark. [Reproduce it](examples/startup_diagnostic.py).
+
+The measurement loop took **28.95 minutes**, with no failures or missing coverage. Tests, the checkpoint/resume pilot, the quick smoke run, diagnostics and reporting are separately recorded in the [wall accounting](results/eight-experiments/suite_wall_accounting.json) and [readout receipt](results/eight-experiments/readout_wall.json). Package installation is excluded.
+
+- [Full measured comparison and all paired ratios](results/eight-experiments/summary.md)
+- [Executed notebook, including raw-record and source-hash verification](examples/eight_qml_experiments.ipynb)
+- [Raw worker records](results/eight-experiments/raw_attempts.zip) and [frozen source snapshot](results/eight-experiments/source_snapshot.zip)
+
+![Matched seed ranges against both Qiskit controls](results/eight-experiments/paired_seed_ranges.png)
+
+Lines span the observed seed ratios; they are not confidence intervals. Both panels use the same scale. Values above one favor GroupMemory.
+
 ## What the demo learns
 
 The binary task distinguishes contiguous positive/negative sensor readings from alternating readings around a ring. Each paired example has the same amplitude histogram, so spatial arrangement matters. Inputs are encoded as rotation angles.
@@ -97,9 +130,9 @@ Compared with the **secondary exact-cache Qiskit control**, GroupMemory used 75%
 
 The avoided forward circuits also avoid their CNOTs. This is **not a reduction in the native CNOT count of each circuit**. Reverse-gradient instances are classical derivative computations and are not QPU executions.
 
-## What is included in the clock
+## Original sensor demo timing
 
-Every measured application starts with a fresh engine and includes data generation, circuit setup and compilation, canonicalization and cache lookup, parameter binding, forward simulation, gradients, output reconstruction, head fitting, prediction, and result construction.
+In the original sensor demo, every measured application starts with a fresh engine and includes data generation, circuit setup and compilation, canonicalization and cache lookup, parameter binding, forward simulation, gradients, output reconstruction, head fitting, prediction, and result construction.
 
 Imports, correctness validation, benchmark orchestration, plotting, and file writing are reported separately, alongside elapsed wall time from the CLI module's first clock. The receipt explicitly excludes interpreter startup before that clock and its own final write, console output, and shutdown; an external process timer can measure those too. Inspect both the application comparison and the wall receipt. Repeated calls within an application can hit its cache; separate timing repeats do not share a trained engine or its results.
 

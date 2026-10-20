@@ -54,6 +54,8 @@ python -m group_memory_qml.experiment_report results/eight-run
 
 The full plan has 480 attempts: eight conditions × five data seeds × three timing repeats × four methods. The budget is a cap, not a completion-time estimate. Unfinished, failed, and timed-out attempts remain explicit. Generating the report only reads saved data; it does not run the experiments.
 
+The repository also provides `benchmarks/eight_experiments.json`, with two workload sizes for each experiment: **16 conditions and 960 attempts** at the same seed/repeat settings. The smaller `benchmarks/eight_quick.json` exercises all eight APIs in 32 attempts with one seed and one repeat. The quick run is a functionality demonstration, not sufficient evidence for a descriptive performance win.
+
 The harness saves an immutable configuration, source hashes, authorization deadline, per-attempt journal, and two alternating checkpoints. To resume before that deadline, run the **same command with the same output, condition file, seeds, repeats, and budget**, omitting `--limit` if a smoke limit stopped it. Resume continues the plan cursor and does not reset the deadline. Changed code or configuration is rejected; use a new directory for a genuinely new run.
 
 ## Four comparisons in every condition
@@ -183,6 +185,8 @@ With partial coverage, a method's marginal summary can include a different subse
 
 Counts have experiment-specific units. Sensor and derivative `evaluations` are executed quantum-circuit simulations; kernel `evaluations` are classical overlap calculations. Read each record's diagnostics before comparing counts. `total_cx` covers native gates in simulated preparations/evaluations actually performed; it is not a hardware receipt and does not include classical density overlaps or reverse differentiation.
 
+CX counts use the `rz`, `sx`, `x`, `cx` basis without a physical coupling map. They are logical simulation work, not routed gate counts for a particular QPU. The `descriptive_win` field is a timing flag only: it does not incorporate prediction quality and is never, by itself, a quantum-advantage verdict.
+
 Finite-shot hardware could break ideal equivariances and introduce correlations when estimates are reused. None of these experiments establishes hardware accuracy, cost, or quantum advantage.
 
 ## Saved artifacts
@@ -196,3 +200,5 @@ Finite-shot hardware could break ideal equivariances and introduce correlations 
 - `report_wall.json`: separately measured readout cost.
 
 When sharing a result, include the code revision, conditions, environment, complete coverage, correctness status, classical quality, and both timing boundaries. A missing result is not a zero-time win.
+
+The published reference may bundle the raw attempt files in `raw_attempts.zip` to keep the review readable. Extract that archive in its result directory before rerunning `python -m group_memory_qml.experiment_report` on the reference. New experiment runs write `attempts/*.json` directly and need no extraction. The executed notebook reads the published summaries without extracting or launching any jobs.

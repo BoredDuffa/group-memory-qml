@@ -10,4 +10,5 @@ dist/
 /results/*
 !/results/reference/
 !/results/release-validation/
+!/results/eight-experiments/
 

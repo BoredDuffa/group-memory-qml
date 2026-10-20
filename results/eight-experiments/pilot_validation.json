@@ -1,0 +1,19 @@
+{
+  "status": {
+    "status": "COMPLETE",
+    "completed_attempts": 64,
+    "planned_attempts": 64,
+    "deadline_unix": 1792493963.784477,
+    "last_invocation_wall_s": 121.0242933339905,
+    "elapsed_since_first_start_s": 132.93196988105774,
+    "unattempted": 0
+  },
+  "attempts": 64,
+  "planned": 64,
+  "successful": 64,
+  "validation_passed": 16,
+  "validation_planned": 16,
+  "maximum_absolute_error": 2.148281552649678e-14,
+  "process_wall_sum_s": 123.7580175860785,
+  "scope": "Separate functional/checkpoint validation; never pooled with campaign timings"
+}

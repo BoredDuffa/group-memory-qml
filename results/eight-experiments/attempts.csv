@@ -1,0 +1,961 @@
+condition,experiment,config,seed,repeat,method,status,process_wall_s,application_s,import_and_setup_s,metric_name,metric_value,higher_is_better,evaluations,total_cx
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,0,qiskit_symmetry,SUCCESS,1.6187958749942482,1.3086164999986067,0.14039300003787503,heldout_mse,0.02652202976383383,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,0,qiskit_exact,SUCCESS,1.0642937920056283,0.8961190419504419,0.05433220899431035,heldout_mse,0.0265220297638338,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,0,classical,SUCCESS,2.104924041952472,1.9036124169942923,0.030593124974984676,heldout_mse,0.002245821628668166,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,0,group_memory,SUCCESS,1.0331885410123505,0.835482582973782,0.03313691698713228,heldout_mse,0.02652202976383383,False,1356,12204
+4B-scaled,4B,"{""n_global"": 256}",930102,2,qiskit_exact,SUCCESS,1.8719755840138532,1.6113693749648519,0.04331908299354836,heldout_accuracy,1.0,True,192,768
+4B-scaled,4B,"{""n_global"": 256}",930102,2,qiskit_symmetry,SUCCESS,1.664057167014107,1.4083296669996344,0.03103708301205188,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930102,2,group_memory,SUCCESS,1.5593180419527926,1.306687458010856,0.034402958990540355,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930102,2,classical,SUCCESS,1.2575464999536052,1.0546436660224572,0.032796791987493634,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,1,qiskit_symmetry,SUCCESS,2.498331957962364,1.9183425410301425,0.03366654098499566,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,1,classical,SUCCESS,1.379993666021619,1.1183610000298359,0.03697441698750481,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,1,qiskit_exact,SUCCESS,2.2974459169781767,2.036281540989876,0.0320893750176765,heldout_accuracy,1.0,True,1584,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,1,group_memory,SUCCESS,2.0353528329869732,1.746106292004697,0.03311429196037352,heldout_accuracy,1.0,True,108,4096
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,0,qiskit_exact,SUCCESS,4.1003069169819355,2.1029975839774124,1.0942314580315724,heldout_mse,0.01542499430294797,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,0,group_memory,SUCCESS,1.825377374945674,0.41185754199977964,1.1505038750474341,heldout_mse,0.015424994302947973,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,0,classical,SUCCESS,1.6302830000058748,0.02318070799810812,1.2439854170079343,heldout_mse,0.014449643555700116,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,0,qiskit_symmetry,SUCCESS,2.8693527500145137,1.0130163750145584,1.564084957994055,heldout_mse,0.015424994302947973,False,48,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,2,qiskit_exact,SUCCESS,1.8650351670221426,1.5586525829858147,0.03601591696497053,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,2,group_memory,SUCCESS,1.8506531250313856,1.577517291996628,0.035200375015847385,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,2,qiskit_symmetry,SUCCESS,2.0124053340405226,1.6598239580052905,0.03358579199993983,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,2,classical,SUCCESS,1.382296166033484,1.16606833395781,0.03486545803025365,heldout_accuracy,0.75,True,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,1,group_memory,SUCCESS,1.0987200000090525,0.9473765839939006,0.03134525002678856,heldout_mse,0.029047582789069774,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,1,qiskit_symmetry,SUCCESS,1.0999522909987718,0.9125894579919986,0.03928929194808006,heldout_mse,0.029047582789069774,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,1,qiskit_exact,SUCCESS,1.7358192919637077,1.4267319589853287,0.06489645800320432,heldout_mse,0.029047582789069704,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,1,classical,SUCCESS,2.9262994159944355,2.4822283340035938,0.09418641700176522,heldout_mse,0.0034962095389464154,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,2,qiskit_exact,SUCCESS,1.404385916015599,1.1700646249810234,0.08592895796755329,heldout_mse,0.0298391295324377,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,2,classical,SUCCESS,3.0560812079929747,2.7701459170202725,0.08090720797190443,heldout_mse,0.004550690887628361,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,2,qiskit_symmetry,SUCCESS,1.8853241670294665,1.6102750420104712,0.03006750001804903,heldout_mse,0.029839129532437596,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,2,group_memory,SUCCESS,0.8349849170190282,0.6389397910097614,0.04726220801239833,heldout_mse,0.029839129532437596,False,608,5472
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,1,qiskit_exact,SUCCESS,2.7625911249779165,0.607564999954775,1.8813256249995902,heldout_mse,0.01632475822595552,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,1,qiskit_symmetry,SUCCESS,2.29400962498039,0.7007505410001613,1.361463749955874,heldout_mse,0.016324758225955492,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,1,classical,SUCCESS,1.5293017079820856,0.010834374988917261,1.3436205830075778,heldout_mse,0.014417744755759358,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,1,group_memory,SUCCESS,2.128098040993791,0.4469634590204805,1.4547629579901695,heldout_mse,0.016324758225955492,False,32,512
+4B-scaled,4B,"{""n_global"": 256}",930101,1,qiskit_exact,SUCCESS,1.9670381659525447,1.602162999974098,0.03161016700323671,heldout_accuracy,1.0,True,192,768
+4B-scaled,4B,"{""n_global"": 256}",930101,1,group_memory,SUCCESS,1.7807732080109417,1.5279636660125107,0.03715762495994568,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930101,1,classical,SUCCESS,1.4715264170081355,1.2710373330046423,0.030884999956469983,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930101,1,qiskit_symmetry,SUCCESS,1.6248996670474298,1.3745097500504926,0.031047791009768844,heldout_accuracy,1.0,True,96,384
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,2,group_memory,SUCCESS,1.9267864590510726,1.6820412920205854,0.031483667029533535,heldout_accuracy,1.0,True,884,3488
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,2,qiskit_symmetry,SUCCESS,1.8393943750415929,1.5828469999833032,0.03727479197550565,heldout_accuracy,1.0,True,884,3488
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,2,classical,SUCCESS,1.301027332956437,1.086183917010203,0.03373841696884483,heldout_accuracy,1.0,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,2,qiskit_exact,SUCCESS,1.5796471249777824,1.330205041973386,0.032628417015075684,heldout_accuracy,1.0,True,1552,1024
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,1,group_memory,SUCCESS,1.5790369579917751,1.3344946250435896,0.03414587496081367,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,1,qiskit_symmetry,SUCCESS,1.5632771250093356,1.3260472500114702,0.032333958020899445,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,1,qiskit_exact,SUCCESS,1.6590907080098987,1.4063968749833293,0.03526199999032542,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,1,classical,SUCCESS,1.295750124962069,1.08133341697976,0.03222875000210479,heldout_accuracy,0.5,True,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,2,classical,SUCCESS,1.2440184160368517,0.010528875049203634,1.0583213749923743,heldout_mse,0.014578058022134022,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,2,group_memory,SUCCESS,2.0358502920134924,0.559751833032351,1.20621349994326,heldout_mse,0.01571713081448786,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,2,qiskit_exact,SUCCESS,2.6448091249912977,1.3152912500081584,1.0915848329896107,heldout_mse,0.015717130814487872,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,2,qiskit_symmetry,SUCCESS,1.6600463750073686,0.386127291014418,1.0500214580097236,heldout_mse,0.01571713081448786,False,48,1152
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,0,classical,SUCCESS,1.2068697089562193,1.0145256250398234,0.030413458007387817,heldout_mse,0.0026865725015910655,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,0,group_memory,SUCCESS,0.5950695829815231,0.4582598749548197,0.032008082955144346,heldout_mse,0.013281978660169778,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,0,qiskit_symmetry,SUCCESS,0.5832744590006769,0.4499446660047397,0.029337124957237393,heldout_mse,0.013281978660169778,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,0,qiskit_exact,SUCCESS,0.6212250840035267,0.49019800004316494,0.029357499966863543,heldout_mse,0.013281978660169752,False,672,6048
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,2,qiskit_exact,SUCCESS,1.5276157080079429,1.2804816249990836,0.03748979204101488,heldout_accuracy,1.0,True,392,384
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,2,qiskit_symmetry,SUCCESS,1.5131409160094336,1.2786432090215385,0.03125729103339836,heldout_accuracy,1.0,True,226,1092
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,2,classical,SUCCESS,1.2464106670231558,1.0424862089566886,0.03709845896810293,heldout_accuracy,0.5,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,2,group_memory,SUCCESS,1.5230671250028536,1.2896425839862786,0.03193437500158325,heldout_accuracy,1.0,True,226,1092
+4B-scaled,4B,"{""n_global"": 256}",930103,0,group_memory,SUCCESS,1.5410418749670498,1.2962760839727707,0.033395999984350055,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930103,0,qiskit_symmetry,SUCCESS,1.4880937910056673,1.2613969579688273,0.030180958041455597,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930103,0,classical,SUCCESS,1.2646813750034198,1.0621777920168824,0.03222937497776002,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930103,0,qiskit_exact,SUCCESS,1.5453078750288114,1.3148888750001788,0.030432166997343302,heldout_accuracy,1.0,True,192,768
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,0,classical,SUCCESS,1.2254490839550272,1.0193861669977196,0.03250749997096136,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,0,qiskit_exact,SUCCESS,2.22755412501283,1.9684237919864245,0.03126195800723508,heldout_accuracy,1.0,True,1584,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,0,group_memory,SUCCESS,1.8959944589878432,1.6316542499698699,0.0315445419983007,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,0,qiskit_symmetry,SUCCESS,1.9390625830274075,1.6754970410256647,0.033238292031455785,heldout_accuracy,1.0,True,108,4096
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,2,classical,SUCCESS,1.2074726250139065,1.0146303749643266,0.03196529200067744,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,2,qiskit_exact,SUCCESS,2.144083541992586,1.9913934160140343,0.029817332979291677,heldout_accuracy,1.0,True,2088,33408
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,2,qiskit_symmetry,SUCCESS,0.7056656660279259,0.5581404170370661,0.030105374986305833,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,2,group_memory,SUCCESS,0.6856360000092536,0.548851375002414,0.029660499945748597,heldout_accuracy,1.0,True,408,6528
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,1,classical,SUCCESS,1.269610458984971,1.074682541016955,0.03149854199727997,heldout_accuracy,0.75,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,1,qiskit_symmetry,SUCCESS,1.633843582996633,1.3854253750178032,0.031864541000686586,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,1,qiskit_exact,SUCCESS,1.582274292013608,1.337990166968666,0.03309612500015646,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,1,group_memory,SUCCESS,1.5864726669969968,1.3261257500271313,0.03418991598300636,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,2,group_memory,SUCCESS,1.57232529099565,1.3177662919624709,0.03278079198207706,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,2,qiskit_symmetry,SUCCESS,2.035851792024914,1.776793707977049,0.03954145801253617,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,2,classical,SUCCESS,1.37213645799784,1.1162775419652462,0.03177833399968222,heldout_accuracy,1.0,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,2,qiskit_exact,SUCCESS,1.6993664170149714,1.4013484579627402,0.03323029197053984,heldout_accuracy,1.0,True,408,1152
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,1,group_memory,SUCCESS,0.6804684170056134,0.5415866670082323,0.03152129100635648,heldout_mse,0.029604125836895367,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,1,qiskit_exact,SUCCESS,0.6189962910139002,0.4867612090311013,0.03140658396296203,heldout_mse,0.029604125836895378,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,1,qiskit_symmetry,SUCCESS,0.5870690420269966,0.455005792027805,0.029903499991632998,heldout_mse,0.029604125836895367,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,1,classical,SUCCESS,1.2515744590200484,1.0570679159718566,0.030586082953959703,heldout_mse,0.01620356487111469,False,0,0
+4B-small,4B,"{""n_global"": 64}",930103,0,qiskit_symmetry,SUCCESS,1.5466517500462942,1.3083185839932412,0.03470875002676621,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930103,0,qiskit_exact,SUCCESS,1.5616815829998814,1.31557541602524,0.03230791701935232,heldout_accuracy,1.0,True,192,768
+4B-small,4B,"{""n_global"": 64}",930103,0,group_memory,SUCCESS,1.5367384580313228,1.299137374968268,0.03211554198060185,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930103,0,classical,SUCCESS,1.2143049169681035,1.017309374990873,0.0312423330033198,heldout_accuracy,1.0,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,0,group_memory,SUCCESS,1.5520175420097075,1.3158777499920689,0.033030458027496934,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,0,classical,SUCCESS,1.2298998750047758,1.033162041043397,0.032649457978550345,heldout_accuracy,1.0,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,0,qiskit_exact,SUCCESS,1.5842282910016365,1.3470362499938346,0.033684999973047525,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,0,qiskit_symmetry,SUCCESS,1.5524297499796376,1.3109386249561794,0.032242540968582034,heldout_accuracy,1.0,True,30,1152
+4B-small,4B,"{""n_global"": 64}",930101,2,qiskit_exact,SUCCESS,1.5736143339890987,1.3322799999732524,0.033155040990095586,heldout_accuracy,1.0,True,192,768
+4B-small,4B,"{""n_global"": 64}",930101,2,qiskit_symmetry,SUCCESS,1.632804542023223,1.2889327500015497,0.03153916698647663,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930101,2,group_memory,SUCCESS,1.5921940410044044,1.3446841670083813,0.03429900004994124,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930101,2,classical,SUCCESS,1.211338916036766,1.0109834999893792,0.032401958014816046,heldout_accuracy,1.0,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,0,group_memory,SUCCESS,1.603241957956925,1.3591471249819733,0.030796832987107337,heldout_accuracy,0.9375,True,226,888
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,0,qiskit_symmetry,SUCCESS,1.5494677079841495,1.3053759580361657,0.03335291601251811,heldout_accuracy,0.9375,True,226,888
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,0,classical,SUCCESS,1.2239317919593304,1.0254337079823017,0.0329993330524303,heldout_accuracy,0.75,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,0,qiskit_exact,SUCCESS,1.4475324589875527,1.2223056660150178,0.030621041951235384,heldout_accuracy,0.9375,True,392,384
+4B-small,4B,"{""n_global"": 64}",930101,0,group_memory,SUCCESS,1.5036613749689423,1.254243083007168,0.03007533395430073,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930101,0,classical,SUCCESS,1.1972297079628333,1.0118527919985354,0.02968570904340595,heldout_accuracy,1.0,True,0,0
+4B-small,4B,"{""n_global"": 64}",930101,0,qiskit_exact,SUCCESS,1.5254455410176888,1.2881687079789117,0.03195408300962299,heldout_accuracy,1.0,True,192,768
+4B-small,4B,"{""n_global"": 64}",930101,0,qiskit_symmetry,SUCCESS,1.479354166018311,1.2520608329796232,0.02968904096633196,heldout_accuracy,1.0,True,96,384
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,2,group_memory,SUCCESS,0.7199598749866709,0.5825250410125591,0.030867958965245634,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,2,classical,SUCCESS,1.241177499992773,1.0358609589748085,0.02911504200892523,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,2,qiskit_exact,SUCCESS,2.0330087080365047,1.8807519999681972,0.03411474998574704,heldout_accuracy,1.0,True,2088,33408
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,2,qiskit_symmetry,SUCCESS,0.7090296660317108,0.5709594159852713,0.03023033298086375,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,0,qiskit_exact,SUCCESS,2.0622719160164706,1.9039810840040445,0.031509875028859824,heldout_accuracy,1.0,True,2088,33408
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,0,group_memory,SUCCESS,0.6980910000274889,0.5596175409737043,0.03161537501728162,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,0,classical,SUCCESS,1.3829056660179049,1.1839663330465555,0.031319125031586736,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,0,qiskit_symmetry,SUCCESS,0.7185427499935031,0.5833748750155792,0.03131262498209253,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,1,group_memory,SUCCESS,0.685181167034898,0.5534258750267327,0.0300410840427503,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,1,classical,SUCCESS,2.3546834170119837,2.1271922910236754,0.03150541696231812,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,1,qiskit_symmetry,SUCCESS,0.9928950000321493,0.8303397499839775,0.03577587503241375,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,1,qiskit_exact,SUCCESS,1.9983904589898884,1.8652362920111045,0.031093082972802222,heldout_accuracy,1.0,True,2088,33408
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,1,qiskit_exact,SUCCESS,0.9941234579891898,0.8526922080200166,0.03193383396137506,heldout_mse,0.0265220297638338,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,1,classical,SUCCESS,1.4804478340083733,1.2837689580046572,0.03132279199780896,heldout_mse,0.002245821628668166,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,1,qiskit_symmetry,SUCCESS,0.9218060830025934,0.7809590420220047,0.031493499991483986,heldout_mse,0.02652202976383383,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,1,group_memory,SUCCESS,0.9228819159907289,0.7892973329871893,0.029415874974802136,heldout_mse,0.02652202976383383,False,1356,12204
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,2,classical,SUCCESS,1.2368268750142306,1.0330543749732897,0.03249437501654029,heldout_accuracy,1.0,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,2,group_memory,SUCCESS,1.5364346669521183,1.2936885000090115,0.030979375005699694,heldout_accuracy,1.0,True,226,984
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,2,qiskit_symmetry,SUCCESS,1.5254835840314627,1.2847846249933355,0.03314216702710837,heldout_accuracy,1.0,True,226,984
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,2,qiskit_exact,SUCCESS,1.6714552079793066,1.3730287920334376,0.030792333011049777,heldout_accuracy,1.0,True,392,384
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,2,group_memory,SUCCESS,1.779330833000131,0.42611175001366064,1.1055787079967558,heldout_mse,0.011163402509575152,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,2,qiskit_exact,SUCCESS,2.5122159169986844,1.2344135419698432,1.0448407499934547,heldout_mse,0.011163402509575142,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,2,classical,SUCCESS,1.2277057090541348,0.010071166965644807,1.0504402500228025,heldout_mse,0.010538437112341724,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,2,qiskit_symmetry,SUCCESS,1.6086091250181198,0.37515929102664813,1.017091540968977,heldout_mse,0.011163402509575152,False,48,1152
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,2,qiskit_exact,SUCCESS,1.5437620829907246,1.302653459017165,0.032263125001918525,heldout_accuracy,1.0,True,1552,1024
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,2,classical,SUCCESS,1.2149852080037817,1.0180602920008823,0.030502041045110673,heldout_accuracy,1.0,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,2,group_memory,SUCCESS,1.8001387910335325,1.5587750409613363,0.03196020802715793,heldout_accuracy,1.0,True,884,3632
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,2,qiskit_symmetry,SUCCESS,1.7540422910242341,1.5184988749679178,0.031002125004306436,heldout_accuracy,1.0,True,884,3632
+4A-scaled,4A,"{""patch_side"": 3}",930102,2,group_memory,SUCCESS,1.4998742499738,1.2563078749808483,0.032214167003985494,heldout_accuracy,1.0,True,19,456
+4A-scaled,4A,"{""patch_side"": 3}",930102,2,qiskit_symmetry,SUCCESS,1.4602980419876985,1.2356967919622548,0.030666208011098206,heldout_accuracy,1.0,True,19,456
+4A-scaled,4A,"{""patch_side"": 3}",930102,2,qiskit_exact,SUCCESS,1.573377916996833,1.3378941669943742,0.029744125029537827,heldout_accuracy,1.0,True,64,1536
+4A-scaled,4A,"{""patch_side"": 3}",930102,2,classical,SUCCESS,1.2119294999865815,0.9989457079791464,0.030209875025320798,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930102,0,group_memory,SUCCESS,1.5254369580070488,1.2921866670367308,0.030883917002938688,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930102,0,classical,SUCCESS,1.218005875009112,1.024179541040212,0.031156292010564357,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930102,0,qiskit_symmetry,SUCCESS,1.4944989590439945,1.2644932079710998,0.030162249982822686,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930102,0,qiskit_exact,SUCCESS,1.655178832996171,1.4147726250230335,0.030379500007256866,heldout_accuracy,1.0,True,192,768
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,0,qiskit_symmetry,SUCCESS,0.6174508330295794,0.4790290000382811,0.03136054199421778,heldout_mse,0.014402704581634743,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,0,classical,SUCCESS,1.1950809590052813,1.003418333013542,0.03032683295896277,heldout_mse,0.003456271160746119,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,0,qiskit_exact,SUCCESS,0.6259345419821329,0.4913275000290014,0.03169145900756121,heldout_mse,0.014402704581634708,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,0,group_memory,SUCCESS,0.573232916998677,0.4444310420076363,0.029114208999089897,heldout_mse,0.014402704581634743,False,608,5472
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,0,classical,SUCCESS,1.2328749159933068,1.0376030830084346,0.03385316696949303,heldout_accuracy,1.0,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,0,qiskit_exact,SUCCESS,1.6342972919810563,1.3829115830012597,0.035920583992265165,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,0,qiskit_symmetry,SUCCESS,1.5088632919942029,1.277231915970333,0.03140249999705702,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,0,group_memory,SUCCESS,1.511698707996402,1.2707999169942923,0.03292287501972169,heldout_accuracy,1.0,True,30,1152
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,1,group_memory,SUCCESS,2.6502020840416662,1.4242139999987558,1.0100612919777632,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,1,qiskit_exact,SUCCESS,10.341748792037833,9.086554583976977,1.0234521249658428,heldout_accuracy,0.9375,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,1,qiskit_symmetry,SUCCESS,3.0047614159993827,1.4991299160174094,1.247836707974784,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,1,classical,SUCCESS,1.569603707990609,0.009321916964836419,1.3521833750419319,heldout_accuracy,1.0,True,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,1,qiskit_symmetry,SUCCESS,0.7142787920311093,0.5701743329991587,0.030175416031852365,heldout_mse,0.029839129532437596,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,1,classical,SUCCESS,1.5597460000426508,1.3591259159729816,0.031056374951731414,heldout_mse,0.004550690887628361,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,1,qiskit_exact,SUCCESS,0.7571929999976419,0.6165214999928139,0.03172783297486603,heldout_mse,0.0298391295324377,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,1,group_memory,SUCCESS,0.5881207910133526,0.4579297080053948,0.029867167002521455,heldout_mse,0.029839129532437596,False,608,5472
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,2,qiskit_symmetry,SUCCESS,1.78875520901056,1.5481712499749847,0.032275041041430086,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,2,classical,SUCCESS,1.352972041000612,1.1553907920024358,0.034475916996598244,heldout_accuracy,1.0,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,2,group_memory,SUCCESS,1.5416523339808919,1.304871040978469,0.03047037497162819,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,2,qiskit_exact,SUCCESS,1.5761034580064006,1.3234210420050658,0.033239042037166655,heldout_accuracy,1.0,True,408,1152
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,0,classical,SUCCESS,1.2847684160224162,1.087274250050541,0.03112233302090317,heldout_mse,0.0034962095389464154,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,0,qiskit_symmetry,SUCCESS,0.9507513749995269,0.8135660410043783,0.030017749988473952,heldout_mse,0.029047582789069774,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,0,group_memory,SUCCESS,0.948671167017892,0.8069557910203002,0.03199116699397564,heldout_mse,0.029047582789069774,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,0,qiskit_exact,SUCCESS,0.9815925830043852,0.8477992080152035,0.029899166023824364,heldout_mse,0.029047582789069704,False,1500,13500
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,2,group_memory,SUCCESS,0.43593249999685213,0.30834070802666247,0.030268625007010996,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,2,classical,SUCCESS,1.3720832919934765,1.1756556669715792,0.0298719999846071,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,2,qiskit_symmetry,SUCCESS,0.508256291039288,0.34688558301422745,0.029633792000822723,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,2,qiskit_exact,SUCCESS,0.8281177080352791,0.6982444999739528,0.029253583983518183,heldout_accuracy,1.0,True,636,10176
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,1,group_memory,SUCCESS,0.44499929196899757,0.3063964170287363,0.030921125027816743,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,1,classical,SUCCESS,1.262490416993387,1.066328374959994,0.030491875018924475,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,1,qiskit_symmetry,SUCCESS,0.43066937499679625,0.3051523339818232,0.030396874994039536,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,1,qiskit_exact,SUCCESS,0.8476349579868838,0.7137245410121977,0.030363124969881028,heldout_accuracy,1.0,True,636,10176
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,0,classical,SUCCESS,1.225002124963794,0.00810387497767806,1.0473707919591106,heldout_mse,0.014417744755759358,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,0,qiskit_symmetry,SUCCESS,1.5496291669551283,0.3083837500307709,1.0278978749993257,heldout_mse,0.016324758225955492,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,0,qiskit_exact,SUCCESS,1.6728404159657657,0.35451633302727714,1.0396857080049813,heldout_mse,0.01632475822595552,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,0,group_memory,SUCCESS,1.4916927499580197,0.2529023340321146,1.0224409999791533,heldout_mse,0.016324758225955492,False,32,512
+4A-small,4A,"{""patch_side"": 2}",930101,1,group_memory,SUCCESS,1.4573015840142034,1.2257083750446327,0.030529542011208832,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930101,1,qiskit_exact,SUCCESS,1.4497646249947138,1.220712292008102,0.030098457995336503,heldout_accuracy,1.0,True,14,112
+4A-small,4A,"{""patch_side"": 2}",930101,1,classical,SUCCESS,1.2028699170332402,1.0098727499716915,0.031692666991148144,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930101,1,qiskit_symmetry,SUCCESS,1.4628022499964572,1.232387457974255,0.029891166021116078,heldout_accuracy,1.0,True,4,32
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,1,qiskit_exact,SUCCESS,2.674887709028553,1.3239365419722162,1.1064825839712285,heldout_accuracy,0.75,True,160,1920
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,1,group_memory,SUCCESS,1.8743066669558175,0.524651542014908,1.0420136250322685,heldout_accuracy,0.75,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,1,qiskit_symmetry,SUCCESS,1.8472110839793459,0.5100568329798989,1.1100328750326298,heldout_accuracy,0.75,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,1,classical,SUCCESS,1.2188275840017013,0.009183290996588767,1.0329018330085091,heldout_accuracy,1.0,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,2,classical,SUCCESS,1.2236444170121104,1.0283141669933684,0.03322704101447016,heldout_accuracy,1.0,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,2,group_memory,SUCCESS,1.621145915996749,1.3769423339981586,0.03216620796592906,heldout_accuracy,1.0,True,226,624
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,2,qiskit_exact,SUCCESS,1.4872362919850275,1.2504526670090854,0.03376058302819729,heldout_accuracy,1.0,True,392,384
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,2,qiskit_symmetry,SUCCESS,1.4716210840269923,1.24428058299236,0.03199187497375533,heldout_accuracy,1.0,True,226,624
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,1,classical,SUCCESS,1.1964929589885287,0.008485959027893841,1.0142528750002384,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,1,qiskit_symmetry,SUCCESS,2.6020700419903733,1.3458434590138495,1.0393943329690956,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,1,group_memory,SUCCESS,2.6161812500213273,1.3515092910383828,1.0270702919806354,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,1,qiskit_exact,SUCCESS,10.852766625001095,9.427251541987062,1.1497638750006445,heldout_accuracy,0.9375,True,640,12800
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,2,qiskit_exact,SUCCESS,2.9666367919999175,2.5914053329615854,0.06971479096682742,heldout_accuracy,1.0,True,1584,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,2,group_memory,SUCCESS,2.34143483301159,1.967395709012635,0.10305020801024511,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,2,classical,SUCCESS,1.2372547499835491,1.0219918750226498,0.031614166975487024,heldout_accuracy,0.875,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,2,qiskit_symmetry,SUCCESS,1.918977499997709,1.6281162920058705,0.029678499966394156,heldout_accuracy,1.0,True,108,4096
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,2,qiskit_symmetry,SUCCESS,1.6766547919833101,1.4393834579968825,0.03199441701872274,heldout_accuracy,1.0,True,226,1092
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,2,qiskit_exact,SUCCESS,1.5137839579838328,1.2847277499968186,0.03058362501906231,heldout_accuracy,1.0,True,392,384
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,2,group_memory,SUCCESS,1.5596631249645725,1.3250777500215918,0.031966625014320016,heldout_accuracy,1.0,True,226,1092
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,2,classical,SUCCESS,1.2373020409722812,1.0470850000274368,0.030483209004160017,heldout_accuracy,0.5,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,1,qiskit_symmetry,SUCCESS,1.5079290409921668,1.2718784169992432,0.031161417020484805,heldout_accuracy,1.0,True,226,624
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,1,group_memory,SUCCESS,1.463866957987193,1.2324006669805385,0.03101679199608043,heldout_accuracy,1.0,True,226,624
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,1,classical,SUCCESS,1.2265130419982597,1.0317678340361454,0.03168795898091048,heldout_accuracy,1.0,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,1,qiskit_exact,SUCCESS,1.453362250002101,1.2207218749681488,0.03069141600281,heldout_accuracy,1.0,True,392,384
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,0,qiskit_exact,SUCCESS,10.462372457957827,9.16447470796993,1.0511209579999559,heldout_accuracy,0.9375,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,0,group_memory,SUCCESS,3.2617054999573156,1.5420892909751274,1.4557072089519352,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,0,qiskit_symmetry,SUCCESS,3.174631290952675,1.6345045830239542,1.2790011669858359,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,0,classical,SUCCESS,1.535716707992833,0.01468983298400417,1.3273794170236215,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930103,1,qiskit_symmetry,SUCCESS,2.1356987499748357,1.8660286249942146,0.04830579098779708,heldout_accuracy,1.0,True,5,40
+4A-small,4A,"{""patch_side"": 2}",930103,1,group_memory,SUCCESS,1.992276499979198,1.7136157909990288,0.05427491699811071,heldout_accuracy,1.0,True,5,40
+4A-small,4A,"{""patch_side"": 2}",930103,1,qiskit_exact,SUCCESS,2.134726042044349,1.858803583018016,0.05015079100849107,heldout_accuracy,1.0,True,15,120
+4A-small,4A,"{""patch_side"": 2}",930103,1,classical,SUCCESS,1.636552040989045,1.3494768330128863,0.04999712499557063,heldout_accuracy,1.0,True,0,0
+4B-small,4B,"{""n_global"": 64}",930103,2,group_memory,SUCCESS,2.24050775001524,1.9660268750158139,0.05364345799898729,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930103,2,qiskit_symmetry,SUCCESS,2.0346899169962853,1.765726541983895,0.05132604099344462,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930103,2,classical,SUCCESS,1.5299062080448493,1.30823170801159,0.04727308405563235,heldout_accuracy,1.0,True,0,0
+4B-small,4B,"{""n_global"": 64}",930103,2,qiskit_exact,SUCCESS,2.059124542050995,1.7714759999653324,0.06625266699120402,heldout_accuracy,1.0,True,192,768
+4B-small,4B,"{""n_global"": 64}",930105,0,qiskit_exact,SUCCESS,1.964391292014625,1.6989252920029685,0.052137124992441386,heldout_accuracy,1.0,True,192,768
+4B-small,4B,"{""n_global"": 64}",930105,0,qiskit_symmetry,SUCCESS,1.9375520420144312,1.6198417500127107,0.07927608402678743,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930105,0,classical,SUCCESS,1.5305648749927059,1.3078306250390597,0.05066949996398762,heldout_accuracy,1.0,True,0,0
+4B-small,4B,"{""n_global"": 64}",930105,0,group_memory,SUCCESS,1.8942972499644384,1.6314966250211,0.04680783400544897,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930101,1,classical,SUCCESS,1.5717652920284308,1.2973341250326484,0.08283041696995497,heldout_accuracy,1.0,True,0,0
+4B-small,4B,"{""n_global"": 64}",930101,1,group_memory,SUCCESS,1.9841294169891626,1.7234070830163546,0.04945816600229591,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930101,1,qiskit_symmetry,SUCCESS,1.8336620420450345,1.5576035829726607,0.048245791986119,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930101,1,qiskit_exact,SUCCESS,2.1169326250092126,1.8482360829948448,0.053620750026311725,heldout_accuracy,1.0,True,192,768
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,0,qiskit_symmetry,SUCCESS,3.1514116670005023,1.5183149999938905,1.3616585419513285,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,0,qiskit_exact,SUCCESS,10.834880250040442,9.219885708997026,1.3037890829727985,heldout_accuracy,0.9375,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,0,classical,SUCCESS,1.5558313329820521,0.017428166000172496,1.3410517909796908,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,0,group_memory,SUCCESS,3.244170415971894,1.5453060420113616,1.421197374991607,heldout_accuracy,0.9375,True,80,1600
+4A-scaled,4A,"{""patch_side"": 3}",930105,1,qiskit_symmetry,SUCCESS,2.1019505410222337,1.7530998750007711,0.07881416700547561,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930105,1,group_memory,SUCCESS,2.1219473750097677,1.844003917009104,0.05173729103989899,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930105,1,classical,SUCCESS,1.6159669159678742,1.3449075410026126,0.062996499997098,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930105,1,qiskit_exact,SUCCESS,2.1814970000414178,1.847533083986491,0.07603795797331259,heldout_accuracy,1.0,True,66,1584
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,0,qiskit_symmetry,SUCCESS,0.9129693330032751,0.7302177920355462,0.05386774998623878,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,0,group_memory,SUCCESS,0.7578061659587547,0.6213975839782506,0.032370208005886525,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,0,classical,SUCCESS,1.6442707080277614,1.437342000019271,0.03157062496757135,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,0,qiskit_exact,SUCCESS,2.156860292016063,2.007648084021639,0.03276391699910164,heldout_accuracy,1.0,True,2088,33408
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,1,qiskit_exact,SUCCESS,2.9411720000207424,1.3356839169864543,1.3688797079958022,heldout_mse,0.015717130814487872,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,1,qiskit_symmetry,SUCCESS,2.104221375018824,0.44108908297494054,1.4315611249767244,heldout_mse,0.01571713081448786,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,1,classical,SUCCESS,1.466897832986433,0.00992933299858123,1.286928791028913,heldout_mse,0.014578058022134022,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,1,group_memory,SUCCESS,1.6725669580046088,0.4045486249960959,1.0522916670306586,heldout_mse,0.01571713081448786,False,48,1152
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,1,classical,SUCCESS,1.2333498329971917,0.016658957989420742,1.0402785000042059,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,1,qiskit_exact,SUCCESS,10.52287091704784,9.150483415985946,1.130463499983307,heldout_accuracy,0.9375,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,1,group_memory,SUCCESS,3.2690620829816908,1.6918921670294367,1.3104036249569617,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,1,qiskit_symmetry,SUCCESS,3.264143292035442,1.6131006670184433,1.3784453329863027,heldout_accuracy,0.9375,True,80,1600
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,2,qiskit_symmetry,SUCCESS,1.0292288329801522,0.8566215000464581,0.049919749959371984,heldout_mse,0.017367067104576903,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,2,qiskit_exact,SUCCESS,0.9765433329739608,0.846089040976949,0.02971199998864904,heldout_mse,0.017367067104576916,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,2,group_memory,SUCCESS,0.9151034170063213,0.7738517909892835,0.03092883399222046,heldout_mse,0.017367067104576903,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,2,classical,SUCCESS,1.52957004198106,1.3388892079819925,0.03029162500752136,heldout_mse,0.003580406072072886,False,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930103,0,qiskit_exact,SUCCESS,1.801058208977338,1.5599993749638088,0.032276041980367154,heldout_accuracy,1.0,True,59,1416
+4A-scaled,4A,"{""patch_side"": 3}",930103,0,qiskit_symmetry,SUCCESS,1.9168185000307858,1.674614167015534,0.0313890419784002,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930103,0,group_memory,SUCCESS,1.8952997089945711,1.6176103330217302,0.03183416702086106,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930103,0,classical,SUCCESS,1.4649072919855826,1.2463199170306325,0.032476084015797824,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930105,0,qiskit_symmetry,SUCCESS,1.818066917010583,1.5654941669781692,0.035032875020988286,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930105,0,classical,SUCCESS,1.4199286670191213,1.2261882500024512,0.03037991700693965,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930105,0,qiskit_exact,SUCCESS,1.8158961669541895,1.5805791250313632,0.030912541958969086,heldout_accuracy,1.0,True,14,112
+4A-small,4A,"{""patch_side"": 2}",930105,0,group_memory,SUCCESS,1.676691500004381,1.433198957995046,0.03199537500040606,heldout_accuracy,1.0,True,4,32
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,0,qiskit_symmetry,SUCCESS,1.7638510409742594,1.501741582993418,0.034814416023436934,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,0,group_memory,SUCCESS,1.7741227500373498,1.532260124979075,0.0322927079978399,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,0,classical,SUCCESS,1.360095750016626,1.1662693329853937,0.032226665993221104,heldout_accuracy,0.75,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,0,qiskit_exact,SUCCESS,1.7377836250234395,1.4948949579847977,0.032660708006005734,heldout_accuracy,1.0,True,408,1152
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,0,classical,SUCCESS,1.34818000002997,1.1479723749798723,0.03385374997742474,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,0,group_memory,SUCCESS,2.0440701250336133,1.7823395419982262,0.03226704098051414,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,0,qiskit_symmetry,SUCCESS,2.0533898749854416,1.7656000839779153,0.034398249990772456,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,0,qiskit_exact,SUCCESS,2.3149627500097267,2.025118790974375,0.033545250014867634,heldout_accuracy,1.0,True,1584,4096
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,0,qiskit_symmetry,SUCCESS,0.7757672920124605,0.6190732090035453,0.04810562502825633,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,0,group_memory,SUCCESS,0.671974916011095,0.5439230420161039,0.02972925000358373,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,0,qiskit_exact,SUCCESS,1.9552920419955626,1.826095916039776,0.029621125024277717,heldout_accuracy,1.0,True,2088,33408
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,0,classical,SUCCESS,1.3824523329967633,1.0865079579525627,0.0294537500012666,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930101,0,qiskit_symmetry,SUCCESS,1.6449117919546552,1.3547335829935037,0.032996749971061945,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930101,0,group_memory,SUCCESS,1.9244354580296203,1.5351190000073984,0.039274249982554466,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930101,0,qiskit_exact,SUCCESS,1.7243241659598425,1.2917442499892786,0.17013812501681969,heldout_accuracy,1.0,True,14,112
+4A-small,4A,"{""patch_side"": 2}",930101,0,classical,SUCCESS,1.2415547500131652,1.0421188329928555,0.02969525003572926,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,2,qiskit_exact,SUCCESS,10.613784125016537,9.322494874999393,1.055264291993808,heldout_accuracy,0.9375,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,2,group_memory,SUCCESS,2.91956729197409,1.4329537079902366,1.2459801670047455,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,2,classical,SUCCESS,1.5268920419621281,0.009880750032607466,1.3246119579998776,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,2,qiskit_symmetry,SUCCESS,2.6995809999643825,1.452057833026629,1.0302240829914808,heldout_accuracy,0.9375,True,80,1600
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,0,qiskit_exact,SUCCESS,2.468722040997818,1.2201907910057344,1.026521000021603,heldout_mse,0.011163402509575142,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,0,classical,SUCCESS,1.1747947499970905,0.010776291019283235,1.0051671249675564,heldout_mse,0.010538437112341724,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,0,group_memory,SUCCESS,1.6461692079901695,0.4071574999834411,1.012095167010557,heldout_mse,0.011163402509575152,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,0,qiskit_symmetry,SUCCESS,1.5877359580481425,0.3418390839942731,1.028789957985282,heldout_mse,0.011163402509575152,False,48,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,0,qiskit_exact,SUCCESS,1.5975135000189766,1.359539458004292,0.03107320796698332,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,0,qiskit_symmetry,SUCCESS,1.5746198329725303,1.3421575829852372,0.031602000002749264,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,0,group_memory,SUCCESS,1.5261287500034086,1.2846894999966025,0.030975000001490116,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,0,classical,SUCCESS,1.2207187499734573,1.030095958034508,0.03128441597800702,heldout_accuracy,0.5,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,0,classical,SUCCESS,1.2369561669765972,0.010497708979528397,1.0570131249842234,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,0,qiskit_exact,SUCCESS,10.240252707968466,8.93173225002829,1.0680162909557112,heldout_accuracy,1.0,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,0,group_memory,SUCCESS,3.015884416003246,1.4419110419694334,1.306866250000894,heldout_accuracy,1.0,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,0,qiskit_symmetry,SUCCESS,2.8994433330371976,1.442148250003811,1.2167876249877736,heldout_accuracy,1.0,True,80,1600
+4B-small,4B,"{""n_global"": 64}",930102,1,qiskit_exact,SUCCESS,1.9897314589470625,1.71437566698296,0.04850887501379475,heldout_accuracy,1.0,True,192,768
+4B-small,4B,"{""n_global"": 64}",930102,1,qiskit_symmetry,SUCCESS,1.784655625000596,1.5051379159558564,0.05213424999965355,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930102,1,classical,SUCCESS,1.2953235420281999,1.065737083030399,0.04700766602763906,heldout_accuracy,1.0,True,0,0
+4B-small,4B,"{""n_global"": 64}",930102,1,group_memory,SUCCESS,1.6611431670025922,1.4164476250298321,0.030301708029583097,heldout_accuracy,1.0,True,96,384
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,1,qiskit_exact,SUCCESS,2.8750907910289243,1.5278426249860786,1.105098000029102,heldout_accuracy,0.875,True,160,1920
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,1,qiskit_symmetry,SUCCESS,2.2853338749846444,0.8109627910307609,1.1921093340497464,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,1,classical,SUCCESS,1.2537827080232091,0.008878499967977405,1.0699590420117602,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,1,group_memory,SUCCESS,2.3206666670157574,0.7388824999798089,1.179438791994471,heldout_accuracy,0.875,True,40,480
+4B-small,4B,"{""n_global"": 64}",930102,0,qiskit_symmetry,SUCCESS,3.533529458043631,3.084552749991417,0.16193004098022357,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930102,0,classical,SUCCESS,2.096453042002395,1.828399416001048,0.04059308301657438,heldout_accuracy,1.0,True,0,0
+4B-small,4B,"{""n_global"": 64}",930102,0,qiskit_exact,SUCCESS,4.288545165967662,2.0660787090309896,0.04702758300118148,heldout_accuracy,1.0,True,192,768
+4B-small,4B,"{""n_global"": 64}",930102,0,group_memory,SUCCESS,3.073642832983751,2.4785410829936154,0.06380391697166488,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930105,2,qiskit_exact,SUCCESS,3.2546844169846736,2.9277639579959214,0.058770209026988596,heldout_accuracy,1.0,True,192,768
+4B-small,4B,"{""n_global"": 64}",930105,2,group_memory,SUCCESS,2.3997344999806955,1.8170692499843426,0.05068387498613447,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930105,2,classical,SUCCESS,1.816362667013891,1.4315952920005657,0.12977670901454985,heldout_accuracy,1.0,True,0,0
+4B-small,4B,"{""n_global"": 64}",930105,2,qiskit_symmetry,SUCCESS,2.2578096669749357,1.9338921249727719,0.06588095799088478,heldout_accuracy,1.0,True,96,384
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,1,qiskit_symmetry,SUCCESS,2.4581617080257274,2.0941600420046598,0.07434804202057421,heldout_accuracy,1.0,True,884,3632
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,1,classical,SUCCESS,2.3969211250077933,1.9958447910030372,0.10030637501040474,heldout_accuracy,1.0,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,1,qiskit_exact,SUCCESS,2.3544019170221873,1.9713375420542434,0.11968870798591524,heldout_accuracy,1.0,True,1552,1024
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,1,group_memory,SUCCESS,2.9793747090152465,2.6271980829769745,0.07691579195670784,heldout_accuracy,1.0,True,884,3632
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,0,qiskit_symmetry,SUCCESS,1.109393332968466,0.9100072919973172,0.05662925000069663,heldout_mse,0.017367067104576903,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,0,qiskit_exact,SUCCESS,1.1579389169928618,0.9727810000185855,0.056829582958016545,heldout_mse,0.017367067104576916,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,0,classical,SUCCESS,2.1451362500083633,1.8405291669769213,0.08645829203305766,heldout_mse,0.003580406072072886,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,0,group_memory,SUCCESS,1.1525707920081913,0.9266984999994747,0.05795087496517226,heldout_mse,0.017367067104576903,False,1356,12204
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,0,group_memory,SUCCESS,0.9174319170415401,0.6796751669608057,0.07324812497245148,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,0,classical,SUCCESS,1.9727138750022277,1.7487869579927064,0.033100166998337954,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,0,qiskit_symmetry,SUCCESS,0.9114808330195956,0.7551638340228237,0.034196000022348017,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930101,0,qiskit_exact,SUCCESS,2.9398324999492615,2.6866274169879034,0.03082395897945389,heldout_accuracy,1.0,True,2088,33408
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,1,qiskit_exact,SUCCESS,1.1058422919595614,0.9042237919638865,0.051353833987377584,heldout_accuracy,1.0,True,636,10176
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,1,qiskit_symmetry,SUCCESS,0.4694715410005301,0.3229671670123935,0.034294791985303164,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,1,group_memory,SUCCESS,0.45949020801344886,0.31574466603342444,0.030947750026825815,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,1,classical,SUCCESS,2.3683074579457752,2.1206082080025226,0.032427791971713305,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,2,group_memory,SUCCESS,2.3789427499868907,2.0900494160014205,0.036710708984173834,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,2,classical,SUCCESS,1.7295548749971204,1.489626082999166,0.03668683394789696,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,2,qiskit_symmetry,SUCCESS,2.3778999589849263,2.0935139170032926,0.03575033397646621,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,2,qiskit_exact,SUCCESS,2.5866851250175387,2.255641374969855,0.035458584025036544,heldout_accuracy,1.0,True,1584,4096
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,0,group_memory,SUCCESS,1.9466826670104638,0.3271700410405174,1.3137845830060542,heldout_mse,0.019867803637084278,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,0,qiskit_symmetry,SUCCESS,1.841642416024115,0.3448566670413129,1.2232200830476359,heldout_mse,0.019867803637084278,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,0,qiskit_exact,SUCCESS,2.003115917032119,0.5043317920062691,1.212781583017204,heldout_mse,0.019867803637084278,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,0,classical,SUCCESS,1.3936964169843122,0.007450541947036982,1.1962035829783417,heldout_mse,0.019091721291995642,False,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,0,group_memory,SUCCESS,0.47550441697239876,0.33448008401319385,0.03160833299625665,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,0,classical,SUCCESS,1.4445357920485549,1.2396518749883398,0.03103658399777487,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,0,qiskit_exact,SUCCESS,0.8684252499951981,0.7250460829818621,0.031484542007092386,heldout_accuracy,1.0,True,636,10176
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,0,qiskit_symmetry,SUCCESS,0.4755615830072202,0.3296658750041388,0.031276707944925874,heldout_accuracy,1.0,True,132,2112
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,0,qiskit_exact,SUCCESS,2.848521707986947,1.3894420419819653,1.219100541959051,heldout_accuracy,0.875,True,160,1920
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,0,group_memory,SUCCESS,2.007434041996021,0.6007657499867491,1.1651296250056475,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,0,classical,SUCCESS,1.3077477079932578,0.007702749979216605,1.1186762909637764,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,0,qiskit_symmetry,SUCCESS,2.147222292027436,0.6026090419618413,1.2956489580101334,heldout_accuracy,0.875,True,40,480
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,1,classical,SUCCESS,1.3180547920055687,1.1050313749583438,0.03346645797137171,heldout_mse,0.002853785005524991,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,1,group_memory,SUCCESS,0.9664120830129832,0.8156231250031851,0.033744041982572526,heldout_mse,0.009905221517263989,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,1,qiskit_symmetry,SUCCESS,0.9380362919764593,0.7923892500111833,0.03065091703319922,heldout_mse,0.009905221517263989,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,1,qiskit_exact,SUCCESS,1.0421495829941705,0.895039250026457,0.03118866594741121,heldout_mse,0.009905221517263895,False,1500,13500
+4A-small,4A,"{""patch_side"": 2}",930102,1,qiskit_exact,SUCCESS,1.8949908340000547,1.614902917004656,0.03383020800538361,heldout_accuracy,1.0,True,14,112
+4A-small,4A,"{""patch_side"": 2}",930102,1,classical,SUCCESS,1.3417982090031728,1.1157567499903962,0.035093957965727895,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930102,1,group_memory,SUCCESS,1.6024128750432283,1.3550359159708023,0.03166575002251193,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930102,1,qiskit_symmetry,SUCCESS,1.694259083014913,1.4292728749569505,0.032741083996370435,heldout_accuracy,1.0,True,4,32
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,2,qiskit_symmetry,SUCCESS,2.018462207983248,0.589980083052069,1.1842646249569952,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,2,classical,SUCCESS,1.3129175000358373,0.008304665971081704,1.1228141669998877,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,2,group_memory,SUCCESS,1.8806802919716574,0.5588935000123456,1.0754071659757756,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,2,qiskit_exact,SUCCESS,2.766266708029434,1.4134084170218557,1.108724792022258,heldout_accuracy,0.875,True,160,1920
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,2,classical,SUCCESS,1.3349151250440627,1.1000117500079796,0.0337812079815194,heldout_mse,0.01620356487111469,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,2,qiskit_symmetry,SUCCESS,0.6148747500265017,0.4777548330021091,0.03162258304655552,heldout_mse,0.029604125836895367,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,2,qiskit_exact,SUCCESS,0.6596326670260169,0.49605883297044784,0.03348587505752221,heldout_mse,0.029604125836895378,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,2,group_memory,SUCCESS,0.6017969999811612,0.4572916249744594,0.030468375014606863,heldout_mse,0.029604125836895367,False,608,5472
+4A-small,4A,"{""patch_side"": 2}",930103,2,qiskit_exact,SUCCESS,1.5677666250267066,1.3115767080453224,0.030531249998603016,heldout_accuracy,1.0,True,15,120
+4A-small,4A,"{""patch_side"": 2}",930103,2,qiskit_symmetry,SUCCESS,1.5461368329706602,1.2855497500277124,0.034602750034537166,heldout_accuracy,1.0,True,5,40
+4A-small,4A,"{""patch_side"": 2}",930103,2,group_memory,SUCCESS,1.6298449159949087,1.375161667005159,0.03092087496770546,heldout_accuracy,1.0,True,5,40
+4A-small,4A,"{""patch_side"": 2}",930103,2,classical,SUCCESS,1.3904497920302674,1.1805613330216147,0.03053670795634389,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,2,qiskit_symmetry,SUCCESS,0.7221816669916734,0.5795039579970762,0.03272079199086875,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,2,classical,SUCCESS,1.2569610409555025,1.0585761670372449,0.030187292024493217,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,2,qiskit_exact,SUCCESS,2.1473452920326963,1.9670786249917,0.031319125031586736,heldout_accuracy,1.0,True,2088,33408
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,2,group_memory,SUCCESS,0.7596991250175051,0.589354292023927,0.03761266596848145,heldout_accuracy,1.0,True,408,6528
+4B-scaled,4B,"{""n_global"": 256}",930102,1,classical,SUCCESS,1.5498880419763736,1.3109006670420058,0.030807291972450912,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930102,1,qiskit_symmetry,SUCCESS,1.6691856670076959,1.3747883749892935,0.03448583302088082,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930102,1,group_memory,SUCCESS,1.626615084009245,1.3664852500078268,0.0316772919613868,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930102,1,qiskit_exact,SUCCESS,1.6893790000467561,1.4189664169680327,0.032863875036127865,heldout_accuracy,1.0,True,192,768
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,2,qiskit_exact,SUCCESS,1.7665770830353722,0.4051605829736218,1.1108535410021432,heldout_mse,0.019867803637084278,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,2,classical,SUCCESS,1.2881328749936074,0.006662416970357299,1.0876262499950826,heldout_mse,0.019091721291995642,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,2,qiskit_symmetry,SUCCESS,1.7567644999944605,0.3182297079474665,1.185245291038882,heldout_mse,0.019867803637084278,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,2,group_memory,SUCCESS,1.9197762089897878,0.36122266604797915,1.282056082971394,heldout_mse,0.019867803637084278,False,32,512
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,0,classical,SUCCESS,1.3391826250008307,1.1188307920238003,0.035413875011727214,heldout_accuracy,1.0,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,0,group_memory,SUCCESS,1.8085106670041569,1.5642021659878083,0.03195179102476686,heldout_accuracy,1.0,True,884,3488
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,0,qiskit_symmetry,SUCCESS,1.8866619589971378,1.5932573330355808,0.034227084019221365,heldout_accuracy,1.0,True,884,3488
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,0,qiskit_exact,SUCCESS,1.5971186659880914,1.34310437500244,0.032192207989282906,heldout_accuracy,1.0,True,1552,1024
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,0,group_memory,SUCCESS,1.9708790839649737,0.6136457499815151,1.089352165989112,heldout_accuracy,1.0,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,0,classical,SUCCESS,1.269999000011012,0.006368458038195968,1.0780540829873644,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,0,qiskit_symmetry,SUCCESS,1.966602124972269,0.6108230839599855,1.0927596249966882,heldout_accuracy,1.0,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,0,qiskit_exact,SUCCESS,2.800776250020135,1.4547783330199309,1.0771908750175498,heldout_accuracy,1.0,True,160,1920
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,1,qiskit_symmetry,SUCCESS,2.057184291013982,1.7791082079638727,0.03396666597109288,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,1,classical,SUCCESS,1.2817860840004869,1.064798166975379,0.03284137503942475,heldout_accuracy,0.875,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,1,qiskit_exact,SUCCESS,2.3572532499674708,2.04307387501467,0.03192729200236499,heldout_accuracy,1.0,True,1584,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,1,group_memory,SUCCESS,1.9925976669765078,1.6924664169782773,0.03627579100430012,heldout_accuracy,1.0,True,108,4096
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,2,qiskit_symmetry,SUCCESS,2.8121901670238003,1.4705343339592218,1.0961922080023214,heldout_accuracy,0.8125,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,2,qiskit_exact,SUCCESS,13.52088362496579,11.967048207996413,1.0910152909928001,heldout_accuracy,0.8125,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,2,classical,SUCCESS,2.9756582499830984,0.019278249994385988,2.4070157499518245,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,2,group_memory,SUCCESS,3.4939196659834124,1.6804882080177777,1.5225586249725893,heldout_accuracy,0.8125,True,80,1600
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,1,classical,SUCCESS,1.7779570000129752,1.445609875023365,0.09710366697981954,heldout_accuracy,0.75,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,1,qiskit_exact,SUCCESS,2.02788937499281,1.7338332080398686,0.05522712500533089,heldout_accuracy,0.9375,True,392,384
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,1,qiskit_symmetry,SUCCESS,1.8758760829805396,1.5714267080184072,0.056976832973305136,heldout_accuracy,0.9375,True,226,888
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,1,group_memory,SUCCESS,1.906923291971907,1.6002622499945574,0.0685689999954775,heldout_accuracy,0.9375,True,226,888
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,0,classical,SUCCESS,1.432802041003015,1.1658860829775222,0.06652070803102106,heldout_mse,0.002853785005524991,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,0,qiskit_symmetry,SUCCESS,1.2382697500288486,1.0815685829729773,0.030744749994482845,heldout_mse,0.009905221517263989,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,0,qiskit_exact,SUCCESS,1.0106342919752933,0.8687544580316171,0.03248566697584465,heldout_mse,0.009905221517263895,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,0,group_memory,SUCCESS,0.9870064579881728,0.8292591249919496,0.031400500040035695,heldout_mse,0.009905221517263989,False,1356,12204
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,0,qiskit_exact,SUCCESS,3.0969192080083303,1.3821143750101328,1.4659005830180831,heldout_accuracy,0.875,True,160,1920
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,0,classical,SUCCESS,1.428362458012998,0.007493041979614645,1.2176841250038706,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,0,qiskit_symmetry,SUCCESS,2.007342291995883,0.6714185000164434,1.0956868749926798,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,0,group_memory,SUCCESS,1.9014964170055464,0.5446074170176871,1.1077010000008158,heldout_accuracy,0.875,True,40,480
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,2,qiskit_symmetry,SUCCESS,2.040985665982589,1.7459974579978734,0.03444399998988956,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,2,qiskit_exact,SUCCESS,2.406476208008826,2.1022569579654373,0.03408700000727549,heldout_accuracy,1.0,True,1584,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,2,classical,SUCCESS,1.2566031250171363,1.052970541990362,0.03488554200157523,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,2,group_memory,SUCCESS,1.9980780839687213,1.73303175001638,0.03233191597973928,heldout_accuracy,1.0,True,108,4096
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,2,qiskit_exact,SUCCESS,0.8645910829654895,0.710951582994312,0.03235095797572285,heldout_accuracy,1.0,True,636,10176
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,2,group_memory,SUCCESS,0.4424329579924233,0.3054262090008706,0.030277541955001652,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,2,classical,SUCCESS,1.232854417001363,1.0275374589837156,0.029744166997261345,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,2,qiskit_symmetry,SUCCESS,0.500995124981273,0.34604554099496454,0.034077499993145466,heldout_accuracy,1.0,True,132,2112
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,1,qiskit_exact,SUCCESS,0.6375088330241852,0.49821012502070516,0.033293541986495256,heldout_mse,0.03022615597492382,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,1,classical,SUCCESS,1.2594942079740576,1.0602991670020856,0.03100474999519065,heldout_mse,0.010269095219620302,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,1,group_memory,SUCCESS,0.6115349160390906,0.4647059589624405,0.031701833999250084,heldout_mse,0.030226155974923695,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,1,qiskit_symmetry,SUCCESS,0.6204082919866778,0.4745228330139071,0.030399207957088947,heldout_mse,0.030226155974923695,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,2,qiskit_exact,SUCCESS,0.6584423329913989,0.4984300420037471,0.0351277919835411,heldout_mse,0.014402704581634708,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,2,classical,SUCCESS,1.5502030409988947,1.336397792038042,0.032298583013471216,heldout_mse,0.003456271160746119,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,2,group_memory,SUCCESS,0.6200687499949709,0.474311999976635,0.031821792013943195,heldout_mse,0.014402704581634743,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,2,qiskit_symmetry,SUCCESS,0.620377249957528,0.4672250419971533,0.03447949996916577,heldout_mse,0.014402704581634743,False,608,5472
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,2,qiskit_symmetry,SUCCESS,0.45010949997231364,0.3163469999562949,0.030554541037417948,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,2,group_memory,SUCCESS,0.48152770899469033,0.3135275000240654,0.03178266703616828,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,2,classical,SUCCESS,1.6265156249864958,1.363265332998708,0.043199833016842604,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,2,qiskit_exact,SUCCESS,0.8406783340033144,0.7023873329744674,0.03179183299653232,heldout_accuracy,1.0,True,636,10176
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,0,classical,SUCCESS,1.2611713749938644,1.0575550419744104,0.03315908298827708,heldout_accuracy,0.875,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,0,group_memory,SUCCESS,1.8401593749877065,1.6023063749889843,0.03138370899250731,heldout_accuracy,1.0,True,884,3856
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,0,qiskit_exact,SUCCESS,1.5898731659981422,1.336846666992642,0.032946249993983656,heldout_accuracy,1.0,True,1552,1024
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,0,qiskit_symmetry,SUCCESS,1.8357870409963652,1.5848136660060845,0.03170062502613291,heldout_accuracy,1.0,True,884,3856
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,1,group_memory,SUCCESS,1.8531594590167515,0.5428646659711376,1.0775581250200048,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,1,classical,SUCCESS,1.2665405830484815,0.0065753330127336085,1.0693799590226263,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,1,qiskit_exact,SUCCESS,2.71272329101339,1.40104208298726,1.0715167499729432,heldout_accuracy,0.875,True,160,1920
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,1,qiskit_symmetry,SUCCESS,1.8682518750429153,0.5472585840034299,1.0633667079964653,heldout_accuracy,0.875,True,40,480
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,1,group_memory,SUCCESS,1.6738219580147415,1.4020023749908432,0.034637957985978574,heldout_accuracy,1.0,True,226,984
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,1,qiskit_exact,SUCCESS,1.502210707985796,1.2518626670353115,0.03312995901796967,heldout_accuracy,1.0,True,392,384
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,1,qiskit_symmetry,SUCCESS,1.6183425839990377,1.3642202920163982,0.03318733396008611,heldout_accuracy,1.0,True,226,984
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,1,classical,SUCCESS,1.2358157909475267,1.0328202919918112,0.03288033400895074,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,2,classical,SUCCESS,1.2495635420200415,0.00731979199917987,1.0614271669765003,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,2,qiskit_exact,SUCCESS,2.692040875030216,1.3795890409965068,1.0737617919803597,heldout_accuracy,0.75,True,160,1920
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,2,qiskit_symmetry,SUCCESS,1.9305584999965504,0.6142153330147266,1.0565215419628657,heldout_accuracy,0.75,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,2,group_memory,SUCCESS,1.8290918340208009,0.5286697499686852,1.0567419159924611,heldout_accuracy,0.75,True,40,480
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,2,qiskit_symmetry,SUCCESS,0.4548037910135463,0.3160518330405466,0.032238083018455654,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,2,classical,SUCCESS,1.3186535839922726,1.0389738749945536,0.030726541008334607,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,2,qiskit_exact,SUCCESS,0.857934458006639,0.7134219169965945,0.0337463750038296,heldout_accuracy,1.0,True,636,10176
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,2,group_memory,SUCCESS,0.4439321670215577,0.31173166702501476,0.03037020895862952,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,0,group_memory,SUCCESS,0.4465854589943774,0.31442312500439584,0.030415333050768822,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,0,qiskit_symmetry,SUCCESS,0.45449887501308694,0.3124515829840675,0.030546707974281162,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,0,classical,SUCCESS,1.2500120420008898,1.0446863750112243,0.03343054204015061,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,0,qiskit_exact,SUCCESS,0.8644569169846363,0.7202374580083415,0.030239125015214086,heldout_accuracy,1.0,True,636,10176
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,0,qiskit_exact,SUCCESS,0.6362706249929033,0.49281587498262525,0.03255012503359467,heldout_mse,0.029604125836895378,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,0,qiskit_symmetry,SUCCESS,0.5892148749553598,0.45364108303328976,0.031514709000475705,heldout_mse,0.029604125836895367,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,0,classical,SUCCESS,1.2929931670078076,1.0915271249832585,0.03131649998249486,heldout_mse,0.01620356487111469,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930103,0,group_memory,SUCCESS,0.626522374979686,0.47353379102423787,0.03373745799763128,heldout_mse,0.029604125836895367,False,608,5472
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,1,classical,SUCCESS,1.2851457500364631,0.007370707986410707,1.0991281250026077,heldout_mse,0.013848289713371303,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,1,group_memory,SUCCESS,1.575869208027143,0.2926704170531593,1.0563917079707608,heldout_mse,0.014556702592263543,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,1,qiskit_exact,SUCCESS,1.7391587910242379,0.43142287502996624,1.058141625020653,heldout_mse,0.014556702592263552,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,1,qiskit_symmetry,SUCCESS,1.5925946250208654,0.29713187500601634,1.0594156669685617,heldout_mse,0.014556702592263543,False,32,512
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,2,qiskit_exact,SUCCESS,2.2305998749798164,1.95831483398797,0.03355712501797825,heldout_accuracy,1.0,True,1584,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,2,classical,SUCCESS,1.2787423750269227,1.0723550420370884,0.033510625013150275,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,2,qiskit_symmetry,SUCCESS,2.003575666982215,1.7145951660349965,0.0313100409694016,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,2,group_memory,SUCCESS,2.0792355419835076,1.7592569580301642,0.03266374999657273,heldout_accuracy,1.0,True,108,4096
+4B-scaled,4B,"{""n_global"": 256}",930104,0,qiskit_symmetry,SUCCESS,1.5478345419978723,1.2899887090316042,0.03534266701899469,heldout_accuracy,0.8333333333333334,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930104,0,classical,SUCCESS,1.2347262089606375,1.0345579579588957,0.029786832979880273,heldout_accuracy,0.8333333333333334,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930104,0,group_memory,SUCCESS,1.5296210839878768,1.2824710829881951,0.03197324997745454,heldout_accuracy,0.8333333333333334,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930104,0,qiskit_exact,SUCCESS,1.577134124992881,1.3195508330245502,0.033462583960499614,heldout_accuracy,0.8333333333333334,True,192,768
+4B-scaled,4B,"{""n_global"": 256}",930103,1,classical,SUCCESS,1.2623165410477668,1.053242166992277,0.030621708021499217,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930103,1,qiskit_exact,SUCCESS,1.6434955829754472,1.3870634160120972,0.034330833004787564,heldout_accuracy,1.0,True,192,768
+4B-scaled,4B,"{""n_global"": 256}",930103,1,qiskit_symmetry,SUCCESS,1.5375006250105798,1.299881583021488,0.030782791960518807,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930103,1,group_memory,SUCCESS,1.5722638330189511,1.3248909579706378,0.031754375027958304,heldout_accuracy,1.0,True,96,384
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,0,qiskit_exact,SUCCESS,1.496148957987316,1.2534379580174573,0.031931917008478194,heldout_accuracy,1.0,True,392,384
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,0,qiskit_symmetry,SUCCESS,1.6214054580195807,1.3393621670547873,0.03209300001617521,heldout_accuracy,1.0,True,226,1092
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,0,classical,SUCCESS,1.2496374159818515,1.0502903340384364,0.03281762497499585,heldout_accuracy,0.5,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,0,group_memory,SUCCESS,1.5735977499862202,1.316053542017471,0.03300479199970141,heldout_accuracy,1.0,True,226,1092
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,0,qiskit_exact,SUCCESS,1.785902583040297,0.48168083297787234,1.0749607919715345,heldout_mse,0.01638929567795514,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,0,classical,SUCCESS,1.2438562079914846,0.006865999952424318,1.0573719589738175,heldout_mse,0.016407986941125267,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,0,qiskit_symmetry,SUCCESS,1.6071234160335734,0.3069175000418909,1.0535509579931386,heldout_mse,0.016389295677955135,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,0,group_memory,SUCCESS,1.629518499947153,0.2679385000374168,1.1288202090072446,heldout_mse,0.016389295677955135,False,32,512
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,0,qiskit_symmetry,SUCCESS,2.1164697920321487,1.8328833329724148,0.03135474998271093,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,0,classical,SUCCESS,1.3552853330038488,1.1313473749905825,0.0425385000417009,heldout_accuracy,0.875,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,0,qiskit_exact,SUCCESS,2.2057907500420697,1.937828249996528,0.0337841670261696,heldout_accuracy,1.0,True,1584,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,0,group_memory,SUCCESS,3.2782405000180006,2.5363712499965914,0.038010874995961785,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,2,group_memory,SUCCESS,4.539800417027436,3.7185238329693675,0.13929141603875905,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,2,classical,SUCCESS,1.5121251250384375,1.2470154999755323,0.05984737502876669,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,2,qiskit_exact,SUCCESS,2.664128791016992,2.3005624169600196,0.053175500012002885,heldout_accuracy,1.0,True,1584,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,2,qiskit_symmetry,SUCCESS,2.082738083030563,1.7475267080008052,0.057649958005640656,heldout_accuracy,1.0,True,108,4096
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,1,group_memory,SUCCESS,3.1075282499659806,1.5696640409878455,1.250940875033848,heldout_accuracy,1.0,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,1,classical,SUCCESS,1.3735986669780686,0.01281987497350201,1.1479754580068402,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,1,qiskit_symmetry,SUCCESS,2.7147806669818237,1.3992553750285879,1.0691556669771671,heldout_accuracy,1.0,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,1,qiskit_exact,SUCCESS,11.315465499996208,9.85943320801016,1.124866291997023,heldout_accuracy,1.0,True,640,12800
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,2,qiskit_symmetry,SUCCESS,2.23998837498948,1.9264847919694148,0.05699962499784306,heldout_accuracy,1.0,True,884,2624
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,2,classical,SUCCESS,1.488710708974395,1.2365480829612352,0.05472945800283924,heldout_accuracy,1.0,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,2,qiskit_exact,SUCCESS,1.6635719580226578,1.411053916963283,0.03172999998787418,heldout_accuracy,1.0,True,1552,1024
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,2,group_memory,SUCCESS,1.7131637500133365,1.4601381660322659,0.032747834047768265,heldout_accuracy,1.0,True,884,2624
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,0,classical,SUCCESS,1.3504510840284638,1.1266509999986738,0.0316680419491604,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,0,group_memory,SUCCESS,0.4671849170117639,0.32739962497726083,0.03230124997207895,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,0,qiskit_symmetry,SUCCESS,0.4491712909657508,0.30885845801094547,0.030153582978527993,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,0,qiskit_exact,SUCCESS,0.8642575410194695,0.7215182499494404,0.03193362499587238,heldout_accuracy,1.0,True,636,10176
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,0,classical,SUCCESS,1.297383917029947,0.013361666991841048,1.0952550840447657,heldout_mse,0.014578058022134022,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,0,qiskit_symmetry,SUCCESS,1.6864637499675155,0.38483129197265953,1.0643266249680892,heldout_mse,0.01571713081448786,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,0,qiskit_exact,SUCCESS,2.632804333989043,1.2732315419707447,1.1135353749850765,heldout_mse,0.015717130814487872,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930105,0,group_memory,SUCCESS,1.9266512499889359,0.4093134580180049,1.254997625015676,heldout_mse,0.01571713081448786,False,48,1152
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,2,group_memory,SUCCESS,0.7249331249622628,0.5719294579466805,0.034707624989096075,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,2,classical,SUCCESS,1.2838846250087954,1.0685879999655299,0.030881292012054473,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,2,qiskit_symmetry,SUCCESS,0.7195176249952056,0.5746505840215832,0.033737166959326714,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,2,qiskit_exact,SUCCESS,2.0301549580181018,1.8859636660199612,0.030590832990128547,heldout_accuracy,1.0,True,2088,33408
+4B-small,4B,"{""n_global"": 64}",930102,2,qiskit_symmetry,SUCCESS,1.8906546660000458,1.6323240830097347,0.03187216696096584,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930102,2,group_memory,SUCCESS,1.5517128329956904,1.3037842909689061,0.03149537497665733,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930102,2,qiskit_exact,SUCCESS,1.6212569159688428,1.3546558750094846,0.032217125000897795,heldout_accuracy,1.0,True,192,768
+4B-small,4B,"{""n_global"": 64}",930102,2,classical,SUCCESS,1.258335500024259,1.0523515419918112,0.030916458985302597,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,1,classical,SUCCESS,1.2716371669666842,1.0519617919926532,0.03267799998866394,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,1,qiskit_exact,SUCCESS,2.081877542019356,1.8924778749933466,0.03178062499500811,heldout_accuracy,1.0,True,2088,33408
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,1,qiskit_symmetry,SUCCESS,0.9298381669796072,0.7241955419885926,0.03476233297260478,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930104,1,group_memory,SUCCESS,0.7271074170130305,0.5866420830134302,0.031481332960538566,heldout_accuracy,1.0,True,408,6528
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,2,qiskit_exact,SUCCESS,1.8551636249758303,0.45490320795215666,1.144717082963325,heldout_mse,0.01632475822595552,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,2,classical,SUCCESS,1.2795204580179416,0.006830416969023645,1.0884436250198632,heldout_mse,0.014417744755759358,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,2,qiskit_symmetry,SUCCESS,1.6520843749749474,0.300156541983597,1.1185124589828774,heldout_mse,0.016324758225955492,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930101,2,group_memory,SUCCESS,1.5768709999974817,0.2701550000347197,1.0664925840101205,heldout_mse,0.016324758225955492,False,32,512
+4A-scaled,4A,"{""patch_side"": 3}",930101,2,qiskit_exact,SUCCESS,1.6544758749660105,1.392506374977529,0.031200708996038884,heldout_accuracy,1.0,True,67,1608
+4A-scaled,4A,"{""patch_side"": 3}",930101,2,qiskit_symmetry,SUCCESS,1.5675048329867423,1.3062352919951081,0.03341012500459328,heldout_accuracy,1.0,True,19,456
+4A-scaled,4A,"{""patch_side"": 3}",930101,2,classical,SUCCESS,1.3085615829913877,1.0618362920358777,0.033058667031582445,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930101,2,group_memory,SUCCESS,1.8238167909439653,1.5373566250200383,0.0455194580135867,heldout_accuracy,1.0,True,19,456
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,1,qiskit_exact,SUCCESS,2.6151248749811202,2.2806748329894617,0.03465054195839912,heldout_accuracy,1.0,True,1584,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,1,classical,SUCCESS,1.293215291982051,1.0796627500094473,0.034786875010468066,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,1,qiskit_symmetry,SUCCESS,2.108170000021346,1.757794500037562,0.031201040954329073,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,1,group_memory,SUCCESS,2.048810540989507,1.7595114579889923,0.046227124985307455,heldout_accuracy,1.0,True,108,4096
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,2,qiskit_exact,SUCCESS,2.7706216250080615,1.4092860000091605,1.1021188329905272,heldout_accuracy,1.0,True,160,1920
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,2,qiskit_symmetry,SUCCESS,1.9022695000167005,0.5572924159932882,1.0848577079595998,heldout_accuracy,1.0,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,2,classical,SUCCESS,1.3746326669934206,0.011983915988821536,1.141438249964267,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,2,group_memory,SUCCESS,2.0396381249884143,0.6599214589805342,1.1133772500324994,heldout_accuracy,1.0,True,40,480
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,1,classical,SUCCESS,1.2927491659647785,1.079673708009068,0.032832249999046326,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,1,group_memory,SUCCESS,0.592567042040173,0.4485345840221271,0.03215712500968948,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,1,qiskit_exact,SUCCESS,0.8761810410069302,0.7081958339549601,0.03316383296623826,heldout_accuracy,1.0,True,636,10176
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,1,qiskit_symmetry,SUCCESS,0.49891600001137704,0.35003674996551126,0.034413832996506244,heldout_accuracy,1.0,True,132,2112
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,2,group_memory,SUCCESS,1.7147883340367116,0.29293908301042393,1.172993290994782,heldout_mse,0.021130175117684315,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,2,qiskit_symmetry,SUCCESS,1.6095857080072165,0.2625015829689801,1.0843470419640653,heldout_mse,0.021130175117684315,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,2,classical,SUCCESS,1.3553460420225747,0.017149874998722225,1.1393164999899454,heldout_mse,0.020200428859760568,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,2,qiskit_exact,SUCCESS,1.6914209590177052,0.36755087500205263,1.0757368329796009,heldout_mse,0.021130175117684332,False,128,2048
+4B-scaled,4B,"{""n_global"": 256}",930101,2,classical,SUCCESS,1.302999584004283,1.0605680830194615,0.034356457996182144,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930101,2,qiskit_symmetry,SUCCESS,1.5857707079849206,1.3190632500336505,0.033744749962352216,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930101,2,qiskit_exact,SUCCESS,1.6541987499804236,1.3842003750032745,0.03350345802027732,heldout_accuracy,1.0,True,192,768
+4B-scaled,4B,"{""n_global"": 256}",930101,2,group_memory,SUCCESS,1.6314257080084644,1.3731299170176499,0.03572866698959842,heldout_accuracy,1.0,True,96,384
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,1,classical,SUCCESS,1.2554001249955036,1.047116708010435,0.03237804095260799,heldout_mse,0.0044316808782311175,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,1,qiskit_exact,SUCCESS,1.1961192499729805,1.0297930830274709,0.03759204095695168,heldout_mse,0.027455598712913545,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,1,qiskit_symmetry,SUCCESS,0.992024292005226,0.8226522500044666,0.037671334051992744,heldout_mse,0.027455598712913518,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,1,group_memory,SUCCESS,1.0183287910185754,0.8615942079923116,0.030966375023126602,heldout_mse,0.027455598712913518,False,1356,12204
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,1,qiskit_exact,SUCCESS,1.7482566249673255,1.4606997080263682,0.035404167021624744,heldout_accuracy,1.0,True,1552,1024
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,1,qiskit_symmetry,SUCCESS,1.774733375001233,1.4805023340159096,0.03474608302349225,heldout_accuracy,1.0,True,884,2624
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,1,classical,SUCCESS,1.3363739170017652,1.1233057089848444,0.03218245803145692,heldout_accuracy,1.0,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,1,group_memory,SUCCESS,1.8843401659978554,1.5942455840413459,0.03374824998900294,heldout_accuracy,1.0,True,884,2624
+4A-scaled,4A,"{""patch_side"": 3}",930104,2,group_memory,SUCCESS,1.6086917910142802,1.3517674999893643,0.0326599589898251,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930104,2,classical,SUCCESS,1.3127091249916703,1.0777875410276465,0.03327645797980949,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930104,2,qiskit_symmetry,SUCCESS,1.5546711669885553,1.2973890000139363,0.033230000000912696,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930104,2,qiskit_exact,SUCCESS,1.6254529579891823,1.3759294580086134,0.03204845899017528,heldout_accuracy,1.0,True,60,1440
+4A-small,4A,"{""patch_side"": 2}",930105,2,group_memory,SUCCESS,1.514850875013508,1.2573644579970278,0.030973999993875623,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930105,2,classical,SUCCESS,1.2501846250379458,1.0417002500034869,0.03165012499084696,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930105,2,qiskit_symmetry,SUCCESS,1.5141792080248706,1.262929750024341,0.03247966698836535,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930105,2,qiskit_exact,SUCCESS,1.512147040979471,1.2553759170114063,0.02989687502849847,heldout_accuracy,1.0,True,14,112
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,2,qiskit_symmetry,SUCCESS,1.6915282910340466,0.3283854159526527,1.1173242920194753,heldout_mse,0.016389295677955135,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,2,group_memory,SUCCESS,1.7303652089904062,0.38210229197284207,1.1029482500161976,heldout_mse,0.016389295677955135,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,2,qiskit_exact,SUCCESS,2.449009166972246,0.6515652919770218,1.5476212500361726,heldout_mse,0.01638929567795514,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,2,classical,SUCCESS,1.3801033329800703,0.006737582967616618,1.1732720410218462,heldout_mse,0.016407986941125267,False,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,1,qiskit_symmetry,SUCCESS,0.7384559579659253,0.5931178340106271,0.03163495799526572,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,1,qiskit_exact,SUCCESS,2.0303512919927016,1.8686353749944828,0.03377149999141693,heldout_accuracy,1.0,True,2088,33408
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,1,classical,SUCCESS,1.3146469999919645,1.0962435419787653,0.031251917011104524,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930105,1,group_memory,SUCCESS,0.7132939159637317,0.5727887499961071,0.03204466600436717,heldout_accuracy,1.0,True,408,6528
+4B-scaled,4B,"{""n_global"": 256}",930101,0,qiskit_symmetry,SUCCESS,1.602124458993785,1.3276646659942344,0.032145709032192826,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930101,0,qiskit_exact,SUCCESS,1.6223017920274287,1.3568732499843463,0.032172666979022324,heldout_accuracy,1.0,True,192,768
+4B-scaled,4B,"{""n_global"": 256}",930101,0,group_memory,SUCCESS,1.6429422920336947,1.3946493339608423,0.03256162500474602,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930101,0,classical,SUCCESS,2.6912425839691423,2.342310957959853,0.034592082956805825,heldout_accuracy,1.0,True,0,0
+4B-small,4B,"{""n_global"": 64}",930104,1,qiskit_symmetry,SUCCESS,2.8816810839925893,2.221655083994847,0.04629174998262897,heldout_accuracy,0.8333333333333334,True,96,384
+4B-small,4B,"{""n_global"": 64}",930104,1,qiskit_exact,SUCCESS,2.892574291967321,2.4471999169909395,0.08369974995730445,heldout_accuracy,0.8333333333333334,True,192,768
+4B-small,4B,"{""n_global"": 64}",930104,1,classical,SUCCESS,1.701929916976951,1.4662610829691403,0.03238704102113843,heldout_accuracy,0.8333333333333334,True,0,0
+4B-small,4B,"{""n_global"": 64}",930104,1,group_memory,SUCCESS,2.0714637910132296,1.7600570420036092,0.033959541004151106,heldout_accuracy,0.8333333333333334,True,96,384
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,2,classical,SUCCESS,1.638397749979049,0.013344291015528142,1.3722509579965845,heldout_mse,0.014004500929342455,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,2,qiskit_exact,SUCCESS,4.435949708975386,1.6377554580103606,2.4012296249857172,heldout_mse,0.015160246544050257,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,2,group_memory,SUCCESS,3.5943195830332115,0.894895458011888,2.1249066670425236,heldout_mse,0.015160246544050238,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,2,qiskit_symmetry,SUCCESS,4.00937070796499,0.6689315840485506,2.928461415984202,heldout_mse,0.015160246544050238,False,48,1152
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,1,qiskit_exact,SUCCESS,2.3146390420151874,1.9134339580195956,0.08580795803572983,heldout_accuracy,1.0,True,392,384
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,1,qiskit_symmetry,SUCCESS,2.4132622909964994,1.9974164589657448,0.05754420900484547,heldout_accuracy,1.0,True,226,1092
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,1,group_memory,SUCCESS,2.36770154198166,2.0220947909983806,0.07497412496013567,heldout_accuracy,1.0,True,226,1092
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,1,classical,SUCCESS,2.2457745829597116,1.9044615000020713,0.08116395800607279,heldout_accuracy,0.5,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,2,classical,SUCCESS,1.9629282500245608,1.5995722920051776,0.08768850000342354,heldout_accuracy,1.0,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,2,group_memory,SUCCESS,3.1101075839833356,2.758301458961796,0.06287691701436415,heldout_accuracy,1.0,True,884,3136
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,2,qiskit_symmetry,SUCCESS,2.4097147500142455,2.1059541249996983,0.05621337500633672,heldout_accuracy,1.0,True,884,3136
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,2,qiskit_exact,SUCCESS,2.0962169590056874,1.7941728330333717,0.052257333998568356,heldout_accuracy,1.0,True,1552,1024
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,1,group_memory,SUCCESS,2.629431083041709,0.8078607909847051,1.4757743329973891,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,1,classical,SUCCESS,1.9215177500154823,0.011374875030014664,1.6677526670391671,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,1,qiskit_symmetry,SUCCESS,2.541137417021673,0.7460078329895623,1.538700915989466,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930102,1,qiskit_exact,SUCCESS,3.5508449579938315,1.7577360839932226,1.503612750035245,heldout_accuracy,0.875,True,160,1920
+4A-small,4A,"{""patch_side"": 2}",930104,0,group_memory,SUCCESS,2.5616110000410117,2.1808176670456305,0.05736466700909659,heldout_accuracy,0.8333333333333334,True,5,40
+4A-small,4A,"{""patch_side"": 2}",930104,0,qiskit_exact,SUCCESS,2.2257987080374733,1.865451000048779,0.07143749995157123,heldout_accuracy,0.8333333333333334,True,15,120
+4A-small,4A,"{""patch_side"": 2}",930104,0,classical,SUCCESS,2.611834791023284,2.005303832993377,0.051362749945838004,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930104,0,qiskit_symmetry,SUCCESS,7.719052167027257,6.620268874976318,0.10424129100283608,heldout_accuracy,0.8333333333333334,True,5,40
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,1,qiskit_exact,SUCCESS,2.2319960829918273,1.8587276250473224,0.09366483299527317,heldout_accuracy,1.0,True,636,10176
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,1,classical,SUCCESS,2.7385448329732753,2.422368791012559,0.058121582958847284,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,1,group_memory,SUCCESS,2.462350375019014,2.186001750000287,0.07660983299138024,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,1,qiskit_symmetry,SUCCESS,1.1746752089820802,0.9042171249748208,0.09411766601260751,heldout_accuracy,1.0,True,132,2112
+4A-scaled,4A,"{""patch_side"": 3}",930101,1,qiskit_symmetry,SUCCESS,4.550907417025883,3.8759779590182006,0.03489279100904241,heldout_accuracy,1.0,True,19,456
+4A-scaled,4A,"{""patch_side"": 3}",930101,1,classical,SUCCESS,2.662099292036146,2.112546249991283,0.1218874590122141,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930101,1,group_memory,SUCCESS,2.1676530839758925,1.8016762909828685,0.05146716599119827,heldout_accuracy,1.0,True,19,456
+4A-scaled,4A,"{""patch_side"": 3}",930101,1,qiskit_exact,SUCCESS,2.3065732090035453,1.959508458035998,0.09162587497849017,heldout_accuracy,1.0,True,67,1608
+4A-small,4A,"{""patch_side"": 2}",930102,0,classical,SUCCESS,1.6895748330280185,1.4255409999750555,0.060855875024572015,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930102,0,qiskit_symmetry,SUCCESS,2.2231109579443,1.904741832986474,0.06766875000903383,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930102,0,qiskit_exact,SUCCESS,4.646503459021915,4.304116374987643,0.08790158398915082,heldout_accuracy,1.0,True,14,112
+4A-small,4A,"{""patch_side"": 2}",930102,0,group_memory,SUCCESS,2.299967708007898,1.8630100410082377,0.08955733402399346,heldout_accuracy,1.0,True,4,32
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,2,qiskit_exact,SUCCESS,1.307099542056676,1.1133643750217743,0.05496908398345113,heldout_mse,0.029047582789069704,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,2,classical,SUCCESS,1.9603579170070589,1.6062637079739943,0.0666662500007078,heldout_mse,0.0034962095389464154,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,2,group_memory,SUCCESS,1.1174650830216706,0.9219279169919901,0.056612417043652385,heldout_mse,0.029047582789069774,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930101,2,qiskit_symmetry,SUCCESS,0.9656944169546477,0.8234326670062728,0.03126954199979082,heldout_mse,0.029047582789069774,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,2,qiskit_symmetry,SUCCESS,0.9810000829747878,0.8110284580034204,0.03185450000455603,heldout_mse,0.009905221517263989,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,2,group_memory,SUCCESS,0.9407853329903446,0.7989433750044554,0.03108479198999703,heldout_mse,0.009905221517263989,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,2,qiskit_exact,SUCCESS,1.1717630830244161,0.920615499955602,0.03144366602646187,heldout_mse,0.009905221517263895,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,2,classical,SUCCESS,2.4332795420195907,2.130051583983004,0.049587792018428445,heldout_mse,0.002853785005524991,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,1,classical,SUCCESS,1.7969027499784715,1.5406996670062654,0.03701437503332272,heldout_mse,0.003456271160746119,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,1,qiskit_exact,SUCCESS,0.7489254169631749,0.5768306660465896,0.03464583301683888,heldout_mse,0.014402704581634708,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,1,group_memory,SUCCESS,0.7701327920076437,0.6093428330495954,0.0329992919578217,heldout_mse,0.014402704581634743,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930101,1,qiskit_symmetry,SUCCESS,0.6729461250361055,0.5067191250273027,0.04308199998922646,heldout_mse,0.014402704581634743,False,608,5472
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,2,qiskit_symmetry,SUCCESS,2.57310320797842,2.16663274995517,0.0426487079821527,heldout_accuracy,0.9375,True,226,888
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,2,qiskit_exact,SUCCESS,2.1195698750088923,1.7711406660382636,0.03772366599878296,heldout_accuracy,0.9375,True,392,384
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,2,group_memory,SUCCESS,2.056917625013739,1.7362482090247795,0.04649754101410508,heldout_accuracy,0.9375,True,226,888
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930101,2,classical,SUCCESS,1.921516917005647,1.6824451670399867,0.03711675002705306,heldout_accuracy,0.75,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,0,qiskit_symmetry,SUCCESS,0.557831541984342,0.4079987920122221,0.03686995798489079,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,0,qiskit_exact,SUCCESS,0.9066452920087613,0.7615183340385556,0.03154208295745775,heldout_accuracy,1.0,True,636,10176
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,0,classical,SUCCESS,1.8492816669750027,1.6209875829517841,0.03348087501944974,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,0,group_memory,SUCCESS,0.5183087089681067,0.36793725000461563,0.03397054102970287,heldout_accuracy,1.0,True,132,2112
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,1,classical,SUCCESS,1.6941831670119427,0.014722083986271173,1.4980067909928039,heldout_mse,0.010538437112341724,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,1,qiskit_exact,SUCCESS,3.068842083972413,1.2995041250251234,1.5171054159873165,heldout_mse,0.011163402509575142,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,1,group_memory,SUCCESS,2.0137568750069477,0.4099599589826539,1.3601100420346484,heldout_mse,0.011163402509575152,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930101,1,qiskit_symmetry,SUCCESS,2.086976708029397,0.3976395839708857,1.45605933398474,heldout_mse,0.011163402509575152,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,2,qiskit_symmetry,SUCCESS,2.523790542036295,0.4388936670147814,1.8113933749846183,heldout_mse,0.015424994302947973,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,2,group_memory,SUCCESS,2.064689750026446,0.5049572499701753,1.31453708402114,heldout_mse,0.015424994302947973,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,2,qiskit_exact,SUCCESS,2.897549292014446,1.312129541998729,1.3386556250043213,heldout_mse,0.01542499430294797,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,2,classical,SUCCESS,1.655633750022389,0.0160959999775514,1.4386864170082845,heldout_mse,0.014449643555700116,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,1,classical,SUCCESS,1.7040672920411453,1.4406537499744445,0.03268812503665686,heldout_mse,0.0026865725015910655,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,1,qiskit_symmetry,SUCCESS,0.8654867089935578,0.6805838330183178,0.03765995800495148,heldout_mse,0.013281978660169778,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,1,group_memory,SUCCESS,0.6854745839955285,0.5114654169883579,0.032770790974609554,heldout_mse,0.013281978660169778,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,1,qiskit_exact,SUCCESS,0.7133103749947622,0.547945374972187,0.036689417029265314,heldout_mse,0.013281978660169752,False,672,6048
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,1,classical,SUCCESS,2.851163458020892,2.498107624996919,0.03661158395698294,heldout_accuracy,0.5,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,1,qiskit_symmetry,SUCCESS,2.4035914589767344,2.1107704580063,0.040573916980065405,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,1,qiskit_exact,SUCCESS,2.2079897080548108,1.8153697500238195,0.03668070898856968,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,1,group_memory,SUCCESS,1.9346993750077672,1.6417502500116825,0.03381812496809289,heldout_accuracy,1.0,True,30,1152
+4A-scaled,4A,"{""patch_side"": 3}",930105,0,group_memory,SUCCESS,2.708488792006392,1.9940790830296464,0.03216100001009181,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930105,0,qiskit_symmetry,SUCCESS,3.269938916026149,2.8310230000060983,0.059203832992352545,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930105,0,classical,SUCCESS,1.6979961659526452,1.473571666982025,0.0320559999672696,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930105,0,qiskit_exact,SUCCESS,2.097035875020083,1.7901511249947362,0.03931224998086691,heldout_accuracy,1.0,True,66,1584
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,0,classical,SUCCESS,1.7179689580225386,0.013943583006039262,1.500216750020627,heldout_mse,0.013848289713371303,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,0,group_memory,SUCCESS,2.217988583026454,0.38045712502207607,1.5858182089868933,heldout_mse,0.014556702592263543,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,0,qiskit_exact,SUCCESS,2.192177332995925,0.41857745801098645,1.4761944999918342,heldout_mse,0.014556702592263552,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,0,qiskit_symmetry,SUCCESS,2.0361330829910003,0.3254274589708075,1.4282133329543285,heldout_mse,0.014556702592263543,False,32,512
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,1,qiskit_exact,SUCCESS,1.961788707994856,1.6872204579995014,0.034295834018848836,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,1,group_memory,SUCCESS,1.8108276670100167,1.556053125008475,0.03475191700272262,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,1,qiskit_symmetry,SUCCESS,1.8994339590426534,1.6357925420161337,0.03679862502031028,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,1,classical,SUCCESS,1.4888753750128672,1.2769621659535915,0.03337604197440669,heldout_accuracy,1.0,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,2,classical,SUCCESS,1.3140420829877257,1.0871802910114639,0.03256095899268985,heldout_accuracy,0.5,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,2,qiskit_symmetry,SUCCESS,2.0285245830309577,1.7666161250090227,0.032423291995655745,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,2,qiskit_exact,SUCCESS,1.6124617920140736,1.3570232499623671,0.033145916007924825,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,2,group_memory,SUCCESS,1.6145155830308795,1.3384126659948379,0.031750958994962275,heldout_accuracy,1.0,True,30,1152
+4A-small,4A,"{""patch_side"": 2}",930102,2,group_memory,SUCCESS,1.5530125829973258,1.3057523750467226,0.03290225000819191,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930102,2,classical,SUCCESS,1.2721812920062803,1.0483243750059046,0.030630124965682626,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930102,2,qiskit_symmetry,SUCCESS,1.5419545840122737,1.2894877499784343,0.03428870905190706,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930102,2,qiskit_exact,SUCCESS,1.507026874984149,1.2491873750113882,0.030211375036742538,heldout_accuracy,1.0,True,14,112
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,0,classical,SUCCESS,1.28978383296635,1.0791274999501184,0.03458716697059572,heldout_accuracy,0.5,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,0,qiskit_exact,SUCCESS,1.6536945829866454,1.3955672499723732,0.031928125012200326,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,0,group_memory,SUCCESS,1.5971142500056885,1.3360169579973444,0.035650125006213784,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930105,0,qiskit_symmetry,SUCCESS,1.668941999960225,1.4013073749956675,0.0325919589959085,heldout_accuracy,1.0,True,30,1152
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,0,group_memory,SUCCESS,1.8628130829893053,1.6040881669614464,0.03448416700121015,heldout_accuracy,1.0,True,884,3632
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,0,qiskit_exact,SUCCESS,1.6673193750320934,1.3934083339991048,0.03376841702265665,heldout_accuracy,1.0,True,1552,1024
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,0,qiskit_symmetry,SUCCESS,1.8562908750027418,1.594435207953211,0.03632650000508875,heldout_accuracy,1.0,True,884,3632
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930102,0,classical,SUCCESS,1.2520845420076512,1.0475052919937298,0.03479725000215694,heldout_accuracy,1.0,True,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,0,group_memory,SUCCESS,0.6341566669871099,0.49775770801352337,0.030328041990287602,heldout_mse,0.030226155974923695,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,0,classical,SUCCESS,1.2557246669894084,1.0601775830145925,0.029749708017334342,heldout_mse,0.010269095219620302,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,0,qiskit_symmetry,SUCCESS,0.6052844580262899,0.4558240000042133,0.031093249970581383,heldout_mse,0.030226155974923695,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,0,qiskit_exact,SUCCESS,0.7688893339945935,0.49299154098844156,0.1631622920394875,heldout_mse,0.03022615597492382,False,672,6048
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,0,qiskit_symmetry,SUCCESS,1.8730905419797637,1.6260861660121009,0.03089645894942805,heldout_accuracy,1.0,True,884,3136
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,0,group_memory,SUCCESS,1.8106762500246987,1.5515022909967229,0.03211349999764934,heldout_accuracy,1.0,True,884,3136
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,0,classical,SUCCESS,1.3156201249803416,1.091462499985937,0.03543770901160315,heldout_accuracy,1.0,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,0,qiskit_exact,SUCCESS,1.5932392919785343,1.3401389580103569,0.03198562504258007,heldout_accuracy,1.0,True,1552,1024
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,1,group_memory,SUCCESS,2.005035834037699,0.6188664580113254,1.1063697499921545,heldout_accuracy,1.0,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,1,qiskit_exact,SUCCESS,2.7397568749729544,1.3912215830059722,1.0932150000007823,heldout_accuracy,1.0,True,160,1920
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,1,classical,SUCCESS,1.2772827500011772,0.006965084001421928,1.0874456249875948,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930101,1,qiskit_symmetry,SUCCESS,2.0627902499982156,0.7555162499775179,1.0653492080164142,heldout_accuracy,1.0,True,40,480
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,0,group_memory,SUCCESS,1.6766052920138463,0.36514354101382196,1.0735877089900896,heldout_mse,0.015160246544050238,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,0,classical,SUCCESS,1.2513901250204071,0.010715208016335964,1.0655127920326777,heldout_mse,0.014004500929342455,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,0,qiskit_exact,SUCCESS,2.6480958749889396,1.270174750010483,1.0951842910144478,heldout_mse,0.015160246544050257,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,0,qiskit_symmetry,SUCCESS,1.7736667919671163,0.37226437497884035,1.0782851669937372,heldout_mse,0.015160246544050238,False,48,1152
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,2,qiskit_exact,SUCCESS,0.6552391659934074,0.5073731250013225,0.03415487502934411,heldout_mse,0.013281978660169752,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,2,classical,SUCCESS,1.5400322079658508,1.3252497499925084,0.03088383300928399,heldout_mse,0.0026865725015910655,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,2,group_memory,SUCCESS,0.6192287920275703,0.46671354200225323,0.03360620798775926,heldout_mse,0.013281978660169778,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930104,2,qiskit_symmetry,SUCCESS,0.598180333035998,0.46292129199719056,0.03089995897607878,heldout_mse,0.013281978660169778,False,608,5472
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,0,qiskit_symmetry,SUCCESS,2.0509336669929326,1.789178584003821,0.03365383297204971,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,0,group_memory,SUCCESS,2.023842499998864,1.7407808330026455,0.03280462499242276,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,0,classical,SUCCESS,1.4134593750350177,1.1741777920396999,0.036329958005808294,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,0,qiskit_exact,SUCCESS,3.3421467500156723,2.948470167000778,0.032229999953415245,heldout_accuracy,1.0,True,1584,4096
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,1,qiskit_exact,SUCCESS,3.1939914590329863,1.581630332977511,1.2491248339647427,heldout_mse,0.015160246544050257,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,1,group_memory,SUCCESS,1.8782034579780884,0.4813330420292914,1.1478207500185817,heldout_mse,0.015160246544050238,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,1,qiskit_symmetry,SUCCESS,1.7287377499742433,0.39770999999018386,1.0846835410338826,heldout_mse,0.015160246544050238,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930102,1,classical,SUCCESS,1.5685163749731146,0.01799829100491479,1.2273317080107518,heldout_mse,0.014004500929342455,False,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,0,group_memory,SUCCESS,6.408684334019199,3.879448124964256,2.18378100002883,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,0,classical,SUCCESS,1.41922425001394,0.010476541996467859,1.1897924580262043,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,0,qiskit_exact,SUCCESS,11.97985654202057,10.468035375000909,1.240412374958396,heldout_accuracy,0.9375,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930104,0,qiskit_symmetry,SUCCESS,3.489780083997175,1.7098255000310019,1.4933416250278242,heldout_accuracy,0.9375,True,80,1600
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,0,classical,SUCCESS,1.638946124992799,1.3723682499839924,0.053268207993824035,heldout_mse,0.004550690887628361,False,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,0,qiskit_exact,SUCCESS,0.8069195410353132,0.627965709019918,0.04761383397271857,heldout_mse,0.0298391295324377,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,0,qiskit_symmetry,SUCCESS,0.6057882090099156,0.46274820796679705,0.030015583033673465,heldout_mse,0.029839129532437596,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930102,0,group_memory,SUCCESS,0.6446914999978617,0.5033053749939427,0.03101541695650667,heldout_mse,0.029839129532437596,False,608,5472
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,2,classical,SUCCESS,1.6470503750024363,0.01259633299196139,1.4471254590316676,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,2,qiskit_symmetry,SUCCESS,1.9392068330198526,0.5555670000030659,1.1346705830073915,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,2,group_memory,SUCCESS,2.0027987500070594,0.5466392919770442,1.2109777920413762,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,2,qiskit_exact,SUCCESS,2.790079042024445,1.3818793329992332,1.1603786250343546,heldout_accuracy,0.875,True,160,1920
+4A-scaled,4A,"{""patch_side"": 3}",930104,1,classical,SUCCESS,1.3161952079972252,1.1070973330060951,0.034034417010843754,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930104,1,qiskit_symmetry,SUCCESS,1.5646457910188474,1.3193467080127448,0.03077387501252815,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930104,1,group_memory,SUCCESS,1.5324912089854479,1.2721092919819057,0.03380195895442739,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930104,1,qiskit_exact,SUCCESS,1.6212754999869503,1.3732392499805428,0.03183787496527657,heldout_accuracy,1.0,True,60,1440
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,2,classical,SUCCESS,1.3872890410129912,0.00927045801654458,1.1984209169750102,heldout_mse,0.013848289713371303,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,2,qiskit_exact,SUCCESS,1.9408849159954116,0.5425912920036353,1.0741350000025705,heldout_mse,0.014556702592263552,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,2,qiskit_symmetry,SUCCESS,1.7767151250154711,0.32665737497154623,1.213134917023126,heldout_mse,0.014556702592263543,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930102,2,group_memory,SUCCESS,1.8220348749891855,0.34096925001358613,1.166457542043645,heldout_mse,0.014556702592263543,False,32,512
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,1,classical,SUCCESS,1.3407577080070041,1.1209735000156797,0.0356798330321908,heldout_accuracy,1.0,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,1,qiskit_exact,SUCCESS,1.9238966669654474,1.6658997919876128,0.032870583003386855,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,1,group_memory,SUCCESS,1.6377210000064224,1.3656763330218382,0.03451087500434369,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,1,qiskit_symmetry,SUCCESS,1.6628412500140257,1.4018284999765456,0.037145125039387494,heldout_accuracy,1.0,True,30,1152
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,1,qiskit_symmetry,SUCCESS,1.8130794170428999,1.5561221250100061,0.033847583981696516,heldout_accuracy,1.0,True,884,3488
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,1,classical,SUCCESS,1.2803394160000607,1.077781457977835,0.031956874998286366,heldout_accuracy,1.0,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,1,group_memory,SUCCESS,1.9682827499927953,1.7053171659936197,0.034773082996252924,heldout_accuracy,1.0,True,884,3488
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,1,qiskit_exact,SUCCESS,1.6003311250242405,1.349473875015974,0.032697291986551136,heldout_accuracy,1.0,True,1552,1024
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,1,qiskit_symmetry,SUCCESS,0.8108530830359086,0.6504790420294739,0.03609500004677102,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,1,classical,SUCCESS,1.2718641660176218,1.0721665000310168,0.0303488330100663,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,1,qiskit_exact,SUCCESS,2.0606001670239493,1.9035727910231799,0.032619333011098206,heldout_accuracy,1.0,True,2088,33408
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,1,group_memory,SUCCESS,0.7105992090073414,0.5682971249916591,0.031231833971105516,heldout_accuracy,1.0,True,408,6528
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,1,qiskit_exact,SUCCESS,1.8829993330291472,0.41596333403140306,1.2307645420078188,heldout_mse,0.01638929567795514,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,1,qiskit_symmetry,SUCCESS,1.6093965000472963,0.3084627499920316,1.0685964999720454,heldout_mse,0.016389295677955135,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,1,classical,SUCCESS,1.2632236249628477,0.007424583018291742,1.067893458995968,heldout_mse,0.016407986941125267,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930105,1,group_memory,SUCCESS,1.6665858749765903,0.36608520901063457,1.0726334580103867,heldout_mse,0.016389295677955135,False,32,512
+4B-small,4B,"{""n_global"": 64}",930105,1,classical,SUCCESS,1.2691698750131764,1.056870959000662,0.03313437500037253,heldout_accuracy,1.0,True,0,0
+4B-small,4B,"{""n_global"": 64}",930105,1,group_memory,SUCCESS,1.6348719579982571,1.3772171250311658,0.030344291997607797,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930105,1,qiskit_exact,SUCCESS,1.7601630419958383,1.5060165830072947,0.031417999998666346,heldout_accuracy,1.0,True,192,768
+4B-small,4B,"{""n_global"": 64}",930105,1,qiskit_symmetry,SUCCESS,1.5448154580080882,1.2931204159976915,0.03173391695600003,heldout_accuracy,1.0,True,96,384
+4A-scaled,4A,"{""patch_side"": 3}",930103,1,group_memory,SUCCESS,1.6037940409732983,1.3092972919694148,0.03481745894532651,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930103,1,classical,SUCCESS,1.237761333992239,1.0286463330266997,0.03153291699709371,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930103,1,qiskit_symmetry,SUCCESS,1.5398267079726793,1.291453791956883,0.030938958982005715,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930103,1,qiskit_exact,SUCCESS,1.6205791249522008,1.368750708992593,0.03247737500350922,heldout_accuracy,1.0,True,59,1416
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,1,group_memory,SUCCESS,1.7790057500242256,0.49594824999803677,1.053969833010342,heldout_mse,0.014936545207522646,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,1,qiskit_exact,SUCCESS,2.6316593749797903,1.337086083018221,1.0556164160370827,heldout_mse,0.01493654520752264,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,1,classical,SUCCESS,1.2649392919847742,0.010622499976307154,1.0643407499883324,heldout_mse,0.014306375943128304,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,1,qiskit_symmetry,SUCCESS,1.6838857090333477,0.41246895800577477,1.0445757499546744,heldout_mse,0.014936545207522646,False,48,1152
+4B-scaled,4B,"{""n_global"": 256}",930105,1,qiskit_symmetry,SUCCESS,1.570719916955568,1.3106529579963535,0.03575375000946224,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930105,1,classical,SUCCESS,1.2484530420042574,1.029706500004977,0.03210741700604558,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930105,1,qiskit_exact,SUCCESS,1.6309672920033336,1.387639417022001,0.03199237497756258,heldout_accuracy,1.0,True,192,768
+4B-scaled,4B,"{""n_global"": 256}",930105,1,group_memory,SUCCESS,1.5467552920454182,1.3002844580332749,0.0316422909963876,heldout_accuracy,1.0,True,96,384
+4A-scaled,4A,"{""patch_side"": 3}",930104,0,group_memory,SUCCESS,1.5234980420209467,1.2834967090166174,0.0303849580232054,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930104,0,classical,SUCCESS,1.2589808750199154,1.0248669580323622,0.03316537500359118,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930104,0,qiskit_exact,SUCCESS,1.6400944999768399,1.3940642500529066,0.03136637498391792,heldout_accuracy,1.0,True,60,1440
+4A-scaled,4A,"{""patch_side"": 3}",930104,0,qiskit_symmetry,SUCCESS,1.5461329580284655,1.2972014170372859,0.032510707969777286,heldout_accuracy,1.0,True,18,432
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,0,group_memory,SUCCESS,1.628797834040597,1.3496866669738665,0.034829291980713606,heldout_accuracy,1.0,True,226,1092
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,0,qiskit_symmetry,SUCCESS,1.579270832997281,1.3216396660427563,0.035663041984662414,heldout_accuracy,1.0,True,226,1092
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,0,classical,SUCCESS,1.2392402080004103,1.0417513340362348,0.031663957983255386,heldout_accuracy,0.5,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,0,qiskit_exact,SUCCESS,1.5609903750009835,1.3133949589682743,0.032356333977077156,heldout_accuracy,1.0,True,392,384
+4B-scaled,4B,"{""n_global"": 256}",930104,1,classical,SUCCESS,1.2595345409936272,1.0568890410359018,0.03009825001936406,heldout_accuracy,0.8333333333333334,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930104,1,qiskit_exact,SUCCESS,1.8502449169754982,1.474892332975287,0.0333344159880653,heldout_accuracy,0.8333333333333334,True,192,768
+4B-scaled,4B,"{""n_global"": 256}",930104,1,qiskit_symmetry,SUCCESS,1.9623092919937335,1.7011932500172406,0.03461816598428413,heldout_accuracy,0.8333333333333334,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930104,1,group_memory,SUCCESS,1.5605236669653095,1.3072996250120923,0.031179999990854412,heldout_accuracy,0.8333333333333334,True,96,384
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,2,qiskit_symmetry,SUCCESS,1.8627147920196876,1.612429249973502,0.03413074999116361,heldout_accuracy,1.0,True,884,3856
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,2,group_memory,SUCCESS,1.8615756660001352,1.6007769579882734,0.03318812500219792,heldout_accuracy,1.0,True,884,3856
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,2,classical,SUCCESS,1.5145797500154004,1.2955943330307491,0.03236558404751122,heldout_accuracy,0.875,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,2,qiskit_exact,SUCCESS,1.5960874159936793,1.3417649999610148,0.03103641699999571,heldout_accuracy,1.0,True,1552,1024
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,1,group_memory,SUCCESS,1.8274934579967521,1.56909570901189,0.03512883296934888,heldout_accuracy,1.0,True,884,3856
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,1,qiskit_exact,SUCCESS,1.556319292052649,1.303707792016212,0.03218124998966232,heldout_accuracy,1.0,True,1552,1024
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,1,classical,SUCCESS,1.2591544590541162,1.053770957980305,0.032390917011070997,heldout_accuracy,0.875,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930105,1,qiskit_symmetry,SUCCESS,1.8113766250316985,1.5656707499874756,0.031233749992679805,heldout_accuracy,1.0,True,884,3856
+4A-scaled,4A,"{""patch_side"": 3}",930101,0,classical,SUCCESS,1.2477091670152731,1.044749208027497,0.030869209032971412,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930101,0,qiskit_symmetry,SUCCESS,1.537703541049268,1.2896491250139661,0.030400457966607064,heldout_accuracy,1.0,True,19,456
+4A-scaled,4A,"{""patch_side"": 3}",930101,0,qiskit_exact,SUCCESS,1.6352796670398675,1.3894177910406142,0.03229479200672358,heldout_accuracy,1.0,True,67,1608
+4A-scaled,4A,"{""patch_side"": 3}",930101,0,group_memory,SUCCESS,1.5411428329534829,1.2961062910035253,0.031329624995123595,heldout_accuracy,1.0,True,19,456
+4A-small,4A,"{""patch_side"": 2}",930105,1,group_memory,SUCCESS,1.4819318749941885,1.2340662089991383,0.030868207977619022,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930105,1,qiskit_exact,SUCCESS,1.5104018750134856,1.2505924580036663,0.03074362501502037,heldout_accuracy,1.0,True,14,112
+4A-small,4A,"{""patch_side"": 2}",930105,1,classical,SUCCESS,1.2593715420225635,1.0556053339969367,0.03117333399131894,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930105,1,qiskit_symmetry,SUCCESS,1.5043522079940885,1.259467208001297,0.030711041996255517,heldout_accuracy,1.0,True,4,32
+4B-scaled,4B,"{""n_global"": 256}",930105,2,qiskit_exact,SUCCESS,1.5596641250303946,1.3050520420074463,0.03333766700234264,heldout_accuracy,1.0,True,192,768
+4B-scaled,4B,"{""n_global"": 256}",930105,2,classical,SUCCESS,1.23350054200273,1.037972834019456,0.03068704198813066,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930105,2,qiskit_symmetry,SUCCESS,1.5627901250263676,1.3041307919775136,0.032413416949566454,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930105,2,group_memory,SUCCESS,1.5303240419598296,1.289658583002165,0.030315332987811416,heldout_accuracy,1.0,True,96,384
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,0,group_memory,SUCCESS,0.7888156250119209,0.6037307079532184,0.036315749981440604,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,0,qiskit_symmetry,SUCCESS,0.6866894580307417,0.5558706250158139,0.02996533300029114,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,0,qiskit_exact,SUCCESS,2.0353849999955855,1.894758791953791,0.03043108299607411,heldout_accuracy,1.0,True,2088,33408
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,0,classical,SUCCESS,1.326560707995668,1.109732041019015,0.03167695802403614,heldout_accuracy,1.0,True,0,0
+4B-small,4B,"{""n_global"": 64}",930103,1,qiskit_symmetry,SUCCESS,1.532049208006356,1.2841810419922695,0.03080079099163413,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930103,1,group_memory,SUCCESS,1.5202831249916926,1.2704819579957984,0.03238666703691706,heldout_accuracy,1.0,True,96,384
+4B-small,4B,"{""n_global"": 64}",930103,1,qiskit_exact,SUCCESS,1.555085166997742,1.3157128329621628,0.030232457967940718,heldout_accuracy,1.0,True,192,768
+4B-small,4B,"{""n_global"": 64}",930103,1,classical,SUCCESS,1.239604040980339,1.033112249977421,0.03209866600809619,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930103,0,group_memory,SUCCESS,1.4751804589759558,1.2342016249895096,0.02992908301530406,heldout_accuracy,1.0,True,5,40
+4A-small,4A,"{""patch_side"": 2}",930103,0,qiskit_symmetry,SUCCESS,1.4897405419615097,1.239662124949973,0.03444737498648465,heldout_accuracy,1.0,True,5,40
+4A-small,4A,"{""patch_side"": 2}",930103,0,qiskit_exact,SUCCESS,1.4899137080064975,1.2406212919740938,0.03303070802940056,heldout_accuracy,1.0,True,15,120
+4A-small,4A,"{""patch_side"": 2}",930103,0,classical,SUCCESS,1.2475269580027089,1.0378027499536984,0.03311441600089893,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930101,2,qiskit_exact,SUCCESS,1.5199235000181943,1.2403198330430314,0.030221583030652255,heldout_accuracy,1.0,True,14,112
+4A-small,4A,"{""patch_side"": 2}",930101,2,group_memory,SUCCESS,1.515195792017039,1.2626096660387702,0.03380470804404467,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930101,2,qiskit_symmetry,SUCCESS,1.4672689160215668,1.2181228330009617,0.032405792037025094,heldout_accuracy,1.0,True,4,32
+4A-small,4A,"{""patch_side"": 2}",930101,2,classical,SUCCESS,1.3602166670025326,1.115267709014006,0.03217816696269438,heldout_accuracy,1.0,True,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,2,qiskit_symmetry,SUCCESS,1.004700374964159,0.8498262920184061,0.031203708960674703,heldout_mse,0.02652202976383383,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,2,classical,SUCCESS,1.3033952910336666,1.0849680420360528,0.03726408298825845,heldout_mse,0.002245821628668166,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,2,qiskit_exact,SUCCESS,1.038213208958041,0.8894075420103036,0.030288083013147116,heldout_mse,0.0265220297638338,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,2,group_memory,SUCCESS,0.9561410000314936,0.8088866660255007,0.03523825004231185,heldout_mse,0.02652202976383383,False,1356,12204
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,1,classical,SUCCESS,1.5679095839732327,1.3351399169769138,0.0327139159780927,heldout_accuracy,1.0,True,0,0
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,1,qiskit_symmetry,SUCCESS,2.0479936670162715,1.7630305420025252,0.03411574999336153,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,1,group_memory,SUCCESS,1.9874961670138873,1.6984818750061095,0.03199479100294411,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930104,1,qiskit_exact,SUCCESS,2.27311958395876,1.985977791948244,0.03311491699423641,heldout_accuracy,1.0,True,1584,4096
+4B-small,4B,"{""n_global"": 64}",930104,2,qiskit_symmetry,SUCCESS,1.5356678329990245,1.2892207499826327,0.03415116702672094,heldout_accuracy,0.8333333333333334,True,96,384
+4B-small,4B,"{""n_global"": 64}",930104,2,classical,SUCCESS,1.228116250014864,1.0345935840159655,0.03035783296218142,heldout_accuracy,0.8333333333333334,True,0,0
+4B-small,4B,"{""n_global"": 64}",930104,2,group_memory,SUCCESS,1.5296728750108741,1.2739852499798872,0.03104154102038592,heldout_accuracy,0.8333333333333334,True,96,384
+4B-small,4B,"{""n_global"": 64}",930104,2,qiskit_exact,SUCCESS,1.61386354197748,1.365592124988325,0.03309891698881984,heldout_accuracy,0.8333333333333334,True,192,768
+4A-scaled,4A,"{""patch_side"": 3}",930102,1,group_memory,SUCCESS,1.5284813749603927,1.2827190840034746,0.03104266698937863,heldout_accuracy,1.0,True,19,456
+4A-scaled,4A,"{""patch_side"": 3}",930102,1,qiskit_symmetry,SUCCESS,1.5645553750218824,1.3233554160105996,0.03047712502302602,heldout_accuracy,1.0,True,19,456
+4A-scaled,4A,"{""patch_side"": 3}",930102,1,qiskit_exact,SUCCESS,1.6502265839953907,1.391970916010905,0.03348137502325699,heldout_accuracy,1.0,True,64,1536
+4A-scaled,4A,"{""patch_side"": 3}",930102,1,classical,SUCCESS,1.2460012499941513,1.0470583750284277,0.03209808300016448,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,1,qiskit_symmetry,SUCCESS,0.47309554199455306,0.3349670409807004,0.03312625002581626,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,1,group_memory,SUCCESS,0.44738712499383837,0.313846375036519,0.0297286250279285,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,1,qiskit_exact,SUCCESS,0.8425031249644235,0.6993179999990389,0.03172487497795373,heldout_accuracy,1.0,True,636,10176
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930104,1,classical,SUCCESS,1.2341926250373945,1.0347804590128362,0.03067945799557492,heldout_accuracy,1.0,True,0,0
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,2,group_memory,SUCCESS,0.6011496670544147,0.4589879580307752,0.031131250027101487,heldout_mse,0.030226155974923695,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,2,qiskit_exact,SUCCESS,0.6273968750028871,0.4911084160557948,0.029966166999656707,heldout_mse,0.03022615597492382,False,672,6048
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,2,qiskit_symmetry,SUCCESS,0.6124862500000745,0.47431429201969877,0.031212874979246408,heldout_mse,0.030226155974923695,False,608,5472
+2B-small,2B,"{""n_test"": 8, ""n_train"": 8, ""steps"": 2}",930105,2,classical,SUCCESS,1.2706806659698486,1.0626562500256114,0.032185374991968274,heldout_mse,0.010269095219620302,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,2,qiskit_symmetry,SUCCESS,0.9470206249970943,0.7994754579849541,0.03212450002320111,heldout_mse,0.027455598712913518,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,2,classical,SUCCESS,1.3962090829736553,1.1843247499782592,0.031068625045008957,heldout_mse,0.0044316808782311175,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,2,qiskit_exact,SUCCESS,1.0217054579989053,0.8788047499838285,0.03292720904573798,heldout_mse,0.027455598712913545,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,2,group_memory,SUCCESS,0.9527965830056928,0.8088782500126399,0.031451833026949316,heldout_mse,0.027455598712913518,False,1356,12204
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,2,group_memory,SUCCESS,0.4512640000320971,0.3076153750298545,0.03109674999723211,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,2,qiskit_exact,SUCCESS,0.859723333036527,0.721340499992948,0.030705332988873124,heldout_accuracy,1.0,True,636,10176
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,2,qiskit_symmetry,SUCCESS,0.46762579097412527,0.32843791600316763,0.033270457992330194,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930103,2,classical,SUCCESS,1.719912375032436,1.4966287499992177,0.03153174999170005,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930104,2,qiskit_exact,SUCCESS,1.4793095829663798,1.2335171250160784,0.031055209052283317,heldout_accuracy,0.8333333333333334,True,15,120
+4A-small,4A,"{""patch_side"": 2}",930104,2,qiskit_symmetry,SUCCESS,1.5071070410194807,1.2521635000011884,0.03218974999617785,heldout_accuracy,0.8333333333333334,True,5,40
+4A-small,4A,"{""patch_side"": 2}",930104,2,group_memory,SUCCESS,1.5015481250011362,1.2447531670331955,0.031122208980377764,heldout_accuracy,0.8333333333333334,True,5,40
+4A-small,4A,"{""patch_side"": 2}",930104,2,classical,SUCCESS,1.232794666022528,1.0317324579809792,0.03137120901374146,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930105,0,classical,SUCCESS,1.2287531669717282,1.0305422079982236,0.030236040998715907,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930105,0,group_memory,SUCCESS,1.5620072919991799,1.2905588750145398,0.03415762499207631,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930105,0,qiskit_symmetry,SUCCESS,1.5660034170141444,1.316637791984249,0.03138949995627627,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930105,0,qiskit_exact,SUCCESS,1.566064665967133,1.3185735419974662,0.03162579203490168,heldout_accuracy,1.0,True,192,768
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,2,qiskit_symmetry,SUCCESS,2.687253249983769,1.383129249967169,1.0635135420016013,heldout_accuracy,1.0,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,2,qiskit_exact,SUCCESS,10.752062333049253,9.423995207995176,1.0711640419904143,heldout_accuracy,1.0,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,2,classical,SUCCESS,1.7026087919948623,0.014167666027788073,1.4737227500299923,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930105,2,group_memory,SUCCESS,3.1662863329984248,1.6295304580125958,1.2692006670404226,heldout_accuracy,1.0,True,80,1600
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,1,qiskit_symmetry,SUCCESS,2.150332042016089,0.4016821249970235,1.4922027910361066,heldout_mse,0.021130175117684315,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,1,group_memory,SUCCESS,2.0329573749913834,0.4947253330028616,1.283419000043068,heldout_mse,0.021130175117684315,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,1,classical,SUCCESS,1.4578858750173822,0.006966707995161414,1.2513331670197658,heldout_mse,0.020200428859760568,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,1,qiskit_exact,SUCCESS,1.8593986250343733,0.4707532090251334,1.1437287500011735,heldout_mse,0.021130175117684332,False,128,2048
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,0,group_memory,SUCCESS,2.259279499994591,0.8632736669969745,1.1493858749745414,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,0,classical,SUCCESS,1.3661956660216674,0.006899375002831221,1.1672531660296954,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,0,qiskit_symmetry,SUCCESS,1.9148596660234034,0.6221466249553487,1.0612734579481184,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930104,0,qiskit_exact,SUCCESS,2.962628000008408,1.6520293329958804,1.0727033750154078,heldout_accuracy,0.875,True,160,1920
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,0,qiskit_exact,SUCCESS,2.8582879999885336,1.5518702500266954,1.0665385420434177,heldout_accuracy,0.75,True,160,1920
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,0,classical,SUCCESS,1.2528496669838205,0.0066672079847194254,1.066566249995958,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,0,group_memory,SUCCESS,1.929275874979794,0.6598640420124866,1.0388309590052813,heldout_accuracy,0.75,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930105,0,qiskit_symmetry,SUCCESS,1.9344827080494724,0.6320184170035645,1.0652649580151774,heldout_accuracy,0.75,True,40,480
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,0,qiskit_exact,SUCCESS,1.8636847080197185,0.5712123339762911,1.0631454590475187,heldout_mse,0.021130175117684332,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,0,qiskit_symmetry,SUCCESS,1.663885209010914,0.3805187079706229,1.0418690409860574,heldout_mse,0.021130175117684315,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,0,group_memory,SUCCESS,1.531580250011757,0.25916470895754173,1.0522514580516145,heldout_mse,0.021130175117684315,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930104,0,classical,SUCCESS,1.217422333022114,0.007061375014018267,1.031938000000082,heldout_mse,0.020200428859760568,False,0,0
+4B-scaled,4B,"{""n_global"": 256}",930103,2,qiskit_exact,SUCCESS,1.5453391250339337,1.304360749956686,0.030653291032649577,heldout_accuracy,1.0,True,192,768
+4B-scaled,4B,"{""n_global"": 256}",930103,2,group_memory,SUCCESS,1.5324189580278471,1.2948961660149507,0.03238062496529892,heldout_accuracy,1.0,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930103,2,classical,SUCCESS,1.2272020420059562,1.0232337500201538,0.0311489169835113,heldout_accuracy,1.0,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930103,2,qiskit_symmetry,SUCCESS,1.540919833991211,1.3019896249752492,0.03128995798761025,heldout_accuracy,1.0,True,96,384
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,0,qiskit_symmetry,SUCCESS,1.7129282500245608,1.457312542013824,0.03238733304897323,heldout_accuracy,1.0,True,884,2624
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,0,classical,SUCCESS,1.2405124999932013,1.0429137500468642,0.03203637502156198,heldout_accuracy,1.0,True,0,0
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,0,group_memory,SUCCESS,1.7158420830382966,1.465328624995891,0.03283941699191928,heldout_accuracy,1.0,True,884,2624
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,0,qiskit_exact,SUCCESS,1.5708087079692632,1.3181726249749772,0.03617587499320507,heldout_accuracy,1.0,True,1552,1024
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,0,group_memory,SUCCESS,1.9334295419976115,1.6742978330003098,0.032461624999996275,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,0,qiskit_exact,SUCCESS,2.2288940839935094,1.9442717079655267,0.033968333969824016,heldout_accuracy,1.0,True,1584,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,0,qiskit_symmetry,SUCCESS,1.9439883749582805,1.6700784590211697,0.03325491596478969,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,0,classical,SUCCESS,1.2956485419999808,1.0692242499790154,0.03449704102240503,heldout_accuracy,1.0,True,0,0
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,2,qiskit_symmetry,SUCCESS,1.5558548339759,1.31097408401547,0.03236316697439179,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,2,qiskit_exact,SUCCESS,1.5932806250057183,1.3388957920251414,0.032047083019278944,heldout_accuracy,1.0,True,408,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,2,group_memory,SUCCESS,1.5689877920085564,1.318926999985706,0.0358776249922812,heldout_accuracy,1.0,True,30,1152
+3B-small,3B,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,2,classical,SUCCESS,1.3382945409975946,1.1275940419873223,0.03244658303447068,heldout_accuracy,0.5,True,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,2,qiskit_symmetry,SUCCESS,1.7359384580049664,0.4331935830414295,1.0589835830032825,heldout_mse,0.014936545207522646,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,2,classical,SUCCESS,1.2548775000032037,0.010953375021927059,1.0572757920017466,heldout_mse,0.014306375943128304,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,2,qiskit_exact,SUCCESS,2.6551767499768175,1.2947123749763705,1.1148035840014927,heldout_mse,0.01493654520752264,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,2,group_memory,SUCCESS,1.7561328749870881,0.41043462499510497,1.1080772500135936,heldout_mse,0.014936545207522646,False,48,1152
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,1,group_memory,SUCCESS,1.8328362089814618,1.5754068749956787,0.03591416700510308,heldout_accuracy,1.0,True,884,3136
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,1,qiskit_symmetry,SUCCESS,1.828711416979786,1.5606136249843985,0.03417158295633271,heldout_accuracy,1.0,True,884,3136
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,1,qiskit_exact,SUCCESS,1.5753114590188488,1.3189102499745786,0.03412154200486839,heldout_accuracy,1.0,True,1552,1024
+3A-scaled,3A,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930103,1,classical,SUCCESS,1.2851859590155073,1.0713200829923153,0.03319929196732119,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,2,qiskit_symmetry,SUCCESS,2.726048125012312,1.3961683330126107,1.0832577080000192,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,2,group_memory,SUCCESS,2.7433373749954626,1.418794249999337,1.0871561670210212,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,2,qiskit_exact,SUCCESS,10.45557704201201,9.158338374982122,1.0459776669740677,heldout_accuracy,0.9375,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930103,2,classical,SUCCESS,1.6770360000082292,0.009025582985486835,1.4121425420162268,heldout_accuracy,1.0,True,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,1,qiskit_symmetry,SUCCESS,1.0741491250228137,0.9288021250395104,0.031181917001958936,heldout_mse,0.017367067104576903,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,1,qiskit_exact,SUCCESS,1.0382760409847833,0.8824998750351369,0.03442037501372397,heldout_mse,0.017367067104576916,False,1500,13500
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,1,group_memory,SUCCESS,0.9365252500283532,0.7952044170233421,0.030118290975224227,heldout_mse,0.017367067104576903,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,1,classical,SUCCESS,1.4973560000071302,1.2870251249987632,0.03131491696694866,heldout_mse,0.003580406072072886,False,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,0,qiskit_exact,SUCCESS,0.8360714169684798,0.6960254160221666,0.031208208994939923,heldout_accuracy,1.0,True,636,10176
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,0,classical,SUCCESS,1.3686380420112982,1.1641561250435188,0.03418679104652256,heldout_accuracy,1.0,True,0,0
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,0,qiskit_symmetry,SUCCESS,0.4532486659591086,0.3153593339957297,0.03173791605513543,heldout_accuracy,1.0,True,132,2112
+2A-small,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930102,0,group_memory,SUCCESS,0.4368306660326198,0.3080039999913424,0.030314000032376498,heldout_accuracy,1.0,True,132,2112
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,1,qiskit_exact,SUCCESS,10.626214875024743,9.18328787497012,1.21044991601957,heldout_accuracy,0.8125,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,1,classical,SUCCESS,1.7151511660194956,0.012135500030126423,1.4740370000363328,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,1,qiskit_symmetry,SUCCESS,3.130678416986484,1.690937915991526,1.1525505420286208,heldout_accuracy,0.8125,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,1,group_memory,SUCCESS,3.4376007500104606,1.8077412500279024,1.3300934999715537,heldout_accuracy,0.8125,True,80,1600
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,1,classical,SUCCESS,1.5823073749779724,0.013481291010975838,1.3631716659874655,heldout_mse,0.014449643555700116,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,1,qiskit_symmetry,SUCCESS,1.8833561249775812,0.524777417012956,1.1059916249942034,heldout_mse,0.015424994302947973,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,1,group_memory,SUCCESS,1.9338522089528851,0.5711049580131657,1.1150625000009313,heldout_mse,0.015424994302947973,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930103,1,qiskit_exact,SUCCESS,2.8620857920031995,1.5314766670344397,1.0812610830180347,heldout_mse,0.01542499430294797,False,384,9216
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,1,group_memory,SUCCESS,1.8873054580180906,1.597563999996055,0.05995374999474734,heldout_accuracy,1.0,True,226,1092
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,1,qiskit_exact,SUCCESS,1.7501657079556026,1.4280681249802,0.05513879202771932,heldout_accuracy,1.0,True,392,384
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,1,classical,SUCCESS,1.4028965419856831,1.0819383340422064,0.09361337503651157,heldout_accuracy,0.5,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930104,1,qiskit_symmetry,SUCCESS,1.9218632090487517,1.6393851659959182,0.03927883302094415,heldout_accuracy,1.0,True,226,1092
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,1,qiskit_symmetry,SUCCESS,0.7670807500253431,0.6003873749868944,0.03768962499452755,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,1,group_memory,SUCCESS,0.6878026250051335,0.5539217500481755,0.03040774998953566,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,1,qiskit_exact,SUCCESS,2.0089319170219824,1.869092708977405,0.03094191598938778,heldout_accuracy,1.0,True,2088,33408
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930103,1,classical,SUCCESS,1.253179249993991,1.0487623329972848,0.03196637501241639,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,2,classical,SUCCESS,1.2469727090210654,0.0076721670338884,1.0584331669961102,heldout_accuracy,1.0,True,0,0
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,2,qiskit_exact,SUCCESS,2.7489919580402784,1.4176926250220276,1.0514415000216104,heldout_accuracy,0.875,True,160,1920
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,2,qiskit_symmetry,SUCCESS,1.8820935409748927,0.5357065839925781,1.054896750021726,heldout_accuracy,0.875,True,40,480
+1A-small,1A,"{""bases"": 8, ""n_qubits"": 6, ""updates"": 3, ""views"": 4}",930103,2,group_memory,SUCCESS,1.918857874989044,0.535729082999751,1.1465630840393715,heldout_accuracy,0.875,True,40,480
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,1,qiskit_symmetry,SUCCESS,1.7157401669537649,0.3447024160414003,1.1221594579983503,heldout_mse,0.019867803637084278,False,32,512
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,1,qiskit_exact,SUCCESS,1.7163538339664228,0.3993163750274107,1.079407540964894,heldout_mse,0.019867803637084278,False,128,2048
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,1,classical,SUCCESS,1.2782150830025785,0.006530917016789317,1.0880353329703212,heldout_mse,0.019091721291995642,False,0,0
+1B-small,1B,"{""bases"": 16, ""n_qubits"": 8, ""views"": 4}",930103,1,group_memory,SUCCESS,1.5677165829692967,0.28429204097483307,1.0385150829679333,heldout_mse,0.019867803637084278,False,32,512
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,2,qiskit_exact,SUCCESS,10.697300250001717,9.29732354200678,1.085843374952674,heldout_accuracy,0.9375,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,2,qiskit_symmetry,SUCCESS,3.356626624998171,1.5417695000069216,1.5361259169876575,heldout_accuracy,0.9375,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,2,classical,SUCCESS,1.528834917000495,0.016927082964684814,1.3072612499818206,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930102,2,group_memory,SUCCESS,3.120839708019048,1.4796582499984652,1.3782133339555003,heldout_accuracy,0.9375,True,80,1600
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,0,classical,SUCCESS,1.5279453750117682,1.265083416015841,0.05171941698063165,heldout_accuracy,1.0,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,0,group_memory,SUCCESS,2.011416958004702,1.720044916961342,0.05219783401116729,heldout_accuracy,1.0,True,226,624
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,0,qiskit_symmetry,SUCCESS,2.045382041018456,1.755017500021495,0.05392024997854605,heldout_accuracy,1.0,True,226,624
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930103,0,qiskit_exact,SUCCESS,1.9224765000399202,1.5870254579931498,0.07533679099287838,heldout_accuracy,1.0,True,392,384
+4A-scaled,4A,"{""patch_side"": 3}",930103,2,group_memory,SUCCESS,1.8397432090132497,1.5189542089938186,0.07538829103577882,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930103,2,qiskit_symmetry,SUCCESS,1.8181583329569548,1.5312580830068327,0.05180549999931827,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930103,2,classical,SUCCESS,1.2835568750160746,1.0455863749957643,0.051286375033669174,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930103,2,qiskit_exact,SUCCESS,1.5870980419567786,1.3409072089707479,0.030973749991972,heldout_accuracy,1.0,True,59,1416
+4B-small,4B,"{""n_global"": 64}",930104,0,qiskit_symmetry,SUCCESS,1.5316152090090327,1.285306165984366,0.03375500004040077,heldout_accuracy,0.8333333333333334,True,96,384
+4B-small,4B,"{""n_global"": 64}",930104,0,qiskit_exact,SUCCESS,1.5493045829935,1.3118837079964578,0.029862833966035396,heldout_accuracy,0.8333333333333334,True,192,768
+4B-small,4B,"{""n_global"": 64}",930104,0,classical,SUCCESS,1.3237127079628408,1.1052575000212528,0.03214704099809751,heldout_accuracy,0.8333333333333334,True,0,0
+4B-small,4B,"{""n_global"": 64}",930104,0,group_memory,SUCCESS,1.5230342079885304,1.2794357920065522,0.030625417013652623,heldout_accuracy,0.8333333333333334,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930104,2,group_memory,SUCCESS,1.6540563750313595,1.326665000000503,0.054976082989014685,heldout_accuracy,0.8333333333333334,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930104,2,qiskit_symmetry,SUCCESS,1.5559450410073623,1.305976625008043,0.033242792007513344,heldout_accuracy,0.8333333333333334,True,96,384
+4B-scaled,4B,"{""n_global"": 256}",930104,2,classical,SUCCESS,1.2682128329761326,1.051071125024464,0.0315245000529103,heldout_accuracy,0.8333333333333334,True,0,0
+4B-scaled,4B,"{""n_global"": 256}",930104,2,qiskit_exact,SUCCESS,1.6339997919858433,1.3803266669856384,0.03200254199327901,heldout_accuracy,0.8333333333333334,True,192,768
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,0,group_memory,SUCCESS,2.744685625017155,1.4125520000234246,1.08837841701461,heldout_accuracy,0.8125,True,80,1600
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,0,qiskit_exact,SUCCESS,10.707272750034463,9.390476582979318,1.0686100830207579,heldout_accuracy,0.8125,True,640,12800
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,0,classical,SUCCESS,1.5183965830365196,0.009516291960608214,1.3157706669881009,heldout_accuracy,1.0,True,0,0
+1A-scaled,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 3, ""views"": 8}",930101,0,qiskit_symmetry,SUCCESS,3.0993947079987265,1.4902924590278417,1.339846791990567,heldout_accuracy,0.8125,True,80,1600
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,0,qiskit_symmetry,SUCCESS,3.132879291952122,2.782931624969933,0.06202070799190551,heldout_accuracy,1.0,True,226,984
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,0,classical,SUCCESS,1.5629022080102004,1.3247000410337932,0.049695749999955297,heldout_accuracy,1.0,True,0,0
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,0,qiskit_exact,SUCCESS,1.6408409999567084,1.391915499989409,0.031959959014784545,heldout_accuracy,1.0,True,392,384
+3A-small,3A,"{""n_qubits"": 6, ""pairs"": 2, ""views"": 4}",930102,0,group_memory,SUCCESS,1.6931367500219494,1.4384910409571603,0.03267679101554677,heldout_accuracy,1.0,True,226,984
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,0,qiskit_exact,SUCCESS,2.6766886249533854,1.3695641250233166,1.0716701250057667,heldout_mse,0.01493654520752264,False,384,9216
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,0,group_memory,SUCCESS,1.8386019589961506,0.49213599995709956,1.1031846249825321,heldout_mse,0.014936545207522646,False,48,1152
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,0,classical,SUCCESS,1.259641166019719,0.011901749996468425,1.0566671249689534,heldout_mse,0.014306375943128304,False,0,0
+1B-scaled,1B,"{""bases"": 24, ""n_qubits"": 12, ""views"": 8}",930104,0,qiskit_symmetry,SUCCESS,1.8226553330314346,0.513076999981422,1.0586230420158245,heldout_mse,0.014936545207522646,False,48,1152
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,2,qiskit_symmetry,SUCCESS,0.7134504580171779,0.5700681250309572,0.031716792029328644,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,2,group_memory,SUCCESS,0.7128197919810191,0.5623477919725701,0.03118595900014043,heldout_accuracy,1.0,True,408,6528
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,2,classical,SUCCESS,1.3071324579650536,1.1106381669524126,0.030822416010778397,heldout_accuracy,1.0,True,0,0
+2A-scaled,2A,"{""n_test"": 24, ""n_train"": 24, ""steps"": 5}",930102,2,qiskit_exact,SUCCESS,2.020879874995444,1.8677640829700977,0.03244087501661852,heldout_accuracy,1.0,True,2088,33408
+4A-scaled,4A,"{""patch_side"": 3}",930105,2,qiskit_exact,SUCCESS,1.6387441669940017,1.3811224589589983,0.03273008397081867,heldout_accuracy,1.0,True,66,1584
+4A-scaled,4A,"{""patch_side"": 3}",930105,2,classical,SUCCESS,1.2576259580091573,1.0447924580075778,0.03127495897933841,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930105,2,group_memory,SUCCESS,1.5452467919676565,1.3014854580396786,0.031364416994620115,heldout_accuracy,1.0,True,18,432
+4A-scaled,4A,"{""patch_side"": 3}",930105,2,qiskit_symmetry,SUCCESS,1.560488583985716,1.2975957079906948,0.031060917011927813,heldout_accuracy,1.0,True,18,432
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,1,group_memory,SUCCESS,2.0297617919859476,1.7601469999644905,0.03136304201325402,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,1,qiskit_symmetry,SUCCESS,2.0201043750275858,1.7308894590241835,0.03304408397525549,heldout_accuracy,1.0,True,108,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,1,qiskit_exact,SUCCESS,2.4219843330211006,2.0696505829691887,0.045713166997302324,heldout_accuracy,1.0,True,1584,4096
+3B-scaled,3B,"{""n_qubits"": 8, ""pairs"": 4, ""views"": 4}",930101,1,classical,SUCCESS,1.261110750027001,1.0550675420090556,0.034248167008627206,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930104,1,qiskit_exact,SUCCESS,1.4966165000223555,1.2453406659769826,0.03165504097705707,heldout_accuracy,0.8333333333333334,True,15,120
+4A-small,4A,"{""patch_side"": 2}",930104,1,qiskit_symmetry,SUCCESS,1.5857379169901833,1.3206938749644905,0.03417308401549235,heldout_accuracy,0.8333333333333334,True,5,40
+4A-small,4A,"{""patch_side"": 2}",930104,1,classical,SUCCESS,1.4690037079853937,1.247946041985415,0.032164165982976556,heldout_accuracy,1.0,True,0,0
+4A-small,4A,"{""patch_side"": 2}",930104,1,group_memory,SUCCESS,1.6080774999572895,1.3369574169628322,0.03226095903664827,heldout_accuracy,0.8333333333333334,True,5,40
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,0,group_memory,SUCCESS,0.9924075420130976,0.836864999961108,0.03568633401300758,heldout_mse,0.027455598712913518,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,0,classical,SUCCESS,1.2983752919826657,1.0740332920104265,0.03232633299194276,heldout_mse,0.0044316808782311175,False,0,0
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,0,qiskit_symmetry,SUCCESS,0.9487685000058264,0.8009308750042692,0.032980458985548466,heldout_mse,0.027455598712913518,False,1356,12204
+2B-scaled,2B,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",930105,0,qiskit_exact,SUCCESS,0.9895134579855949,0.8561022499925457,0.03032787499250844,heldout_mse,0.027455598712913545,False,1500,13500
+4A-scaled,4A,"{""patch_side"": 3}",930102,0,qiskit_exact,SUCCESS,1.8911940419930033,1.5644464159850031,0.0312708750134334,heldout_accuracy,1.0,True,64,1536
+4A-scaled,4A,"{""patch_side"": 3}",930102,0,classical,SUCCESS,1.2476806670310907,1.0423046670039184,0.03153575002215803,heldout_accuracy,1.0,True,0,0
+4A-scaled,4A,"{""patch_side"": 3}",930102,0,group_memory,SUCCESS,1.677473874995485,1.420572584029287,0.033369250013493,heldout_accuracy,1.0,True,19,456
+4A-scaled,4A,"{""patch_side"": 3}",930102,0,qiskit_symmetry,SUCCESS,1.5295809580129571,1.2719691249658354,0.03183120902394876,heldout_accuracy,1.0,True,19,456

@@ -1,0 +1,2 @@
+# Preserve measured artifacts byte-for-byte so SHA256SUMS verifies on every OS.
+results/eight-experiments/** -text

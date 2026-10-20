@@ -1,0 +1,8 @@
+[
+  {"id":"sensor-1","experiment":"1A","config":{"n_qubits":10,"bases":16,"views":8,"updates":1}},
+  {"id":"sensor-5","experiment":"1A","config":{"n_qubits":10,"bases":16,"views":8,"updates":5}},
+  {"id":"sensor-20","experiment":"1A","config":{"n_qubits":10,"bases":16,"views":8,"updates":20}},
+  {"id":"spin-1","experiment":"2A","config":{"n_train":12,"n_test":12,"steps":1}},
+  {"id":"spin-3","experiment":"2A","config":{"n_train":12,"n_test":12,"steps":3}},
+  {"id":"spin-8","experiment":"2A","config":{"n_train":12,"n_test":12,"steps":8}}
+]

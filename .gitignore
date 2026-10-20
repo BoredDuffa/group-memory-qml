@@ -11,4 +11,5 @@ dist/
 !/results/reference/
 !/results/release-validation/
 !/results/eight-experiments/
+!/results/parameter-response/
 

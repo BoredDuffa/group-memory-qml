@@ -1,0 +1,9 @@
+{
+  "planned": 12,
+  "successful": 12,
+  "validation_planned": 2,
+  "validation_passed": 2,
+  "maximum_absolute_error": 3.0253577421035516e-15,
+  "sum_process_wall_s": 14.708956458955072,
+  "not_pooled_with_main": true
+}

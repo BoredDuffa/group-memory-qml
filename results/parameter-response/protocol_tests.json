@@ -1,0 +1,7 @@
+{
+  "passed": 17,
+  "pytest_seconds": 0.5,
+  "external_seconds": 1.068035208,
+  "scope": "tests/test_response_protocol.py",
+  "additional_to_preflight_tests": 136
+}

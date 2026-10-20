@@ -46,6 +46,64 @@ The command writes a new results directory with `summary.md`, `summary.csv`, acc
 
 Use `--broken-symmetry` with a new output directory to make the circuit's site gains unequal and verify that orbit reuse is disabled. `python -m group_memory_qml.demo --help` lists the bounded run options.
 
+## Reusing computations across training updates
+
+The new response engines cache an **exact function of the trainable weights**.
+For the supported sensor circuit, four coefficients describe each local output;
+the shared-weight spin circuit needs two. Native Qiskit/Aer probes determine the
+coefficients, and an additional off-grid execution checks them at `1e-10`.
+Later updates reuse both the response and its analytic derivatives.
+
+This path is specific to the documented shallow architectures. Unsupported
+cases use conservative fallbacks. Both architectures also have inexpensive
+classical formulas, which are included as identical-model controls.
+Read [the derivations, prior work and limits](docs/parameter_response.md).
+
+```bash
+python -m group_memory_qml.response_suite run \
+  --conditions benchmarks/response_quick.json \
+  --output results/response-quick-local \
+  --seeds 940101 --repeats 1 --budget-seconds 300
+python -m group_memory_qml.response_report results/response-quick-local
+```
+
+The six controls include the previous GroupMemory and symmetry-aware Qiskit
+implementations, both new response implementations, the analytic identical
+model, and the original classical task model. The response-aware Qiskit control
+receives the same basis, probes, checks and cache lifetime. The short command
+checks functionality; it does not have enough repetitions for a performance claim.
+
+## Parameter-response reference result — 2026-10-20
+
+**Response reuse improves on the previous symmetry-aware Qiskit baseline; Qiskit given the same response reuse matches it.** All 540 attempts completed, all 90 same-model comparison blocks passed at the unchanged `1e-10` tolerance (maximum error `3.62e-14`), and 153 local tests passed. The independent checkpoint/resume pilot completed all 36 attempts.
+
+The main benchmark took **15.73 minutes**, including its parent process. Per-method times below include fresh-process startup, imports, data, compilation, every calibration/check circuit, cache planning, training, predictions, serialization and shutdown. Each condition has five fresh data seeds and three timing repeats on the local Apple M1, with one thread per worker.
+
+| Workload | New GroupMemory | Previous symmetry Qiskit | Qiskit + response | Analytic identical model | Paired speedup vs previous Qiskit | Same-model accuracy |
+|---|---:|---:|---:|---:|---:|---:|
+| sensor-1 | 1.696 s | 1.990 s | 1.743 s | 1.256 s | 1.15× | 86.25% |
+| sensor-5 | 1.853 s | 3.560 s | 1.854 s | 1.290 s | 2.01× | 95.00% |
+| sensor-20 | 2.156 s | 9.519 s | 2.080 s | 1.590 s | 4.36× | 98.75% |
+| spin-1 | 0.394 s | 0.397 s | 0.401 s | 0.110 s | 1.01× | 100.00% |
+| spin-3 | 0.386 s | 0.456 s | 0.385 s | 0.108 s | 1.16× | 100.00% |
+| spin-8 | 0.395 s | 0.682 s | 0.389 s | 0.112 s | 1.75× | 100.00% |
+
+Sensor rows use 10 qubits and 1/5/20 updates; spin rows use eight qubits and 1/3/8 updates. Times are medians of seed medians. Speedups are medians of **paired seed ratios**, so they need not equal the ratio of displayed marginal times.
+
+Five of the six conditions met the predefined descriptive-win rule versus the previous Qiskit implementation. The one-step spin case did not. None met it versus Qiskit with the same response reuse. The rule requires at least five complete seeds, three matching repeats per seed, every seed median faster, and median paired saving of at least 5%; this is not a significance or universal-crossover claim.
+
+At 20 sensor updates, actual simulated forward CNOT work fell **72.7%**; at eight spin updates, it fell **84.6%**. At one sensor update, calibration **doubled** forward CNOT work while still reducing runtime, because response derivatives avoid the original classical reverse-gradient work. CNOT counts and total runtime measure different costs.
+
+The analytic identical-model control was faster in every tested seed and condition. The original task-specific classical learners reached 100% accuracy. The spin task learner's larger cold-process time includes scikit-learn imports; it is not evidence of quantum learning advantage. These circuits have efficient classical formulas, and no QPU or finite-shot advantage is claimed.
+
+- [All paired comparisons, classical task controls and native work](results/parameter-response/summary.md)
+- [Executed results notebook with independent archive/source/checkpoint audit](examples/parameter_response_results.ipynb)
+- [Raw attempts](results/parameter-response/raw_attempts.zip), [frozen sources](results/parameter-response/source_snapshot.zip), and [full timing ledger](results/parameter-response/wall_accounting.json)
+
+![Exact parameter-response runtime comparisons](results/parameter-response/notebook_paired_speedups.png)
+
+Both panels use the same scale; ranges show observed seed ratios, not confidence intervals. Values above one favor GroupMemory.
+
 ## Eight QML experiments
 
 Run all eight small experiments, each against equally informed Qiskit, ordinary exact caching, and an application-specific classical model:

@@ -1,0 +1,19 @@
+{
+  "completed_attempts": 539,
+  "next_spec": {
+    "condition": "spin-3",
+    "experiment": "2A",
+    "config": {
+      "n_train": 12,
+      "n_test": 12,
+      "steps": 3
+    },
+    "seed": 941104,
+    "repeat": 0,
+    "method": "group_memory_response"
+  },
+  "config_sha256": "40e73a2d12ad31af7b8d385db7ecdae3d6bf1c454b205504bc37b6496ed7703a",
+  "deadline_unix": 1792501486.3393369,
+  "journal_last_index": 538,
+  "last_result_sha256": "40e7f519d3906be235814282f749a364ec527e7bb26e3a8ff60e1f1e1d9ccb09"
+}

@@ -1,0 +1,10 @@
+{
+  "seed": 940101,
+  "planned": 36,
+  "successful": 36,
+  "validation_passed": 6,
+  "max_error": 1.4765966227514582e-14,
+  "first_invocation_limit": 1,
+  "resume_preserved_source_config_deadline": true,
+  "not_pooled_with_main": true
+}

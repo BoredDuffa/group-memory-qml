@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "successful_attempts": 540,
+  "matched_blocks": 90,
+  "source_files": 17,
+  "maximum_error": 3.624878175401136e-14,
+  "checkpoint_cursors": [
+    540,
+    539
+  ],
+  "qualified_wins_vs_previous_qiskit": 5,
+  "qualified_wins_vs_response_qiskit": 0,
+  "analytic_same_model_faster_every_seed_condition": true,
+  "verification": "Independent read-only audit recomputed every paired ratio from raw JSON, checked data/source/seed identities, checkpoint/config/result/deadline links, empty worker stderr and enclosing timing clocks. No new simulations."
+}

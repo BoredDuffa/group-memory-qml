@@ -228,6 +228,7 @@ python -m group_memory_qml.response_suite run \
   --conditions benchmarks/response_quick.json \
   --output results/response-quick-local \
   --seeds 940101 --repeats 1 --budget-seconds 600
+python -m group_memory_qml.response_report results/response-quick-local
 ```
 
 The full planned comparison uses six conditions: the 10-qubit sensor task
@@ -241,6 +242,7 @@ python -m group_memory_qml.response_suite run \
   --output results/response-memory-local \
   --seeds 941101 941102 941103 941104 941105 \
   --repeats 3 --budget-seconds 1800
+python -m group_memory_qml.response_report results/response-memory-local
 ```
 
 The time budget is a deadline, not a prediction that every machine will finish

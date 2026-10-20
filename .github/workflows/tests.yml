@@ -40,6 +40,17 @@ jobs:
           assert result["successful"] == result["planned"] == 32
           assert result["validation_passed"] == result["validation_planned"] == 8
           PY
+      - run: python -m group_memory_qml.response_suite run --conditions benchmarks/response_quick.json --output results/response-ci --seeds 940101 --repeats 1 --budget-seconds 300
+      - run: python -m group_memory_qml.response_report results/response-ci
+      - name: Require complete parameter-response smoke coverage
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          result = json.loads(Path("results/response-ci/analysis.json").read_text())
+          assert result["successful"] == result["planned"] == 12
+          assert result["validation_passed"] == result["validation_planned"] == 2
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -47,3 +58,4 @@ jobs:
           path: |
             results/ci
             results/eight-ci
+            results/response-ci

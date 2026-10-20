@@ -1,0 +1,5 @@
+{
+  "frozen_benchmark_commit": "578a1f25f77e72d6d15d6f0b45412e4c6b92db56",
+  "post_measurement_changes": "README, executed readout and results packaging; added pandas to development extras for notebook rendering. Benchmark engine and training source unchanged.",
+  "test_evidence": "540 local tests passed before the frozen main campaign; subsequent changes only presentation/artifacts and development dependency declaration."
+}

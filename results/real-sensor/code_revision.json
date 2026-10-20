@@ -1,0 +1,24 @@
+{
+  "commit": "578a1f25f77e72d6d15d6f0b45412e4c6b92db56",
+  "plan_sha256": "8308cdcb9facfc76ce7d6aac660733e2f0348a73852c615c8a744c21892f4a40",
+  "preflight_passed": 540,
+  "frozen_methods": [
+    "group_spectral",
+    "qiskit_response",
+    "classical_adjoint",
+    "classical_logistic",
+    "classical_rbf",
+    "classical_mlp"
+  ],
+  "conditions": 3,
+  "seeds": [
+    955101,
+    955102,
+    955103,
+    955104,
+    955105
+  ],
+  "repeats": 2,
+  "expected_attempts": 180,
+  "scope": "CPU-only, real UCI HAR features, fixed architecture and hyperparameters; pilot timings excluded"
+}

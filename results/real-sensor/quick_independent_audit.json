@@ -1,0 +1,212 @@
+{
+  "audit": "PASS",
+  "source": {
+    "files": 29,
+    "commit": null,
+    "verification": "current source hashes; no frozen commit receipt yet"
+  },
+  "raw_data_verified": true,
+  "planned": 6,
+  "attempted": 6,
+  "successful": 6,
+  "matched_blocks": 1,
+  "planned_blocks": 1,
+  "maximum_matching_vector_error": 8.881784197001252e-16,
+  "coverage": {
+    "har-smoke": {
+      "SUCCESS": 6
+    }
+  },
+  "authorization": {
+    "start_unix": 1792511411.91699,
+    "deadline_unix": 1792512011.91699,
+    "scope": "Local CPU-only benchmark; no remote VM or QPU"
+  },
+  "latest_attempt_end_unix": 1792511456.9411032,
+  "worker_wall_sum_s": 12.959946457005572,
+  "parameter_motion": {
+    "har-smoke": {
+      "observed_seeds": 1,
+      "min_moved_parameters": 8,
+      "max_moved_parameters": 8,
+      "min_selected_moved_parameters": 8,
+      "max_selected_moved_parameters": 8,
+      "median_displacement_norm": 0.15887645536283215,
+      "selected_steps": [
+        2
+      ]
+    }
+  },
+  "comparisons": [
+    {
+      "condition": "har-smoke",
+      "baseline": "qiskit_response",
+      "matched_seeds": 1,
+      "paired_speedup": 0.9215037915860076,
+      "minimum_seed_speedup": 0.9215037915860076,
+      "maximum_seed_speedup": 0.9215037915860076,
+      "median_paired_saving": -0.0851827297193124,
+      "runtime_win": false,
+      "minimum_balanced_accuracy_difference": 0.0,
+      "mean_balanced_accuracy_difference": 0.0,
+      "useful_win": false,
+      "per_seed": [
+        {
+          "seed": 955001,
+          "speedup": 0.9215037915860076,
+          "balanced_accuracy_difference": 0.0
+        }
+      ]
+    },
+    {
+      "condition": "har-smoke",
+      "baseline": "classical_adjoint",
+      "matched_seeds": 1,
+      "paired_speedup": 0.8970663274803922,
+      "minimum_seed_speedup": 0.8970663274803922,
+      "maximum_seed_speedup": 0.8970663274803922,
+      "median_paired_saving": -0.11474477345361933,
+      "runtime_win": false,
+      "minimum_balanced_accuracy_difference": 0.0,
+      "mean_balanced_accuracy_difference": 0.0,
+      "useful_win": false,
+      "per_seed": [
+        {
+          "seed": 955001,
+          "speedup": 0.8970663274803922,
+          "balanced_accuracy_difference": 0.0
+        }
+      ]
+    },
+    {
+      "condition": "har-smoke",
+      "baseline": "classical_logistic",
+      "matched_seeds": 1,
+      "paired_speedup": 0.8855540613046095,
+      "minimum_seed_speedup": 0.8855540613046095,
+      "maximum_seed_speedup": 0.8855540613046095,
+      "median_paired_saving": -0.12923653529044565,
+      "runtime_win": false,
+      "minimum_balanced_accuracy_difference": -0.375,
+      "mean_balanced_accuracy_difference": -0.375,
+      "useful_win": false,
+      "per_seed": [
+        {
+          "seed": 955001,
+          "speedup": 0.8855540613046095,
+          "balanced_accuracy_difference": -0.375
+        }
+      ]
+    },
+    {
+      "condition": "har-smoke",
+      "baseline": "classical_rbf",
+      "matched_seeds": 1,
+      "paired_speedup": 0.6241114173025787,
+      "minimum_seed_speedup": 0.6241114173025787,
+      "maximum_seed_speedup": 0.6241114173025787,
+      "median_paired_saving": -0.6022780104264378,
+      "runtime_win": false,
+      "minimum_balanced_accuracy_difference": -0.25,
+      "mean_balanced_accuracy_difference": -0.25,
+      "useful_win": false,
+      "per_seed": [
+        {
+          "seed": 955001,
+          "speedup": 0.6241114173025787,
+          "balanced_accuracy_difference": -0.25
+        }
+      ]
+    },
+    {
+      "condition": "har-smoke",
+      "baseline": "classical_mlp",
+      "matched_seeds": 1,
+      "paired_speedup": 1.028359347258471,
+      "minimum_seed_speedup": 1.028359347258471,
+      "maximum_seed_speedup": 1.028359347258471,
+      "median_paired_saving": 0.027577273775042488,
+      "runtime_win": false,
+      "minimum_balanced_accuracy_difference": -0.29166666666666663,
+      "mean_balanced_accuracy_difference": -0.29166666666666663,
+      "useful_win": false,
+      "per_seed": [
+        {
+          "seed": 955001,
+          "speedup": 1.028359347258471,
+          "balanced_accuracy_difference": -0.29166666666666663
+        }
+      ]
+    }
+  ],
+  "seed_medians": [
+    {
+      "condition": "har-smoke",
+      "seed": 955001,
+      "method": "group_spectral",
+      "process_wall_s": 2.419437457981985,
+      "balanced_accuracy": 0.25,
+      "log_loss": 1.7532305332309732,
+      "selected_step": 2,
+      "selected_view": null
+    },
+    {
+      "condition": "har-smoke",
+      "seed": 955001,
+      "method": "qiskit_response",
+      "process_wall_s": 2.229520791035611,
+      "balanced_accuracy": 0.25,
+      "log_loss": 1.7532305332309732,
+      "selected_step": 2,
+      "selected_view": null
+    },
+    {
+      "condition": "har-smoke",
+      "seed": 955001,
+      "method": "classical_adjoint",
+      "process_wall_s": 2.170395875000395,
+      "balanced_accuracy": 0.25,
+      "log_loss": 1.7532305332309732,
+      "selected_step": 2,
+      "selected_view": null
+    },
+    {
+      "condition": "har-smoke",
+      "seed": 955001,
+      "method": "classical_logistic",
+      "process_wall_s": 2.1425426669884473,
+      "balanced_accuracy": 0.625,
+      "log_loss": 1.1125935260268014,
+      "selected_step": null,
+      "selected_view": "full561"
+    },
+    {
+      "condition": "har-smoke",
+      "seed": 955001,
+      "method": "classical_rbf",
+      "process_wall_s": 1.5099985409760848,
+      "balanced_accuracy": 0.5,
+      "log_loss": 1.293951298475372,
+      "selected_step": null,
+      "selected_view": "angles"
+    },
+    {
+      "condition": "har-smoke",
+      "seed": 955001,
+      "method": "classical_mlp",
+      "process_wall_s": 2.4880511250230484,
+      "balanced_accuracy": 0.5416666666666666,
+      "log_loss": 1.1027330267516953,
+      "selected_step": null,
+      "selected_view": "angles"
+    }
+  ],
+  "limits": [
+    "Independent two-qubit patches; nominal8/16 qubits are not a fully entangled statevector or a hardware advantage.",
+    "The same-model vector verifies optimizer parameters/gradients and selected final predictions, not every intermediate feature Jacobian.",
+    "Seed subsets share subjects across replicates; no confidence interval or independent-subject significance claim.",
+    "Common archive download/text preparation is separate from each timed NPZ read and train-only preprocessing.",
+    "Partial blocks and incomplete repeat sets never support wins."
+  ],
+  "audit_seconds": 0.18938033300219104
+}

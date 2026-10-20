@@ -1,0 +1,9 @@
+{
+  "phase": "main",
+  "seconds": 572.2749046669924,
+  "start_unix": 1792511644.408343,
+  "end_unix": 1792512216.680056,
+  "returncode": 0,
+  "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+  "log": "main.log"
+}

@@ -1,0 +1,35 @@
+{
+  "main_process_wall_s": 572.2749046669924,
+  "main_worker_wall_sum_s": 560.6627797081019,
+  "main_parent_orchestration_s": 11.61212495889049,
+  "common_dataset_setup_component_sum_s": 29.55585479194997,
+  "common_dataset_setup_components": {
+    "download_s": 26.66435937496135,
+    "extraction_s": 0.4240258340141736,
+    "raw_text_parse_s": 0.7328417079988867,
+    "npz_write_s": 1.7346278749755584
+  },
+  "setup_scope": "Observed download, extraction, released-feature text parsing and NPZ writing component sum; no single external acquisition clock. Original authors sensor feature extraction and manual/development time are not measured.",
+  "clock_scope": "Every fresh worker process includes interpreter startup/imports, prepared data read/hash, train-only preprocessing, compile/calibration/checks, training/validation/selection, test prediction, serialization and exit. One-time data setup is separate and added once for a standalone cold-start illustration; it was not repeated for every worker.",
+  "phases": {
+    "initial_preflight": 28.821866457990836,
+    "preflight": 28.62157004099572,
+    "quick_2": 4.568310792034026,
+    "quick": 8.860273041995242,
+    "pilot": 26.842040540999733
+  },
+  "audit_s": {
+    "quick": 0.18938033300219104,
+    "pilot": 0.25297054200200364,
+    "campaign": 2.200396375032142
+  },
+  "publication_partial_s": 3.9750923750107177,
+  "publication_partial_scope": "Packaging through source archive and ledger creation; later report rendering, final hashes and publication are recorded separately.",
+  "initial_report_build_s": 4.525198208983056,
+  "final_report_build_s": 4.086328125034925,
+  "additional_boundary_tests": {
+    "passed": 30,
+    "pytest_reported_s": 2.98,
+    "scope": "Additional focused training tests after boundary fix; pytest duration only, external interpreter clock not recorded. Complete final suite then passed540 tests."
+  }
+}

@@ -6,6 +6,7 @@ import hashlib
 import importlib
 import importlib.metadata
 import json
+import math
 import os
 from pathlib import Path
 import platform
@@ -71,12 +72,18 @@ def build_plan(conditions, seeds, repeats):
     return plan
 
 
-def campaign(output, conditions, seeds, repeats, budget_s, limit=None):
+def campaign(output, conditions, seeds, repeats, budget_s, limit=None,
+             hard_deadline_unix=None):
+    if hard_deadline_unix is not None:
+        if not isinstance(hard_deadline_unix, (int, float)) or not math.isfinite(hard_deadline_unix) or hard_deadline_unix <= 0:
+            raise ValueError("hard_deadline_unix must be a finite positive timestamp")
     output = Path(output).absolute()
     output.mkdir(parents=True, exist_ok=True)
     plan = build_plan(conditions, seeds, repeats)
     config = {"conditions": conditions, "seeds": seeds, "repeats": repeats,
               "budget_s": budget_s, "plan": plan, "source_hashes": source_hashes()}
+    if hard_deadline_unix is not None:
+        config["hard_deadline_unix"] = hard_deadline_unix
     config_path = output/"config.json"
     if config_path.exists():
         if json.loads(config_path.read_text()) != config:
@@ -86,7 +93,7 @@ def campaign(output, conditions, seeds, repeats, budget_s, limit=None):
         if any(output.iterdir()):
             raise RuntimeError("Refusing an unrecognized nonempty directory")
         now = time.time()
-        authorization = {"start_unix": now, "deadline_unix": now+budget_s,
+        authorization = {"start_unix": now, "deadline_unix": min(now+budget_s, hard_deadline_unix) if hard_deadline_unix is not None else now+budget_s,
                          "scope": "Local CPU-only benchmark; no remote VM or QPU"}
         atomic(config_path, config)
         atomic(output/"authorization.json", authorization)
@@ -197,13 +204,16 @@ def main():
     c.add_argument("--seeds", nargs="+", type=int, default=[944101,944102,944103,944104,944105])
     c.add_argument("--repeats", type=int, default=3)
     c.add_argument("--budget-seconds", type=float, default=4200)
+    c.add_argument("--hard-deadline-unix", type=float, default=None,
+                   help="Immutable enclosing deadline, including earlier revisions and preflight")
     c.add_argument("--limit", type=int, default=None, help="Stop at a checkpoint for resume smoke tests")
     args = parser.parse_args()
     if args.mode == "worker":
         worker(json.loads(args.spec), args.output)
     else:
         campaign(args.output, json.loads(Path(args.conditions).read_text()),
-                 args.seeds, args.repeats, args.budget_seconds, args.limit)
+                 args.seeds, args.repeats, args.budget_seconds, args.limit,
+                 args.hard_deadline_unix)
 
 
 if __name__ == "__main__":

@@ -285,7 +285,10 @@ def test_exact_input_keys_do_not_assume_spatial_symmetry(method):
             gradients, shift_oracle(6, 2, 2, vectors[::-1], weights), atol=1e-10, rtol=0
         )
     after = engine.diagnostics
-    for key in ("cached_responses", "native_evaluations", "check_evaluations", "coefficient_bytes"):
+    for key in (
+        "cached_responses", "total_circuit_evaluations", "native_evaluations",
+        "check_evaluations", "coefficient_bytes",
+    ):
         assert after[key] == before[key]
 
 
@@ -332,20 +335,20 @@ def test_forward_only_unknown_inputs_do_not_calibrate_the_response(method):
     assert before["cached_direct_values"] == 2
     assert before["cached_responses"] == before["check_evaluations"] == 0
     engine.evaluate(vectors[::-1], theta, gradient=False)
-    assert engine.diagnostics["native_evaluations"] == before["native_evaluations"]
+    assert engine.diagnostics["total_circuit_evaluations"] == before["total_circuit_evaluations"]
     theta[1] = np.nextafter(theta[1], np.inf)
     engine.evaluate(vectors, theta, gradient=False)
     assert engine.diagnostics["cached_responses"] == engine.diagnostics["check_evaluations"] == 0
     if method == "qiskit_response":
-        assert engine.diagnostics["native_evaluations"] == before["native_evaluations"] + 2
+        assert engine.diagnostics["total_circuit_evaluations"] == before["total_circuit_evaluations"] + 2
     engine.evaluate(vectors, theta, gradient=True)
     assert engine.diagnostics["cached_responses"] == 2
     assert engine.diagnostics["check_evaluations"] == 4
-    charged = engine.diagnostics["native_evaluations"]
+    charged = engine.diagnostics["total_circuit_evaluations"]
     theta[:] = [-0.63, 0.71]
     updated, _ = engine.evaluate(vectors, theta, gradient=False)
     np.testing.assert_allclose(updated, oracle(6, 2, 2, vectors, theta), atol=1e-10, rtol=0)
-    assert engine.diagnostics["native_evaluations"] == charged
+    assert engine.diagnostics["total_circuit_evaluations"] == charged
 
 
 def test_public_source_and_basis_copies_cannot_change_saved_semantics():
@@ -364,6 +367,84 @@ def test_public_source_and_basis_copies_cannot_change_saved_semantics():
     np.testing.assert_allclose(
         gradients, shift_oracle(4, 2, 2, vectors, theta), atol=1e-10, rtol=0
     )
+
+
+@pytest.mark.parametrize("method", ("qiskit_response", "qiskit_shift"))
+@pytest.mark.parametrize("qubits", (2, 4))
+def test_cached_diagonal_preserves_complex_global_phase_and_little_endian_order(method, qubits):
+    engine = MultiResponseEngine(qubits, 2, 2, method)
+    words = np.arange(2**qubits)
+    z_sum = np.sum([1 - 2 * ((words >> site) & 1) for site in range(qubits)], axis=0)
+    sign = np.ones(2**qubits)
+    visited = set()
+    for site in range(qubits):
+        other = (site + 1) % qubits
+        edge = frozenset((site, other))
+        if edge not in visited:
+            sign *= 1 - 2 * (((words >> site) & 1) * ((words >> other) & 1))
+            visited.add(edge)
+    for kind, diagonal in enumerate(engine.diagonals):
+        assert diagonal.shape == (2**qubits,)
+        expected = sign * np.exp(-0.5j * (0.17 - 0.02 * kind) * z_sum)
+        np.testing.assert_allclose(diagonal, expected, atol=1e-10, rtol=0)
+        # The |0...0> phase must survive; setting it to one would be incorrect.
+        assert abs(diagonal[0] - 1) > 0.1
+        np.testing.assert_allclose(np.abs(diagonal), np.ones_like(sign), atol=1e-10, rtol=0)
+
+
+@pytest.mark.parametrize("method", ("qiskit_response", "qiskit_shift"))
+def test_diagonal_execution_circuit_preserves_full_operator_without_dense_instructions(method):
+    engine = MultiResponseEngine(4, 2, 2, method)
+    vector = np.array([0.37, -0.81, 0.43, 0.69])
+    theta = np.array([0.43, -0.72])
+    circuit = engine.diagonal_circuit
+    bindings = dict(zip(engine.inputs, vector))
+    if method == "qiskit_shift":
+        bindings.update(
+            (parameter, theta[layer % 2])
+            for layer, parameter in enumerate(engine.occurrence_weights)
+        )
+    else:
+        bindings.update(zip(engine.weights, theta))
+    np.testing.assert_allclose(
+        Operator(circuit.assign_parameters(bindings)).data,
+        Operator(independent_circuit(4, 2, 2, vector, theta)).data,
+        atol=1e-10,
+        rtol=0,
+    )
+    assert circuit.count_ops().get("diagonal", 0) == 4
+    assert circuit.count_ops().get("unitary", 0) == 0
+    assert circuit.count_ops().get("cx", 0) == 0
+    assert engine.diagnostics["dense_block_bytes"] == 0
+    for instruction in circuit.data:
+        for parameter in instruction.operation.params:
+            assert not isinstance(parameter, np.ndarray) or parameter.ndim < 2
+
+
+@pytest.mark.parametrize("method", ("qiskit_response", "qiskit_shift"))
+def test_cached_diagonal_and_circuit_copies_do_not_mutate_execution(method):
+    engine = MultiResponseEngine(6, 2, 2, method)
+    for diagonal in engine.diagonals:
+        try:
+            diagonal[:] = 0
+        except ValueError:
+            assert not diagonal.flags.writeable
+    engine.diagonal_circuit.x(0)
+    vectors = np.random.default_rng(973).normal(size=(2, 6))
+    theta = np.array([0.41, -0.63])
+    values, gradients = engine.evaluate(vectors, theta, gradient=True)
+    np.testing.assert_allclose(values, oracle(6, 2, 2, vectors, theta), atol=1e-10, rtol=0)
+    np.testing.assert_allclose(
+        gradients, shift_oracle(6, 2, 2, vectors, theta), atol=1e-10, rtol=0
+    )
+    diagnostics = engine.diagnostics
+    expected_diagonal = 2 * (25 if method == "qiskit_response" else 1 + 2 * 4)
+    expected_native = 4 if method == "qiskit_response" else 0
+    assert diagnostics["diagonal_evaluations"] == expected_diagonal
+    assert diagnostics["native_evaluations"] == expected_native
+    assert diagnostics["total_circuit_evaluations"] == expected_diagonal + expected_native
+    assert diagnostics["check_evaluations"] == expected_native
+    assert diagnostics["native_cx_work"] == expected_native * (diagnostics["native_cx_per_circuit"] or 0)
 
 
 @pytest.mark.parametrize("method", RESPONSE_METHODS)
@@ -454,15 +535,16 @@ def test_qiskit_shift_reuses_only_exact_current_weight_results():
     np.testing.assert_allclose(
         gradients, shift_oracle(4, 2, 2, vectors, theta), atol=1e-10, rtol=0
     )
-    assert engine.diagnostics["native_evaluations"] == 2 * (1 + 2 * 4)
+    assert engine.diagnostics["total_circuit_evaluations"] == 2 * (1 + 2 * 4)
+    assert engine.diagnostics["native_evaluations"] == 0
     assert engine.diagnostics["cached_responses"] == 0
-    before = engine.diagnostics["native_evaluations"]
+    before = engine.diagnostics["total_circuit_evaluations"]
     engine.evaluate(vectors[::-1], theta, gradient=True)
     engine.evaluate(vectors, theta, gradient=False)
-    assert engine.diagnostics["native_evaluations"] == before
+    assert engine.diagnostics["total_circuit_evaluations"] == before
     theta[1] = np.nextafter(theta[1], np.inf)
     engine.evaluate(vectors, theta, gradient=True)
-    assert engine.diagnostics["native_evaluations"] == 2 * before
+    assert engine.diagnostics["total_circuit_evaluations"] == 2 * before
     assert engine.diagnostics["cached_responses"] == 0
 
 

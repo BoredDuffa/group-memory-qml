@@ -62,6 +62,17 @@ jobs:
           assert result["successful"] == result["planned"] == 12
           assert result["validation_passed"] == result["validation_planned"] == 2
           PY
+      - run: python -m group_memory_qml.multi_suite run --conditions benchmarks/multi_quick.json --output results/multi-ci --seeds 944001 --repeats 1 --budget-seconds 600
+      - run: python -m group_memory_qml.multi_report results/multi-ci
+      - name: Require complete multi-parameter smoke coverage
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          result = json.loads(Path("results/multi-ci/analysis.json").read_text())
+          assert result["successful"] == result["planned"] == 12
+          assert result["validation_passed"] == result["validation_planned"] == 2
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -71,3 +82,4 @@ jobs:
             results/eight-ci
             results/response-ci
             results/deep-ci
+            results/multi-ci

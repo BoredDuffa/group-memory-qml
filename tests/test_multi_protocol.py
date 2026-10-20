@@ -415,3 +415,60 @@ def test_checkpoint_tamper_rejected_before_resume(tmp_path, monkeypatch):
     with pytest.raises(RuntimeError, match="Checkpoint hash mismatch"):
         multi_suite.campaign(*args)
     assert len(calls) == 1
+
+
+def test_enclosing_past_deadline_launches_no_worker(tmp_path, monkeypatch):
+    calls = mock_workers(monkeypatch)
+    monkeypatch.setattr(multi_suite.time, "time", lambda: 1000.0)
+    directory = tmp_path / "expired"
+    conditions = [{"id": "smoke", "experiment": "multi_sensor", "config": {}}]
+    result = multi_suite.campaign(
+        directory, conditions, [1], 1, 60, hard_deadline_unix=999.0
+    )
+    assert result == "BUDGET_EXHAUSTED"
+    assert calls == []
+    assert not (directory / "attempts").exists()
+    authorization = json.loads((directory / "authorization.json").read_text())
+    status = json.loads((directory / "status.json").read_text())
+    assert authorization["deadline_unix"] == status["deadline_unix"] == 999.0
+    assert status["completed_attempts"] == 0
+    assert status["unattempted"] == len(multi_suite.METHODS)
+
+
+def test_enclosing_future_deadline_clips_authorization_and_survives_resume(tmp_path, monkeypatch):
+    calls = mock_workers(monkeypatch)
+    monkeypatch.setattr(multi_suite.time, "time", lambda: 1000.0)
+    directory = tmp_path / "clipped"
+    conditions = [{"id": "smoke", "experiment": "multi_sensor", "config": {}}]
+    args = directory, conditions, [1], 1, 60
+    assert multi_suite.campaign(
+        *args, limit=1, hard_deadline_unix=1030.0
+    ) == "CHECKPOINTED"
+    saved_authorization = (directory / "authorization.json").read_bytes()
+    authorization = json.loads(saved_authorization)
+    assert authorization["start_unix"] == 1000.0
+    assert authorization["deadline_unix"] == 1030.0
+    assert len(calls) == 1
+    monkeypatch.setattr(multi_suite.time, "time", lambda: 1005.0)
+    assert multi_suite.campaign(*args, hard_deadline_unix=1030.0) == "COMPLETE"
+    assert (directory / "authorization.json").read_bytes() == saved_authorization
+    assert len(calls) == len(multi_suite.METHODS)
+    manifest = json.loads((directory / "checkpoints" / "manifest.json").read_text())
+    assert manifest["deadline_unix"] == 1030.0
+    for slot in ("latest", "previous"):
+        checkpoint = json.loads((directory / "checkpoints" / manifest[slot]).read_text())
+        assert checkpoint["deadline_unix"] == 1030.0
+    with pytest.raises(RuntimeError, match="unchanged"):
+        multi_suite.campaign(*args, hard_deadline_unix=1040.0)
+    assert len(calls) == len(multi_suite.METHODS)
+
+
+@pytest.mark.parametrize("deadline", [float("nan"), float("inf"), float("-inf")])
+def test_nonfinite_enclosing_deadline_is_rejected_without_side_effects(tmp_path, monkeypatch, deadline):
+    calls = mock_workers(monkeypatch)
+    directory = tmp_path / "invalid"
+    conditions = [{"id": "smoke", "experiment": "multi_sensor", "config": {}}]
+    with pytest.raises(ValueError, match="finite positive timestamp"):
+        multi_suite.campaign(directory, conditions, [1], 1, 60, hard_deadline_unix=deadline)
+    assert calls == []
+    assert not directory.exists()

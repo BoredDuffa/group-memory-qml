@@ -118,7 +118,7 @@ def run(experiment, seed, method, config=None):
         experiment=experiment, seed=seed, method=method, config=cfg,
         n_qubits=cfg["n_qubits"], n_parameters=cfg["n_parameters"], metric_name="heldout_accuracy",
         metric_value=float(np.mean(predicted == target)), higher_is_better=True,
-        evaluations=int(diagnostics.get("native_evaluations", 0)),
+        evaluations=int(diagnostics.get("total_circuit_evaluations", 0)),
         total_cx=int(diagnostics.get("native_cx_work", 0)),
         validation_vector=[*probabilities.tolist(), *trace],
         diagnostics={
@@ -130,5 +130,5 @@ def run(experiment, seed, method, config=None):
                            evaluate_s=evaluate_s, fit_predict_s=fit_s),
             "compute": "Ideal CPU simulation, no QPU or finite shots",
             "symmetry_scope": "Exact multi-parameter Fourier structure; no spatial-orbit assumption",
-            "cx_scope": "Native Aer calls only; coefficient and local-gate arithmetic have separate costs, not QPU savings",
+            "cx_scope": "Native-L3 verification calls only; diagonal, coefficient and local-gate arithmetic have separate costs, not QPU savings",
         })

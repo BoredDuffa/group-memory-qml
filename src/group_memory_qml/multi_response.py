@@ -21,6 +21,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from time import perf_counter
+import hashlib
 import math
 
 import numpy as np
@@ -125,6 +126,10 @@ class MultiResponseEngine:
         ])
         self._check_angles.flags.writeable = False
         self._base_bytes = (8*self._n+32)*self._d
+        if method in ("qiskit_response", "qiskit_shift"):
+            # Two complex vectors plus conservative Python complex/list storage
+            # in DiagonalGate, including bounded construction temporaries.
+            self._base_bytes += 2*self._d*96
         self._working_per_input = self._working_bytes(method)
         if method in _RESPONSE_METHODS:
             if self._grid_size > self._max_grid:
@@ -165,6 +170,10 @@ class MultiResponseEngine:
             self._initialize_response_basis()
         self._source = self._native = self._forward = self._inputs = self._weights = None
         self._occurrence_weights = None
+        self._diagonals = self._diagonal_circuit = self._diagonal_forward = None
+        self._diagonal_sha = self._diagonal_hashes = None
+        self._diagonal_s = 0.
+        self._diagonal_evaluations = 0
         self._backend = None
         self._native_cx = self._native_depth = None
         self._cache, self._direct_cache, self._plans, self._shift_cache = {}, {}, {}, {}
@@ -233,40 +242,80 @@ class MultiResponseEngine:
         self._source, self._inputs, self._weights = build_multi_circuit(self._n, self._p, self._r)
         if _circuit_signature(self._source) != self._source_sha:
             raise RuntimeError("Independent logical source signature mismatch")
-        operational = self._source
-        if self._method == "qiskit_shift":
-            self._occurrence_weights = tuple(ParameterVector("occurrence", self._length))
-            operational = QuantumCircuit(self._n)
-            for q, value in enumerate(self._inputs):
-                operational.ry(value, q)
-            for layer, parameter in enumerate(self._occurrence_weights):
-                operational.ry(parameter, layer % self._n)
-                rx, rz = _block_angles(layer % 2)
-                for q in range(self._n):
-                    operational.rx(rx, q)
-                    operational.rz(rz, q)
-                for first, second in _edges(self._n):
-                    operational.cz(first, second)
-        started = perf_counter()
-        self._native = transpile(
-            operational, basis_gates=["rz", "sx", "x", "cx"], optimization_level=3,
-            approximation_degree=1., seed_transpiler=_SEED, num_processes=1,
-        )
-        self._compile_s += perf_counter()-started
-        if self._native.layout is not None or self._native.num_qubits != self._n:
-            raise RuntimeError("Unexpected native layout")
-        self._native_sha = _circuit_signature(self._native)
-        self._native_cx = int(self._native.count_ops().get("cx", 0))
-        self._native_depth = int(self._native.depth())
         self._observable = SparsePauliOp.from_sparse_list(
             [("Z", [q], 1/self._n) for q in range(self._n)], self._n,
         )
-        self._forward = self._native.copy()
-        self._forward.save_expectation_value(self._observable, range(self._n), label="z")
+        if self._method in ("qiskit_response", "qiskit_shift"):
+            from qiskit.circuit.library import DiagonalGate
+            started = perf_counter()
+            zsum = np.rint(self._z*self._n)
+            # These buffers stay writable when handed to Qiskit/Aer. The old
+            # dense-unitary read-only-buffer fixture must not be reintroduced.
+            self._diagonals = tuple(
+                np.asarray(self._cz*np.exp(-.5j*_block_angles(kind)[1]*zsum),
+                           dtype=np.complex128).copy()
+                for kind in range(2)
+            )
+            self._diagonal_hashes = tuple(
+                hashlib.sha256(vector.tobytes()).hexdigest() for vector in self._diagonals
+            )
+            gates = tuple(DiagonalGate(vector) for vector in self._diagonals)
+            if self._method == "qiskit_shift":
+                self._occurrence_weights = tuple(ParameterVector("occurrence", self._length))
+            operational = QuantumCircuit(self._n)
+            for q, value in enumerate(self._inputs):
+                operational.ry(value, q)
+            records = []
+            for layer in range(self._length):
+                parameter = (self._occurrence_weights[layer] if self._method == "qiskit_shift"
+                             else self._weights[layer % self._p])
+                operational.ry(parameter, layer % self._n)
+                rx, _ = _block_angles(layer % 2)
+                for q in range(self._n):
+                    operational.rx(rx, q)
+                operational.append(gates[layer % 2], range(self._n), copy=False)
+            for item in operational.data:
+                operation = item.operation
+                params = ([hashlib.sha256(np.asarray(operation.params, dtype=np.complex128)
+                                         .tobytes()).hexdigest()]
+                          if operation.name == "diagonal"
+                          else [str(value) for value in operation.params])
+                records.append((operation.name, [operational.find_bit(q).index for q in item.qubits],
+                                params))
+            self._diagonal_sha = _fingerprint({
+                "n": self._n, "phase": str(operational.global_phase), "operations": records,
+            })
+            self._diagonal_circuit = operational
+            self._diagonal_forward = operational.copy()
+            self._diagonal_forward.save_expectation_value(self._observable, range(self._n), label="z")
+            self._diagonal_s += perf_counter()-started
+        if self._method == "qiskit_shift":
+            # No redundant native-L3 compile merely for reporting. This is the
+            # actual occurrence circuit, whose diagonal operators remain intact.
+            self._native = self._diagonal_circuit
+            self._native_sha = self._diagonal_sha
+            self._native_cx = 0
+            self._native_depth = int(self._native.depth())
+            self._forward = self._diagonal_forward
+        else:
+            started = perf_counter()
+            self._native = transpile(
+                self._source, basis_gates=["rz", "sx", "x", "cx"], optimization_level=3,
+                approximation_degree=1., seed_transpiler=_SEED, num_processes=1,
+            )
+            self._compile_s += perf_counter()-started
+            if self._native.layout is not None or self._native.num_qubits != self._n:
+                raise RuntimeError("Unexpected native layout")
+            self._native_sha = _circuit_signature(self._native)
+            self._native_cx = int(self._native.count_ops().get("cx", 0))
+            self._native_depth = int(self._native.depth())
+            self._forward = self._native.copy()
+            self._forward.save_expectation_value(self._observable, range(self._n), label="z")
         self._backend = AerSimulator(
             method="statevector", precision="double", device="CPU",
             max_parallel_threads=1, max_parallel_experiments=1, max_parallel_shots=1,
             runtime_parameter_bind_enable=True, max_memory_mb=max(1, self._budget//1024**2),
+            fusion_enable=True, fusion_threshold=0, fusion_max_qubit=5,
         )
 
     @property
@@ -291,6 +340,15 @@ class MultiResponseEngine:
         self._ensure_quantum()
         return self._occurrence_weights
     @property
+    def diagonals(self):
+        """Independent copies of the two cached O(2**n) diagonal operators."""
+        self._ensure_quantum()
+        return None if self._diagonals is None else tuple(vector.copy() for vector in self._diagonals)
+    @property
+    def diagonal_circuit(self):
+        self._ensure_quantum()
+        return None if self._diagonal_circuit is None else self._diagonal_circuit.copy()
+    @property
     def grid(self):
         self._initialize_response_basis()
         return self._grid.copy()
@@ -308,6 +366,10 @@ class MultiResponseEngine:
             "method": self._method, "architecture": _ARCHITECTURE,
             "architecture_sha256": self._architecture_sha,
             "source_sha256": self._source_sha, "native_sha256": self._native_sha,
+            "diagonal_sha256": self._diagonal_sha,
+            "diagonal_operator_hashes": self._diagonal_hashes,
+            "diagonal_bytes": 0 if self._diagonals is None else sum(v.nbytes for v in self._diagonals),
+            "diagonal_build_seconds": self._diagonal_s,
             "source_depth": self._source_depth, "native_depth": self._native_depth,
             "n_qubits": self._n, "n_parameters": self._p, "occurrences": self._r,
             "layers": self._length, "response_degree_per_parameter": [self._r]*self._p,
@@ -327,6 +389,8 @@ class MultiResponseEngine:
             "max_grid_points": self._max_grid, "max_coefficient_pairs": _MAX_COEFFICIENT_PAIRS,
             "calibration_chunks": self._calibration_chunks, "maximum_input_chunk": self._max_chunk,
             "dense_block_bytes": 0, "native_evaluations": self._native_evaluations,
+            "diagonal_evaluations": self._diagonal_evaluations,
+            "total_circuit_evaluations": self._native_evaluations+self._diagonal_evaluations,
             "native_cx_per_circuit": self._native_cx,
             "native_cx_work": 0 if self._native_cx is None else self._native_evaluations*self._native_cx,
             "group_grid_state_evaluations": self._grid_evaluations,
@@ -341,6 +405,10 @@ class MultiResponseEngine:
             "planning_seconds": self._planning_s, "check_seconds": self._check_s,
             "spatial_symmetry_reuse": False,
             "compute": "Ideal CPU simulation; independent parameters; no QPU or finite shots",
+            "execution_mode": ("qiskit_cached_diagonal_rx_runtime_binding"
+                               if self._method in ("qiskit_response", "qiskit_shift")
+                               else "matrix_free_local_gates"),
+            "aer_fusion": {"enabled": True, "threshold": 0, "max_qubit": 5},
             "gradient_rule": ("sum of valid single-occurrence parameter shifts"
                               if self._method == "qiskit_shift"
                               else "reverse statevector adjoint" if self._method == "classical_adjoint"
@@ -454,10 +522,13 @@ class MultiResponseEngine:
         """Independent native checks and fast runtime-bound Qiskit grid probes."""
         if self._method == "qiskit_shift":
             return self._run_native(X, theta[:, np.arange(self._length) % self._p],
-                                    self._occurrence_weights)
+                                    self._occurrence_weights, diagonal=True)
         return self._run_native(X, theta, self._weights)
 
-    def _run_native(self, X, theta, parameters):
+    def _diagonal_values(self, X, theta):
+        return self._run_native(X, theta, self._weights, diagonal=True)
+
+    def _run_native(self, X, theta, parameters, diagonal=False):
         if not len(X):
             return np.empty(0)
         # This cap also bounds the parameter/result metadata held by one Aer job.
@@ -468,9 +539,13 @@ class MultiResponseEngine:
             bindings = {parameter: vectors[:, q].tolist() for q, parameter in enumerate(self._inputs)}
             bindings.update({parameter: angles[:, j].tolist() for j, parameter in enumerate(parameters)})
             result = self._backend.run(
-                self._forward, parameter_binds=[bindings], shots=None, seed_simulator=_SEED,
+                self._diagonal_forward if diagonal else self._forward,
+                parameter_binds=[bindings], shots=None, seed_simulator=_SEED,
             ).result()
-            self._native_evaluations += len(vectors)
+            if diagonal:
+                self._diagonal_evaluations += len(vectors)
+            else:
+                self._native_evaluations += len(vectors)
             if not result.success or len(result.results) != len(vectors):
                 raise RuntimeError("Native Aer evaluation failed")
             outputs.extend(float(np.real(result.data(i)["z"])) for i in range(len(vectors)))
@@ -491,7 +566,7 @@ class MultiResponseEngine:
             vectors = X[start:start+chunk]
             values = self._run_native(
                 np.repeat(vectors, multiplier, axis=0), np.tile(settings, (len(vectors), 1)),
-                self._occurrence_weights,
+                self._occurrence_weights, diagonal=True,
             ).reshape(len(vectors), multiplier)
             derivatives = np.zeros((len(vectors), self._p))
             for occurrence in range(self._length):
@@ -546,7 +621,7 @@ class MultiResponseEngine:
             self._grid_evaluations += len(X)*self._grid_size
         else:
             # Native batches are separately capped; no dense state grid is held.
-            samples = self._native_values(
+            samples = self._diagonal_values(
                 np.repeat(X, self._grid_size, axis=0), np.tile(self._grid, (len(X), 1)),
             ).reshape(len(X), self._grid_size)
         tensor = samples.reshape((len(X),)+self._grid_shape)
@@ -668,7 +743,7 @@ class MultiResponseEngine:
                 if missing:
                     vectors = plan.vectors[missing]
                     if self._method == "qiskit_response":
-                        direct = self._native_values(vectors, np.tile(theta, (len(vectors), 1)))
+                        direct = self._diagonal_values(vectors, np.tile(theta, (len(vectors), 1)))
                     else:
                         direct, _ = self._direct(vectors, theta)
                     for i, value in zip(missing, direct):

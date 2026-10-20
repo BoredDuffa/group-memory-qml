@@ -13,4 +13,5 @@ dist/
 !/results/eight-experiments/
 !/results/parameter-response/
 !/results/deep-response/
+!/results/multi-parameter/
 

@@ -21,8 +21,8 @@ MATCHED = tuple(m for m in METHODS if m != "classical")
 LABELS = {
     "group_spectral": "GroupMemory spectral",
     "group_grid": "GroupMemory batched grid",
-    "qiskit_response": "Qiskit runtime-bound response",
-    "qiskit_shift": "Qiskit batched occurrence shifts",
+    "qiskit_response": "Qiskit diagonal response",
+    "qiskit_shift": "Qiskit diagonal occurrence shifts",
     "classical_adjoint": "Direct state and adjoint",
     "classical": "Classical task model",
 }

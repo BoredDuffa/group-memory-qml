@@ -121,10 +121,17 @@ is valid for arbitrary circuits.
 |---|---|
 | `group_spectral` | Propagate coefficient states, construct the full signed-frequency response, and reuse it across updates |
 | `group_grid` | Evaluate the same response grid using matrix-free batched state propagation, then reconstruct the same coefficients |
-| `qiskit_response` | Compile the circuit and use native Aer runtime parameter binding for the same grid, response lifetime and correctness checks |
-| `qiskit_shift` | Batch exact individual-occurrence parameter shifts and sum their derivatives for each independent angle, without constructing a response table |
+| `qiskit_response` | Qiskit diagonal response: use Aer runtime parameter binding and cached CZ/RZ diagonal blocks for the same grid, response lifetime and correctness checks |
+| `qiskit_shift` | Qiskit diagonal shifts: use the same cached CZ/RZ aggregation, batch exact individual-occurrence shifts and sum their derivatives without constructing a response table |
 | `classical_adjoint` | Evaluate the identical circuit model and all parameter derivatives by direct state/adjoint propagation without a persistent Fourier response |
 | `classical` | Fit the task-specific classical features and logistic classifier |
+
+Both Qiskit controls receive the same fixed CZ-ring/RZ aggregation as the
+custom matrix-free kernels. These cached diagonal blocks require vectors of
+length \(2^n\), rather than dense \(2^n\times2^n\) operators. Their construction,
+compilation, binding and execution are timed. The response methods retain
+independent native-basis L3 off-grid checks, so the operational diagonal circuit
+and the native validation circuit are distinguished in the evidence.
 
 The batched-grid ablation tests whether coefficient sharing adds value beyond
 ordinary batching. The adjoint control avoids an artificially expensive
@@ -191,10 +198,11 @@ remove the \(O(2^n)\) statevector cost. These circuits do not demonstrate
 general simulation of hundreds of entangled qubits, QPU memory compression,
 or practical full-language-model training.
 
-Native Aer circuit counts exclude classical coefficient and state arithmetic.
-Reduced native calls are not evidence of fewer physical CNOTs or QPU shots.
-The report should separate representative source/native circuit sizes,
-simulated native calls, classical work, peak memory and total runtime.
+Native-basis validation counts and operational Aer diagonal-circuit counts
+exclude classical coefficient and state arithmetic. Neither count establishes
+fewer physical CNOTs or QPU shots. The report separates representative
+source/native circuit sizes, operational diagonal evaluations, native validation
+evaluations, classical work, peak memory and total runtime.
 
 ## Measurement and correctness protocol
 
@@ -210,9 +218,10 @@ insufficient. Frozen source hashes, logical architecture identities and
 compiled-circuit signatures are checked separately. Input and label hashes
 must also agree with the task-specific classical control.
 The shift control uses independently addressable occurrence parameters for
-its operational circuit; its native hash can therefore differ from the
-response circuits. It must retain the same canonical logical architecture,
-and its operational signatures are checked within that method.
+its operational circuit; its operational hash can therefore differ from the
+response circuit. It must retain the same canonical logical architecture.
+Operational signatures are checked within each method, separately from the
+shared native-basis response-validation signature.
 
 Five fresh data seeds and three timing repeats are planned. Seeds vary the
 data, not the fixed architecture. Reported speed ratios are medians of paired
@@ -229,7 +238,10 @@ not a claim that choosing a runtime strategy has zero overhead.
 Parent orchestration, correctness preflight, checkpoint/resume pilot and
 reporting have separate timing receipts. Installation and implementation work
 are excluded from benchmark runtime. Historical shallow and single-parameter
-timings must not be pooled with this campaign.
+timings must not be pooled with this campaign. A native-only preliminary run
+was stopped when the missing fixed-block aggregation control was identified.
+Its timings are excluded from final comparisons; its elapsed time remains in
+the cost ledger and within the original unchanged main deadline.
 
 ## Reproduce and resume
 
@@ -259,9 +271,14 @@ python -m group_memory_qml.multi_suite run \
 python -m group_memory_qml.multi_report results/multi-response-local
 ```
 
-The ceiling is an immutable deadline, not a runtime promise. Repeating the
-identical command resumes the existing plan and deadline. Changed source,
-configuration or budget is rejected. Two checkpoint slots and a manifest are
+The ceiling is an immutable deadline, not a runtime promise. An optional
+`--hard-deadline-unix TIMESTAMP` additionally limits a new revision to the
+original enclosing allowance, including earlier revisions and preflight. The
+authorized deadline is the minimum of the start time plus the requested budget
+and that enclosing deadline. The strengthened-control revision retains the
+original enclosing deadline rather than receiving a fresh allowance.
+Repeating the identical command resumes the existing plan and deadline. Changed
+source, configuration, budget or enclosing deadline is rejected. Two checkpoint slots and a manifest are
 updated after each completed attempt. A pilot can use `--limit 1`, preserve
 the first result and authorization hashes, and then rerun without that flag
 to verify exact continuation. Failed, timed-out and unattempted work remains

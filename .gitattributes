@@ -2,3 +2,4 @@
 results/eight-experiments/** -text
 results/parameter-response/** -text
 results/deep-response/** -text
+results/multi-parameter/** -text

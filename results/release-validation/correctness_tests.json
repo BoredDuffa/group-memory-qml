@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "tests_passed": 40,
+  "pytest_wall_s": 55.37,
+  "command": "python -m pytest -q",
+  "environment": "Clean local virtual environment; no prior workspace imports needed",
+  "checks": [
+    "independent uncompiled statevector oracle at6and10qubits",
+    "finite difference shared gradient",
+    "output permutation restoration",
+    "same-symmetry work equality",
+    "warm cache and one-ULP invalidation",
+    "broken symmetry fallback",
+    "input validity and defensive copies",
+    "disjoint base and orbit splits",
+    "one-update learning trajectory and classical baseline"
+  ]
+}

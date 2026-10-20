@@ -1,0 +1,131 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=19mm,headheight=14pt]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype,xcolor,fancyhdr}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\definecolor{ink}{HTML}{15334A}
+\definecolor{muted}{HTML}{536476}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\color{muted}GroupMemory \;|\; Mathematical note}
+\fancyhead[R]{\small\color{muted}20 October 2026}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlength{\abovedisplayskip}{7pt}\setlength{\belowdisplayskip}{7pt}
+\newcommand{\bits}{\operatorname{bytes}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\ket}[1]{\lvert #1\rangle}
+\newcommand{\bra}[1]{\langle #1\rvert}
+\newcommand{\head}[1]{\vspace{5pt}{\large\bfseries\color{ink}#1}\par}
+\begin{document}
+{\LARGE\bfseries\color{ink}GroupMemory: reuse by exact symmetry}\par
+{\color{muted}A fixed ring-circuit example: equivariant forward values, invariant shared gradients.}
+
+\head{1. Model and observables}
+For an even ring of $n$ sites, $x\in\R^n$ and shared weights $\theta=(\beta,\alpha)$, define
+\begin{align}
+ U_\theta(x)
+ &=\underbrace{\bigotimes_{j=0}^{n-1}R_y(0.47)}_{B}\;
+   \underbrace{\bigotimes_{j=0}^{n-1}R_x(\alpha)}_{A_\alpha}\;
+   \underbrace{\prod_{j=0}^{n-1}R_{ZZ}^{(j,j+1\bmod n)}(\beta)}_{E_\beta}\;
+   \underbrace{\bigotimes_{j=0}^{n-1}R_y(x_j+0.31)}_{D(x)},\label{eq:model}\\
+ R_a(t)&=e^{-it\sigma_a/2},\qquad
+ R_{ZZ}^{(j,k)}(t)=e^{-it Z_jZ_k/2}.
+\end{align}
+Products act from right to left. The $ZZ$ factors commute. With $\ket{\psi_\theta(x)}=U_\theta(x)\ket{0}^{\otimes n}$, the requested outputs are
+\begin{equation}
+ f_\theta(x)_j=\bra{\psi_\theta(x)}Z_j\ket{\psi_\theta(x)},\qquad
+ m_\theta(x)=\frac{1}{n}\sum_{j=0}^{n-1}f_\theta(x)_j,\qquad
+ J_\theta(x)=\nabla_\theta m_\theta(x)\in\R^2.\label{eq:outputs}
+\end{equation}
+
+\head{2. The symmetry supplies the reuse certificate}
+Let $\G=D_n=\langle r,s\mid r^n=s^2=e,\;srs=r^{-1}\rangle$, with $|D_n|=2n$.
+For a site permutation $g$, write
+\begin{equation}
+ (P_gx)_j=x_{g^{-1}(j)},\qquad
+ \Pi_g\ket{b_0\cdots b_{n-1}}=\ket{b_{g^{-1}(0)}\cdots b_{g^{-1}(n-1)}}.
+\end{equation}
+Rotations and reflections preserve the ring's edges. Uniform local gates and shared couplings therefore give
+\begin{gather}
+ \Pi_g\ket{0}^{\otimes n}=\ket{0}^{\otimes n},\qquad
+ \Pi_g B\Pi_g^\dagger=B,\quad
+ \Pi_g A_\alpha\Pi_g^\dagger=A_\alpha,\quad
+ \Pi_g E_\beta\Pi_g^\dagger=E_\beta,\\
+ D(P_gx)=\Pi_gD(x)\Pi_g^\dagger
+ \quad\Longrightarrow\quad
+ \boxed{U_\theta(P_gx)=\Pi_gU_\theta(x)\Pi_g^\dagger}.\label{eq:covariance}
+\end{gather}
+Using $\Pi_g^\dagger Z_j\Pi_g=Z_{g^{-1}(j)}$ in \eqref{eq:outputs} yields
+\begin{equation}
+ \boxed{f_\theta(P_gx)=P_gf_\theta(x)},\qquad
+ \boxed{m_\theta(P_gx)=m_\theta(x)},\qquad
+ \boxed{J_\theta(P_gx)=J_\theta(x)}.\label{eq:reuse}
+\end{equation}
+The vector output is \emph{equivariant}; its mean and shared-weight gradient are \emph{invariant}. The last equality follows by differentiating an identity valid for every $\theta$.
+
+\head{3. Shared parameters require shared-parameter derivatives}
+Let $\widetilde m(x;\boldsymbol\beta,\boldsymbol\alpha)$ allow independent edge and site angles. Then
+\begin{equation}
+ \frac{\partial m}{\partial\beta}
+ =\left.\sum_{j=0}^{n-1}\frac{\partial\widetilde m}{\partial\beta_j}\right|_{\beta_j=\beta,\,\alpha_j=\alpha},\qquad
+ \frac{\partial m}{\partial\alpha}
+ =\left.\sum_{j=0}^{n-1}\frac{\partial\widetilde m}{\partial\alpha_j}\right|_{\beta_j=\beta,\,\alpha_j=\alpha}.
+\end{equation}
+A single-gate parameter-shift rule cannot generally be applied by shifting all shared occurrences at once. The CPU demo uses reverse-mode differentiation; finite differences of the complete circuit independently check these two derivatives.
+
+\newpage
+\head{4. Canonical representatives and reconstruction}
+For the finite orbit $\G x=\{P_gx:g\in\G\}$, choose a deterministic representative
+\begin{equation}
+ h(x)\in\underset{g\in\G}{\arg\min}\;\bits(P_gx),\qquad
+ c(x)=P_{h(x)}x.\label{eq:canonical}
+\end{equation}
+The minimum is lexicographic over exact float64 byte strings, with deterministic tie breaking. It is a representation convention, not approximate numerical matching. Store one forward vector and, when requested, one gradient per representative:
+\begin{equation}
+ \mathcal C[K_\theta(x)]=(f_\theta(c(x)),\;J_\theta(c(x))\text{ or }\varnothing),\qquad
+ K_\theta(x)=(\sigma,\bits(\theta),\bits(c(x))).\label{eq:key}
+\end{equation}
+Here $\sigma$ identifies the fixed circuit, observable and numerical execution policy. In the implementation, this context is bound to an engine instance. Recover each requested result by
+\begin{equation}
+ \boxed{f_\theta(x)=P_{h(x)}^{-1}\mathcal C[K_\theta(x)]_f},\qquad
+ \boxed{J_\theta(x)=\mathcal C[K_\theta(x)]_J}.
+\end{equation}
+Different canonicalizing permutations at a tie give the same mathematical result: their relative permutation lies in the stabilizer of $c(x)$, which also fixes $f_\theta(c(x))$ by \eqref{eq:reuse}.
+
+\head{5. What is reusable across training?}
+At a fixed weight value, an already-cached orbit avoids new computation. A gradient request can fill a missing $J$ while retaining the cached forward vector. A weight change, even one representable float64 step, changes the numerical problem:
+\begin{equation}
+ \bits(\theta')\ne\bits(\theta)\quad\Longrightarrow\quad
+ \text{invalidate the old per-weight result cache}.
+\end{equation}
+Thus reuse applies within equal-weight requests and their exact symmetry orbits; it does not reuse arbitrary stale gradients across parameter updates.
+
+For $N$ cold, distinct inputs after ordinary exact-input deduplication, partitioned into $M$ symmetry orbits at the same $\theta$,
+\begin{equation}
+ N_{\rm forward}:N\longrightarrow M,\qquad
+ N_{\rm gradient}:N\longrightarrow M,\qquad
+ \text{avoided fraction}=1-\frac{M}{N}.\label{eq:counts}
+\end{equation}
+Four distinct augmented views per base give $4\to1$ and $75\%$ fewer instances. The full orbit size is
+\begin{equation}
+ |\G x|=\frac{2n}{|\operatorname{Stab}(x)|}\le 2n;
+ \qquad |\G x|=2n\ \text{only for a free orbit}.
+\end{equation}
+These are counts of avoided evaluations, not a guaranteed reduction of gates inside each compiled circuit. For equal per-forward CNOT count $c_{\rm CX}$, the forward-work proxy changes from $Nc_{\rm CX}$ to $Mc_{\rm CX}$. CPU reverse-gradient instances are not QPU circuits.
+
+\head{6. The performance condition and the comparison that matters}
+For a fixed model and weight value, let $T_{\rm eval}$ denote one representative evaluation and $T_{\rm reuse}$ include canonicalization, lookup and reconstruction. Then
+\begin{equation}
+ T_{\rm reuse}<(N-M)T_{\rm eval}
+ \quad\Longleftrightarrow\quad
+ \text{reuse amortizes its own overhead},\qquad
+ S=\frac{T_{\rm setup}+NT_{\rm eval}}
+ {T_{\rm setup}+T_{\rm reuse}+MT_{\rm eval}}.
+\end{equation}
+End-to-end learning also charges data preparation, compilation, classical fitting, prediction and reporting. An equally symmetry-aware Qiskit implementation can obtain the same $N\to M$ reduction; a speed advantage over that baseline must be measured, not inferred from \eqref{eq:counts}.
+
+\head{Scope}
+The supplied $D_n$ certificate applies to \eqref{eq:model}, shared weights, the stated observables and ideal execution. Position-dependent gains generally break it, so the demo disables orbit reuse and retains ordinary exact-input caching. Independent statevector and gradient tests check numerical correctness. This method does not discover arbitrary circuit symmetries or establish a quantum hardware advantage.
+\end{document}

@@ -1,0 +1,43 @@
+name: Benchmark or use-case feedback
+description: Share a measured result, stronger baseline, related work, or candidate symmetry.
+title: "[Feedback] "
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Feedback type
+      options:
+        - Reproduced benchmark
+        - Stronger baseline
+        - New use case or symmetry
+        - Related work
+        - Measurement concern
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: Finding or proposal
+      description: Positive, neutral, and negative findings are all welcome. Explain the workload and the supported equivalence if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction details
+      description: For measurements, include commit, exact command, seeds, repeats, package versions, CPU, fresh versus reused state, and concurrent load.
+  - type: textarea
+    id: comparisons
+    attributes:
+      label: Comparisons and overhead
+      description: Include symmetry-aware Qiskit and the classical control where applicable. Distinguish application time, startup/validation/reporting, and total process wall time.
+  - type: textarea
+    id: correctness
+    attributes:
+      label: Correctness and quality
+      description: Include numerical agreement, held-out accuracy, independent dataset counts, missing runs, and failures. State whether results use CPU simulation or hardware.
+  - type: textarea
+    id: links
+    attributes:
+      label: Evidence or related work
+      description: Link raw results, a minimal example, a paper, or another implementation. Remove private information from uploads.

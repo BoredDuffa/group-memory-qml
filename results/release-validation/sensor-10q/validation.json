@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "matched_blocks": [
+    {
+      "seed": 846102,
+      "repeat": 1,
+      "status": "PASS",
+      "max_prediction_error": 8.215650382226158e-15,
+      "max_partial_gradient_error": 4.3298697960381105e-15
+    },
+    {
+      "seed": 846101,
+      "repeat": 0,
+      "status": "PASS",
+      "max_prediction_error": 1.6764367671839864e-14,
+      "max_partial_gradient_error": 8.118505867571457e-16
+    },
+    {
+      "seed": 846103,
+      "repeat": 1,
+      "status": "PASS",
+      "max_prediction_error": 8.104628079763643e-15,
+      "max_partial_gradient_error": 2.7755575615628914e-15
+    },
+    {
+      "seed": 846103,
+      "repeat": 0,
+      "status": "PASS",
+      "max_prediction_error": 8.104628079763643e-15,
+      "max_partial_gradient_error": 2.7755575615628914e-15
+    },
+    {
+      "seed": 846101,
+      "repeat": 1,
+      "status": "PASS",
+      "max_prediction_error": 1.6764367671839864e-14,
+      "max_partial_gradient_error": 8.118505867571457e-16
+    },
+    {
+      "seed": 846102,
+      "repeat": 0,
+      "status": "PASS",
+      "max_prediction_error": 8.215650382226158e-15,
+      "max_partial_gradient_error": 4.3298697960381105e-15
+    }
+  ],
+  "expected_blocks": 6,
+  "passed_blocks": 6,
+  "error": null,
+  "prediction_and_gradient_atol": 1e-09,
+  "independent_numerical_checks": "Run pytest; this receipt checks matched training results."
+}

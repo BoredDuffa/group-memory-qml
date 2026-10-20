@@ -1,0 +1,6 @@
+{
+  "process_wall_s": 7.880761542008258,
+  "exit_code": 0,
+  "scope": "Fresh Python process launch through exit; includes interpreter startup/imports/application/validation/plots/all files/console/shutdown. Local parent spawn overhead included. Installation excluded.",
+  "measured_utc": "2026-10-20T09:54:22.661334+00:00"
+}

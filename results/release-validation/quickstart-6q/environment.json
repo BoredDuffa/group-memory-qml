@@ -1,0 +1,24 @@
+{
+  "python": "3.13.5",
+  "system": "Darwin",
+  "release": "25.6.0",
+  "machine": "arm64",
+  "packages": {
+    "group-memory-qml": "0.1.0",
+    "numpy": "2.5.4",
+    "qiskit": "2.6.0",
+    "qiskit-aer": "0.17.2",
+    "qiskit-algorithms": "0.4.0",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.7.0"
+  },
+  "thread_limits": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "started_utc": "2026-10-20T09:54:19.395199+00:00"
+}

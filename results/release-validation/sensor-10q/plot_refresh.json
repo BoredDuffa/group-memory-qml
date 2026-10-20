@@ -1,0 +1,5 @@
+{
+  "purpose": "Use points instead of bars on the logarithmic time axis; saved data only, no benchmark rerun.",
+  "elapsed_s": 0.22888620797311887,
+  "separate_from_original_process_wall": true
+}

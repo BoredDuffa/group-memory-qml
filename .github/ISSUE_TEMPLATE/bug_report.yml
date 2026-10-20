@@ -1,0 +1,38 @@
+name: Bug or incorrect reuse
+description: Report a correctness failure, installation problem, or reproducible error.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: State the expected result and what you observed. Include the complete error if available.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Include the exact command or a small code example, inputs, seeds, and any changes to the circuit or observables.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Commit or release, Python and package versions, operating system, and CPU.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Correctness and result files
+      description: Attach a small sanitized output file or describe the reference result and numerical error. Remove private paths and credentials.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Reproduction details
+      options:
+        - label: I have included whether the run used a fresh output directory.
+        - label: I have not relaxed correctness tolerances to make the case pass.

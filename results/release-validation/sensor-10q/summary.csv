@@ -1,0 +1,5 @@
+method,data_seeds,timed_runs,mean_seed_accuracy,median_seed_pipeline_s,median_forward_evaluations,median_gradient_instances,median_cx_per_circuit,median_forward_cx_work
+group_memory,3,6,0.9583333333333334,0.6839629165187944,40.0,24.0,20.0,800.0
+qiskit_same_symmetry,3,6,0.9583333333333334,0.6881899999862071,40.0,24.0,20.0,800.0
+qiskit_exact_cache,3,6,0.9583333333333334,2.4579743954818696,160.0,96.0,20.0,3200.0
+classical,3,6,1.0,0.0034638959623407573,0.0,0.0,0.0,0.0

@@ -1,0 +1,36 @@
+name: Correctness and runnable demo
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.13"]
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m pip check
+      - run: python -m pytest -q
+      - run: python -m group_memory_qml.demo --qubits 6 --updates 1 --output results/ci
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: demo-python-${{ matrix.python }}
+          path: results/ci

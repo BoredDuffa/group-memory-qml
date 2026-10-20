@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "wall_boundary": "From first demo-module clock to this receipt snapshot. Includes standard and heavy imports, all methods, validation, plots and result files. Excludes interpreter/package startup before that clock, final receipt write, stdout and shutdown.",
+  "whole_module_wall_to_receipt_snapshot_s": 7.582508541003335,
+  "module_to_main_entry_s": 0.058366832963656634,
+  "heavy_import_s": 4.518565917038359,
+  "application_pipeline_sum_s": 2.0673670420073904,
+  "matched_validation_s": 0.0005356249748729169,
+  "plot_report_and_result_write_s": 0.8762717919307761,
+  "other_harness_and_standard_import_s": 0.1197681650519371,
+  "actual_application_runs": 4,
+  "expected_application_runs": 4,
+  "data_seed_count": 1,
+  "timing_repeats_per_seed": 1,
+  "thread_scope": "Thread environment set before heavy imports; threadpoolctl limits timed learner work to one."
+}

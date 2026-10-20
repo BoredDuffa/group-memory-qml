@@ -1,0 +1,614 @@
+[
+  {
+    "metric_name": "test_accuracy",
+    "value": 1.0,
+    "total_s": 0.0037990830023773015,
+    "metadata": {
+      "application": "sensor_classifier",
+      "baseline": "Logistic regression on D_n-invariant Fourier power and circular correlations",
+      "control": "symmetry",
+      "n": 10,
+      "seed": 846101,
+      "train_metric": 1.0,
+      "dataset_sha256": "9755b57e47113920237ba4639793d49961650f14120fdf463b0b215fe34049fc",
+      "data_preparation_s": 0.0018741250387392938,
+      "prepared_data_supplied": false,
+      "carried_upstream_preparation_s": 0.0,
+      "this_call_wall_s": 0.0037990830023773015,
+      "fit_and_predict_s": 0.0019169170409440994,
+      "common_pipeline_including_unused_features_and_optional_control_s": 0.0037990830023773015,
+      "unused_quantum_feature_preparation_excluded_from_primary_s": 0.0,
+      "optional_matched_PCA_control_excluded_from_primary_s": 0.0,
+      "timing_scope": "Primary total includes full data/split and relevant classical preprocessing/fit/prediction; Wine excludes separately measured unused quantum-PCA preparation and optional matched-PCA diagnostic. Full actual common-pipeline wall is retained separately. Supplied upstream preparation is carried once.",
+      "evaluation_unit": "Original test base, with four related views for sensor apps; source Wine rows for Wine. Views are not independent test samples.",
+      "no_test_fitting_or_tuning": true,
+      "feature_definition": "mean, rFFT magnitude-squared/n, circular autocorrelation lags1..floor(n/2); no phase/orientation coordinate.",
+      "test_predictions": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "test_probabilities": [
+        [
+          0.9831894239861528,
+          0.016810576013847185
+        ],
+        [
+          0.9831894239861528,
+          0.016810576013847185
+        ],
+        [
+          0.9831894239861528,
+          0.01681057601384717
+        ],
+        [
+          0.9831894239861528,
+          0.016810576013847185
+        ],
+        [
+          0.012565466026750016,
+          0.98743453397325
+        ],
+        [
+          0.012565466026750016,
+          0.98743453397325
+        ],
+        [
+          0.012565466026750016,
+          0.98743453397325
+        ],
+        [
+          0.012565466026750016,
+          0.98743453397325
+        ],
+        [
+          0.9875846219454755,
+          0.012415378054524487
+        ],
+        [
+          0.9875846219454755,
+          0.012415378054524499
+        ],
+        [
+          0.9875846219454755,
+          0.012415378054524487
+        ],
+        [
+          0.9875846219454755,
+          0.012415378054524476
+        ],
+        [
+          0.011421660372826214,
+          0.9885783396271738
+        ],
+        [
+          0.011421660372826214,
+          0.9885783396271738
+        ],
+        [
+          0.011421660372826214,
+          0.9885783396271738
+        ],
+        [
+          0.011421660372826214,
+          0.9885783396271738
+        ],
+        [
+          0.9773154909518345,
+          0.022684509048165505
+        ],
+        [
+          0.9773154909518345,
+          0.022684509048165498
+        ],
+        [
+          0.9773154909518345,
+          0.022684509048165505
+        ],
+        [
+          0.9773154909518345,
+          0.022684509048165498
+        ],
+        [
+          0.017489047192554952,
+          0.982510952807445
+        ],
+        [
+          0.017489047192554952,
+          0.982510952807445
+        ],
+        [
+          0.017489047192554952,
+          0.982510952807445
+        ],
+        [
+          0.017489047192554952,
+          0.982510952807445
+        ],
+        [
+          0.9866265819190129,
+          0.0133734180809871
+        ],
+        [
+          0.9866265819190129,
+          0.0133734180809871
+        ],
+        [
+          0.9866265819190129,
+          0.013373418080987078
+        ],
+        [
+          0.9866265819190129,
+          0.0133734180809871
+        ],
+        [
+          0.016379738095650742,
+          0.9836202619043493
+        ],
+        [
+          0.016379738095650742,
+          0.9836202619043493
+        ],
+        [
+          0.016379738095650742,
+          0.9836202619043493
+        ],
+        [
+          0.016379738095650742,
+          0.9836202619043493
+        ]
+      ],
+      "classes": [
+        0,
+        1
+      ],
+      "iterations": [
+        8
+      ],
+      "C": 1.0,
+      "solver": "lbfgs",
+      "max_iter": 2000
+    },
+    "application": "sensor_classifier",
+    "n": 10,
+    "control": "symmetry",
+    "seed": 846101
+  },
+  {
+    "metric_name": "test_accuracy",
+    "value": 1.0,
+    "total_s": 0.0034733329666778445,
+    "metadata": {
+      "application": "sensor_classifier",
+      "baseline": "Logistic regression on D_n-invariant Fourier power and circular correlations",
+      "control": "symmetry",
+      "n": 10,
+      "seed": 846102,
+      "train_metric": 1.0,
+      "dataset_sha256": "699a4dc12b98d77019b63f913e8ea896c621f778a9ebe564d02e3b5b7c0baac0",
+      "data_preparation_s": 0.001693165977485478,
+      "prepared_data_supplied": false,
+      "carried_upstream_preparation_s": 0.0,
+      "this_call_wall_s": 0.0034733329666778445,
+      "fit_and_predict_s": 0.0017709580133669078,
+      "common_pipeline_including_unused_features_and_optional_control_s": 0.0034733329666778445,
+      "unused_quantum_feature_preparation_excluded_from_primary_s": 0.0,
+      "optional_matched_PCA_control_excluded_from_primary_s": 0.0,
+      "timing_scope": "Primary total includes full data/split and relevant classical preprocessing/fit/prediction; Wine excludes separately measured unused quantum-PCA preparation and optional matched-PCA diagnostic. Full actual common-pipeline wall is retained separately. Supplied upstream preparation is carried once.",
+      "evaluation_unit": "Original test base, with four related views for sensor apps; source Wine rows for Wine. Views are not independent test samples.",
+      "no_test_fitting_or_tuning": true,
+      "feature_definition": "mean, rFFT magnitude-squared/n, circular autocorrelation lags1..floor(n/2); no phase/orientation coordinate.",
+      "test_predictions": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "test_probabilities": [
+        [
+          0.9521133783980019,
+          0.047886621601998094
+        ],
+        [
+          0.9521133783980018,
+          0.047886621601998136
+        ],
+        [
+          0.9521133783980018,
+          0.04788662160199816
+        ],
+        [
+          0.9521133783980019,
+          0.04788662160199812
+        ],
+        [
+          0.03647476369250613,
+          0.9635252363074939
+        ],
+        [
+          0.03647476369250613,
+          0.9635252363074939
+        ],
+        [
+          0.03647476369250613,
+          0.9635252363074939
+        ],
+        [
+          0.03647476369250613,
+          0.9635252363074939
+        ],
+        [
+          0.974663267928781,
+          0.025336732071219017
+        ],
+        [
+          0.974663267928781,
+          0.025336732071219007
+        ],
+        [
+          0.974663267928781,
+          0.025336732071219007
+        ],
+        [
+          0.974663267928781,
+          0.025336732071219007
+        ],
+        [
+          0.025195699601792243,
+          0.9748043003982078
+        ],
+        [
+          0.025195699601792243,
+          0.9748043003982078
+        ],
+        [
+          0.025195699601792243,
+          0.9748043003982078
+        ],
+        [
+          0.025195699601792243,
+          0.9748043003982078
+        ],
+        [
+          0.9546062921516464,
+          0.045393707848353664
+        ],
+        [
+          0.9546062921516463,
+          0.04539370784835372
+        ],
+        [
+          0.9546062921516463,
+          0.045393707848353684
+        ],
+        [
+          0.9546062921516464,
+          0.04539370784835365
+        ],
+        [
+          0.03185506164603935,
+          0.9681449383539606
+        ],
+        [
+          0.03185506164603935,
+          0.9681449383539606
+        ],
+        [
+          0.03185506164603935,
+          0.9681449383539606
+        ],
+        [
+          0.03185506164603935,
+          0.9681449383539606
+        ],
+        [
+          0.9650649712996302,
+          0.034935028700369804
+        ],
+        [
+          0.9650649712996302,
+          0.03493502870036978
+        ],
+        [
+          0.9650649712996302,
+          0.03493502870036982
+        ],
+        [
+          0.9650649712996302,
+          0.034935028700369804
+        ],
+        [
+          0.022072978530007004,
+          0.977927021469993
+        ],
+        [
+          0.022072978530007226,
+          0.9779270214699928
+        ],
+        [
+          0.022072978530007226,
+          0.9779270214699928
+        ],
+        [
+          0.022072978530007004,
+          0.977927021469993
+        ]
+      ],
+      "classes": [
+        0,
+        1
+      ],
+      "iterations": [
+        8
+      ],
+      "C": 1.0,
+      "solver": "lbfgs",
+      "max_iter": 2000
+    },
+    "application": "sensor_classifier",
+    "n": 10,
+    "control": "symmetry",
+    "seed": 846102
+  },
+  {
+    "metric_name": "test_accuracy",
+    "value": 1.0,
+    "total_s": 0.003407916985452175,
+    "metadata": {
+      "application": "sensor_classifier",
+      "baseline": "Logistic regression on D_n-invariant Fourier power and circular correlations",
+      "control": "symmetry",
+      "n": 10,
+      "seed": 846103,
+      "train_metric": 1.0,
+      "dataset_sha256": "a548be45381665a1901231279957567283d04e00215158de3e33364087a1e060",
+      "data_preparation_s": 0.0016860830364748836,
+      "prepared_data_supplied": false,
+      "carried_upstream_preparation_s": 0.0,
+      "this_call_wall_s": 0.003407916985452175,
+      "fit_and_predict_s": 0.0017151249921880662,
+      "common_pipeline_including_unused_features_and_optional_control_s": 0.003407916985452175,
+      "unused_quantum_feature_preparation_excluded_from_primary_s": 0.0,
+      "optional_matched_PCA_control_excluded_from_primary_s": 0.0,
+      "timing_scope": "Primary total includes full data/split and relevant classical preprocessing/fit/prediction; Wine excludes separately measured unused quantum-PCA preparation and optional matched-PCA diagnostic. Full actual common-pipeline wall is retained separately. Supplied upstream preparation is carried once.",
+      "evaluation_unit": "Original test base, with four related views for sensor apps; source Wine rows for Wine. Views are not independent test samples.",
+      "no_test_fitting_or_tuning": true,
+      "feature_definition": "mean, rFFT magnitude-squared/n, circular autocorrelation lags1..floor(n/2); no phase/orientation coordinate.",
+      "test_predictions": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "test_probabilities": [
+        [
+          0.9884650490365,
+          0.01153495096349994
+        ],
+        [
+          0.9884650490365001,
+          0.01153495096349992
+        ],
+        [
+          0.9884650490365001,
+          0.01153495096349992
+        ],
+        [
+          0.9884650490365001,
+          0.01153495096349992
+        ],
+        [
+          0.01717860613196398,
+          0.982821393868036
+        ],
+        [
+          0.01717860613196398,
+          0.982821393868036
+        ],
+        [
+          0.01717860613196398,
+          0.982821393868036
+        ],
+        [
+          0.01717860613196398,
+          0.982821393868036
+        ],
+        [
+          0.9803373781025435,
+          0.019662621897456545
+        ],
+        [
+          0.9803373781025435,
+          0.019662621897456527
+        ],
+        [
+          0.9803373781025435,
+          0.01966262189745651
+        ],
+        [
+          0.9803373781025435,
+          0.019662621897456527
+        ],
+        [
+          0.021111955549776074,
+          0.9788880444502239
+        ],
+        [
+          0.021111955549776074,
+          0.9788880444502239
+        ],
+        [
+          0.021111955549776074,
+          0.9788880444502239
+        ],
+        [
+          0.021111955549776074,
+          0.9788880444502239
+        ],
+        [
+          0.9920802236258895,
+          0.007919776374110449
+        ],
+        [
+          0.9920802236258895,
+          0.007919776374110456
+        ],
+        [
+          0.9920802236258895,
+          0.007919776374110463
+        ],
+        [
+          0.9920802236258895,
+          0.007919776374110449
+        ],
+        [
+          0.03618251562926511,
+          0.9638174843707349
+        ],
+        [
+          0.03618251562926511,
+          0.9638174843707349
+        ],
+        [
+          0.03618251562926511,
+          0.9638174843707349
+        ],
+        [
+          0.03618251562926511,
+          0.9638174843707349
+        ],
+        [
+          0.9745466035860161,
+          0.02545339641398395
+        ],
+        [
+          0.9745466035860161,
+          0.02545339641398395
+        ],
+        [
+          0.9745466035860161,
+          0.025453396413983965
+        ],
+        [
+          0.9745466035860161,
+          0.02545339641398395
+        ],
+        [
+          0.04671970618625665,
+          0.9532802938137434
+        ],
+        [
+          0.04671970618625665,
+          0.9532802938137434
+        ],
+        [
+          0.04671970618625665,
+          0.9532802938137434
+        ],
+        [
+          0.04671970618625665,
+          0.9532802938137434
+        ]
+      ],
+      "classes": [
+        0,
+        1
+      ],
+      "iterations": [
+        6
+      ],
+      "C": 1.0,
+      "solver": "lbfgs",
+      "max_iter": 2000
+    },
+    "application": "sensor_classifier",
+    "n": 10,
+    "control": "symmetry",
+    "seed": 846103
+  }
+]

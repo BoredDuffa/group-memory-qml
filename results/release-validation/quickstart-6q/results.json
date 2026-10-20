@@ -1,0 +1,1605 @@
+{
+  "status": "PASS",
+  "config": {
+    "qubits": 6,
+    "seeds": [
+      846101
+    ],
+    "repeats": 1,
+    "updates": 3,
+    "broken_symmetry": false,
+    "order_seed": 846919
+  },
+  "records": [
+    {
+      "n_qubits": 6,
+      "seed": 846101,
+      "method": "group_memory",
+      "symmetry": true,
+      "updates": 3,
+      "data": {
+        "dataset_sha256": "17ffc8a9015ca7a31a2df1d90e1be3d7bf8463ce34f27279ee7f5ac10b6afb5e",
+        "task": "Contiguous versus alternating signed-amplitude ring patterns",
+        "source": "Deterministic synthetic data; no external download",
+        "bases_per_split": 8,
+        "independent_histogram_pairs_per_split": 4,
+        "views_per_base": 4,
+        "samples_per_split": 32,
+        "train_base_ids": [
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class1",
+          "train-pair3-class1",
+          "train-pair3-class1",
+          "train-pair3-class1"
+        ],
+        "test_base_ids": [
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class1",
+          "test-pair3-class1",
+          "test-pair3-class1",
+          "test-pair3-class1"
+        ],
+        "split_unit": "Original bases; paired classes share amplitude histogram",
+        "chance_accuracy": 0.5
+      },
+      "history": [
+        {
+          "step": 0,
+          "weights": [
+            0.53,
+            -0.41
+          ],
+          "train_loss": 0.5858274571106221,
+          "partial_gradient": [
+            0.17594033998865577,
+            0.7910213611032135
+          ]
+        },
+        {
+          "step": 1,
+          "weights": [
+            0.5212029830005672,
+            -0.44955106805516065
+          ],
+          "train_loss": 0.5471644376446156,
+          "partial_gradient": [
+            0.1389961659172526,
+            0.8542497250772176
+          ]
+        },
+        {
+          "step": 2,
+          "weights": [
+            0.5142531747047046,
+            -0.4922635543090215
+          ],
+          "train_loss": 0.5034453819888332,
+          "partial_gradient": [
+            0.09125917987258443,
+            0.8922846104573231
+          ]
+        }
+      ],
+      "final_weights": [
+        0.5096902157110753,
+        -0.5368777848318876
+      ],
+      "forward_evaluations": 40,
+      "gradient_instances": 24,
+      "cx_per_circuit": 12,
+      "forward_cx_work": 480,
+      "cache_invalidations": 3,
+      "requested_examples": 160,
+      "calls": [
+        {
+          "requested": 32,
+          "new_forward_states": 8,
+          "reverse_gradient_instances": 8,
+          "canonical_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "forward_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "gradient_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "weights_sha256": "d0350e1497052631d6d2d4eb97cabe37d1f3234baa2e54a95b1d704a640b62cc",
+          "gradient": true
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 8,
+          "reverse_gradient_instances": 8,
+          "canonical_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "forward_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "gradient_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "weights_sha256": "4d3ff257d746bcfd3390d07cffd563ae509e667fcef08a34d4d20cee1e11e87c",
+          "gradient": true
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 8,
+          "reverse_gradient_instances": 8,
+          "canonical_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "forward_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "gradient_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "weights_sha256": "ff91652592421563b84c131f429ba021b2b12101d9c8ca539ce1a89c493368c4",
+          "gradient": true
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 8,
+          "reverse_gradient_instances": 0,
+          "canonical_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "forward_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "gradient_jobs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "weights_sha256": "6bdb2121429f0ca78644f6a70484708584ca571ce7c97d68f2c4034d519ad8ff",
+          "gradient": false
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 8,
+          "reverse_gradient_instances": 0,
+          "canonical_jobs_sha256": "1306726417c3a1d8db058fbe5c47626af2f7938dea55b022633b5161d883dd50",
+          "forward_jobs_sha256": "1306726417c3a1d8db058fbe5c47626af2f7938dea55b022633b5161d883dd50",
+          "gradient_jobs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "weights_sha256": "6bdb2121429f0ca78644f6a70484708584ca571ce7c97d68f2c4034d519ad8ff",
+          "gradient": false
+        }
+      ],
+      "model_signature": "63ce80554454a701d1c6dc37171a52184bd09258cc26bf09924bdcb06f48aab6",
+      "heldout_accuracy": 0.75,
+      "probabilities": [
+        [
+          0.472519627875444,
+          0.527480372124556
+        ],
+        [
+          0.472519627875444,
+          0.527480372124556
+        ],
+        [
+          0.47251962787544355,
+          0.5274803721245565
+        ],
+        [
+          0.472519627875444,
+          0.527480372124556
+        ],
+        [
+          0.0883760292234449,
+          0.9116239707765551
+        ],
+        [
+          0.08837602922344512,
+          0.9116239707765549
+        ],
+        [
+          0.08837602922344512,
+          0.9116239707765549
+        ],
+        [
+          0.08837602922344512,
+          0.9116239707765549
+        ],
+        [
+          0.572250261038314,
+          0.42774973896168605
+        ],
+        [
+          0.572250261038314,
+          0.42774973896168605
+        ],
+        [
+          0.572250261038314,
+          0.42774973896168605
+        ],
+        [
+          0.572250261038314,
+          0.42774973896168605
+        ],
+        [
+          0.1367390822797192,
+          0.8632609177202808
+        ],
+        [
+          0.1367390822797192,
+          0.8632609177202808
+        ],
+        [
+          0.1367390822797192,
+          0.8632609177202808
+        ],
+        [
+          0.1367390822797192,
+          0.8632609177202808
+        ],
+        [
+          0.7252255779033654,
+          0.27477442209663455
+        ],
+        [
+          0.7252255779033654,
+          0.27477442209663455
+        ],
+        [
+          0.7252255779033654,
+          0.27477442209663455
+        ],
+        [
+          0.7252255779033654,
+          0.27477442209663455
+        ],
+        [
+          0.29224532748452403,
+          0.707754672515476
+        ],
+        [
+          0.29224532748452325,
+          0.7077546725154767
+        ],
+        [
+          0.2922453274845237,
+          0.7077546725154763
+        ],
+        [
+          0.2922453274845237,
+          0.7077546725154763
+        ],
+        [
+          0.9539575544615269,
+          0.04604244553847316
+        ],
+        [
+          0.9539575544615267,
+          0.04604244553847326
+        ],
+        [
+          0.9539575544615269,
+          0.04604244553847316
+        ],
+        [
+          0.9539575544615269,
+          0.04604244553847316
+        ],
+        [
+          0.8569528563727995,
+          0.14304714362720056
+        ],
+        [
+          0.8569528563727989,
+          0.14304714362720103
+        ],
+        [
+          0.8569528563727989,
+          0.14304714362720103
+        ],
+        [
+          0.8569528563727995,
+          0.14304714362720056
+        ]
+      ],
+      "predictions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "stages": {
+        "data_s": 0.002031082985922694,
+        "setup_compile_s": 0.0320893750176765,
+        "evaluate_s": 0.3631267079617828,
+        "fit_predict_s": 0.017227541015017778,
+        "record_and_dispatch_s": 0.00015916797565296292
+      },
+      "compute": "CPU statevector and classical reverse-mode gradients; no QPU",
+      "pipeline_s": 0.41463387495605275,
+      "repeat": 0
+    },
+    {
+      "n_qubits": 6,
+      "seed": 846101,
+      "method": "classical",
+      "symmetry": true,
+      "updates": 3,
+      "data": {
+        "dataset_sha256": "17ffc8a9015ca7a31a2df1d90e1be3d7bf8463ce34f27279ee7f5ac10b6afb5e",
+        "task": "Contiguous versus alternating signed-amplitude ring patterns",
+        "source": "Deterministic synthetic data; no external download",
+        "bases_per_split": 8,
+        "independent_histogram_pairs_per_split": 4,
+        "views_per_base": 4,
+        "samples_per_split": 32,
+        "train_base_ids": [
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class1",
+          "train-pair3-class1",
+          "train-pair3-class1",
+          "train-pair3-class1"
+        ],
+        "test_base_ids": [
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class1",
+          "test-pair3-class1",
+          "test-pair3-class1",
+          "test-pair3-class1"
+        ],
+        "split_unit": "Original bases; paired classes share amplitude histogram",
+        "chance_accuracy": 0.5
+      },
+      "history": [],
+      "final_weights": null,
+      "forward_evaluations": 0,
+      "gradient_instances": 0,
+      "cx_per_circuit": 0,
+      "forward_cx_work": 0,
+      "cache_invalidations": 0,
+      "requested_examples": 0,
+      "calls": [],
+      "heldout_accuracy": 1.0,
+      "probabilities": [
+        [
+          0.9710575840019755,
+          0.028942415998024516
+        ],
+        [
+          0.9710575840019755,
+          0.02894241599802453
+        ],
+        [
+          0.9710575840019755,
+          0.028942415998024495
+        ],
+        [
+          0.9710575840019755,
+          0.028942415998024495
+        ],
+        [
+          0.019138990903792008,
+          0.980861009096208
+        ],
+        [
+          0.019138990903792008,
+          0.980861009096208
+        ],
+        [
+          0.019138990903792008,
+          0.980861009096208
+        ],
+        [
+          0.019138990903792008,
+          0.980861009096208
+        ],
+        [
+          0.980962925268483,
+          0.019037074731516945
+        ],
+        [
+          0.980962925268483,
+          0.019037074731516966
+        ],
+        [
+          0.980962925268483,
+          0.019037074731516966
+        ],
+        [
+          0.980962925268483,
+          0.019037074731516966
+        ],
+        [
+          0.01061224860138621,
+          0.9893877513986138
+        ],
+        [
+          0.01061224860138621,
+          0.9893877513986138
+        ],
+        [
+          0.01061224860138621,
+          0.9893877513986138
+        ],
+        [
+          0.01061224860138621,
+          0.9893877513986138
+        ],
+        [
+          0.9704674808953585,
+          0.029532519104641494
+        ],
+        [
+          0.9704674808953585,
+          0.029532519104641494
+        ],
+        [
+          0.9704674808953585,
+          0.029532519104641494
+        ],
+        [
+          0.9704674808953585,
+          0.029532519104641494
+        ],
+        [
+          0.0192592606920986,
+          0.9807407393079014
+        ],
+        [
+          0.0192592606920986,
+          0.9807407393079014
+        ],
+        [
+          0.0192592606920986,
+          0.9807407393079014
+        ],
+        [
+          0.0192592606920986,
+          0.9807407393079014
+        ],
+        [
+          0.9169598802370736,
+          0.08304011976292634
+        ],
+        [
+          0.9169598802370736,
+          0.08304011976292631
+        ],
+        [
+          0.9169598802370736,
+          0.08304011976292634
+        ],
+        [
+          0.9169598802370736,
+          0.08304011976292634
+        ],
+        [
+          0.04914103944262893,
+          0.9508589605573711
+        ],
+        [
+          0.04914103944262893,
+          0.9508589605573711
+        ],
+        [
+          0.04914103944262893,
+          0.9508589605573711
+        ],
+        [
+          0.04914103944262893,
+          0.9508589605573711
+        ]
+      ],
+      "predictions": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "stages": {
+        "data_s": 0.001360249996650964,
+        "features_fit_predict_s": 0.006418582983314991,
+        "record_and_dispatch_s": 8.854205952957273e-05
+      },
+      "compute": "CPU statevector and classical reverse-mode gradients; no QPU",
+      "pipeline_s": 0.007867375039495528,
+      "repeat": 0
+    },
+    {
+      "n_qubits": 6,
+      "seed": 846101,
+      "method": "qiskit_exact_cache",
+      "symmetry": true,
+      "updates": 3,
+      "data": {
+        "dataset_sha256": "17ffc8a9015ca7a31a2df1d90e1be3d7bf8463ce34f27279ee7f5ac10b6afb5e",
+        "task": "Contiguous versus alternating signed-amplitude ring patterns",
+        "source": "Deterministic synthetic data; no external download",
+        "bases_per_split": 8,
+        "independent_histogram_pairs_per_split": 4,
+        "views_per_base": 4,
+        "samples_per_split": 32,
+        "train_base_ids": [
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class1",
+          "train-pair3-class1",
+          "train-pair3-class1",
+          "train-pair3-class1"
+        ],
+        "test_base_ids": [
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class1",
+          "test-pair3-class1",
+          "test-pair3-class1",
+          "test-pair3-class1"
+        ],
+        "split_unit": "Original bases; paired classes share amplitude histogram",
+        "chance_accuracy": 0.5
+      },
+      "history": [
+        {
+          "step": 0,
+          "weights": [
+            0.53,
+            -0.41
+          ],
+          "train_loss": 0.5858274571106232,
+          "partial_gradient": [
+            0.17594033998865335,
+            0.7910213611032101
+          ]
+        },
+        {
+          "step": 1,
+          "weights": [
+            0.5212029830005673,
+            -0.4495510680551605
+          ],
+          "train_loss": 0.5471644376446158,
+          "partial_gradient": [
+            0.1389961659172509,
+            0.8542497250772147
+          ]
+        },
+        {
+          "step": 2,
+          "weights": [
+            0.5142531747047048,
+            -0.49226355430902125
+          ],
+          "train_loss": 0.503445381988832,
+          "partial_gradient": [
+            0.09125917987258664,
+            0.8922846104573259
+          ]
+        }
+      ],
+      "final_weights": [
+        0.5096902157110754,
+        -0.5368777848318875
+      ],
+      "forward_evaluations": 160,
+      "gradient_instances": 96,
+      "cx_per_circuit": 12,
+      "forward_cx_work": 1920,
+      "cache_invalidations": 3,
+      "requested_examples": 160,
+      "calls": [
+        {
+          "requested": 32,
+          "new_forward_states": 32,
+          "reverse_gradient_instances": 32,
+          "canonical_jobs_sha256": "a9e1b30edc45c7f7293a3b30a73bb698ecffdaa0e2e114672722db154368ed38",
+          "forward_jobs_sha256": "a9e1b30edc45c7f7293a3b30a73bb698ecffdaa0e2e114672722db154368ed38",
+          "gradient_jobs_sha256": "a9e1b30edc45c7f7293a3b30a73bb698ecffdaa0e2e114672722db154368ed38",
+          "weights_sha256": "d0350e1497052631d6d2d4eb97cabe37d1f3234baa2e54a95b1d704a640b62cc",
+          "gradient": true
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 32,
+          "reverse_gradient_instances": 32,
+          "canonical_jobs_sha256": "a9e1b30edc45c7f7293a3b30a73bb698ecffdaa0e2e114672722db154368ed38",
+          "forward_jobs_sha256": "a9e1b30edc45c7f7293a3b30a73bb698ecffdaa0e2e114672722db154368ed38",
+          "gradient_jobs_sha256": "a9e1b30edc45c7f7293a3b30a73bb698ecffdaa0e2e114672722db154368ed38",
+          "weights_sha256": "f154809b57a30c262f2a67972a0033f7a3d5a28501556e6659c839dd8faf891f",
+          "gradient": true
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 32,
+          "reverse_gradient_instances": 32,
+          "canonical_jobs_sha256": "a9e1b30edc45c7f7293a3b30a73bb698ecffdaa0e2e114672722db154368ed38",
+          "forward_jobs_sha256": "a9e1b30edc45c7f7293a3b30a73bb698ecffdaa0e2e114672722db154368ed38",
+          "gradient_jobs_sha256": "a9e1b30edc45c7f7293a3b30a73bb698ecffdaa0e2e114672722db154368ed38",
+          "weights_sha256": "79cb865fb63782504f6b9dbff49068bfdf71ebf6ea3b6e9d649d38ffc36b370a",
+          "gradient": true
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 32,
+          "reverse_gradient_instances": 0,
+          "canonical_jobs_sha256": "a9e1b30edc45c7f7293a3b30a73bb698ecffdaa0e2e114672722db154368ed38",
+          "forward_jobs_sha256": "a9e1b30edc45c7f7293a3b30a73bb698ecffdaa0e2e114672722db154368ed38",
+          "gradient_jobs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "weights_sha256": "9bfe97ebb6c9d48265aef4e12e8d8a333a61a8c79abeba2f97ee4fd95f2451cf",
+          "gradient": false
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 32,
+          "reverse_gradient_instances": 0,
+          "canonical_jobs_sha256": "b1226ff6fff731a411a883ae869a61ba909140c46d8bec3530b9ab315769d5d4",
+          "forward_jobs_sha256": "b1226ff6fff731a411a883ae869a61ba909140c46d8bec3530b9ab315769d5d4",
+          "gradient_jobs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "weights_sha256": "9bfe97ebb6c9d48265aef4e12e8d8a333a61a8c79abeba2f97ee4fd95f2451cf",
+          "gradient": false
+        }
+      ],
+      "model_signature": "63ce80554454a701d1c6dc37171a52184bd09258cc26bf09924bdcb06f48aab6",
+      "heldout_accuracy": 0.75,
+      "probabilities": [
+        [
+          0.47251962787544444,
+          0.5274803721245556
+        ],
+        [
+          0.47251962787544444,
+          0.5274803721245556
+        ],
+        [
+          0.4725196278754449,
+          0.5274803721245551
+        ],
+        [
+          0.47251962787544677,
+          0.5274803721245532
+        ],
+        [
+          0.08837602922344545,
+          0.9116239707765545
+        ],
+        [
+          0.0883760292234449,
+          0.9116239707765551
+        ],
+        [
+          0.08837602922344545,
+          0.9116239707765545
+        ],
+        [
+          0.08837602922344434,
+          0.9116239707765557
+        ],
+        [
+          0.5722502610383137,
+          0.42774973896168633
+        ],
+        [
+          0.5722502610383137,
+          0.42774973896168633
+        ],
+        [
+          0.5722502610383128,
+          0.4277497389616872
+        ],
+        [
+          0.57225026103831,
+          0.42774973896169
+        ],
+        [
+          0.13673908227971865,
+          0.8632609177202814
+        ],
+        [
+          0.13673908227972054,
+          0.8632609177202795
+        ],
+        [
+          0.13673908227971898,
+          0.863260917720281
+        ],
+        [
+          0.13673908227971998,
+          0.86326091772028
+        ],
+        [
+          0.7252255779033653,
+          0.2747744220966347
+        ],
+        [
+          0.7252255779033667,
+          0.2747744220966332
+        ],
+        [
+          0.7252255779033661,
+          0.274774422096634
+        ],
+        [
+          0.7252255779033645,
+          0.2747744220966355
+        ],
+        [
+          0.29224532748452403,
+          0.707754672515476
+        ],
+        [
+          0.2922453274845225,
+          0.7077546725154775
+        ],
+        [
+          0.29224532748452403,
+          0.707754672515476
+        ],
+        [
+          0.29224532748452325,
+          0.7077546725154767
+        ],
+        [
+          0.9539575544615261,
+          0.04604244553847392
+        ],
+        [
+          0.9539575544615261,
+          0.04604244553847392
+        ],
+        [
+          0.9539575544615262,
+          0.04604244553847382
+        ],
+        [
+          0.953957554461526,
+          0.046042445538473996
+        ],
+        [
+          0.8569528563727986,
+          0.1430471436272014
+        ],
+        [
+          0.8569528563727979,
+          0.14304714362720208
+        ],
+        [
+          0.8569528563727988,
+          0.14304714362720117
+        ],
+        [
+          0.8569528563727982,
+          0.1430471436272018
+        ]
+      ],
+      "predictions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "stages": {
+        "data_s": 0.001258125004824251,
+        "setup_compile_s": 0.005898999981582165,
+        "evaluate_s": 1.2870142090250738,
+        "fit_predict_s": 0.007452250923961401,
+        "record_and_dispatch_s": 0.0004132900503464043
+      },
+      "compute": "CPU statevector and classical reverse-mode gradients; no QPU",
+      "pipeline_s": 1.302036874985788,
+      "repeat": 0
+    },
+    {
+      "n_qubits": 6,
+      "seed": 846101,
+      "method": "qiskit_same_symmetry",
+      "symmetry": true,
+      "updates": 3,
+      "data": {
+        "dataset_sha256": "17ffc8a9015ca7a31a2df1d90e1be3d7bf8463ce34f27279ee7f5ac10b6afb5e",
+        "task": "Contiguous versus alternating signed-amplitude ring patterns",
+        "source": "Deterministic synthetic data; no external download",
+        "bases_per_split": 8,
+        "independent_histogram_pairs_per_split": 4,
+        "views_per_base": 4,
+        "samples_per_split": 32,
+        "train_base_ids": [
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class0",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair0-class1",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class0",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair1-class1",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class0",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair2-class1",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class0",
+          "train-pair3-class1",
+          "train-pair3-class1",
+          "train-pair3-class1",
+          "train-pair3-class1"
+        ],
+        "test_base_ids": [
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class0",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair0-class1",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class0",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair1-class1",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class0",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair2-class1",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class0",
+          "test-pair3-class1",
+          "test-pair3-class1",
+          "test-pair3-class1",
+          "test-pair3-class1"
+        ],
+        "split_unit": "Original bases; paired classes share amplitude histogram",
+        "chance_accuracy": 0.5
+      },
+      "history": [
+        {
+          "step": 0,
+          "weights": [
+            0.53,
+            -0.41
+          ],
+          "train_loss": 0.5858274571106221,
+          "partial_gradient": [
+            0.17594033998865577,
+            0.7910213611032135
+          ]
+        },
+        {
+          "step": 1,
+          "weights": [
+            0.5212029830005672,
+            -0.44955106805516065
+          ],
+          "train_loss": 0.5471644376446156,
+          "partial_gradient": [
+            0.1389961659172526,
+            0.8542497250772176
+          ]
+        },
+        {
+          "step": 2,
+          "weights": [
+            0.5142531747047046,
+            -0.4922635543090215
+          ],
+          "train_loss": 0.5034453819888332,
+          "partial_gradient": [
+            0.09125917987258443,
+            0.8922846104573231
+          ]
+        }
+      ],
+      "final_weights": [
+        0.5096902157110753,
+        -0.5368777848318876
+      ],
+      "forward_evaluations": 40,
+      "gradient_instances": 24,
+      "cx_per_circuit": 12,
+      "forward_cx_work": 480,
+      "cache_invalidations": 3,
+      "requested_examples": 160,
+      "calls": [
+        {
+          "requested": 32,
+          "new_forward_states": 8,
+          "reverse_gradient_instances": 8,
+          "canonical_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "forward_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "gradient_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "weights_sha256": "d0350e1497052631d6d2d4eb97cabe37d1f3234baa2e54a95b1d704a640b62cc",
+          "gradient": true
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 8,
+          "reverse_gradient_instances": 8,
+          "canonical_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "forward_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "gradient_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "weights_sha256": "4d3ff257d746bcfd3390d07cffd563ae509e667fcef08a34d4d20cee1e11e87c",
+          "gradient": true
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 8,
+          "reverse_gradient_instances": 8,
+          "canonical_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "forward_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "gradient_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "weights_sha256": "ff91652592421563b84c131f429ba021b2b12101d9c8ca539ce1a89c493368c4",
+          "gradient": true
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 8,
+          "reverse_gradient_instances": 0,
+          "canonical_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "forward_jobs_sha256": "0ed8cd027ed2e34bcd805437e6dec6691d9e8d6737b0eabf90aa4615940e10f4",
+          "gradient_jobs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "weights_sha256": "6bdb2121429f0ca78644f6a70484708584ca571ce7c97d68f2c4034d519ad8ff",
+          "gradient": false
+        },
+        {
+          "requested": 32,
+          "new_forward_states": 8,
+          "reverse_gradient_instances": 0,
+          "canonical_jobs_sha256": "1306726417c3a1d8db058fbe5c47626af2f7938dea55b022633b5161d883dd50",
+          "forward_jobs_sha256": "1306726417c3a1d8db058fbe5c47626af2f7938dea55b022633b5161d883dd50",
+          "gradient_jobs_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "weights_sha256": "6bdb2121429f0ca78644f6a70484708584ca571ce7c97d68f2c4034d519ad8ff",
+          "gradient": false
+        }
+      ],
+      "model_signature": "63ce80554454a701d1c6dc37171a52184bd09258cc26bf09924bdcb06f48aab6",
+      "heldout_accuracy": 0.75,
+      "probabilities": [
+        [
+          0.472519627875444,
+          0.527480372124556
+        ],
+        [
+          0.472519627875444,
+          0.527480372124556
+        ],
+        [
+          0.47251962787544355,
+          0.5274803721245565
+        ],
+        [
+          0.472519627875444,
+          0.527480372124556
+        ],
+        [
+          0.0883760292234449,
+          0.9116239707765551
+        ],
+        [
+          0.08837602922344512,
+          0.9116239707765549
+        ],
+        [
+          0.08837602922344512,
+          0.9116239707765549
+        ],
+        [
+          0.08837602922344512,
+          0.9116239707765549
+        ],
+        [
+          0.572250261038314,
+          0.42774973896168605
+        ],
+        [
+          0.572250261038314,
+          0.42774973896168605
+        ],
+        [
+          0.572250261038314,
+          0.42774973896168605
+        ],
+        [
+          0.572250261038314,
+          0.42774973896168605
+        ],
+        [
+          0.1367390822797192,
+          0.8632609177202808
+        ],
+        [
+          0.1367390822797192,
+          0.8632609177202808
+        ],
+        [
+          0.1367390822797192,
+          0.8632609177202808
+        ],
+        [
+          0.1367390822797192,
+          0.8632609177202808
+        ],
+        [
+          0.7252255779033654,
+          0.27477442209663455
+        ],
+        [
+          0.7252255779033654,
+          0.27477442209663455
+        ],
+        [
+          0.7252255779033654,
+          0.27477442209663455
+        ],
+        [
+          0.7252255779033654,
+          0.27477442209663455
+        ],
+        [
+          0.29224532748452403,
+          0.707754672515476
+        ],
+        [
+          0.29224532748452325,
+          0.7077546725154767
+        ],
+        [
+          0.2922453274845237,
+          0.7077546725154763
+        ],
+        [
+          0.2922453274845237,
+          0.7077546725154763
+        ],
+        [
+          0.9539575544615269,
+          0.04604244553847316
+        ],
+        [
+          0.9539575544615267,
+          0.04604244553847326
+        ],
+        [
+          0.9539575544615269,
+          0.04604244553847316
+        ],
+        [
+          0.9539575544615269,
+          0.04604244553847316
+        ],
+        [
+          0.8569528563727995,
+          0.14304714362720056
+        ],
+        [
+          0.8569528563727989,
+          0.14304714362720103
+        ],
+        [
+          0.8569528563727989,
+          0.14304714362720103
+        ],
+        [
+          0.8569528563727995,
+          0.14304714362720056
+        ]
+      ],
+      "predictions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "stages": {
+        "data_s": 0.0012170410482212901,
+        "setup_compile_s": 0.005556458025239408,
+        "evaluate_s": 0.32962929195491597,
+        "fit_predict_s": 0.006303542002569884,
+        "record_and_dispatch_s": 0.00012258399510756135
+      },
+      "compute": "CPU statevector and classical reverse-mode gradients; no QPU",
+      "pipeline_s": 0.3428289170260541,
+      "repeat": 0
+    }
+  ],
+  "method_order": [
+    {
+      "seed": 846101,
+      "repeat": 0,
+      "methods": [
+        "group_memory",
+        "classical",
+        "qiskit_exact_cache",
+        "qiskit_same_symmetry"
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "method": "group_memory",
+      "data_seeds": 1,
+      "timed_runs": 1,
+      "mean_seed_accuracy": 0.75,
+      "median_seed_pipeline_s": 0.41463387495605275,
+      "median_forward_evaluations": 40,
+      "median_gradient_instances": 24,
+      "median_cx_per_circuit": 12,
+      "median_forward_cx_work": 480
+    },
+    {
+      "method": "qiskit_same_symmetry",
+      "data_seeds": 1,
+      "timed_runs": 1,
+      "mean_seed_accuracy": 0.75,
+      "median_seed_pipeline_s": 0.3428289170260541,
+      "median_forward_evaluations": 40,
+      "median_gradient_instances": 24,
+      "median_cx_per_circuit": 12,
+      "median_forward_cx_work": 480
+    },
+    {
+      "method": "qiskit_exact_cache",
+      "data_seeds": 1,
+      "timed_runs": 1,
+      "mean_seed_accuracy": 0.75,
+      "median_seed_pipeline_s": 1.302036874985788,
+      "median_forward_evaluations": 160,
+      "median_gradient_instances": 96,
+      "median_cx_per_circuit": 12,
+      "median_forward_cx_work": 1920
+    },
+    {
+      "method": "classical",
+      "data_seeds": 1,
+      "timed_runs": 1,
+      "mean_seed_accuracy": 1.0,
+      "median_seed_pipeline_s": 0.007867375039495528,
+      "median_forward_evaluations": 0,
+      "median_gradient_instances": 0,
+      "median_cx_per_circuit": 0,
+      "median_forward_cx_work": 0
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "baseline": "qiskit_same_symmetry",
+      "candidate": "group_memory",
+      "matched_data_seeds": 1,
+      "median_paired_speed_ratio": 0.8268232234097871,
+      "ratio_definition": "baseline seed-median time / GroupMemory seed-median time",
+      "seed_ratios": [
+        {
+          "seed": 846101,
+          "ratio": 0.8268232234097871
+        }
+      ]
+    },
+    {
+      "baseline": "qiskit_exact_cache",
+      "candidate": "group_memory",
+      "matched_data_seeds": 1,
+      "median_paired_speed_ratio": 3.1402086361703843,
+      "ratio_definition": "baseline seed-median time / GroupMemory seed-median time",
+      "seed_ratios": [
+        {
+          "seed": 846101,
+          "ratio": 3.1402086361703843
+        }
+      ]
+    },
+    {
+      "baseline": "classical",
+      "candidate": "group_memory",
+      "matched_data_seeds": 1,
+      "median_paired_speed_ratio": 0.018974269867191616,
+      "ratio_definition": "baseline seed-median time / GroupMemory seed-median time",
+      "seed_ratios": [
+        {
+          "seed": 846101,
+          "ratio": 0.018974269867191616
+        }
+      ]
+    }
+  ],
+  "error": null
+}

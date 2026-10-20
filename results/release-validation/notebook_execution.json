@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "code_cells": 4,
+  "errors": 0,
+  "wall_s": 6.429811166948639,
+  "scope": "Fresh kernel executes notebook top to bottom; notebook is illustrative, CLI is primary timing harness."
+}

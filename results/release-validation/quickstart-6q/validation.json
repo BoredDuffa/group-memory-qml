@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "matched_blocks": [
+    {
+      "seed": 846101,
+      "repeat": 0,
+      "status": "PASS",
+      "max_prediction_error": 3.9968028886505635e-15,
+      "max_partial_gradient_error": 3.4416913763379853e-15
+    }
+  ],
+  "expected_blocks": 1,
+  "passed_blocks": 1,
+  "error": null,
+  "prediction_and_gradient_atol": 1e-09,
+  "independent_numerical_checks": "Run pytest; this receipt checks matched training results."
+}

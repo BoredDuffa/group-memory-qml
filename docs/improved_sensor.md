@@ -21,7 +21,8 @@ with smallest mean validation log loss was selected before final tests:
 3. Standardize the LDA coordinates using training rows only.
 4. Repeat the five coordinates across sixteen patch inputs and encode each as
    `pi/2 + 0.5 * atan(z)`.
-5. Run 1,000 full-batch joint Adam updates (learning rate .03, head L2 1e-4).
+5. Run 1,000 full-batch joint Adam updates (final repair: learning rate .003,
+   Adam epsilon 1e-4, head L2 1e-4).
 6. Select the lowest validation log loss, including initialization, before one
    final test evaluation. Do not select the highest test accuracy.
 
@@ -48,7 +49,31 @@ an equally informed Qiskit comparison. The full main plan has five matched
 training/split seeds, two timing repetitions and seven methods; the ablations
 add thirty attempts, for one hundred planned attempts.
 
-## Fresh-row holdout
+## Numerical repair and test reuse
+
+The initial 100-attempt recipe used learning rate .03 and Adam epsilon 1e-8.
+Although every process completed, the strict full-trajectory comparison failed:
+maximum absolute disagreement was 0.0340823. Equal classification accuracies did
+not rescue that failure. Those timings are retained as rejected evidence, never
+pooled with the repaired comparison. The original source is frozen in commit
+`a0f8cb5fc67845c0be30ea08cc51dac782b8ac96`.
+
+A bounded validation-only numerical pilot tested common optimizer settings.
+The repair uses learning rate .003 and epsilon 1e-4 identically for all quantum
+engines and the fixed-angle control. No values are rounded to force agreement;
+the complete trajectory threshold remains absolute 1e-10. Final performance
+claims require the separate saved-data audit to pass.
+
+The initial receipt also showed a 48.499 ms disagreement between UTC and
+monotonic elapsed time. The cause is unknown. The new controller records
+monotonic interval endpoints for elapsed-time checks and retains UTC separately
+for deadlines, without rewriting the old receipt.
+
+The same final rows have already been evaluated by the initial recipe. The
+repaired experiment is a **same-holdout correctness-recovery retest**, not a new
+untouched holdout. Neither representation nor repair selection uses test scores.
+
+## Original fresh-row holdout construction
 
 The source-pinned final holdout has 256 balanced official-test rows. It excludes
 all 1,248 unique rows evaluated in the earlier quick/pilot/main runs and their
@@ -67,15 +92,15 @@ python -m pip install -e '.[dev]'
 python -m group_memory_qml.real_sensor_data --data-dir data/uci_har
 python -m pytest -q
 python -m group_memory_qml.improved_sensor_suite run \
-  --conditions benchmarks/improved_sensor_quick.json --data-dir data/uci_har \
+  --conditions benchmarks/improved_sensor_stable_quick.json --data-dir data/uci_har \
   --output results/my-improved-smoke --seeds 956001 --repeats 1 \
   --budget-seconds 600 --limit 2
 # Resume the exact same short run without --limit; do not change its source/data.
 python -m group_memory_qml.improved_sensor_suite run \
-  --conditions benchmarks/improved_sensor_quick.json --data-dir data/uci_har \
+  --conditions benchmarks/improved_sensor_stable_quick.json --data-dir data/uci_har \
   --output results/my-improved-smoke --seeds 956001 --repeats 1 --budget-seconds 600
 python -m group_memory_qml.improved_sensor_suite run \
-  --conditions benchmarks/improved_sensor.json --data-dir data/uci_har \
+  --conditions benchmarks/improved_sensor_stable.json --data-dir data/uci_har \
   --output results/my-improved-run --seeds 956101 956102 956103 956104 956105 \
   --repeats 2 --budget-seconds 1800
 ```

@@ -27,7 +27,7 @@ REPRESENTATIONS = ("pca_original", "pca_shifted", "lda_tiled", "lda_pca")
 
 def _configuration(config=None):
     cfg = dict(n_qubits=16, n_train=512, n_validation=128, n_test=256,
-               steps=1000, learning_rate=0.03, head_l2=1e-4,
+               steps=1000, learning_rate=0.03, adam_epsilon=1e-8, head_l2=1e-4,
                representation="lda_tiled", angle_scale=0.5,
                validation_only=False, early_stopping_patience=0)
     supplied = dict(config or {})
@@ -43,7 +43,7 @@ def _configuration(config=None):
         raise ValueError("Use 8 or 16 total independently parameterized patch qubits")
     if cfg["representation"] not in REPRESENTATIONS or type(cfg["validation_only"]) is not bool:
         raise ValueError("Invalid representation or validation_only")
-    for name, high in (("learning_rate", 1.0), ("head_l2", 1.0), ("angle_scale", 1.0)):
+    for name, high in (("learning_rate", 1.0), ("adam_epsilon", 0.1), ("head_l2", 1.0), ("angle_scale", 1.0)):
         value = cfg[name]
         if (isinstance(value, (bool, np.bool_)) or not isinstance(value, (int, float))
                 or not np.isfinite(value) or value < 0 or value > high
@@ -156,7 +156,7 @@ def _train_qml(dataset, seed, method, cfg):
         first_moment = 0.9*first_moment + 0.1*gradient
         second_moment = 0.999*second_moment + 0.001*gradient*gradient
         parameters = parameters - cfg["learning_rate"] * (first_moment/(1-0.9**step)) / (
-            np.sqrt(second_moment/(1-0.999**step)) + 1e-8)
+            np.sqrt(second_moment/(1-0.999**step)) + cfg["adam_epsilon"])
         if not np.isfinite(parameters).all():
             raise RuntimeError("Nonfinite updated parameters")
         if frozen and not np.array_equal(parameters[:cfg["n_qubits"]], initial_theta):
@@ -226,7 +226,7 @@ def _train_qml(dataset, seed, method, cfg):
                     moved_parameters=int(np.sum(np.abs(parameters[:cfg["n_qubits"]]-initial_theta)>1e-12)),
                     initial_parameters=initial.tolist(), final_parameters=parameters.tolist(),
                     selected_parameters=best_parameters.tolist()),
-                optimizer=dict(name="Deterministic full-batch Adam", beta1=.9, beta2=.999, epsilon=1e-8,
+                optimizer=dict(name="Deterministic full-batch Adam", beta1=.9, beta2=.999, epsilon=cfg["adam_epsilon"],
                     learning_rate=cfg["learning_rate"], head_l2=cfg["head_l2"],
                     early_stopping_patience=cfg["early_stopping_patience"]),
                 checkpoint_selection="Minimum validation log loss including initialization; earliest exact tie",

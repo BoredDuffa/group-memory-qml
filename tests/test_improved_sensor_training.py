@@ -78,11 +78,13 @@ def test_all_qml_engines_match_over_longer_than_old_sixty_step_limit(monkeypatch
         assert result["application_wall_s"] >= result["diagnostics"]["timing"]["train_select_test_s"]
 
 
-def test_joint_gradient_and_adam_updates_are_auditable(monkeypatch):
+@pytest.mark.parametrize("epsilon", (1e-8, 1e-6, 1e-4))
+def test_joint_gradient_and_adam_updates_are_auditable(monkeypatch, epsilon):
     dataset = dataset_fixture()
     install_data(monkeypatch, dataset)
     install_spy_model(monkeypatch, dataset)
-    result = training.run(2, "group_spectral", config(), "/fixture")
+    result = training.run(2, "group_spectral", config(adam_epsilon=epsilon), "/fixture")
+    assert result["diagnostics"]["optimizer"]["epsilon"] == epsilon
     audits = result["diagnostics"]["optimizer_audit"]
     first, second = audits
     parameters = np.asarray(first["parameters_before"])
@@ -101,10 +103,10 @@ def test_joint_gradient_and_adam_updates_are_auditable(monkeypatch):
         finite[index] = (independent_loss(plus)-independent_loss(minus))/2e-6
     g1, g2 = np.asarray(first["gradient"]), np.asarray(second["gradient"])
     np.testing.assert_allclose(g1, finite, atol=2e-8, rtol=0)
-    p1 = parameters - .03*g1/(np.abs(g1)+1e-8)
+    p1 = parameters - .03*g1/(np.abs(g1)+epsilon)
     np.testing.assert_allclose(first["parameters_after"], p1, atol=1e-12, rtol=0)
     m2, v2 = .9*.1*g1+.1*g2, .999*.001*g1*g1+.001*g2*g2
-    p2 = p1-.03*(m2/(1-.9**2))/(np.sqrt(v2/(1-.999**2))+1e-8)
+    p2 = p1-.03*(m2/(1-.9**2))/(np.sqrt(v2/(1-.999**2))+epsilon)
     np.testing.assert_allclose(second["parameters_after"], p2, atol=1e-12, rtol=0)
 
 
@@ -233,7 +235,9 @@ def test_strong_classical_controls_keep_fixed_hyperparameters():
 
 @pytest.mark.parametrize("bad", [{"steps": 2001}, {"steps": True}, {"steps": 0},
     {"n_qubits": 12}, {"head_l2": -1e-16}, {"angle_scale": 0}, {"angle_scale": np.nan},
-    {"validation_only": 1}, {"early_stopping_patience": -1}, {"representation": "test_fitted"}])
+    {"validation_only": 1}, {"early_stopping_patience": -1}, {"representation": "test_fitted"},
+    {"adam_epsilon": 0}, {"adam_epsilon": -1e-8}, {"adam_epsilon": True},
+    {"adam_epsilon": float("nan")}, {"adam_epsilon": .11}])
 def test_invalid_config_fails_closed(bad):
     with pytest.raises(ValueError):
         training._configuration(bad)

@@ -1,0 +1,831 @@
+{
+  "created_utc": "2026-10-20T14:40:22.629925+00:00",
+  "scope": "Pure integer arithmetic from frozen source. No engine construction, simulation, performance job, or package-source edit. Main campaign outcomes are not inferred.",
+  "source": {
+    "path": "src/group_memory_qml/multi_response.py",
+    "sha256": "bbbacfed9caa7ddca8ecd7a46e474d861e9a3462da4374e2faf60d6f00d8b91e",
+    "relevant_lines": {
+      "argument_ranges": [
+        64,
+        66,
+        110,
+        112
+      ],
+      "grid_and_state_products": [
+        120,
+        125
+      ],
+      "guards_and_base_memory": [
+        128,
+        153
+      ],
+      "per_input_working_memory": [
+        205,
+        217
+      ],
+      "additional_cache_and_plan_accounting": [
+        421,
+        448
+      ]
+    }
+  },
+  "benchmark_plan": {
+    "path": "benchmarks/multi_response.json",
+    "sha256": "708926de116d4eb5d2a8ca59df01c00c0ee0dde22032963fadcac4c356e37e06"
+  },
+  "defaults": {
+    "n_range": [
+      2,
+      16
+    ],
+    "parameter_range": [
+      1,
+      8
+    ],
+    "occurrence_range": [
+      1,
+      8
+    ],
+    "memory_budget_bytes": 268435456,
+    "max_grid_points": 4096,
+    "max_coefficient_pairs": 262144
+  },
+  "formulas": {
+    "n_state_amplitudes": "D=2^n",
+    "full_signed_response_grid": "G=(2r+1)^p",
+    "state_coefficient_vectors": "S=(r+1)^p",
+    "coefficient_pairs": "S^2",
+    "single_input_coefficient_state_lower_bound_bytes": "16*D*S for complex128",
+    "persistent_response_coefficients_per_input_bytes": "16*G",
+    "spectral_working_array_estimate_per_input_bytes": "16*(6*S*D+3*S^2+4*G)",
+    "base_array_estimate_response_bytes": "(8*n+32)*D+(3*p+1)*S^2*8+(G+S)*p*24; Qiskit adds 2*D*96 for diagonal construction/storage",
+    "two_diagonal_vectors_bytes": "2*16*D"
+  },
+  "limitations": [
+    "The coefficient-state lower bound omits temporary arrays, caches, input plans, interpreter/library memory and result objects. It is not a measured process peak.",
+    "Default eligibility is only the constructor-level arithmetic. Public calls also charge input plans, retained response caches and pending response batches; eligibility does not promise runtime or learning quality.",
+    "All grid methods retain the full Cartesian signed spectrum, including mixed signs. The grid and coefficient-pair guards apply to response methods, not direct adjoint or occurrence shifts.",
+    "At p=8,r=1 the response has 6561 grid points and is rejected by the default4096 limit even when memory is otherwise sufficient. This is a configured exact-response boundary, not a statement that eight-parameter circuits cannot run.",
+    "n=20 and n=24 examples are unsupported extrapolations beyond the implemented16-qubit cap. They were not executed.",
+    "These are classical simulator memory requirements. They do not estimate physical QPU qubits, hardware runtime or a quantum advantage.",
+    "A single shared parameter with many occurrences is materially different from many independently trainable parameters. Keeping total gate occurrences fixed does not keep response size fixed."
+  ],
+  "largest_initially_allowed_qubits": [
+    {
+      "parameters": 1,
+      "occurrences": 8,
+      "qubit_range_searched": [
+        2,
+        16
+      ],
+      "largest_initially_allowed_n_by_method": {
+        "group_spectral": 16,
+        "group_grid": 16,
+        "qiskit_response": 16,
+        "qiskit_shift": 16,
+        "classical_adjoint": 16
+      }
+    },
+    {
+      "parameters": 2,
+      "occurrences": 4,
+      "qubit_range_searched": [
+        2,
+        16
+      ],
+      "largest_initially_allowed_n_by_method": {
+        "group_spectral": 16,
+        "group_grid": 15,
+        "qiskit_response": 16,
+        "qiskit_shift": 16,
+        "classical_adjoint": 16
+      }
+    },
+    {
+      "parameters": 4,
+      "occurrences": 2,
+      "qubit_range_searched": [
+        2,
+        16
+      ],
+      "largest_initially_allowed_n_by_method": {
+        "group_spectral": 15,
+        "group_grid": 12,
+        "qiskit_response": 16,
+        "qiskit_shift": 16,
+        "classical_adjoint": 16
+      }
+    },
+    {
+      "parameters": 8,
+      "occurrences": 1,
+      "qubit_range_searched": [
+        2,
+        16
+      ],
+      "largest_initially_allowed_n_by_method": {
+        "group_spectral": null,
+        "group_grid": null,
+        "qiskit_response": null,
+        "qiskit_shift": 16,
+        "classical_adjoint": 16
+      }
+    }
+  ],
+  "examples": [
+    {
+      "n_qubits": 8,
+      "independent_parameters": 1,
+      "occurrences_per_parameter": 8,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [
+        "sensor-n8-p1"
+      ],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 17,
+      "state_coefficient_vectors": 9,
+      "coefficient_pairs": 81,
+      "one_complex_statevector_bytes": 4096,
+      "one_input_state_coefficients_lower_bound_bytes": 36864,
+      "one_input_persistent_response_coefficients_bytes": 272,
+      "two_cached_diagonal_vectors_bytes": 8192,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 253952,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 446672,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 103832,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 99392,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 81936,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        }
+      }
+    },
+    {
+      "n_qubits": 8,
+      "independent_parameters": 2,
+      "occurrences_per_parameter": 4,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [
+        "sensor-n8-p2"
+      ],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 81,
+      "state_coefficient_vectors": 25,
+      "coefficient_pairs": 625,
+      "one_complex_statevector_bytes": 4096,
+      "one_input_state_coefficients_lower_bound_bytes": 102400,
+      "one_input_persistent_response_coefficients_bytes": 1296,
+      "two_cached_diagonal_vectors_bytes": 8192,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 714248,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 2060504,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 150056,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 99456,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 81952,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        }
+      }
+    },
+    {
+      "n_qubits": 8,
+      "independent_parameters": 4,
+      "occurrences_per_parameter": 2,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [
+        "sensor-n8-p4"
+      ],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 625,
+      "state_coefficient_vectors": 81,
+      "coefficient_pairs": 6561,
+      "one_complex_statevector_bytes": 4096,
+      "one_input_state_coefficients_lower_bound_bytes": 331776,
+      "one_input_persistent_response_coefficients_bytes": 10000,
+      "two_cached_diagonal_vectors_bytes": 8192,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 3120280,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 16174696,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 948424,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 99584,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 81984,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        }
+      }
+    },
+    {
+      "n_qubits": 12,
+      "independent_parameters": 2,
+      "occurrences_per_parameter": 4,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [
+        "sensor-n12-p2",
+        "shared-n12-p2"
+      ],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 81,
+      "state_coefficient_vectors": 25,
+      "coefficient_pairs": 625,
+      "one_complex_statevector_bytes": 65536,
+      "one_input_state_coefficients_lower_bound_bytes": 1638400,
+      "one_input_persistent_response_coefficients_bytes": 1296,
+      "two_cached_diagonal_vectors_bytes": 131072,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 10429960,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 32420056,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 1758280,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 1705088,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 1441824,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        }
+      }
+    },
+    {
+      "n_qubits": 12,
+      "independent_parameters": 4,
+      "occurrences_per_parameter": 2,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [
+        "sensor-n12-p4",
+        "shared-n12-p4"
+      ],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 625,
+      "state_coefficient_vectors": 81,
+      "coefficient_pairs": 6561,
+      "one_complex_statevector_bytes": 65536,
+      "one_input_state_coefficients_lower_bound_bytes": 5308416,
+      "one_input_persistent_response_coefficients_bytes": 10000,
+      "two_cached_diagonal_vectors_bytes": 131072,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 33479832,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 247074408,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 2574056,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 1705216,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 1441856,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        }
+      }
+    },
+    {
+      "n_qubits": 14,
+      "independent_parameters": 2,
+      "occurrences_per_parameter": 4,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [
+        "sensor-n14-p2"
+      ],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 81,
+      "state_coefficient_vectors": 25,
+      "coefficient_pairs": 625,
+      "one_complex_statevector_bytes": 262144,
+      "one_input_state_coefficients_lower_bound_bytes": 6553600,
+      "one_input_persistent_response_coefficients_bytes": 1296,
+      "two_cached_diagonal_vectors_bytes": 524288,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 41756168,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 129806552,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 7133528,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 7079040,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 6029344,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        }
+      }
+    },
+    {
+      "n_qubits": 8,
+      "independent_parameters": 8,
+      "occurrences_per_parameter": 1,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 6561,
+      "state_coefficient_vectors": 256,
+      "coefficient_pairs": 65536,
+      "one_complex_statevector_bytes": 4096,
+      "one_input_state_coefficients_lower_bound_bytes": 1048576,
+      "one_input_persistent_response_coefficients_bytes": 104976,
+      "two_cached_diagonal_vectors_bytes": 8192,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 24297728,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "grid exceeds default 4096-point guard"
+          ]
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 176103680,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "grid exceeds default 4096-point guard"
+          ]
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 15774080,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "grid exceeds default 4096-point guard"
+          ]
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 99840,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 82048,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        }
+      }
+    },
+    {
+      "n_qubits": 12,
+      "independent_parameters": 8,
+      "occurrences_per_parameter": 1,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 6561,
+      "state_coefficient_vectors": 256,
+      "coefficient_pairs": 65536,
+      "one_complex_statevector_bytes": 65536,
+      "one_input_state_coefficients_lower_bound_bytes": 16777216,
+      "one_input_persistent_response_coefficients_bytes": 104976,
+      "two_cached_diagonal_vectors_bytes": 131072,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 119169280,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "grid exceeds default 4096-point guard"
+          ]
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 2595250432,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "grid exceeds default 4096-point guard",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 17589664,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "grid exceeds default 4096-point guard"
+          ]
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 1705472,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 1441920,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        }
+      }
+    },
+    {
+      "n_qubits": 16,
+      "independent_parameters": 4,
+      "occurrences_per_parameter": 2,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 625,
+      "state_coefficient_vectors": 81,
+      "coefficient_pairs": 6561,
+      "one_complex_statevector_bytes": 1048576,
+      "one_input_state_coefficients_lower_bound_bytes": 84934656,
+      "one_input_persistent_response_coefficients_bytes": 10000,
+      "two_cached_diagonal_vectors_bytes": 2097152,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 521198744,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 3943435880,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 30250248,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 29361408,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 25165888,
+          "default_initial_guards_pass_by_arithmetic": true,
+          "rejection_reasons": []
+        }
+      }
+    },
+    {
+      "n_qubits": 20,
+      "independent_parameters": 1,
+      "occurrences_per_parameter": 8,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 17,
+      "state_coefficient_vectors": 9,
+      "coefficient_pairs": 81,
+      "one_complex_statevector_bytes": 16777216,
+      "one_input_state_coefficients_lower_bound_bytes": 150994944,
+      "one_input_persistent_response_coefficients_bytes": 272,
+      "two_cached_diagonal_vectors_bytes": 33554432,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 1107304448,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 1912606928,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 503323640,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 503317568,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 436207632,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        }
+      }
+    },
+    {
+      "n_qubits": 20,
+      "independent_parameters": 2,
+      "occurrences_per_parameter": 4,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 81,
+      "state_coefficient_vectors": 25,
+      "coefficient_pairs": 625,
+      "one_complex_statevector_bytes": 16777216,
+      "one_input_state_coefficients_lower_bound_bytes": 419430400,
+      "one_input_persistent_response_coefficients_bytes": 1296,
+      "two_cached_diagonal_vectors_bytes": 33554432,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 2717984264,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 8355098840,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 503376008,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 503317632,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 436207648,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        }
+      }
+    },
+    {
+      "n_qubits": 20,
+      "independent_parameters": 4,
+      "occurrences_per_parameter": 2,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 625,
+      "state_coefficient_vectors": 81,
+      "coefficient_pairs": 6561,
+      "one_complex_statevector_bytes": 16777216,
+      "one_input_state_coefficients_lower_bound_bytes": 1358954496,
+      "one_input_persistent_response_coefficients_bytes": 10000,
+      "two_cached_diagonal_vectors_bytes": 33554432,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 8356158616,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 63116676712,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 504226600,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 503317760,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 436207680,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        }
+      }
+    },
+    {
+      "n_qubits": 24,
+      "independent_parameters": 2,
+      "occurrences_per_parameter": 4,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 81,
+      "state_coefficient_vectors": 25,
+      "coefficient_pairs": 625,
+      "one_complex_statevector_bytes": 268435456,
+      "one_input_state_coefficients_lower_bound_bytes": 6710886400,
+      "one_input_persistent_response_coefficients_bytes": 1296,
+      "two_cached_diagonal_vectors_bytes": 536870912,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 44023490056,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 134217773272,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 8589996712,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 8589935744,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 7516192800,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        }
+      }
+    },
+    {
+      "n_qubits": 24,
+      "independent_parameters": 4,
+      "occurrences_per_parameter": 2,
+      "trainable_gate_occurrences": 8,
+      "condition_ids_in_running_plan": [],
+      "evidence_status": "ARITHMETIC_ONLY_NOT_A_BENCHMARK_RESULT",
+      "full_signed_response_grid_points": 625,
+      "state_coefficient_vectors": 81,
+      "coefficient_pairs": 6561,
+      "one_complex_statevector_bytes": 268435456,
+      "one_input_state_coefficients_lower_bound_bytes": 21743271936,
+      "one_input_persistent_response_coefficients_bytes": 10000,
+      "two_cached_diagonal_vectors_bytes": 536870912,
+      "methods": {
+        "group_spectral": {
+          "estimated_one_input_bytes_before_plans_and_caches": 134218833048,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "group_grid": {
+          "estimated_one_input_bytes_before_plans_and_caches": 1010391846504,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_response": {
+          "estimated_one_input_bytes_before_plans_and_caches": 8590864712,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "qiskit_shift": {
+          "estimated_one_input_bytes_before_plans_and_caches": 8589935872,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        },
+        "classical_adjoint": {
+          "estimated_one_input_bytes_before_plans_and_caches": 7516192832,
+          "default_initial_guards_pass_by_arithmetic": false,
+          "rejection_reasons": [
+            "outside implemented qubit range 2..16",
+            "estimated one-input workspace exceeds 256 MiB before caches/plans"
+          ]
+        }
+      }
+    }
+  ]
+}

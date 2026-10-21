@@ -1,0 +1,10 @@
+{
+  "execution_export_passes_s": [
+    1.866251999977976,
+    1.9650509170023724
+  ],
+  "total_recorded_s": 3.8313029169803485,
+  "executed_code_cells": 6,
+  "embedded_png_outputs": 2,
+  "validation": "Notebook independently checks all32 packaged input hashes, raw540 records,90matched blocks and source/checkpoint/deadline identities; final manifest is also checked after export."
+}

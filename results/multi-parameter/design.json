@@ -1,0 +1,37 @@
+{
+  "qubit_counts": [
+    8,
+    12,
+    14
+  ],
+  "independent_parameters": [
+    1,
+    2,
+    4
+  ],
+  "layers": 8,
+  "training_examples": 4,
+  "updates": 12,
+  "fresh_seeds": [
+    944101,
+    944102,
+    944103,
+    944104,
+    944105
+  ],
+  "repeats": 3,
+  "methods": 6,
+  "planned_attempts": 720,
+  "main_budget_seconds": 4200,
+  "preflight_tests": 448,
+  "quick_successful": 12,
+  "cost_pilot_successful": 12,
+  "scope_choice": "Four-example training workload fixed before frozen pilot/main to keep all six controls tractable. All originally planned qubit/parameter conditions retained. No condition selected by observed speedup. Synthetic timing/memory scaling, not learning generalization.",
+  "hardware": {
+    "cpu": "Apple M1",
+    "memory_bytes": 8589934592
+  },
+  "qiskit_controls": "Cached O(2^n) CZ/RZ diagonals and runtime-bound RX/RY; same response support and validity checks",
+  "hard_deadline_unix": 1792510331.885418,
+  "preliminary_attempts_excluded": 101
+}

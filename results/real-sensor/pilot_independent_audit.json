@@ -1,0 +1,212 @@
+{
+  "audit": "PASS",
+  "source": {
+    "files": 29,
+    "commit": null,
+    "verification": "current source hashes; no frozen commit receipt yet"
+  },
+  "raw_data_verified": true,
+  "planned": 6,
+  "attempted": 6,
+  "successful": 6,
+  "matched_blocks": 1,
+  "planned_blocks": 1,
+  "maximum_matching_vector_error": 6.827871601444713e-15,
+  "coverage": {
+    "har-train512-p16": {
+      "SUCCESS": 6
+    }
+  },
+  "authorization": {
+    "start_unix": 1792511518.668267,
+    "deadline_unix": 1792512118.668267,
+    "scope": "Local CPU-only benchmark; no remote VM or QPU"
+  },
+  "latest_attempt_end_unix": 1792511545.332344,
+  "worker_wall_sum_s": 26.519365667016245,
+  "parameter_motion": {
+    "har-train512-p16": {
+      "observed_seeds": 1,
+      "min_moved_parameters": 16,
+      "max_moved_parameters": 16,
+      "min_selected_moved_parameters": 16,
+      "max_selected_moved_parameters": 16,
+      "median_displacement_norm": 1.8801982984148002,
+      "selected_steps": [
+        60
+      ]
+    }
+  },
+  "comparisons": [
+    {
+      "condition": "har-train512-p16",
+      "baseline": "qiskit_response",
+      "matched_seeds": 1,
+      "paired_speedup": 3.5193782821522057,
+      "minimum_seed_speedup": 3.5193782821522057,
+      "maximum_seed_speedup": 3.5193782821522057,
+      "median_paired_saving": 0.715858904661857,
+      "runtime_win": false,
+      "minimum_balanced_accuracy_difference": 0.0,
+      "mean_balanced_accuracy_difference": 0.0,
+      "useful_win": false,
+      "per_seed": [
+        {
+          "seed": 955011,
+          "speedup": 3.5193782821522057,
+          "balanced_accuracy_difference": 0.0
+        }
+      ]
+    },
+    {
+      "condition": "har-train512-p16",
+      "baseline": "classical_adjoint",
+      "matched_seeds": 1,
+      "paired_speedup": 1.6357158154320937,
+      "minimum_seed_speedup": 1.6357158154320937,
+      "maximum_seed_speedup": 1.6357158154320937,
+      "median_paired_saving": 0.38864685994624426,
+      "runtime_win": false,
+      "minimum_balanced_accuracy_difference": 0.0,
+      "mean_balanced_accuracy_difference": 0.0,
+      "useful_win": false,
+      "per_seed": [
+        {
+          "seed": 955011,
+          "speedup": 1.6357158154320937,
+          "balanced_accuracy_difference": 0.0
+        }
+      ]
+    },
+    {
+      "condition": "har-train512-p16",
+      "baseline": "classical_logistic",
+      "matched_seeds": 1,
+      "paired_speedup": 0.6250160194411762,
+      "minimum_seed_speedup": 0.6250160194411762,
+      "maximum_seed_speedup": 0.6250160194411762,
+      "median_paired_saving": -0.5999589912816876,
+      "runtime_win": false,
+      "minimum_balanced_accuracy_difference": -0.3352713178294573,
+      "mean_balanced_accuracy_difference": -0.3352713178294573,
+      "useful_win": false,
+      "per_seed": [
+        {
+          "seed": 955011,
+          "speedup": 0.6250160194411762,
+          "balanced_accuracy_difference": -0.3352713178294573
+        }
+      ]
+    },
+    {
+      "condition": "har-train512-p16",
+      "baseline": "classical_rbf",
+      "matched_seeds": 1,
+      "paired_speedup": 0.5768686299944972,
+      "minimum_seed_speedup": 0.5768686299944972,
+      "maximum_seed_speedup": 0.5768686299944972,
+      "median_paired_saving": -0.73349693154495,
+      "runtime_win": false,
+      "minimum_balanced_accuracy_difference": -0.3117386489479512,
+      "mean_balanced_accuracy_difference": -0.3117386489479512,
+      "useful_win": false,
+      "per_seed": [
+        {
+          "seed": 955011,
+          "speedup": 0.5768686299944972,
+          "balanced_accuracy_difference": -0.3117386489479512
+        }
+      ]
+    },
+    {
+      "condition": "har-train512-p16",
+      "baseline": "classical_mlp",
+      "matched_seeds": 1,
+      "paired_speedup": 0.6264909796791382,
+      "minimum_seed_speedup": 0.6264909796791382,
+      "maximum_seed_speedup": 0.6264909796791382,
+      "median_paired_saving": -0.5961921758429101,
+      "runtime_win": false,
+      "minimum_balanced_accuracy_difference": -0.31949058693244736,
+      "mean_balanced_accuracy_difference": -0.31949058693244736,
+      "useful_win": false,
+      "per_seed": [
+        {
+          "seed": 955011,
+          "speedup": 0.6264909796791382,
+          "balanced_accuracy_difference": -0.31949058693244736
+        }
+      ]
+    }
+  ],
+  "seed_medians": [
+    {
+      "condition": "har-train512-p16",
+      "seed": 955011,
+      "method": "group_spectral",
+      "process_wall_s": 3.3217844589962624,
+      "balanced_accuracy": 0.5986526393503138,
+      "log_loss": 1.0564056736416063,
+      "selected_step": 60,
+      "selected_view": null
+    },
+    {
+      "condition": "har-train512-p16",
+      "seed": 955011,
+      "method": "qiskit_response",
+      "process_wall_s": 11.69061608298216,
+      "balanced_accuracy": 0.5986526393503138,
+      "log_loss": 1.0564056736416063,
+      "selected_step": 60,
+      "selected_view": null
+    },
+    {
+      "condition": "har-train512-p16",
+      "seed": 955011,
+      "method": "classical_adjoint",
+      "process_wall_s": 5.433495375036728,
+      "balanced_accuracy": 0.5986526393503138,
+      "log_loss": 1.0564056736416063,
+      "selected_step": 60,
+      "selected_view": null
+    },
+    {
+      "condition": "har-train512-p16",
+      "seed": 955011,
+      "method": "classical_logistic",
+      "process_wall_s": 2.076168500003405,
+      "balanced_accuracy": 0.9339239571797711,
+      "log_loss": 0.24488387190836997,
+      "selected_step": null,
+      "selected_view": "full561"
+    },
+    {
+      "condition": "har-train512-p16",
+      "seed": 955011,
+      "method": "classical_rbf",
+      "process_wall_s": 1.9162332499981858,
+      "balanced_accuracy": 0.910391288298265,
+      "log_loss": 0.25200862385268935,
+      "selected_step": null,
+      "selected_view": "full561"
+    },
+    {
+      "condition": "har-train512-p16",
+      "seed": 955011,
+      "method": "classical_mlp",
+      "process_wall_s": 2.0810679999995045,
+      "balanced_accuracy": 0.9181432262827611,
+      "log_loss": 0.23868643743490736,
+      "selected_step": null,
+      "selected_view": "full561"
+    }
+  ],
+  "limits": [
+    "Independent two-qubit patches; nominal8/16 qubits are not a fully entangled statevector or a hardware advantage.",
+    "The same-model vector verifies optimizer parameters/gradients and selected final predictions, not every intermediate feature Jacobian.",
+    "Seed subsets share subjects across replicates; no confidence interval or independent-subject significance claim.",
+    "Common archive download/text preparation is separate from each timed NPZ read and train-only preprocessing.",
+    "Partial blocks and incomplete repeat sets never support wins."
+  ],
+  "audit_seconds": 0.25297054200200364
+}

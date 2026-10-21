@@ -1,0 +1,4 @@
+[
+  {"id":"sensor-quick","experiment":"1A","config":{"n_qubits":6,"bases":4,"views":4,"updates":2}},
+  {"id":"spin-quick","experiment":"2A","config":{"n_train":4,"n_test":4,"steps":2}}
+]

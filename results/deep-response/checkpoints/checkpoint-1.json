@@ -1,0 +1,19 @@
+{
+  "completed_attempts": 539,
+  "next_spec": {
+    "condition": "deep_shared-16",
+    "experiment": "deep_shared",
+    "config": {
+      "n_qubits": 8,
+      "layers": 16,
+      "updates": 12
+    },
+    "seed": 942105,
+    "repeat": 0,
+    "method": "classical_direct"
+  },
+  "config_sha256": "f5cf3056a43a56d1942a586aebecb5c4f4ab8f466b5b961d3830fcc936588ac7",
+  "deadline_unix": 1792504248.3712041,
+  "journal_last_index": 538,
+  "last_result_sha256": "544dbe9c3ed53cf8a6ac53d71a3bc8900b161f2b0151ab87dfd6c58e8fc9e60d"
+}

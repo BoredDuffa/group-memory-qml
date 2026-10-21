@@ -1,0 +1,98 @@
+[
+  {
+    "id": "sensor-n8-p1",
+    "experiment": "multi_sensor",
+    "config": {
+      "n_qubits": 8,
+      "n_parameters": 1,
+      "occurrences": 8,
+      "updates": 12,
+      "bases": 4,
+      "views": 1
+    }
+  },
+  {
+    "id": "sensor-n8-p2",
+    "experiment": "multi_sensor",
+    "config": {
+      "n_qubits": 8,
+      "n_parameters": 2,
+      "occurrences": 4,
+      "updates": 12,
+      "bases": 4,
+      "views": 1
+    }
+  },
+  {
+    "id": "sensor-n8-p4",
+    "experiment": "multi_sensor",
+    "config": {
+      "n_qubits": 8,
+      "n_parameters": 4,
+      "occurrences": 2,
+      "updates": 12,
+      "bases": 4,
+      "views": 1
+    }
+  },
+  {
+    "id": "sensor-n12-p2",
+    "experiment": "multi_sensor",
+    "config": {
+      "n_qubits": 12,
+      "n_parameters": 2,
+      "occurrences": 4,
+      "updates": 12,
+      "bases": 4,
+      "views": 1
+    }
+  },
+  {
+    "id": "sensor-n12-p4",
+    "experiment": "multi_sensor",
+    "config": {
+      "n_qubits": 12,
+      "n_parameters": 4,
+      "occurrences": 2,
+      "updates": 12,
+      "bases": 4,
+      "views": 1
+    }
+  },
+  {
+    "id": "sensor-n14-p2",
+    "experiment": "multi_sensor",
+    "config": {
+      "n_qubits": 14,
+      "n_parameters": 2,
+      "occurrences": 4,
+      "updates": 12,
+      "bases": 4,
+      "views": 1
+    }
+  },
+  {
+    "id": "shared-n12-p2",
+    "experiment": "multi_shared",
+    "config": {
+      "n_qubits": 12,
+      "n_parameters": 2,
+      "occurrences": 4,
+      "updates": 12,
+      "n_train": 4,
+      "n_test": 16
+    }
+  },
+  {
+    "id": "shared-n12-p4",
+    "experiment": "multi_shared",
+    "config": {
+      "n_qubits": 12,
+      "n_parameters": 4,
+      "occurrences": 2,
+      "updates": 12,
+      "n_train": 4,
+      "n_test": 16
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {"id":"1A-small","experiment":"1A","config":{"n_qubits":6,"views":4,"bases":8,"updates":3}},
+  {"id":"1A-scaled","experiment":"1A","config":{"n_qubits":10,"views":8,"bases":16,"updates":3}},
+  {"id":"1B-small","experiment":"1B","config":{"n_qubits":8,"views":4,"bases":16}},
+  {"id":"1B-scaled","experiment":"1B","config":{"n_qubits":12,"views":8,"bases":24}},
+  {"id":"2A-small","experiment":"2A","config":{"steps":3,"n_train":12,"n_test":12}},
+  {"id":"2A-scaled","experiment":"2A","config":{"steps":5,"n_train":24,"n_test":24}},
+  {"id":"2B-small","experiment":"2B","config":{"steps":2,"n_train":8,"n_test":8}},
+  {"id":"2B-scaled","experiment":"2B","config":{"steps":3,"n_train":12,"n_test":12}},
+  {"id":"3A-small","experiment":"3A","config":{"n_qubits":6,"pairs":2,"views":4}},
+  {"id":"3A-scaled","experiment":"3A","config":{"n_qubits":8,"pairs":4,"views":4}},
+  {"id":"3B-small","experiment":"3B","config":{"n_qubits":6,"pairs":2,"views":4}},
+  {"id":"3B-scaled","experiment":"3B","config":{"n_qubits":8,"pairs":4,"views":4}},
+  {"id":"4A-small","experiment":"4A","config":{"patch_side":2}},
+  {"id":"4A-scaled","experiment":"4A","config":{"patch_side":3}},
+  {"id":"4B-small","experiment":"4B","config":{"n_global":64}},
+  {"id":"4B-scaled","experiment":"4B","config":{"n_global":256}}
+]

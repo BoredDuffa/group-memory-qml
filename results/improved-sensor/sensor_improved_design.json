@@ -1,0 +1,9237 @@
+{
+  "status": "COMPLETE",
+  "budget_s": 285.0,
+  "seeds": [
+    966001,
+    966002
+  ],
+  "npz_members_opened": [
+    "X_train",
+    "y_train",
+    "subjects_train"
+  ],
+  "test_partition_read": false,
+  "test_predictions_evaluated": false,
+  "source_sha256": "b09a338c86cb55d36826b693cd306bacd1ec895e9be67a7bf74c7d726d61b107",
+  "candidates": [
+    "pca_original",
+    "pca_shifted",
+    "lda_tiled",
+    "lda_pca"
+  ],
+  "results": [
+    {
+      "seed": 966001,
+      "representation": "pca_original",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.65625,
+        "balanced_accuracy": 0.6583694083694084,
+        "log_loss": 0.9053687830252152,
+        "confusion_matrix": [
+          [
+            17,
+            2,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            5,
+            16,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            8,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            12,
+            9,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            4,
+            16,
+            0
+          ],
+          [
+            1,
+            0,
+            2,
+            2,
+            0,
+            16
+          ]
+        ],
+        "class_support": [
+          21,
+          22,
+          22,
+          21,
+          21,
+          21
+        ]
+      },
+      "best_step": 998,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.53125,
+            "balanced_accuracy": 0.534992784992785,
+            "log_loss": 1.1703383975259376,
+            "confusion_matrix": [
+              [
+                13,
+                4,
+                2,
+                0,
+                1,
+                1
+              ],
+              [
+                7,
+                6,
+                2,
+                2,
+                5,
+                0
+              ],
+              [
+                4,
+                9,
+                7,
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                4,
+                14,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                20,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                18
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.53125,
+            "balanced_accuracy": 0.534992784992785,
+            "log_loss": 1.1703383975259376,
+            "confusion_matrix": [
+              [
+                13,
+                4,
+                2,
+                0,
+                1,
+                1
+              ],
+              [
+                7,
+                6,
+                2,
+                2,
+                5,
+                0
+              ],
+              [
+                4,
+                9,
+                7,
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                4,
+                14,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                20,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                18
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.9806980060909201,
+          "training_accuracy": 0.638671875
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.6328125,
+            "balanced_accuracy": 0.6352813852813852,
+            "log_loss": 0.9940288009009763,
+            "confusion_matrix": [
+              [
+                17,
+                2,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                6,
+                14,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                5,
+                10,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                9,
+                12,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                20,
+                0
+              ],
+              [
+                1,
+                0,
+                2,
+                4,
+                0,
+                14
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.6328125,
+            "balanced_accuracy": 0.6352813852813852,
+            "log_loss": 0.9940288009009763,
+            "confusion_matrix": [
+              [
+                17,
+                2,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                6,
+                14,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                5,
+                10,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                9,
+                12,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                20,
+                0
+              ],
+              [
+                1,
+                0,
+                2,
+                4,
+                0,
+                14
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.710469052874056,
+          "training_accuracy": 0.72265625
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.65625,
+            "balanced_accuracy": 0.6583694083694084,
+            "log_loss": 0.9053687830252152,
+            "confusion_matrix": [
+              [
+                17,
+                2,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                5,
+                16,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                7,
+                8,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                9,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                4,
+                16,
+                0
+              ],
+              [
+                1,
+                0,
+                2,
+                2,
+                0,
+                16
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 998,
+          "current_validation": {
+            "accuracy": 0.65625,
+            "balanced_accuracy": 0.6583694083694084,
+            "log_loss": 0.9053759940502533,
+            "confusion_matrix": [
+              [
+                17,
+                2,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                5,
+                16,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                7,
+                8,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                9,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                4,
+                16,
+                0
+              ],
+              [
+                1,
+                0,
+                2,
+                2,
+                0,
+                16
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.6055932820126798,
+          "training_accuracy": 0.765625
+        }
+      },
+      "search_run_s": 4.160332667001057,
+      "initial_calibration_s": 0.22007862501777709,
+      "independent_angles": 16,
+      "trainable_angles": 16,
+      "angle_displacement_norm": 2.9647166664024653,
+      "max_correctness_error": 2.4424906541753444e-15,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": false
+    },
+    {
+      "seed": 966001,
+      "representation": "pca_original",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.609375,
+        "balanced_accuracy": 0.608946608946609,
+        "log_loss": 0.966685024570206,
+        "confusion_matrix": [
+          [
+            14,
+            6,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            21,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            13,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            11,
+            5,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            5,
+            13,
+            3
+          ],
+          [
+            0,
+            0,
+            2,
+            3,
+            4,
+            12
+          ]
+        ],
+        "class_support": [
+          21,
+          22,
+          22,
+          21,
+          21,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.5625,
+            "balanced_accuracy": 0.562049062049062,
+            "log_loss": 1.2084650398965515,
+            "confusion_matrix": [
+              [
+                13,
+                5,
+                2,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                20,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                3,
+                12,
+                6,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                5,
+                10,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                13,
+                3
+              ],
+              [
+                0,
+                0,
+                2,
+                1,
+                3,
+                15
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.5625,
+            "balanced_accuracy": 0.562049062049062,
+            "log_loss": 1.2084650398965515,
+            "confusion_matrix": [
+              [
+                13,
+                5,
+                2,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                20,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                3,
+                12,
+                6,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                5,
+                10,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                13,
+                3
+              ],
+              [
+                0,
+                0,
+                2,
+                1,
+                3,
+                15
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 1.1932237347508325,
+          "training_accuracy": 0.52734375
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.6171875,
+            "balanced_accuracy": 0.6172438672438672,
+            "log_loss": 1.0109194609311793,
+            "confusion_matrix": [
+              [
+                15,
+                5,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                3,
+                12,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                11,
+                5,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                14,
+                3
+              ],
+              [
+                0,
+                0,
+                2,
+                3,
+                4,
+                12
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.6171875,
+            "balanced_accuracy": 0.6172438672438672,
+            "log_loss": 1.0109194609311793,
+            "confusion_matrix": [
+              [
+                15,
+                5,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                3,
+                12,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                11,
+                5,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                14,
+                3
+              ],
+              [
+                0,
+                0,
+                2,
+                3,
+                4,
+                12
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 1.0042167367158208,
+          "training_accuracy": 0.595703125
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.609375,
+            "balanced_accuracy": 0.608946608946609,
+            "log_loss": 0.966685024570206,
+            "confusion_matrix": [
+              [
+                14,
+                6,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                13,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                11,
+                5,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                13,
+                3
+              ],
+              [
+                0,
+                0,
+                2,
+                3,
+                4,
+                12
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.609375,
+            "balanced_accuracy": 0.608946608946609,
+            "log_loss": 0.966685024570206,
+            "confusion_matrix": [
+              [
+                14,
+                6,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                13,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                11,
+                5,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                13,
+                3
+              ],
+              [
+                0,
+                0,
+                2,
+                3,
+                4,
+                12
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.9734582021440896,
+          "training_accuracy": 0.611328125
+        }
+      },
+      "search_run_s": 0.21779195900307968,
+      "initial_calibration_s": 0.031113750010263175,
+      "independent_angles": 16,
+      "trainable_angles": 0,
+      "angle_displacement_norm": 0.0,
+      "max_correctness_error": 0.0,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": true
+    },
+    {
+      "seed": 966001,
+      "representation": "pca_shifted",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.7578125,
+        "balanced_accuracy": 0.759018759018759,
+        "log_loss": 0.5410140187769137,
+        "confusion_matrix": [
+          [
+            18,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            16,
+            3,
+            2,
+            0,
+            0
+          ],
+          [
+            1,
+            7,
+            14,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            12,
+            8,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            4,
+            17,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            20
+          ]
+        ],
+        "class_support": [
+          21,
+          22,
+          22,
+          21,
+          21,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.6953125,
+            "balanced_accuracy": 0.6976911976911978,
+            "log_loss": 0.9449947497705583,
+            "confusion_matrix": [
+              [
+                20,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                9,
+                10,
+                2,
+                1,
+                0,
+                0
+              ],
+              [
+                4,
+                4,
+                14,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                8,
+                11,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.6953125,
+            "balanced_accuracy": 0.6976911976911978,
+            "log_loss": 0.9449947497705583,
+            "confusion_matrix": [
+              [
+                20,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                9,
+                10,
+                2,
+                1,
+                0,
+                0
+              ],
+              [
+                4,
+                4,
+                14,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                8,
+                11,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.9111938300886934,
+          "training_accuracy": 0.759765625
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.7265625,
+            "balanced_accuracy": 0.7287157287157288,
+            "log_loss": 0.5878068074859892,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                13,
+                3,
+                2,
+                0,
+                0
+              ],
+              [
+                1,
+                8,
+                13,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                8,
+                12,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                18,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 299,
+          "current_validation": {
+            "accuracy": 0.7421875,
+            "balanced_accuracy": 0.7438672438672439,
+            "log_loss": 0.5878345048164133,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                13,
+                3,
+                2,
+                0,
+                0
+              ],
+              [
+                1,
+                6,
+                15,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                8,
+                12,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                18,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.4969546362414526,
+          "training_accuracy": 0.837890625
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.7578125,
+            "balanced_accuracy": 0.759018759018759,
+            "log_loss": 0.5410140187769137,
+            "confusion_matrix": [
+              [
+                18,
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                16,
+                3,
+                2,
+                0,
+                0
+              ],
+              [
+                1,
+                7,
+                14,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                8,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                17,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.7578125,
+            "balanced_accuracy": 0.759018759018759,
+            "log_loss": 0.5410140187769137,
+            "confusion_matrix": [
+              [
+                18,
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                16,
+                3,
+                2,
+                0,
+                0
+              ],
+              [
+                1,
+                7,
+                14,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                8,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                17,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.40902861880316665,
+          "training_accuracy": 0.873046875
+        }
+      },
+      "search_run_s": 3.2810133330058306,
+      "initial_calibration_s": 0.23587958299322054,
+      "independent_angles": 16,
+      "trainable_angles": 16,
+      "angle_displacement_norm": 2.4274479005721172,
+      "max_correctness_error": 1.887379141862766e-15,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": false
+    },
+    {
+      "seed": 966001,
+      "representation": "pca_shifted",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.6015625,
+        "balanced_accuracy": 0.6020923520923521,
+        "log_loss": 1.1384945672432314,
+        "confusion_matrix": [
+          [
+            12,
+            2,
+            0,
+            0,
+            1,
+            6
+          ],
+          [
+            1,
+            12,
+            0,
+            1,
+            5,
+            3
+          ],
+          [
+            1,
+            1,
+            13,
+            2,
+            0,
+            5
+          ],
+          [
+            0,
+            6,
+            0,
+            8,
+            6,
+            1
+          ],
+          [
+            0,
+            3,
+            0,
+            3,
+            15,
+            0
+          ],
+          [
+            1,
+            0,
+            3,
+            0,
+            0,
+            17
+          ]
+        ],
+        "class_support": [
+          21,
+          22,
+          22,
+          21,
+          21,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.484375,
+            "balanced_accuracy": 0.48448773448773447,
+            "log_loss": 1.4556406428014488,
+            "confusion_matrix": [
+              [
+                9,
+                4,
+                0,
+                0,
+                0,
+                8
+              ],
+              [
+                1,
+                10,
+                0,
+                3,
+                2,
+                6
+              ],
+              [
+                0,
+                2,
+                11,
+                2,
+                2,
+                5
+              ],
+              [
+                0,
+                5,
+                0,
+                7,
+                6,
+                3
+              ],
+              [
+                0,
+                7,
+                0,
+                4,
+                10,
+                0
+              ],
+              [
+                3,
+                0,
+                3,
+                0,
+                0,
+                15
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.484375,
+            "balanced_accuracy": 0.48448773448773447,
+            "log_loss": 1.4556406428014488,
+            "confusion_matrix": [
+              [
+                9,
+                4,
+                0,
+                0,
+                0,
+                8
+              ],
+              [
+                1,
+                10,
+                0,
+                3,
+                2,
+                6
+              ],
+              [
+                0,
+                2,
+                11,
+                2,
+                2,
+                5
+              ],
+              [
+                0,
+                5,
+                0,
+                7,
+                6,
+                3
+              ],
+              [
+                0,
+                7,
+                0,
+                4,
+                10,
+                0
+              ],
+              [
+                3,
+                0,
+                3,
+                0,
+                0,
+                15
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 1.4117725790523323,
+          "training_accuracy": 0.5390625
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.546875,
+            "balanced_accuracy": 0.5476190476190476,
+            "log_loss": 1.1855179312648638,
+            "confusion_matrix": [
+              [
+                13,
+                2,
+                0,
+                0,
+                0,
+                6
+              ],
+              [
+                1,
+                11,
+                0,
+                3,
+                3,
+                4
+              ],
+              [
+                1,
+                2,
+                11,
+                2,
+                0,
+                6
+              ],
+              [
+                1,
+                6,
+                0,
+                5,
+                8,
+                1
+              ],
+              [
+                0,
+                4,
+                0,
+                4,
+                13,
+                0
+              ],
+              [
+                1,
+                0,
+                3,
+                0,
+                0,
+                17
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.546875,
+            "balanced_accuracy": 0.5476190476190476,
+            "log_loss": 1.1855179312648638,
+            "confusion_matrix": [
+              [
+                13,
+                2,
+                0,
+                0,
+                0,
+                6
+              ],
+              [
+                1,
+                11,
+                0,
+                3,
+                3,
+                4
+              ],
+              [
+                1,
+                2,
+                11,
+                2,
+                0,
+                6
+              ],
+              [
+                1,
+                6,
+                0,
+                5,
+                8,
+                1
+              ],
+              [
+                0,
+                4,
+                0,
+                4,
+                13,
+                0
+              ],
+              [
+                1,
+                0,
+                3,
+                0,
+                0,
+                17
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 1.120011936299143,
+          "training_accuracy": 0.611328125
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.6015625,
+            "balanced_accuracy": 0.6020923520923521,
+            "log_loss": 1.1384945672432314,
+            "confusion_matrix": [
+              [
+                12,
+                2,
+                0,
+                0,
+                1,
+                6
+              ],
+              [
+                1,
+                12,
+                0,
+                1,
+                5,
+                3
+              ],
+              [
+                1,
+                1,
+                13,
+                2,
+                0,
+                5
+              ],
+              [
+                0,
+                6,
+                0,
+                8,
+                6,
+                1
+              ],
+              [
+                0,
+                3,
+                0,
+                3,
+                15,
+                0
+              ],
+              [
+                1,
+                0,
+                3,
+                0,
+                0,
+                17
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.6015625,
+            "balanced_accuracy": 0.6020923520923521,
+            "log_loss": 1.1384945672432314,
+            "confusion_matrix": [
+              [
+                12,
+                2,
+                0,
+                0,
+                1,
+                6
+              ],
+              [
+                1,
+                12,
+                0,
+                1,
+                5,
+                3
+              ],
+              [
+                1,
+                1,
+                13,
+                2,
+                0,
+                5
+              ],
+              [
+                0,
+                6,
+                0,
+                8,
+                6,
+                1
+              ],
+              [
+                0,
+                3,
+                0,
+                3,
+                15,
+                0
+              ],
+              [
+                1,
+                0,
+                3,
+                0,
+                0,
+                17
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 1.0756714550198223,
+          "training_accuracy": 0.60546875
+        }
+      },
+      "search_run_s": 0.2020062500378117,
+      "initial_calibration_s": 0.0312678330228664,
+      "independent_angles": 16,
+      "trainable_angles": 0,
+      "angle_displacement_norm": 0.0,
+      "max_correctness_error": 0.0,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": true
+    },
+    {
+      "seed": 966001,
+      "representation": "lda_tiled",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.9296875,
+        "balanced_accuracy": 0.9307359307359309,
+        "log_loss": 0.23628444476098595,
+        "confusion_matrix": [
+          [
+            21,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            20,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            18,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            20,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21
+          ]
+        ],
+        "class_support": [
+          21,
+          22,
+          22,
+          21,
+          21,
+          21
+        ]
+      },
+      "best_step": 407,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.9375,
+            "balanced_accuracy": 0.9383116883116883,
+            "log_loss": 0.5038127448436822,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                19,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.9375,
+            "balanced_accuracy": 0.9383116883116883,
+            "log_loss": 0.5038127448436822,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                19,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.3798877141800531,
+          "training_accuracy": 0.9921875
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.9296875,
+            "balanced_accuracy": 0.9307359307359309,
+            "log_loss": 0.23879112834799832,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                3,
+                1,
+                18,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.9296875,
+            "balanced_accuracy": 0.9307359307359309,
+            "log_loss": 0.23879112834799832,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                3,
+                1,
+                18,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.06429146507562457,
+          "training_accuracy": 0.994140625
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.9296875,
+            "balanced_accuracy": 0.9307359307359309,
+            "log_loss": 0.23628444476098595,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                3,
+                1,
+                18,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 407,
+          "current_validation": {
+            "accuracy": 0.9296875,
+            "balanced_accuracy": 0.9307359307359309,
+            "log_loss": 0.24647308285642894,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                3,
+                1,
+                18,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.045555481242939344,
+          "training_accuracy": 0.99609375
+        }
+      },
+      "search_run_s": 2.76548995799385,
+      "initial_calibration_s": 0.13242008298402652,
+      "independent_angles": 16,
+      "trainable_angles": 16,
+      "angle_displacement_norm": 2.54802002068063,
+      "max_correctness_error": 1.9984014443252818e-15,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": false
+    },
+    {
+      "seed": 966001,
+      "representation": "lda_tiled",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.9375,
+        "balanced_accuracy": 0.9383116883116883,
+        "log_loss": 0.21697809959296288,
+        "confusion_matrix": [
+          [
+            21,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            20,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            19,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            20,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21
+          ]
+        ],
+        "class_support": [
+          21,
+          22,
+          22,
+          21,
+          21,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.921875,
+            "balanced_accuracy": 0.9224386724386724,
+            "log_loss": 0.747270195259929,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                19,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                17,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.921875,
+            "balanced_accuracy": 0.9224386724386724,
+            "log_loss": 0.747270195259929,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                19,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                17,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.6552236949400752,
+          "training_accuracy": 0.98046875
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.9375,
+            "balanced_accuracy": 0.9383116883116883,
+            "log_loss": 0.2724537636193513,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                19,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.9375,
+            "balanced_accuracy": 0.9383116883116883,
+            "log_loss": 0.2724537636193513,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                19,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.14876136159620001,
+          "training_accuracy": 0.99609375
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.9375,
+            "balanced_accuracy": 0.9383116883116883,
+            "log_loss": 0.21697809959296288,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                19,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.9375,
+            "balanced_accuracy": 0.9383116883116883,
+            "log_loss": 0.21697809959296288,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                19,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.09641805689277394,
+          "training_accuracy": 0.99609375
+        }
+      },
+      "search_run_s": 0.19810954201966524,
+      "initial_calibration_s": 0.02887104102410376,
+      "independent_angles": 16,
+      "trainable_angles": 0,
+      "angle_displacement_norm": 0.0,
+      "max_correctness_error": 0.0,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": true
+    },
+    {
+      "seed": 966001,
+      "representation": "lda_pca",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.875,
+        "balanced_accuracy": 0.876984126984127,
+        "log_loss": 0.34271274740204055,
+        "confusion_matrix": [
+          [
+            20,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            19,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            7,
+            14,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            20,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            20
+          ]
+        ],
+        "class_support": [
+          21,
+          22,
+          22,
+          21,
+          21,
+          21
+        ]
+      },
+      "best_step": 799,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.6640625,
+            "balanced_accuracy": 0.6626984126984127,
+            "log_loss": 0.829385334770913,
+            "confusion_matrix": [
+              [
+                20,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                19,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                7,
+                14,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                4,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                15,
+                4,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                2,
+                16
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.6640625,
+            "balanced_accuracy": 0.6626984126984127,
+            "log_loss": 0.829385334770913,
+            "confusion_matrix": [
+              [
+                20,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                19,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                7,
+                14,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                4,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                15,
+                4,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                2,
+                16
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.7507635996508525,
+          "training_accuracy": 0.77734375
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.8828125,
+            "balanced_accuracy": 0.8845598845598847,
+            "log_loss": 0.3736359972857882,
+            "confusion_matrix": [
+              [
+                20,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                18,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                3,
+                3,
+                16,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.8828125,
+            "balanced_accuracy": 0.8845598845598847,
+            "log_loss": 0.3736359972857882,
+            "confusion_matrix": [
+              [
+                20,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                18,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                3,
+                3,
+                16,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.18607657070123101,
+          "training_accuracy": 0.96484375
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.875,
+            "balanced_accuracy": 0.876984126984127,
+            "log_loss": 0.34271274740204055,
+            "confusion_matrix": [
+              [
+                20,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                19,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                7,
+                14,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 799,
+          "current_validation": {
+            "accuracy": 0.8671875,
+            "balanced_accuracy": 0.8690476190476191,
+            "log_loss": 0.3452198233040139,
+            "confusion_matrix": [
+              [
+                20,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                19,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                7,
+                14,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                0,
+                19
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.11396754281556526,
+          "training_accuracy": 0.98828125
+        }
+      },
+      "search_run_s": 3.2596287080086768,
+      "initial_calibration_s": 0.21705470804590732,
+      "independent_angles": 16,
+      "trainable_angles": 16,
+      "angle_displacement_norm": 3.9316515129702556,
+      "max_correctness_error": 1.9984014443252818e-15,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": false
+    },
+    {
+      "seed": 966001,
+      "representation": "lda_pca",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.875,
+        "balanced_accuracy": 0.876984126984127,
+        "log_loss": 0.44421906147309903,
+        "confusion_matrix": [
+          [
+            21,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            19,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            2,
+            14,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            18,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21
+          ]
+        ],
+        "class_support": [
+          21,
+          22,
+          22,
+          21,
+          21,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.7109375,
+            "balanced_accuracy": 0.711038961038961,
+            "log_loss": 1.131087394751325,
+            "confusion_matrix": [
+              [
+                15,
+                4,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                20,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                6,
+                4,
+                11,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                8,
+                11,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                4,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.7109375,
+            "balanced_accuracy": 0.711038961038961,
+            "log_loss": 1.131087394751325,
+            "confusion_matrix": [
+              [
+                15,
+                4,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                20,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                6,
+                4,
+                11,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                8,
+                11,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                4,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 1.133737320333463,
+          "training_accuracy": 0.6875
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.7734375,
+            "balanced_accuracy": 0.7741702741702742,
+            "log_loss": 0.6458234328251256,
+            "confusion_matrix": [
+              [
+                18,
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                7,
+                3,
+                12,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                9,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.7734375,
+            "balanced_accuracy": 0.7741702741702742,
+            "log_loss": 0.6458234328251256,
+            "confusion_matrix": [
+              [
+                18,
+                2,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                7,
+                3,
+                12,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                9,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.5783903613460246,
+          "training_accuracy": 0.849609375
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.875,
+            "balanced_accuracy": 0.876984126984127,
+            "log_loss": 0.44421906147309903,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                19,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                6,
+                2,
+                14,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                18,
+                3,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.875,
+            "balanced_accuracy": 0.876984126984127,
+            "log_loss": 0.44421906147309903,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                19,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                6,
+                2,
+                14,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                18,
+                3,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              22,
+              22,
+              21,
+              21,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.3660686529350984,
+          "training_accuracy": 0.94921875
+        }
+      },
+      "search_run_s": 0.1954036660026759,
+      "initial_calibration_s": 0.02982049999991432,
+      "independent_angles": 16,
+      "trainable_angles": 0,
+      "angle_displacement_norm": 0.0,
+      "max_correctness_error": 0.0,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": true
+    },
+    {
+      "seed": 966002,
+      "representation": "pca_original",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.7265625,
+        "balanced_accuracy": 0.7279942279942281,
+        "log_loss": 0.6798431749560739,
+        "confusion_matrix": [
+          [
+            13,
+            1,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            17,
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            5,
+            15,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            12,
+            6,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            6,
+            16,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            20
+          ]
+        ],
+        "class_support": [
+          21,
+          21,
+          21,
+          22,
+          22,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.6640625,
+            "balanced_accuracy": 0.665945165945166,
+            "log_loss": 0.9795821234004497,
+            "confusion_matrix": [
+              [
+                12,
+                5,
+                4,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                16,
+                4,
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                6,
+                13,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                8,
+                9,
+                4
+              ],
+              [
+                0,
+                2,
+                0,
+                2,
+                16,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.6640625,
+            "balanced_accuracy": 0.665945165945166,
+            "log_loss": 0.9795821234004497,
+            "confusion_matrix": [
+              [
+                12,
+                5,
+                4,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                16,
+                4,
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                6,
+                13,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                8,
+                9,
+                4
+              ],
+              [
+                0,
+                2,
+                0,
+                2,
+                16,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.9493356844664231,
+          "training_accuracy": 0.66015625
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.703125,
+            "balanced_accuracy": 0.7045454545454545,
+            "log_loss": 0.7376094425162045,
+            "confusion_matrix": [
+              [
+                12,
+                4,
+                3,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                17,
+                4,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                6,
+                13,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                12,
+                6,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                7,
+                15,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.703125,
+            "balanced_accuracy": 0.7045454545454545,
+            "log_loss": 0.7376094425162045,
+            "confusion_matrix": [
+              [
+                12,
+                4,
+                3,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                17,
+                4,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                6,
+                13,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                12,
+                6,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                7,
+                15,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.6973547122443462,
+          "training_accuracy": 0.75390625
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.7265625,
+            "balanced_accuracy": 0.7279942279942281,
+            "log_loss": 0.6798431749560739,
+            "confusion_matrix": [
+              [
+                13,
+                1,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                17,
+                4,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                5,
+                15,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                6,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                6,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.7265625,
+            "balanced_accuracy": 0.7279942279942281,
+            "log_loss": 0.6798431749560739,
+            "confusion_matrix": [
+              [
+                13,
+                1,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                17,
+                4,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                5,
+                15,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                6,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                6,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.6202800454531443,
+          "training_accuracy": 0.775390625
+        }
+      },
+      "search_run_s": 3.197731708001811,
+      "initial_calibration_s": 0.2282479590503499,
+      "independent_angles": 16,
+      "trainable_angles": 16,
+      "angle_displacement_norm": 2.1998328626494286,
+      "max_correctness_error": 2.55351295663786e-15,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": false
+    },
+    {
+      "seed": 966002,
+      "representation": "pca_original",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.5390625,
+        "balanced_accuracy": 0.5404040404040403,
+        "log_loss": 1.0846364415784968,
+        "confusion_matrix": [
+          [
+            18,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            3,
+            7,
+            8,
+            2,
+            0
+          ],
+          [
+            6,
+            4,
+            8,
+            1,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            1,
+            14,
+            1,
+            3
+          ],
+          [
+            1,
+            4,
+            2,
+            7,
+            6,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            20
+          ]
+        ],
+        "class_support": [
+          21,
+          21,
+          21,
+          22,
+          22,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.5078125,
+            "balanced_accuracy": 0.5097402597402597,
+            "log_loss": 1.2161860449608877,
+            "confusion_matrix": [
+              [
+                17,
+                2,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                7,
+                6,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                8,
+                1,
+                3,
+                0
+              ],
+              [
+                0,
+                2,
+                2,
+                10,
+                3,
+                5
+              ],
+              [
+                1,
+                2,
+                3,
+                8,
+                7,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.5078125,
+            "balanced_accuracy": 0.5097402597402597,
+            "log_loss": 1.2161860449608877,
+            "confusion_matrix": [
+              [
+                17,
+                2,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                2,
+                7,
+                6,
+                4,
+                1
+              ],
+              [
+                4,
+                5,
+                8,
+                1,
+                3,
+                0
+              ],
+              [
+                0,
+                2,
+                2,
+                10,
+                3,
+                5
+              ],
+              [
+                1,
+                2,
+                3,
+                8,
+                7,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 1.316756884374536,
+          "training_accuracy": 0.5
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.5390625,
+            "balanced_accuracy": 0.5400432900432901,
+            "log_loss": 1.0893608448242134,
+            "confusion_matrix": [
+              [
+                17,
+                2,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                3,
+                7,
+                8,
+                2,
+                0
+              ],
+              [
+                6,
+                4,
+                8,
+                1,
+                2,
+                0
+              ],
+              [
+                0,
+                3,
+                1,
+                14,
+                1,
+                3
+              ],
+              [
+                1,
+                4,
+                2,
+                6,
+                7,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.5390625,
+            "balanced_accuracy": 0.5400432900432901,
+            "log_loss": 1.0893608448242134,
+            "confusion_matrix": [
+              [
+                17,
+                2,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                3,
+                7,
+                8,
+                2,
+                0
+              ],
+              [
+                6,
+                4,
+                8,
+                1,
+                2,
+                0
+              ],
+              [
+                0,
+                3,
+                1,
+                14,
+                1,
+                3
+              ],
+              [
+                1,
+                4,
+                2,
+                6,
+                7,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 1.2326254644947396,
+          "training_accuracy": 0.5390625
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.5390625,
+            "balanced_accuracy": 0.5404040404040403,
+            "log_loss": 1.0846364415784968,
+            "confusion_matrix": [
+              [
+                18,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                3,
+                7,
+                8,
+                2,
+                0
+              ],
+              [
+                6,
+                4,
+                8,
+                1,
+                2,
+                0
+              ],
+              [
+                0,
+                3,
+                1,
+                14,
+                1,
+                3
+              ],
+              [
+                1,
+                4,
+                2,
+                7,
+                6,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.5390625,
+            "balanced_accuracy": 0.5404040404040403,
+            "log_loss": 1.0846364415784968,
+            "confusion_matrix": [
+              [
+                18,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                3,
+                7,
+                8,
+                2,
+                0
+              ],
+              [
+                6,
+                4,
+                8,
+                1,
+                2,
+                0
+              ],
+              [
+                0,
+                3,
+                1,
+                14,
+                1,
+                3
+              ],
+              [
+                1,
+                4,
+                2,
+                7,
+                6,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 1.2317007295022264,
+          "training_accuracy": 0.5390625
+        }
+      },
+      "search_run_s": 0.2151300419936888,
+      "initial_calibration_s": 0.028808167029637843,
+      "independent_angles": 16,
+      "trainable_angles": 0,
+      "angle_displacement_norm": 0.0,
+      "max_correctness_error": 0.0,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": true
+    },
+    {
+      "seed": 966002,
+      "representation": "pca_shifted",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.8203125,
+        "balanced_accuracy": 0.8225108225108224,
+        "log_loss": 0.4396116588163279,
+        "confusion_matrix": [
+          [
+            19,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            17,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            18,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            15,
+            5,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            7,
+            15,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21
+          ]
+        ],
+        "class_support": [
+          21,
+          21,
+          21,
+          22,
+          22,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.6953125,
+            "balanced_accuracy": 0.6966089466089467,
+            "log_loss": 0.9444636498475207,
+            "confusion_matrix": [
+              [
+                18,
+                1,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                4,
+                6,
+                8,
+                1,
+                2,
+                0
+              ],
+              [
+                1,
+                3,
+                17,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                11,
+                7,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                6,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.6953125,
+            "balanced_accuracy": 0.6966089466089467,
+            "log_loss": 0.9444636498475207,
+            "confusion_matrix": [
+              [
+                18,
+                1,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                4,
+                6,
+                8,
+                1,
+                2,
+                0
+              ],
+              [
+                1,
+                3,
+                17,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                11,
+                7,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                6,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.8989384089424275,
+          "training_accuracy": 0.73828125
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.78125,
+            "balanced_accuracy": 0.7824675324675324,
+            "log_loss": 0.5429604436064126,
+            "confusion_matrix": [
+              [
+                19,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                12,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                4,
+                17,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                5,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.78125,
+            "balanced_accuracy": 0.7824675324675324,
+            "log_loss": 0.5429604436064126,
+            "confusion_matrix": [
+              [
+                19,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                12,
+                7,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                4,
+                17,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                5,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.5019408376721701,
+          "training_accuracy": 0.83984375
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.8203125,
+            "balanced_accuracy": 0.8225108225108224,
+            "log_loss": 0.4396116588163279,
+            "confusion_matrix": [
+              [
+                19,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                17,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                18,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                15,
+                5,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                7,
+                15,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.8203125,
+            "balanced_accuracy": 0.8225108225108224,
+            "log_loss": 0.4396116588163279,
+            "confusion_matrix": [
+              [
+                19,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                17,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                18,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                15,
+                5,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                7,
+                15,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.42093440579380564,
+          "training_accuracy": 0.869140625
+        }
+      },
+      "search_run_s": 3.3157570000039414,
+      "initial_calibration_s": 0.2417901669978164,
+      "independent_angles": 16,
+      "trainable_angles": 16,
+      "angle_displacement_norm": 3.0966112600026765,
+      "max_correctness_error": 1.7763568394002505e-15,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": false
+    },
+    {
+      "seed": 966002,
+      "representation": "pca_shifted",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.7734375,
+        "balanced_accuracy": 0.7766955266955268,
+        "log_loss": 0.6788437950971331,
+        "confusion_matrix": [
+          [
+            20,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            19,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            15,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            9,
+            8,
+            3
+          ],
+          [
+            0,
+            2,
+            0,
+            4,
+            16,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            20
+          ]
+        ],
+        "class_support": [
+          21,
+          21,
+          21,
+          22,
+          22,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.578125,
+            "balanced_accuracy": 0.5800865800865801,
+            "log_loss": 1.3516546734077184,
+            "confusion_matrix": [
+              [
+                15,
+                1,
+                4,
+                0,
+                1,
+                0
+              ],
+              [
+                3,
+                7,
+                1,
+                1,
+                2,
+                7
+              ],
+              [
+                5,
+                1,
+                13,
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                6,
+                9,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                14,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                19
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.578125,
+            "balanced_accuracy": 0.5800865800865801,
+            "log_loss": 1.3516546734077184,
+            "confusion_matrix": [
+              [
+                15,
+                1,
+                4,
+                0,
+                1,
+                0
+              ],
+              [
+                3,
+                7,
+                1,
+                1,
+                2,
+                7
+              ],
+              [
+                5,
+                1,
+                13,
+                0,
+                2,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                6,
+                9,
+                5
+              ],
+              [
+                0,
+                0,
+                0,
+                5,
+                14,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                19
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 1.2961310052060881,
+          "training_accuracy": 0.59375
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.734375,
+            "balanced_accuracy": 0.7377344877344879,
+            "log_loss": 0.8857049032771822,
+            "confusion_matrix": [
+              [
+                19,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                17,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                6,
+                0,
+                15,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                7,
+                9,
+                4
+              ],
+              [
+                0,
+                2,
+                0,
+                4,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.734375,
+            "balanced_accuracy": 0.7377344877344879,
+            "log_loss": 0.8857049032771822,
+            "confusion_matrix": [
+              [
+                19,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                17,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                6,
+                0,
+                15,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                7,
+                9,
+                4
+              ],
+              [
+                0,
+                2,
+                0,
+                4,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.8847915764065051,
+          "training_accuracy": 0.685546875
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.7734375,
+            "balanced_accuracy": 0.7766955266955268,
+            "log_loss": 0.6788437950971331,
+            "confusion_matrix": [
+              [
+                20,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                19,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                15,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                9,
+                8,
+                3
+              ],
+              [
+                0,
+                2,
+                0,
+                4,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.7734375,
+            "balanced_accuracy": 0.7766955266955268,
+            "log_loss": 0.6788437950971331,
+            "confusion_matrix": [
+              [
+                20,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                19,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                6,
+                0,
+                15,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                2,
+                0,
+                9,
+                8,
+                3
+              ],
+              [
+                0,
+                2,
+                0,
+                4,
+                16,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                20
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.7536141828043986,
+          "training_accuracy": 0.734375
+        }
+      },
+      "search_run_s": 0.2107325000106357,
+      "initial_calibration_s": 0.03028329199878499,
+      "independent_angles": 16,
+      "trainable_angles": 0,
+      "angle_displacement_norm": 0.0,
+      "max_correctness_error": 0.0,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": true
+    },
+    {
+      "seed": 966002,
+      "representation": "lda_tiled",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.9609375,
+        "balanced_accuracy": 0.962121212121212,
+        "log_loss": 0.08300592282964217,
+        "confusion_matrix": [
+          [
+            21,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            21,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            21,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            20,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21
+          ]
+        ],
+        "class_support": [
+          21,
+          21,
+          21,
+          22,
+          22,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.3887224998528205,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.3887224998528205,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.34050598006352983,
+          "training_accuracy": 0.986328125
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.10553692936662949,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.10553692936662949,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.07803424836861396,
+          "training_accuracy": 0.986328125
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.08300592282964217,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.08300592282964217,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.06484671912119004,
+          "training_accuracy": 0.986328125
+        }
+      },
+      "search_run_s": 2.7379763750359416,
+      "initial_calibration_s": 0.16340974997729063,
+      "independent_angles": 16,
+      "trainable_angles": 16,
+      "angle_displacement_norm": 2.819078820622966,
+      "max_correctness_error": 1.5543122344752192e-15,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": false
+    },
+    {
+      "seed": 966002,
+      "representation": "lda_tiled",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.9609375,
+        "balanced_accuracy": 0.962121212121212,
+        "log_loss": 0.1141540677566238,
+        "confusion_matrix": [
+          [
+            21,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            21,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            21,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            20,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21
+          ]
+        ],
+        "class_support": [
+          21,
+          21,
+          21,
+          22,
+          22,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.7006203332597772,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.7006203332597772,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.6677679703423879,
+          "training_accuracy": 0.986328125
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.182724300181341,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.182724300181341,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.15825490356210567,
+          "training_accuracy": 0.98828125
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.1141540677566238,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.9609375,
+            "balanced_accuracy": 0.962121212121212,
+            "log_loss": 0.1141540677566238,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                3,
+                19,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.11439649348472636,
+          "training_accuracy": 0.990234375
+        }
+      },
+      "search_run_s": 0.2026692500221543,
+      "initial_calibration_s": 0.027595250052399933,
+      "independent_angles": 16,
+      "trainable_angles": 0,
+      "angle_displacement_norm": 0.0,
+      "max_correctness_error": 0.0,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": true
+    },
+    {
+      "seed": 966002,
+      "representation": "lda_pca",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.96875,
+        "balanced_accuracy": 0.9696969696969697,
+        "log_loss": 0.14534467148082675,
+        "confusion_matrix": [
+          [
+            21,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            21,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            21,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            19,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            21,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21
+          ]
+        ],
+        "class_support": [
+          21,
+          21,
+          21,
+          22,
+          22,
+          21
+        ]
+      },
+      "best_step": 983,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.8203125,
+            "balanced_accuracy": 0.8214285714285715,
+            "log_loss": 0.7360203917452657,
+            "confusion_matrix": [
+              [
+                16,
+                4,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                14,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                15,
+                5,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                18,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.8203125,
+            "balanced_accuracy": 0.8214285714285715,
+            "log_loss": 0.7360203917452657,
+            "confusion_matrix": [
+              [
+                16,
+                4,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                14,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                15,
+                5,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                18,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.6770006688393879,
+          "training_accuracy": 0.83203125
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.90625,
+            "balanced_accuracy": 0.9062049062049061,
+            "log_loss": 0.3136471216190049,
+            "confusion_matrix": [
+              [
+                20,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                5,
+                14,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                19,
+                1,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                21,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 299,
+          "current_validation": {
+            "accuracy": 0.890625,
+            "balanced_accuracy": 0.8903318903318903,
+            "log_loss": 0.3144378867569812,
+            "confusion_matrix": [
+              [
+                19,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                5,
+                13,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                19,
+                1,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                21,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.2530757342783735,
+          "training_accuracy": 0.94921875
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.96875,
+            "balanced_accuracy": 0.9696969696969697,
+            "log_loss": 0.14534467148082675,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                19,
+                1,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                21,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 983,
+          "current_validation": {
+            "accuracy": 0.96875,
+            "balanced_accuracy": 0.9696969696969697,
+            "log_loss": 0.14589398920511243,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                21,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                20,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                2,
+                20,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.147451246905865,
+          "training_accuracy": 0.98046875
+        }
+      },
+      "search_run_s": 3.139829666004516,
+      "initial_calibration_s": 0.21293166698887944,
+      "independent_angles": 16,
+      "trainable_angles": 16,
+      "angle_displacement_norm": 3.4757215979632865,
+      "max_correctness_error": 1.887379141862766e-15,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": false
+    },
+    {
+      "seed": 966002,
+      "representation": "lda_pca",
+      "steps_finished": 1000,
+      "best_validation": {
+        "accuracy": 0.875,
+        "balanced_accuracy": 0.8773448773448774,
+        "log_loss": 0.3639959118249263,
+        "confusion_matrix": [
+          [
+            20,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            20,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            21,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            17,
+            2,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            7,
+            15,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            19
+          ]
+        ],
+        "class_support": [
+          21,
+          21,
+          21,
+          22,
+          22,
+          21
+        ]
+      },
+      "best_step": 1000,
+      "checkpoints": {
+        "60": {
+          "best_validation": {
+            "accuracy": 0.765625,
+            "balanced_accuracy": 0.7683982683982684,
+            "log_loss": 1.0525257961956065,
+            "confusion_matrix": [
+              [
+                15,
+                3,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                17,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                4,
+                6
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                14,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                19
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 60,
+          "current_validation": {
+            "accuracy": 0.765625,
+            "balanced_accuracy": 0.7683982683982684,
+            "log_loss": 1.0525257961956065,
+            "confusion_matrix": [
+              [
+                15,
+                3,
+                3,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                17,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                12,
+                4,
+                6
+              ],
+              [
+                0,
+                0,
+                0,
+                4,
+                14,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                19
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 1.0236673291739453,
+          "training_accuracy": 0.736328125
+        },
+        "300": {
+          "best_validation": {
+            "accuracy": 0.8203125,
+            "balanced_accuracy": 0.822871572871573,
+            "log_loss": 0.5609360995897587,
+            "confusion_matrix": [
+              [
+                17,
+                4,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                19,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                16,
+                2,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                9,
+                13,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                19
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 300,
+          "current_validation": {
+            "accuracy": 0.8203125,
+            "balanced_accuracy": 0.822871572871573,
+            "log_loss": 0.5609360995897587,
+            "confusion_matrix": [
+              [
+                17,
+                4,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                19,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                16,
+                2,
+                4
+              ],
+              [
+                0,
+                0,
+                0,
+                9,
+                13,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                19
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.49795051878119145,
+          "training_accuracy": 0.8984375
+        },
+        "1000": {
+          "best_validation": {
+            "accuracy": 0.875,
+            "balanced_accuracy": 0.8773448773448774,
+            "log_loss": 0.3639959118249263,
+            "confusion_matrix": [
+              [
+                20,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                17,
+                2,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                7,
+                15,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                19
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "best_step": 1000,
+          "current_validation": {
+            "accuracy": 0.875,
+            "balanced_accuracy": 0.8773448773448774,
+            "log_loss": 0.3639959118249263,
+            "confusion_matrix": [
+              [
+                20,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                21,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                17,
+                2,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                7,
+                15,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                19
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              21,
+              22,
+              22,
+              21
+            ]
+          },
+          "training_regularized_log_loss": 0.34943905894613414,
+          "training_accuracy": 0.9453125
+        }
+      },
+      "search_run_s": 0.21449833299266174,
+      "initial_calibration_s": 0.02967583399731666,
+      "independent_angles": 16,
+      "trainable_angles": 0,
+      "angle_displacement_norm": 0.0,
+      "max_correctness_error": 0.0,
+      "compute": "Ideal CPU simulation; exploratory shared-process timing only",
+      "frozen_quantum": true
+    }
+  ],
+  "representations": {
+    "966001": {
+      "pca_fit_transform_s": 0.017168124963063747,
+      "lda_fit_transform_s": 0.08708116604248062,
+      "lda_axes": 5,
+      "lda_tiled_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "fit_scope": "selected_training_rows_only",
+      "shifted_map": "pi/2 + 0.5*atan(StandardScaler(projected))",
+      "train_indices": [
+        2764,
+        5664,
+        1419,
+        372,
+        5630,
+        728,
+        3901,
+        3405,
+        5607,
+        704,
+        6601,
+        2570,
+        3504,
+        3774,
+        4632,
+        4560,
+        5028,
+        3650,
+        1677,
+        1620,
+        6730,
+        2716,
+        4329,
+        2110,
+        6360,
+        3215,
+        3172,
+        3238,
+        2499,
+        2252,
+        748,
+        1903,
+        6562,
+        1921,
+        6751,
+        1517,
+        1971,
+        6774,
+        3370,
+        1776,
+        2827,
+        2922,
+        6706,
+        2694,
+        2641,
+        6825,
+        1431,
+        3300,
+        4787,
+        6602,
+        634,
+        4724,
+        2168,
+        562,
+        2450,
+        4157,
+        2489,
+        3800,
+        3604,
+        6305,
+        592,
+        506,
+        4319,
+        2899,
+        966,
+        4733,
+        4057,
+        5050,
+        776,
+        4005,
+        4659,
+        5523,
+        4615,
+        983,
+        1715,
+        6270,
+        1735,
+        4584,
+        1534,
+        2523,
+        2162,
+        5484,
+        3018,
+        1799,
+        5745,
+        4682,
+        5003,
+        2400,
+        3930,
+        4017,
+        3145,
+        2193,
+        3919,
+        1331,
+        642,
+        6857,
+        2629,
+        5667,
+        1407,
+        536,
+        5854,
+        720,
+        3879,
+        3410,
+        5798,
+        861,
+        6586,
+        2745,
+        3506,
+        3950,
+        4633,
+        4563,
+        4863,
+        3829,
+        1832,
+        1609,
+        6902,
+        2707,
+        4339,
+        1936,
+        6356,
+        3034,
+        2986,
+        3252,
+        2345,
+        2415,
+        763,
+        1749,
+        6570,
+        1905,
+        6754,
+        1360,
+        1969,
+        6794,
+        3364,
+        1771,
+        2845,
+        2937,
+        6722,
+        2693,
+        2642,
+        6652,
+        1596,
+        3487,
+        4780,
+        6448,
+        612,
+        4903,
+        2191,
+        403,
+        2459,
+        4156,
+        2317,
+        3630,
+        3602,
+        6289,
+        593,
+        494,
+        4315,
+        2895,
+        810,
+        4744,
+        4062,
+        4842,
+        774,
+        4199,
+        4503,
+        5739,
+        4626,
+        824,
+        1844,
+        6283,
+        1866,
+        4418,
+        1532,
+        2361,
+        1992,
+        5706,
+        3193,
+        1665,
+        5566,
+        4685,
+        4801,
+        2385,
+        3753,
+        4037,
+        3134,
+        2210,
+        3741,
+        1328,
+        661,
+        6837,
+        2797,
+        5671,
+        1411,
+        356,
+        5637,
+        879,
+        3722,
+        3391,
+        5611,
+        855,
+        6599,
+        2586,
+        3321,
+        3786,
+        4653,
+        4541,
+        4867,
+        3835,
+        1822,
+        1611,
+        6731,
+        2556,
+        4166,
+        2086,
+        6369,
+        3225,
+        3175,
+        3461,
+        2337,
+        2438,
+        919,
+        1737,
+        6567,
+        2080,
+        6943,
+        1349,
+        1970,
+        6946,
+        3361,
+        1788,
+        2836,
+        2925,
+        6719,
+        2853,
+        2808,
+        6648,
+        1425,
+        3289,
+        4778,
+        6612,
+        462,
+        4717,
+        2176,
+        577,
+        2293,
+        4174,
+        2306,
+        3819,
+        3415,
+        6508,
+        607,
+        497,
+        4111,
+        3084,
+        802,
+        4927,
+        4088,
+        5041,
+        792,
+        3970,
+        4497,
+        5535,
+        4451,
+        825,
+        1850,
+        6266,
+        1716,
+        4580,
+        1537,
+        2533,
+        2165,
+        5684,
+        3004,
+        1661,
+        5770,
+        4688,
+        4825,
+        2239,
+        3936,
+        4038,
+        3146,
+        2038,
+        3735,
+        1339,
+        482,
+        6664,
+        2789,
+        5651,
+        1554,
+        524,
+        5622,
+        733,
+        3894,
+        3393,
+        5614,
+        868,
+        6419,
+        2592,
+        3525,
+        3949,
+        4642,
+        4555,
+        4848,
+        3827,
+        1679,
+        1460,
+        6906,
+        2708,
+        4164,
+        2090,
+        6339,
+        3031,
+        2976,
+        3278,
+        2515,
+        2274,
+        917,
+        1887,
+        6578,
+        2082,
+        6935,
+        1356,
+        1978,
+        6781,
+        3366,
+        1782,
+        2840,
+        3106,
+        6705,
+        2683,
+        2809,
+        6821,
+        1580,
+        3310,
+        4795,
+        6413,
+        617,
+        4694,
+        2174,
+        396,
+        2277,
+        4144,
+        2308,
+        3620,
+        3567,
+        6505,
+        416,
+        687,
+        4323,
+        2881,
+        811,
+        4929,
+        4265,
+        4837,
+        789,
+        4178,
+        4525,
+        5545,
+        4457,
+        845,
+        1702,
+        6284,
+        1877,
+        4574,
+        1546,
+        2540,
+        2157,
+        5687,
+        2999,
+        1790,
+        5782,
+        4687,
+        4806,
+        2246,
+        3932,
+        4010,
+        2946,
+        2046,
+        3745,
+        1500,
+        654,
+        6680,
+        2621,
+        5861,
+        1397,
+        368,
+        5831,
+        895,
+        3711,
+        3587,
+        5616,
+        873,
+        6423,
+        2739,
+        3505,
+        3768,
+        4639,
+        4534,
+        5014,
+        3658,
+        1838,
+        1464,
+        6894,
+        2545,
+        4137,
+        1938,
+        6544,
+        3219,
+        2983,
+        3275,
+        2342,
+        2257,
+        747,
+        1890,
+        6372,
+        2063,
+        6938,
+        1515,
+        1951,
+        6965,
+        3539,
+        1641,
+        2837,
+        3118,
+        6690,
+        2680,
+        2817,
+        6822,
+        1438,
+        3462,
+        4969,
+        6447,
+        610,
+        4882,
+        2030,
+        553,
+        2295,
+        4143,
+        2490,
+        3806,
+        3560,
+        6290,
+        429,
+        666,
+        4312,
+        3077,
+        950,
+        4736,
+        4282,
+        4861,
+        934,
+        4183,
+        4662,
+        5552,
+        4605,
+        982,
+        1847,
+        6457,
+        1732,
+        4419,
+        1378,
+        2536,
+        2006,
+        5495,
+        3190,
+        1801,
+        5748,
+        4531,
+        4994,
+        2242,
+        3759,
+        4232,
+        2967,
+        2039,
+        3912,
+        1494,
+        476,
+        6671,
+        2762,
+        5654,
+        1416,
+        533,
+        5631,
+        724,
+        3689,
+        3406,
+        5613,
+        707,
+        6595,
+        2576,
+        3513,
+        3775,
+        4649,
+        4542,
+        5030,
+        3851,
+        1689,
+        1610,
+        6899,
+        2723,
+        4163,
+        1930,
+        6551,
+        3026,
+        3187,
+        3259,
+        2338,
+        2421,
+        906,
+        1739
+      ],
+      "validation_indices": [
+        1278,
+        6036,
+        1092,
+        1203,
+        7172,
+        5940,
+        6216,
+        1290,
+        7278,
+        39,
+        1008,
+        7051,
+        7146,
+        304,
+        6177,
+        5316,
+        178,
+        5370,
+        5438,
+        5464,
+        5195,
+        7217,
+        5082,
+        214,
+        302,
+        7145,
+        95,
+        6109,
+        6086,
+        1229,
+        1275,
+        6226,
+        1080,
+        1040,
+        6982,
+        6135,
+        6006,
+        1296,
+        7090,
+        40,
+        991,
+        7034,
+        7120,
+        320,
+        6167,
+        5310,
+        196,
+        5160,
+        5224,
+        5470,
+        5381,
+        7022,
+        5303,
+        72,
+        142,
+        7160,
+        82,
+        6121,
+        6077,
+        1069,
+        1121,
+        6039,
+        1249,
+        1190,
+        6993,
+        6165,
+        6200,
+        1311,
+        7078,
+        236,
+        1166,
+        7038,
+        7307,
+        152,
+        5984,
+        5338,
+        194,
+        5152,
+        5436,
+        5260,
+        5173,
+        7218,
+        5098,
+        63,
+        333,
+        7165,
+        287,
+        6103,
+        5894,
+        1219,
+        1282,
+        6026,
+        1258,
+        1039,
+        7182,
+        5943,
+        6015,
+        1139,
+        7071,
+        33,
+        1162,
+        7032,
+        7155,
+        168,
+        6179,
+        5131,
+        21,
+        5341,
+        5443,
+        5238,
+        5178,
+        7221,
+        5280,
+        74,
+        346,
+        7346,
+        86,
+        6111,
+        6074,
+        1065,
+        1114,
+        6048,
+        1100,
+        1023,
+        7193,
+        5949,
+        6206,
+        1132
+      ],
+      "train_subjects": [
+        3,
+        5,
+        7,
+        8,
+        11,
+        14,
+        15,
+        16,
+        17,
+        19,
+        21,
+        22,
+        23,
+        26,
+        28,
+        29
+      ],
+      "validation_subjects": [
+        1,
+        6,
+        25,
+        27,
+        30
+      ],
+      "preparation_s": 0.13623795798048377
+    },
+    "966002": {
+      "pca_fit_transform_s": 0.04846991697559133,
+      "lda_fit_transform_s": 0.09201391699025407,
+      "lda_axes": 5,
+      "lda_tiled_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        1,
+        2,
+        3,
+        4,
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "fit_scope": "selected_training_rows_only",
+      "shifted_map": "pi/2 + 0.5*atan(StandardScaler(projected))",
+      "train_indices": [
+        1692,
+        3385,
+        6683,
+        2885,
+        3765,
+        4465,
+        4479,
+        4834,
+        6120,
+        5091,
+        317,
+        3134,
+        3907,
+        4497,
+        2424,
+        4535,
+        4675,
+        4063,
+        2476,
+        1431,
+        2923,
+        2386,
+        6792,
+        6342,
+        3170,
+        128,
+        1522,
+        180,
+        6219,
+        247,
+        5814,
+        3006,
+        48,
+        5476,
+        4837,
+        4968,
+        5412,
+        3928,
+        3470,
+        1009,
+        3225,
+        5571,
+        6733,
+        5622,
+        3855,
+        6809,
+        6413,
+        3685,
+        6391,
+        5438,
+        4033,
+        6480,
+        1891,
+        1227,
+        1084,
+        1269,
+        5725,
+        3975,
+        4369,
+        5961,
+        5981,
+        2332,
+        5329,
+        3610,
+        1147,
+        3345,
+        1575,
+        4362,
+        4581,
+        3460,
+        1619,
+        6721,
+        4306,
+        6197,
+        1791,
+        4710,
+        5270,
+        2287,
+        5002,
+        6423,
+        1024,
+        1758,
+        2537,
+        1691,
+        287,
+        6769,
+        6314,
+        1485,
+        5667,
+        5360,
+        3538,
+        1879,
+        4916,
+        5883,
+        3590,
+        1372,
+        1862,
+        3565,
+        6841,
+        3055,
+        3789,
+        4471,
+        4482,
+        5027,
+        6103,
+        5100,
+        310,
+        3156,
+        3927,
+        4669,
+        2412,
+        4395,
+        4512,
+        4285,
+        2474,
+        1592,
+        2912,
+        2240,
+        6954,
+        6524,
+        3184,
+        125,
+        1366,
+        20,
+        6232,
+        65,
+        5785,
+        3007,
+        230,
+        5498,
+        4873,
+        4960,
+        5193,
+        3939,
+        3482,
+        999,
+        3045,
+        5770,
+        6896,
+        5850,
+        3844,
+        6644,
+        6409,
+        3888,
+        6569,
+        5420,
+        4226,
+        6283,
+        1901,
+        1211,
+        1259,
+        1106,
+        5531,
+        4201,
+        4152,
+        5970,
+        5985,
+        2506,
+        5103,
+        3802,
+        1150,
+        3331,
+        1561,
+        4165,
+        4421,
+        3440,
+        1451,
+        6886,
+        4106,
+        6203,
+        1655,
+        4884,
+        5465,
+        2285,
+        4820,
+        6425,
+        1046,
+        1776,
+        2378,
+        1690,
+        108,
+        6924,
+        6311,
+        1336,
+        5842,
+        5346,
+        3557,
+        1727,
+        4751,
+        5872,
+        3584,
+        1373,
+        1694,
+        3417,
+        6863,
+        2880,
+        3767,
+        4607,
+        4643,
+        4829,
+        5930,
+        5272,
+        312,
+        3151,
+        3745,
+        4666,
+        2433,
+        4374,
+        4514,
+        4296,
+        2310,
+        1438,
+        3119,
+        2222,
+        6795,
+        6334,
+        3189,
+        146,
+        1352,
+        178,
+        6047,
+        67,
+        5605,
+        3192,
+        47,
+        5675,
+        4859,
+        4796,
+        5190,
+        3753,
+        3478,
+        995,
+        3031,
+        5581,
+        6913,
+        5815,
+        3671,
+        6632,
+        6434,
+        3870,
+        6568,
+        5209,
+        4257,
+        6451,
+        1752,
+        1215,
+        1243,
+        1112,
+        5518,
+        4193,
+        4347,
+        6165,
+        6177,
+        2509,
+        5338,
+        3805,
+        1296,
+        3315,
+        1396,
+        4340,
+        4591,
+        3461,
+        1471,
+        6684,
+        4314,
+        6005,
+        1804,
+        4898,
+        5464,
+        2456,
+        4827,
+        6416,
+        1195,
+        1642,
+        2535,
+        1688,
+        86,
+        6750,
+        6289,
+        1341,
+        5846,
+        5158,
+        3364,
+        1718,
+        4755,
+        6080,
+        3579,
+        1376,
+        1865,
+        3386,
+        6851,
+        2874,
+        3963,
+        4620,
+        4637,
+        5039,
+        6107,
+        5074,
+        323,
+        2946,
+        3729,
+        4671,
+        2261,
+        4378,
+        4508,
+        4091,
+        2301,
+        1435,
+        3103,
+        2244,
+        6781,
+        6539,
+        3165,
+        296,
+        1368,
+        5,
+        6236,
+        238,
+        5791,
+        3003,
+        45,
+        5673,
+        5065,
+        4949,
+        5182,
+        3764,
+        3484,
+        1161,
+        3028,
+        5577,
+        6894,
+        5635,
+        3681,
+        6826,
+        6609,
+        3876,
+        6555,
+        5216,
+        4013,
+        6258,
+        1903,
+        1057,
+        1256,
+        1289,
+        5709,
+        4187,
+        4355,
+        6154,
+        6186,
+        2353,
+        5336,
+        3822,
+        1144,
+        3508,
+        1421,
+        4337,
+        4428,
+        3276,
+        1602,
+        6694,
+        4323,
+        6198,
+        1654,
+        4886,
+        5454,
+        2284,
+        4997,
+        6589,
+        1194,
+        1784,
+        2371,
+        1833,
+        88,
+        6765,
+        6308,
+        1335,
+        5651,
+        5347,
+        3354,
+        1719,
+        4930,
+        5880,
+        3405,
+        1389,
+        1696,
+        3399,
+        6839,
+        3084,
+        3774,
+        4624,
+        4478,
+        4847,
+        6113,
+        5294,
+        157,
+        2954,
+        3744,
+        4506,
+        2436,
+        4564,
+        4528,
+        4070,
+        2470,
+        1444,
+        2934,
+        2382,
+        6959,
+        6535,
+        3185,
+        148,
+        1354,
+        198,
+        6045,
+        237,
+        5803,
+        3019,
+        228,
+        5696,
+        5044,
+        4770,
+        5408,
+        3779,
+        3468,
+        1171,
+        3023,
+        5752,
+        6915,
+        5819,
+        3860,
+        6819,
+        6605,
+        3705,
+        6371,
+        5234,
+        4015,
+        6276,
+        1756,
+        1064,
+        1239,
+        1125,
+        5540,
+        3982,
+        4143,
+        6149,
+        5984,
+        2510,
+        5322,
+        3824,
+        1306,
+        3522,
+        1399,
+        4163,
+        4406,
+        3447,
+        1456,
+        6892,
+        4309,
+        6011,
+        1793,
+        4718,
+        5261,
+        2279,
+        4990,
+        6583,
+        1029,
+        1759,
+        2379,
+        1820,
+        273,
+        6934,
+        6286,
+        1321,
+        5835,
+        5370,
+        3348,
+        1882,
+        4752,
+        5876,
+        3407,
+        1385,
+        1858,
+        3402,
+        6675,
+        3088,
+        3772,
+        4441,
+        4490,
+        5037,
+        6105,
+        5277,
+        173,
+        2939,
+        3743,
+        4525,
+        2255,
+        4377,
+        4509,
+        4273,
+        2327,
+        1430,
+        3108,
+        2383,
+        6787,
+        6533,
+        2983,
+        342,
+        1349,
+        189,
+        6027,
+        64,
+        5797,
+        3002
+      ],
+      "validation_indices": [
+        867,
+        556,
+        2121,
+        7115,
+        667,
+        1995,
+        2714,
+        887,
+        2770,
+        2189,
+        2702,
+        2805,
+        6982,
+        7210,
+        7035,
+        477,
+        2195,
+        937,
+        1918,
+        2756,
+        764,
+        2830,
+        985,
+        442,
+        533,
+        2087,
+        409,
+        800,
+        7347,
+        7077,
+        865,
+        381,
+        2132,
+        7110,
+        682,
+        2144,
+        2543,
+        879,
+        2609,
+        2021,
+        2852,
+        2640,
+        7185,
+        7002,
+        7260,
+        638,
+        2216,
+        779,
+        1917,
+        2746,
+        745,
+        2664,
+        842,
+        440,
+        541,
+        1932,
+        581,
+        821,
+        7166,
+        7088,
+        856,
+        385,
+        2126,
+        7119,
+        488,
+        2166,
+        2723,
+        895,
+        2789,
+        2027,
+        2850,
+        2801,
+        6969,
+        7001,
+        7254,
+        483,
+        2034,
+        922,
+        1916,
+        2755,
+        739,
+        2836,
+        982,
+        463,
+        357,
+        1938,
+        412,
+        801,
+        7346,
+        7263,
+        712,
+        570,
+        2136,
+        7114,
+        518,
+        2161,
+        2556,
+        880,
+        2796,
+        2014,
+        2848,
+        2824,
+        6978,
+        7222,
+        7046,
+        662,
+        2035,
+        934,
+        2062,
+        2750,
+        744,
+        2834,
+        987,
+        449,
+        373,
+        1926,
+        428,
+        820,
+        7140,
+        7277,
+        704,
+        573,
+        1965,
+        7307,
+        500,
+        2002,
+        2561,
+        886
+      ],
+      "train_subjects": [
+        1,
+        6,
+        7,
+        8,
+        14,
+        16,
+        17,
+        19,
+        21,
+        22,
+        23,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "validation_subjects": [
+        3,
+        5,
+        11,
+        15,
+        30
+      ],
+      "preparation_s": 0.15710041602142155
+    }
+  },
+  "classical_lda_controls": [
+    {
+      "seed": 966001,
+      "method": "logistic_on_five_LDA_axes",
+      "validation": {
+        "accuracy": 0.921875,
+        "balanced_accuracy": 0.922799422799423,
+        "log_loss": 0.26484569968753047,
+        "confusion_matrix": [
+          [
+            21,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            20,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            18,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            20,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            20
+          ]
+        ],
+        "class_support": [
+          21,
+          22,
+          22,
+          21,
+          21,
+          21
+        ]
+      },
+      "fit_predict_s": 0.05547075002687052
+    },
+    {
+      "seed": 966002,
+      "method": "logistic_on_five_LDA_axes",
+      "validation": {
+        "accuracy": 0.9765625,
+        "balanced_accuracy": 0.9772727272727272,
+        "log_loss": 0.08784719522092774,
+        "confusion_matrix": [
+          [
+            21,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            21,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            21,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            22,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            21
+          ]
+        ],
+        "class_support": [
+          21,
+          21,
+          21,
+          22,
+          22,
+          21
+        ]
+      },
+      "fit_predict_s": 0.021287083043716848
+    }
+  ],
+  "scope": "Exploratory training/validation search; not fresh-process final benchmark",
+  "elapsed_s": 28.01353370799916,
+  "negative_results_preserved": true,
+  "summary_from_saved_validation_only_records": [
+    {
+      "representation": "pca_original",
+      "frozen_quantum": false,
+      "development_seeds": 2,
+      "mean_best_validation_log_loss": 0.7926059789906446,
+      "mean_best_validation_balanced_accuracy": 0.6931818181818182,
+      "per_seed_best_steps": [
+        998,
+        1000
+      ]
+    },
+    {
+      "representation": "pca_original",
+      "frozen_quantum": true,
+      "development_seeds": 2,
+      "mean_best_validation_log_loss": 1.0256607330743515,
+      "mean_best_validation_balanced_accuracy": 0.5746753246753247,
+      "per_seed_best_steps": [
+        1000,
+        1000
+      ]
+    },
+    {
+      "representation": "pca_shifted",
+      "frozen_quantum": false,
+      "development_seeds": 2,
+      "mean_best_validation_log_loss": 0.4903128387966208,
+      "mean_best_validation_balanced_accuracy": 0.7907647907647908,
+      "per_seed_best_steps": [
+        1000,
+        1000
+      ]
+    },
+    {
+      "representation": "pca_shifted",
+      "frozen_quantum": true,
+      "development_seeds": 2,
+      "mean_best_validation_log_loss": 0.9086691811701822,
+      "mean_best_validation_balanced_accuracy": 0.6893939393939394,
+      "per_seed_best_steps": [
+        1000,
+        1000
+      ]
+    },
+    {
+      "representation": "lda_tiled",
+      "frozen_quantum": false,
+      "development_seeds": 2,
+      "mean_best_validation_log_loss": 0.15964518379531406,
+      "mean_best_validation_balanced_accuracy": 0.9464285714285714,
+      "per_seed_best_steps": [
+        407,
+        1000
+      ]
+    },
+    {
+      "representation": "lda_tiled",
+      "frozen_quantum": true,
+      "development_seeds": 2,
+      "mean_best_validation_log_loss": 0.16556608367479334,
+      "mean_best_validation_balanced_accuracy": 0.9502164502164502,
+      "per_seed_best_steps": [
+        1000,
+        1000
+      ]
+    },
+    {
+      "representation": "lda_pca",
+      "frozen_quantum": false,
+      "development_seeds": 2,
+      "mean_best_validation_log_loss": 0.24402870944143365,
+      "mean_best_validation_balanced_accuracy": 0.9233405483405484,
+      "per_seed_best_steps": [
+        799,
+        983
+      ]
+    },
+    {
+      "representation": "lda_pca",
+      "frozen_quantum": true,
+      "development_seeds": 2,
+      "mean_best_validation_log_loss": 0.40410748664901264,
+      "mean_best_validation_balanced_accuracy": 0.8771645021645023,
+      "per_seed_best_steps": [
+        1000,
+        1000
+      ]
+    }
+  ],
+  "search_clock_scope": "28.014s exploratory Python search clock starts after imports; shared-process setup and all16 candidate runs included. This is not a full fresh-process method benchmark.",
+  "recommendation": {
+    "primary_representation": "lda_tiled",
+    "encoding": "pi/2 + 0.5*atan(train-standardized shrinkage-LDA coordinates)",
+    "lda_solver": "eigen",
+    "lda_shrinkage": "auto",
+    "lda_axes": 5,
+    "tile_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      0,
+      1,
+      2,
+      3,
+      4,
+      0,
+      1,
+      2,
+      3,
+      4,
+      0
+    ],
+    "independent_quantum_angles": 16,
+    "training_steps": 1000,
+    "learning_rate": 0.03,
+    "head_l2": 0.0001,
+    "required_ablations": [
+      "pca_original longer training",
+      "pca_shifted encoding",
+      "frozen quantum angles on exact same representation",
+      "classical learners receiving the same supervised representation"
+    ],
+    "selection_rule": "Minimum mean best validation log loss across two development seeds, never test labels",
+    "negative_result": "Frozen LDA quantum features nearly match trained angles; supervised classical representation supplies substantial accuracy and does not establish a quantum learning benefit."
+  }
+}

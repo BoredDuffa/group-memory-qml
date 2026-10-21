@@ -1,0 +1,19 @@
+[
+  {
+    "id": "quick",
+    "experiment": "improved_uci_har",
+    "config": {
+      "n_qubits": 8,
+      "n_train": 24,
+      "n_validation": 24,
+      "n_test": 256,
+      "steps": 2,
+      "learning_rate": 0.03,
+      "head_l2": 0.0001,
+      "representation": "lda_tiled",
+      "angle_scale": 0.5,
+      "validation_only": true,
+      "early_stopping_patience": 0
+    }
+  }
+]

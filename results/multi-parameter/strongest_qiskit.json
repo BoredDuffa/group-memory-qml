@@ -1,0 +1,498 @@
+[
+  {
+    "condition": "sensor-n8-p1",
+    "matched_seeds": 5,
+    "paired_speedup": 1.03195403318482,
+    "minimum_seed_speedup": 0.922668647241598,
+    "maximum_seed_speedup": 1.0618687515145768,
+    "median_paired_saving": 0.03096458965929272,
+    "descriptive_win": false,
+    "details": [
+      {
+        "seed": 944101,
+        "times": {
+          "group_spectral": 1.4632438329863362,
+          "qiskit_response": 1.5100003749830648,
+          "qiskit_shift": 1.7464412919944152
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.03195403318482
+      },
+      {
+        "seed": 944102,
+        "times": {
+          "group_spectral": 1.489425040956121,
+          "qiskit_response": 1.5679189580259845,
+          "qiskit_shift": 1.6970133750000969
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.0527008173700874
+      },
+      {
+        "seed": 944103,
+        "times": {
+          "group_spectral": 1.6357477080309764,
+          "qiskit_response": 1.5092531249974854,
+          "qiskit_shift": 1.8847262909985147
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 0.922668647241598
+      },
+      {
+        "seed": 944104,
+        "times": {
+          "group_spectral": 1.5831685829907656,
+          "qiskit_response": 1.5231902499799617,
+          "qiskit_shift": 1.7557878330117092
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 0.9621150055305552
+      },
+      {
+        "seed": 944105,
+        "times": {
+          "group_spectral": 1.610057542042341,
+          "qiskit_response": 1.709669792035129,
+          "qiskit_shift": 2.0651455000042915
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.0618687515145768
+      }
+    ],
+    "scope": "Faster Qiskit control chosen separately per seed; a conservative comparison, not a deployed selector"
+  },
+  {
+    "condition": "sensor-n8-p2",
+    "matched_seeds": 5,
+    "paired_speedup": 1.0769385486945113,
+    "minimum_seed_speedup": 0.9426899571183764,
+    "maximum_seed_speedup": 1.1362176441355243,
+    "median_paired_saving": 0.07144191169289826,
+    "descriptive_win": false,
+    "details": [
+      {
+        "seed": 944101,
+        "times": {
+          "group_spectral": 1.490462874993682,
+          "qiskit_response": 1.685770375013817,
+          "qiskit_shift": 1.6929646659991704
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.1310381515010652
+      },
+      {
+        "seed": 944102,
+        "times": {
+          "group_spectral": 1.5844999169930816,
+          "qiskit_response": 1.7392064590239897,
+          "qiskit_shift": 1.706409041013103
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.0769385486945113
+      },
+      {
+        "seed": 944103,
+        "times": {
+          "group_spectral": 1.8704240410006605,
+          "qiskit_response": 1.763229959004093,
+          "qiskit_shift": 1.9357203329564072
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 0.9426899571183764
+      },
+      {
+        "seed": 944104,
+        "times": {
+          "group_spectral": 1.4804105830262415,
+          "qiskit_response": 1.6820686249993742,
+          "qiskit_shift": 1.6967581249773502
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.1362176441355243
+      },
+      {
+        "seed": 944105,
+        "times": {
+          "group_spectral": 1.505376957997214,
+          "qiskit_response": 1.5786103749996983,
+          "qiskit_shift": 1.7218743749544956
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.0486478928838632
+      }
+    ],
+    "scope": "Faster Qiskit control chosen separately per seed; a conservative comparison, not a deployed selector"
+  },
+  {
+    "condition": "sensor-n8-p4",
+    "matched_seeds": 5,
+    "paired_speedup": 1.1325324267710692,
+    "minimum_seed_speedup": 1.074610220307962,
+    "maximum_seed_speedup": 1.2162478988664929,
+    "median_paired_saving": 0.11702307469370099,
+    "descriptive_win": true,
+    "details": [
+      {
+        "seed": 944101,
+        "times": {
+          "group_spectral": 1.4650527499616146,
+          "qiskit_response": 2.211082291963976,
+          "qiskit_shift": 1.680355333024636
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.1469589290001077
+      },
+      {
+        "seed": 944102,
+        "times": {
+          "group_spectral": 1.672884083003737,
+          "qiskit_response": 2.319298707996495,
+          "qiskit_shift": 1.7976983329863288
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.074610220307962
+      },
+      {
+        "seed": 944103,
+        "times": {
+          "group_spectral": 1.4895203749765642,
+          "qiskit_response": 2.352702790987678,
+          "qiskit_shift": 1.6869301249971613
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.1325324267710692
+      },
+      {
+        "seed": 944104,
+        "times": {
+          "group_spectral": 1.4910189170041122,
+          "qiskit_response": 2.2891769999987446,
+          "qiskit_shift": 1.813448624976445
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.2162478988664929
+      },
+      {
+        "seed": 944105,
+        "times": {
+          "group_spectral": 1.645330291998107,
+          "qiskit_response": 2.3082986670196988,
+          "qiskit_shift": 1.7732033340143971
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.077718767251893
+      }
+    ],
+    "scope": "Faster Qiskit control chosen separately per seed; a conservative comparison, not a deployed selector"
+  },
+  {
+    "condition": "sensor-n12-p2",
+    "matched_seeds": 5,
+    "paired_speedup": 1.1587763128284785,
+    "minimum_seed_speedup": 1.1361104749721174,
+    "maximum_seed_speedup": 1.19840486856618,
+    "median_paired_saving": 0.1370206752336165,
+    "descriptive_win": true,
+    "details": [
+      {
+        "seed": 944101,
+        "times": {
+          "group_spectral": 1.7474424169631675,
+          "qiskit_response": 2.0941435000277124,
+          "qiskit_shift": 2.9532692920183763
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.19840486856618
+      },
+      {
+        "seed": 944102,
+        "times": {
+          "group_spectral": 1.8528689999948256,
+          "qiskit_response": 2.147060707968194,
+          "qiskit_shift": 2.953361332998611
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.1587763128284785
+      },
+      {
+        "seed": 944103,
+        "times": {
+          "group_spectral": 1.7612771660205908,
+          "qiskit_response": 2.0893933339975774,
+          "qiskit_shift": 3.004692208021879
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.1862944539946136
+      },
+      {
+        "seed": 944104,
+        "times": {
+          "group_spectral": 2.2867285420070402,
+          "qiskit_response": 2.597976249991916,
+          "qiskit_shift": 3.375267499999609
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.1361104749721174
+      },
+      {
+        "seed": 944105,
+        "times": {
+          "group_spectral": 1.9302126659895293,
+          "qiskit_response": 2.2318696249858476,
+          "qiskit_shift": 3.1031489580054767
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.1562817218597377
+      }
+    ],
+    "scope": "Faster Qiskit control chosen separately per seed; a conservative comparison, not a deployed selector"
+  },
+  {
+    "condition": "sensor-n12-p4",
+    "matched_seeds": 5,
+    "paired_speedup": 1.217144171037618,
+    "minimum_seed_speedup": 1.1664622776226974,
+    "maximum_seed_speedup": 1.266010442683563,
+    "median_paired_saving": 0.178404642773339,
+    "descriptive_win": true,
+    "details": [
+      {
+        "seed": 944101,
+        "times": {
+          "group_spectral": 2.552306208992377,
+          "qiskit_response": 6.307049209019169,
+          "qiskit_shift": 3.106524624978192
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.217144171037618
+      },
+      {
+        "seed": 944102,
+        "times": {
+          "group_spectral": 2.7072554170154035,
+          "qiskit_response": 6.174976209003944,
+          "qiskit_shift": 3.33282337494893
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.2310709045041563
+      },
+      {
+        "seed": 944103,
+        "times": {
+          "group_spectral": 2.5840223749983124,
+          "qiskit_response": 6.354115958034527,
+          "qiskit_shift": 3.0141646249685436
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.1664622776226974
+      },
+      {
+        "seed": 944104,
+        "times": {
+          "group_spectral": 2.8562327080289833,
+          "qiskit_response": 6.571551083005033,
+          "qiskit_shift": 3.4307061249855906
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.2011297662623006
+      },
+      {
+        "seed": 944105,
+        "times": {
+          "group_spectral": 2.620210417022463,
+          "qiskit_response": 6.294233416032512,
+          "qiskit_shift": 3.3172137499786913
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.266010442683563
+      }
+    ],
+    "scope": "Faster Qiskit control chosen separately per seed; a conservative comparison, not a deployed selector"
+  },
+  {
+    "condition": "sensor-n14-p2",
+    "matched_seeds": 5,
+    "paired_speedup": 1.263898832574699,
+    "minimum_seed_speedup": 1.1760007131666699,
+    "maximum_seed_speedup": 1.3658429683385214,
+    "median_paired_saving": 0.20879743360242564,
+    "descriptive_win": true,
+    "details": [
+      {
+        "seed": 944101,
+        "times": {
+          "group_spectral": 3.153900875011459,
+          "qiskit_response": 4.307733332971111,
+          "qiskit_shift": 7.430418791947886
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.3658429683385214
+      },
+      {
+        "seed": 944102,
+        "times": {
+          "group_spectral": 3.284066124993842,
+          "qiskit_response": 4.009274957992602,
+          "qiskit_shift": 8.331337832962163
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.2208265014761601
+      },
+      {
+        "seed": 944103,
+        "times": {
+          "group_spectral": 3.177319832961075,
+          "qiskit_response": 4.1159789160010405,
+          "qiskit_shift": 7.481307916983496
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.2954248021563477
+      },
+      {
+        "seed": 944104,
+        "times": {
+          "group_spectral": 3.5264607499702834,
+          "qiskit_response": 4.457089625007939,
+          "qiskit_shift": 7.867034375027288
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.263898832574699
+      },
+      {
+        "seed": 944105,
+        "times": {
+          "group_spectral": 3.446258291020058,
+          "qiskit_response": 4.052802207996137,
+          "qiskit_shift": 7.780213417019695
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.1760007131666699
+      }
+    ],
+    "scope": "Faster Qiskit control chosen separately per seed; a conservative comparison, not a deployed selector"
+  },
+  {
+    "condition": "shared-n12-p2",
+    "matched_seeds": 5,
+    "paired_speedup": 1.1596455761484457,
+    "minimum_seed_speedup": 1.1039625967793059,
+    "maximum_seed_speedup": 1.2399282076308893,
+    "median_paired_saving": 0.13766755932332342,
+    "descriptive_win": true,
+    "details": [
+      {
+        "seed": 944101,
+        "times": {
+          "group_spectral": 1.938379833009094,
+          "qiskit_response": 2.1398988339933567,
+          "qiskit_shift": 3.0462620830512606
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.1039625967793059
+      },
+      {
+        "seed": 944102,
+        "times": {
+          "group_spectral": 1.9254516250221059,
+          "qiskit_response": 2.232841459044721,
+          "qiskit_shift": 3.107496667013038
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.1596455761484457
+      },
+      {
+        "seed": 944103,
+        "times": {
+          "group_spectral": 1.8272009170032106,
+          "qiskit_response": 2.265597958001308,
+          "qiskit_shift": 3.01513045898173
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.2399282076308893
+      },
+      {
+        "seed": 944104,
+        "times": {
+          "group_spectral": 1.7925697499886155,
+          "qiskit_response": 2.100406915997155,
+          "qiskit_shift": 2.9817983329994604
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.1717295329849757
+      },
+      {
+        "seed": 944105,
+        "times": {
+          "group_spectral": 1.9247155420016497,
+          "qiskit_response": 2.187578334007412,
+          "qiskit_shift": 3.2032543329987675
+        },
+        "selected_control": "qiskit_response",
+        "speedup": 1.1365722810823218
+      }
+    ],
+    "scope": "Faster Qiskit control chosen separately per seed; a conservative comparison, not a deployed selector"
+  },
+  {
+    "condition": "shared-n12-p4",
+    "matched_seeds": 5,
+    "paired_speedup": 1.3045620015656105,
+    "minimum_seed_speedup": 1.2892087170096038,
+    "maximum_seed_speedup": 1.3328571080046825,
+    "median_paired_saving": 0.2334592002527318,
+    "descriptive_win": true,
+    "details": [
+      {
+        "seed": 944101,
+        "times": {
+          "group_spectral": 2.44924612500472,
+          "qiskit_response": 6.141221791040152,
+          "qiskit_shift": 3.2466874579549767
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.3255864426237358
+      },
+      {
+        "seed": 944102,
+        "times": {
+          "group_spectral": 2.3721226250054315,
+          "qiskit_response": 5.997634375002235,
+          "qiskit_shift": 3.058161165972706
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.2892087170096038
+      },
+      {
+        "seed": 944103,
+        "times": {
+          "group_spectral": 2.5762277499889024,
+          "qiskit_response": 6.0203014590078965,
+          "qiskit_shift": 3.3550296669709496
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.3023032094058462
+      },
+      {
+        "seed": 944104,
+        "times": {
+          "group_spectral": 2.3229232910089195,
+          "qiskit_response": 6.140546582988463,
+          "qiskit_shift": 3.0303974580019712
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.3045620015656105
+      },
+      {
+        "seed": 944105,
+        "times": {
+          "group_spectral": 2.279994999989867,
+          "qiskit_response": 6.0009020830038935,
+          "qiskit_shift": 3.0389075419516303
+        },
+        "selected_control": "qiskit_shift",
+        "speedup": 1.3328571080046825
+      }
+    ],
+    "scope": "Faster Qiskit control chosen separately per seed; a conservative comparison, not a deployed selector"
+  }
+]

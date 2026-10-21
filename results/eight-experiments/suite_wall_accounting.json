@@ -1,0 +1,18 @@
+{
+  "main_successful_invocations": 960,
+  "main_matched_quantum_blocks": 240,
+  "main_sum_fresh_process_wall_s": 1733.5048990872456,
+  "main_monotonic_loop_wall_s": 1736.804236667056,
+  "main_parent_journal_between_attempts_s": 3.299337579810526,
+  "independent_test_process_s": 9.471230625000317,
+  "pilot_elapsed_including_resume_pause_s": 132.93196988105774,
+  "quick_functional_smoke_loop_s": 43.62755020795157,
+  "separate_diagnostic_clocks_s": [
+    3.97908933297731,
+    4.3121482920250855
+  ],
+  "main_report_clock_s": 1.1616531669860706,
+  "quick_report_clock_s": 0.762567957979627,
+  "initial_packaging_clock_s": 0.8490067080128938,
+  "scope": "Each primary method clock includes full interpreter startup through exit. Main loop wall includes parent parsing/journaling between attempts; initial parent imports/argument parsing precede this loop clock. Installation and human/agent authoring are excluded. Independent tests, pilot, diagnostics and report costs are separate; no timing samples are pooled. Notebook/export cost is in readout_wall.json, written after execution."
+}

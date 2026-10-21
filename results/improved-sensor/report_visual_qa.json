@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "executed_code_cells": 9,
+  "error_outputs": 0,
+  "example_notebook_byte_identical": true,
+  "plots": [
+    {
+      "file": "main_runtime_accuracy.png",
+      "width": 2024,
+      "height": 767,
+      "bytes": 78865,
+      "sha256": "32e84ac3682299ff3994d1fa49a4c54fdc18d1b0fc093647f1e6a92c06ccc722",
+      "visually_inspected": true,
+      "label_revision_visually_inspected": true,
+      "unchanged_from_previous_visual_review": false
+    },
+    {
+      "file": "quality_ablations.png",
+      "width": 1822,
+      "height": 703,
+      "bytes": 60567,
+      "sha256": "28b1ff38a910e6095c5ee6d6b4b9f5459212974c60b52ef2db2dfef00d49bf49",
+      "visually_inspected": true,
+      "label_revision_visually_inspected": false,
+      "unchanged_from_previous_visual_review": true
+    },
+    {
+      "file": "main_learning_curves.png",
+      "width": 1966,
+      "height": 703,
+      "bytes": 113948,
+      "sha256": "afb7fb816cfec7fade8f543aef4ff4df2605fb52e1f403a78027c9cf3253e016",
+      "visually_inspected": true,
+      "label_revision_visually_inspected": false,
+      "unchanged_from_previous_visual_review": true
+    },
+    {
+      "file": "frozen_angle_comparison.png",
+      "width": 1693,
+      "height": 671,
+      "bytes": 86519,
+      "sha256": "415cf8f3590e073413acde74c9beb3ce4bded02617f8aa89dfc4e86b538c8dae",
+      "visually_inspected": true,
+      "label_revision_visually_inspected": true,
+      "unchanged_from_previous_visual_review": false
+    }
+  ],
+  "visual_findings": "All four figures passed the first visual review. The runtime labels were clarified to Complete attempt time, which includes the worker. Modified main and frozen plots were visually rechecked; other two PNG files are byte-identical to their reviewed versions. No numbers changed, clipping or overlap found.",
+  "scope": "Saved-data presentation QA only; the independent audit validates experimental evidence.",
+  "source_builder_sha256": "b75b5127855683923dc0779c2228f84bb241911cdc75f8066aac79414edf4fc1",
+  "notebook_sha256": "e1f3adf023eab21132b52e572dfd1223fa6c91f3294a3eb4cf5fc82eb3e4d966",
+  "html_sha256": "770d74b7507aa6ce20992f2d85292069c603c15c56d253878db50b31e154de5a",
+  "primary_timing_definition": "Complete attempt time is the parent-loop duration, including worker process and parent journal/checkpoint work; it is not a sum of nested clocks."
+}

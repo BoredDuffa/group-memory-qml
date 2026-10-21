@@ -1,0 +1,8 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/240/human+activity+recognition+using+smartphones.zip",
+  "archive_name": "uci_har_official.zip",
+  "archive_sha256": "c00b803081a5c797cd5e4b83700a9810b38d53d9d84e01917e090e1fdbc81031",
+  "archive_bytes": 61005872,
+  "download_seconds": 26.66435937496135,
+  "downloaded_utc": "2026-10-20T15:42:23.385912+00:00"
+}

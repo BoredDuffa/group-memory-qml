@@ -1,0 +1,142 @@
+{
+  "phases": {
+    "pilot": {
+      "phase": "pilot",
+      "seconds": 76.58902812498854,
+      "start_unix": 1792620478.78025,
+      "end_unix": 1792620555.365164,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "pilot.log"
+    },
+    "preflight": {
+      "phase": "preflight",
+      "seconds": 33.906409417046234,
+      "start_unix": 1792620412.930047,
+      "end_unix": 1792620446.8346372,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "preflight.log"
+    },
+    "main": {
+      "phase": "main",
+      "seconds": 950.9578155829804,
+      "start_unix": 1792620574.002971,
+      "end_unix": 1792621524.99764,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "main.log"
+    },
+    "quick_2": {
+      "phase": "quick",
+      "seconds": 5.01203645800706,
+      "start_unix": 1792620453.217619,
+      "end_unix": 1792620458.229391,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "quick_2.log"
+    },
+    "quick": {
+      "phase": "quick",
+      "seconds": 8.70092658395879,
+      "start_unix": 1792620462.505929,
+      "end_unix": 1792620471.206393,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "quick.log"
+    }
+  },
+  "selected_campaign": "campaign",
+  "sum_attempt_process_s": 932.8646876630373,
+  "sum_attempt_parent_loop_s": 950.6518959978712,
+  "measured_parent_loop_overhead_s": 17.78720833483385,
+  "parent_loop_costs_available": true,
+  "parent_loop_unavailable_reason": "",
+  "campaign_external_wall_s": 950.9578155829804,
+  "campaign_external_wall_source": "main_wall.json",
+  "parent_journal_overhead_s": 18.093127919943072,
+  "campaign_setup_gap_and_remaining_s": 0.3059195851092227,
+  "campaign_internal_timing": {
+    "last_invocation_wall_s": 950.7153107079794,
+    "last_invocation_start_monotonic_s": 436053.248739375,
+    "last_invocation_end_monotonic_s": 437004.055197166,
+    "last_invocation_measured_s": 950.8064577910118,
+    "last_invocation_setup_s": 0.09114708303241059,
+    "last_invocation_loop_s": 950.6518959978712,
+    "last_invocation_gap_s": 0.038148169114720076,
+    "last_invocation_after_loop_s": 0.0252665409934707,
+    "last_invocation_parent_remainder_s": 0.06341471010819077,
+    "last_invocation_start_cursor": 0,
+    "summed_parent_loop_s": 950.6518959978712,
+    "summed_parent_loop_overhead_s": 17.78720833483385
+  },
+  "search_recorded_inner_s": 28.01353370799916,
+  "search_import_wall_unmeasured": true,
+  "common_acquisition_components_s": 29.555855,
+  "comparison_scope": "Each parent-timed fresh process includes imports, dataset read/hash/split/preprocessing, construction/calibration, all training and validation selection, final test, JSON serialization and exit. Search, preflight, reporting and common initial data acquisition are separate study costs. Attempts from other campaigns are never pooled.",
+  "known_exclusions": "Installation, unmeasured initial search imports, human/AI development time, and data-owner sensor collection/feature extraction are not measured.",
+  "audit_accepted": true,
+  "summary_generation_s": 2.5897535419790074,
+  "prior_rejected_study_phases": {
+    "pilot": {
+      "phase": "pilot",
+      "seconds": 91.36860433296533,
+      "start_unix": 1792618707.736693,
+      "end_unix": 1792618799.09983,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "pilot.log"
+    },
+    "initial_preflight": {
+      "phase": "preflight",
+      "seconds": 32.8018521250342,
+      "start_unix": 1792618479.190464,
+      "end_unix": 1792618511.9903529,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "preflight.log"
+    },
+    "preflight": {
+      "phase": "preflight",
+      "seconds": 32.55151791701792,
+      "start_unix": 1792618583.0700722,
+      "end_unix": 1792618615.619641,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "preflight.log"
+    },
+    "main": {
+      "phase": "main",
+      "seconds": 980.1370484589715,
+      "start_unix": 1792618812.7366982,
+      "end_unix": 1792619792.724965,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "main.log"
+    },
+    "quick_2": {
+      "phase": "quick",
+      "seconds": 7.1569252500194125,
+      "start_unix": 1792618621.731668,
+      "end_unix": 1792618628.888166,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "quick_2.log"
+    },
+    "quick": {
+      "phase": "quick",
+      "seconds": 11.840269042004365,
+      "start_unix": 1792618640.533744,
+      "end_unix": 1792618652.373307,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "quick.log"
+    }
+  },
+  "prior_rejected_main_external_s": 980.1370484589715,
+  "numerical_stability_search_external_sum_s": 280.31928183406126,
+  "recorded_nonoverlapping_components_sum_s": 2568.9111038350543,
+  "recorded_study_cost_status": "PARTIAL_RECORDED_NONOVERLAPPING_COMPONENTS",
+  "recorded_study_cost_scope": "Partial sum of recorded nonoverlapping components, not complete end-to-end elapsed study wall or fully loaded development cost. External intervals were checked for overlap; search/acquisition components have distinct earlier scopes without complete enclosing clocks.",
+  "reporting_helper_costs_separate": {}
+}

@@ -1,0 +1,9 @@
+{
+  "phase": "preflight",
+  "seconds": 33.906409417046234,
+  "start_unix": 1792620412.930047,
+  "end_unix": 1792620446.8346372,
+  "returncode": 0,
+  "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+  "log": "preflight.log"
+}

@@ -1,0 +1,7 @@
+condition,baseline,n_paired_seeds,median_paired_saving_percent,all_seed_medians_faster,eligible_runtime_win,mean_accuracy_delta_pp,min_accuracy_delta_pp,point_accuracy_at_least_each_seed,useful_observed_win,audit_accepted,audit_status,audit_gate_reason
+lda-long,classical_adjoint,5,88.5775084849597,True,True,0.0,0.0,True,True,True,PASS,
+lda-long,classical_logistic,5,-147.2879208421886,False,False,-0.22886674049465094,-0.7751937984496138,False,False,True,PASS,
+lda-long,classical_mlp,5,-122.87873399645987,False,False,-0.0793650793650813,-2.3440383905500184,False,False,True,PASS,
+lda-long,classical_rbf,5,-157.4909166007403,False,False,0.933923957179772,-0.7659653008490142,False,False,True,PASS,
+lda-long,frozen_quantum,5,-157.5775968932999,False,False,1.7238833517903274,-0.7936507936507908,False,False,True,PASS,
+lda-long,qiskit_response,5,47.36219729544925,True,True,0.0,0.0,True,True,True,PASS,

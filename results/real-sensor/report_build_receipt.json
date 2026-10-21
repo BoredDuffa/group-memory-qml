@@ -1,0 +1,9 @@
+{
+  "status": "EXECUTED",
+  "notebook": "examples/real_sensor_benchmark.ipynb",
+  "snapshot_sha256": "1c9a50faeb9e41229b249b8863c98e92965e21d1a96fa8ccca99a5dbd49cd261",
+  "snapshot_attempts": 180,
+  "planned": 180,
+  "elapsed_s": 4.086328125034925,
+  "scope": "Saved-data notebook construction and rendering only"
+}

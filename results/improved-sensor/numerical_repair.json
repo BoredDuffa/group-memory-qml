@@ -1,0 +1,424 @@
+{
+  "status": "REPAIR_PROTOCOL_AND_PREMAIN_EVIDENCE",
+  "interpretation": "The original run completed but failed strict matched-trajectory agreement. Validation-only numerical pilots selected a common lower Adam learning rate and larger epsilon without relaxing checks or rounding outputs. The production-module pilot passed; final results are admissible only after the separate complete campaign audit passes. The same already evaluated holdout is retested after numerical repair, so this is not a fresh test or independent external confirmation.",
+  "original_campaign": {
+    "attempts": 100,
+    "source_commit": "a0f8cb5fc67845c0be30ea08cc51dac782b8ac96",
+    "audit_status": "FAIL",
+    "max_matching_error": 0.03408229468145725,
+    "absolute_tolerance": 1e-10,
+    "external_wall_s": 980.1370484589715,
+    "evidence_scope": "Rejected initial run; excluded from all accepted accuracy/runtime comparisons. Exact attempts, source and checkpoints retained in rejected archives.",
+    "rejected_archive_receipt": "rejected_package_receipt.json"
+  },
+  "selection": {
+    "learning_rate": 0.003,
+    "adam_epsilon": 0.0001,
+    "steps": 1000,
+    "head_l2": 0.0001,
+    "scope": "Common Adam settings for trainable and frozen-angle QML heads; ordinary classical baselines retain their own specified solvers. The three GroupMemory-only representation ablations use the same repaired optimizer, with the original 60-update ablation retaining 60 updates.",
+    "validation_only": true,
+    "test_metrics_used_for_selection": false,
+    "rounding": false,
+    "quantization": false,
+    "absolute_tolerance": 1e-10,
+    "freeze_receipt": "selection_freeze.json",
+    "freeze_sha256": "0970c1b6d13b0874b16e27c4fbcb13f94b129b36f738c1bb42855f02b1043cf9"
+  },
+  "exploratory_search": {
+    "external_process_wall_s": 280.31928183406126,
+    "budget_s": 300,
+    "shared_process_not_benchmark": true,
+    "receipts": [
+      {
+        "receipt": "stable_sensor_pilot.json",
+        "sha256": "1218de5f4f261a49b6bd46e13b067d244b69754a605aa31800490d8be51dc9ac",
+        "external_process_wall_s": 172.22220358299091,
+        "status": "STABLE_RESPONSE_CANDIDATE",
+        "records": [
+          {
+            "seed": 956102,
+            "epsilon": 1e-08,
+            "learning_rate": 0.03,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "FAIL",
+            "completed_steps": 790,
+            "max_error": 1.2256062831283998e-10,
+            "first_failing_step": 790,
+            "common_point_max_errors": {
+              "features": 1.1102230246251565e-15,
+              "jacobian": 2.220446049250313e-15,
+              "gradient": 3.5028200500754336e-17
+            }
+          },
+          {
+            "seed": 956102,
+            "epsilon": 1e-06,
+            "learning_rate": 0.03,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "FAIL",
+            "completed_steps": 789,
+            "max_error": 1.064680565932008e-10,
+            "first_failing_step": 789,
+            "common_point_max_errors": {
+              "features": 1.0824674490095276e-15,
+              "jacobian": 2.220446049250313e-15,
+              "gradient": 2.699663409488906e-17
+            }
+          },
+          {
+            "seed": 956102,
+            "epsilon": 0.0001,
+            "learning_rate": 0.03,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "FAIL",
+            "completed_steps": 897,
+            "max_error": 1.0200573719032491e-10,
+            "first_failing_step": 897,
+            "common_point_max_errors": {
+              "features": 1.1102230246251565e-15,
+              "jacobian": 1.9984014443252818e-15,
+              "gradient": 9.202165938970719e-17
+            }
+          },
+          {
+            "seed": 956102,
+            "epsilon": 1e-06,
+            "learning_rate": 0.01,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "PASS",
+            "completed_steps": 1000,
+            "max_error": 3.9968028886505635e-15,
+            "first_failing_step": null,
+            "common_point_max_errors": null
+          },
+          {
+            "seed": 956101,
+            "epsilon": 1e-06,
+            "learning_rate": 0.01,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "FAIL",
+            "completed_steps": 508,
+            "max_error": 1.1390645620733969e-10,
+            "first_failing_step": 508,
+            "common_point_max_errors": {
+              "features": 1.0685896612017132e-15,
+              "jacobian": 1.7763568394002505e-15,
+              "gradient": 1.6599135260753073e-16
+            }
+          },
+          {
+            "seed": 956102,
+            "epsilon": 0.0001,
+            "learning_rate": 0.01,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "PASS",
+            "completed_steps": 1000,
+            "max_error": 4.440892098500626e-15,
+            "first_failing_step": null,
+            "common_point_max_errors": null
+          },
+          {
+            "seed": 956101,
+            "epsilon": 0.0001,
+            "learning_rate": 0.01,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "PASS",
+            "completed_steps": 1000,
+            "max_error": 6.022293774776699e-12,
+            "first_failing_step": null,
+            "common_point_max_errors": null
+          },
+          {
+            "seed": 956103,
+            "epsilon": 0.0001,
+            "learning_rate": 0.01,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "PASS",
+            "completed_steps": 1000,
+            "max_error": 5.329070518200751e-15,
+            "first_failing_step": null,
+            "common_point_max_errors": null
+          },
+          {
+            "seed": 956104,
+            "epsilon": 0.0001,
+            "learning_rate": 0.01,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "PASS",
+            "completed_steps": 1000,
+            "max_error": 1.021405182655144e-14,
+            "first_failing_step": null,
+            "common_point_max_errors": null
+          },
+          {
+            "seed": 956105,
+            "epsilon": 0.0001,
+            "learning_rate": 0.01,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "PASS",
+            "completed_steps": 1000,
+            "max_error": 4.385380947269368e-15,
+            "first_failing_step": null,
+            "common_point_max_errors": null
+          },
+          {
+            "seed": 956102,
+            "epsilon": 0.0001,
+            "learning_rate": 0.01,
+            "methods": [
+              "group_spectral",
+              "classical_adjoint"
+            ],
+            "status": "PASS",
+            "completed_steps": 1000,
+            "max_error": 3.774758283725532e-15,
+            "first_failing_step": null,
+            "common_point_max_errors": null
+          }
+        ]
+      },
+      {
+        "receipt": "stable_sensor_confirmation.json",
+        "sha256": "c9fde117562555c96c29dbba118f8ed748cb2aaca24ff5d1a830f77db9b13e8e",
+        "external_process_wall_s": 27.637732584029436,
+        "status": "FAIL_OR_BUDGET",
+        "records": [
+          {
+            "seed": 956101,
+            "epsilon": 0.0001,
+            "learning_rate": 0.01,
+            "methods": [
+              "group_spectral",
+              "classical_adjoint"
+            ],
+            "status": "FAIL",
+            "completed_steps": 458,
+            "max_error": 1.5382618399548131e-10,
+            "first_failing_step": 458,
+            "common_point_max_errors": {
+              "features": 1.4432899320127035e-15,
+              "jacobian": 1.7763568394002505e-15,
+              "gradient": 8.841668716619289e-17
+            }
+          }
+        ]
+      },
+      {
+        "receipt": "stable_sensor_lower_lr.json",
+        "sha256": "6f12fd144b69455e8cc669cd0c91e982963bd51f34d62daa69627b011030b8bf",
+        "external_process_wall_s": 80.4593456670409,
+        "status": "PARTIAL_OR_FAILED",
+        "records": [
+          {
+            "seed": 956101,
+            "epsilon": 0.0001,
+            "learning_rate": 0.003,
+            "methods": [
+              "group_spectral",
+              "classical_adjoint"
+            ],
+            "status": "PASS",
+            "completed_steps": 1000,
+            "max_error": 3.552713678800501e-15,
+            "first_failing_step": null,
+            "common_point_max_errors": null
+          },
+          {
+            "seed": 956101,
+            "epsilon": 0.0001,
+            "learning_rate": 0.003,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "PASS",
+            "completed_steps": 1000,
+            "max_error": 5.773159728050814e-15,
+            "first_failing_step": null,
+            "common_point_max_errors": null
+          },
+          {
+            "seed": 956102,
+            "epsilon": 0.0001,
+            "learning_rate": 0.003,
+            "methods": [
+              "group_spectral",
+              "qiskit_response"
+            ],
+            "status": "PASS",
+            "completed_steps": 1000,
+            "max_error": 2.6645352591003757e-15,
+            "first_failing_step": null,
+            "common_point_max_errors": null
+          }
+        ]
+      }
+    ],
+    "failed_comparisons": [
+      {
+        "receipt": "stable_sensor_pilot.json",
+        "seed": 956102,
+        "epsilon": 1e-08,
+        "learning_rate": 0.03,
+        "methods": [
+          "group_spectral",
+          "qiskit_response"
+        ],
+        "status": "FAIL",
+        "completed_steps": 790,
+        "max_error": 1.2256062831283998e-10,
+        "first_failing_step": 790,
+        "common_point_max_errors": {
+          "features": 1.1102230246251565e-15,
+          "jacobian": 2.220446049250313e-15,
+          "gradient": 3.5028200500754336e-17
+        }
+      },
+      {
+        "receipt": "stable_sensor_pilot.json",
+        "seed": 956102,
+        "epsilon": 1e-06,
+        "learning_rate": 0.03,
+        "methods": [
+          "group_spectral",
+          "qiskit_response"
+        ],
+        "status": "FAIL",
+        "completed_steps": 789,
+        "max_error": 1.064680565932008e-10,
+        "first_failing_step": 789,
+        "common_point_max_errors": {
+          "features": 1.0824674490095276e-15,
+          "jacobian": 2.220446049250313e-15,
+          "gradient": 2.699663409488906e-17
+        }
+      },
+      {
+        "receipt": "stable_sensor_pilot.json",
+        "seed": 956102,
+        "epsilon": 0.0001,
+        "learning_rate": 0.03,
+        "methods": [
+          "group_spectral",
+          "qiskit_response"
+        ],
+        "status": "FAIL",
+        "completed_steps": 897,
+        "max_error": 1.0200573719032491e-10,
+        "first_failing_step": 897,
+        "common_point_max_errors": {
+          "features": 1.1102230246251565e-15,
+          "jacobian": 1.9984014443252818e-15,
+          "gradient": 9.202165938970719e-17
+        }
+      },
+      {
+        "receipt": "stable_sensor_pilot.json",
+        "seed": 956101,
+        "epsilon": 1e-06,
+        "learning_rate": 0.01,
+        "methods": [
+          "group_spectral",
+          "qiskit_response"
+        ],
+        "status": "FAIL",
+        "completed_steps": 508,
+        "max_error": 1.1390645620733969e-10,
+        "first_failing_step": 508,
+        "common_point_max_errors": {
+          "features": 1.0685896612017132e-15,
+          "jacobian": 1.7763568394002505e-15,
+          "gradient": 1.6599135260753073e-16
+        }
+      },
+      {
+        "receipt": "stable_sensor_confirmation.json",
+        "seed": 956101,
+        "epsilon": 0.0001,
+        "learning_rate": 0.01,
+        "methods": [
+          "group_spectral",
+          "classical_adjoint"
+        ],
+        "status": "FAIL",
+        "completed_steps": 458,
+        "max_error": 1.5382618399548131e-10,
+        "first_failing_step": 458,
+        "common_point_max_errors": {
+          "features": 1.4432899320127035e-15,
+          "jacobian": 1.7763568394002505e-15,
+          "gradient": 8.841668716619289e-17
+        }
+      }
+    ],
+    "chosen_coverage": "Full 1,000 updates: GroupMemory vs adjoint seed 956101 and GroupMemory vs Qiskit seeds 956101 and 956102 passed. Remaining three Qiskit seeds were unattempted when the bounded search stopped; no all-five claim is made for this search.",
+    "same_point_max_errors": {
+      "features": 1.4432899320127035e-15,
+      "jacobian": 2.220446049250313e-15,
+      "gradient": 1.6599135260753073e-16
+    },
+    "same_point_scope": "At failed candidate endpoints both evaluators were tested at identical GroupMemory parameters and head. These checks support exact-function agreement at those tested points, not global proof of numerical trajectory stability."
+  },
+  "production_pilot": {
+    "receipt": "pilot_audit.json",
+    "receipt_sha256": "4f0f4b426c631f3c78edaadf66a8184e10aed82e554c9fe32847fc838dbc6cda",
+    "status": "PASS",
+    "attempts": 7,
+    "methods": [
+      "group_spectral",
+      "classical_rbf",
+      "classical_adjoint",
+      "classical_logistic",
+      "qiskit_response",
+      "classical_mlp",
+      "frozen_quantum"
+    ],
+    "matched_qml_blocks": 1,
+    "max_matching_error": 5.773159728050814e-15,
+    "max_adam_replay_error": 4.440892098500626e-16,
+    "validation_only": true,
+    "test_labels_read": false,
+    "scope": "Seven-method production-code pilot on one fragile seed. This does not substitute for the complete final five-seed audit."
+  },
+  "final_acceptance_rule": "Separate final audit.json must pass the unchanged 1e-10 full saved trajectory check, identity/correctness checks and complete planned 100-attempt coverage before any timing-win claim.",
+  "holdout": {
+    "rows": 256,
+    "subjects": 9,
+    "reused_after_repair": true,
+    "fresh_external_validation": false,
+    "selection_used_test_metrics": false,
+    "scope": "Same fixed official-test windows already evaluated in the rejected initial campaign; no independent-cohort or untouched-holdout claim."
+  },
+  "cost_scope": "Rejected initial campaign and all failed/successful numerical pilot costs belong in whole-study accounting. They are not pooled into per-method final-run timing. Parent-loop timing remains distinct from child-process and campaign-remainder clocks."
+}

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "attempt_index": 57,
+  "spec": {
+    "condition": "pca-short",
+    "experiment": "improved_uci_har",
+    "config": {
+      "n_qubits": 16,
+      "n_train": 512,
+      "n_validation": 128,
+      "n_test": 256,
+      "steps": 60,
+      "learning_rate": 0.003,
+      "head_l2": 0.0001,
+      "representation": "pca_original",
+      "angle_scale": 0.5,
+      "validation_only": false,
+      "early_stopping_patience": 0,
+      "adam_epsilon": 0.0001
+    },
+    "seed": 956101,
+    "repeat": 1,
+    "method": "group_spectral"
+  },
+  "result_sha256": "e69c9e89651b787ef0ba748df245546afff7aaeb310d44c0e24c1bef9f4afb8e",
+  "config_sha256": "10dea8fd3a5a246404cfa74943ffba3372885681f3ac435b44c5e2826d0a81c5",
+  "loop_start_monotonic_s": 436597.137152708,
+  "loop_end_monotonic_s": 436600.681501083,
+  "parent_loop_wall_s": 3.5443483749986626,
+  "process_wall_s": 3.435002666024957,
+  "pre_launch_parent_s": 2.404197584837675e-05,
+  "post_process_parent_s": 0.10932166699785739,
+  "parent_overhead_s": 0.10934570897370577,
+  "scope": "Through result, checkpoint, RUNNING status and progress writes; sidecar/terminal writes are charged in invocation gaps/remainder and the enclosing caller timer."
+}

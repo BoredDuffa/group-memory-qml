@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "tests_passed": 51,
+  "reported_pytest_seconds": 3.85,
+  "timing_scope": "Pytest internal clock, imports/external full process not separately captured",
+  "overlap": "Briefly overlapped final full correctness preflight; not additive in study-wall accounting. No benchmark attempts ran concurrently.",
+  "suite_protocol_commit": "9c50b3d"
+}

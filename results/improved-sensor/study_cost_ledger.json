@@ -1,0 +1,255 @@
+{
+  "status": "PARTIAL_RECORDED_NONOVERLAPPING_COMPONENTS",
+  "prior_rejected_study_phases": {
+    "pilot": {
+      "phase": "pilot",
+      "seconds": 91.36860433296533,
+      "start_unix": 1792618707.736693,
+      "end_unix": 1792618799.09983,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "pilot.log"
+    },
+    "initial_preflight": {
+      "phase": "preflight",
+      "seconds": 32.8018521250342,
+      "start_unix": 1792618479.190464,
+      "end_unix": 1792618511.9903529,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "preflight.log"
+    },
+    "preflight": {
+      "phase": "preflight",
+      "seconds": 32.55151791701792,
+      "start_unix": 1792618583.0700722,
+      "end_unix": 1792618615.619641,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "preflight.log"
+    },
+    "main": {
+      "phase": "main",
+      "seconds": 980.1370484589715,
+      "start_unix": 1792618812.7366982,
+      "end_unix": 1792619792.724965,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "main.log"
+    },
+    "quick_2": {
+      "phase": "quick",
+      "seconds": 7.1569252500194125,
+      "start_unix": 1792618621.731668,
+      "end_unix": 1792618628.888166,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "quick_2.log"
+    },
+    "quick": {
+      "phase": "quick",
+      "seconds": 11.840269042004365,
+      "start_unix": 1792618640.533744,
+      "end_unix": 1792618652.373307,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "quick.log"
+    }
+  },
+  "prior_rejected_phase_sum_s": 1155.8562171260128,
+  "prior_rejected_main_external_s": 980.1370484589715,
+  "numerical_stability_search_receipts": {
+    "stable_sensor_pilot": {
+      "status": "STABLE_RESPONSE_CANDIDATE",
+      "external_process_wall_s": 172.22220358299091,
+      "external_start_unix": 1792620008.3382862,
+      "external_end_unix": 1792620180.551239,
+      "external_clock_includes": "child startup/imports, all data transforms, search, strict checks, raw artifact serialization and child exit; parent final JSON write follows clock",
+      "sha256": "1218de5f4f261a49b6bd46e13b067d244b69754a605aa31800490d8be51dc9ac"
+    },
+    "stable_sensor_confirmation": {
+      "status": "FAIL_OR_BUDGET",
+      "external_process_wall_s": 27.637732584029436,
+      "external_start_unix": 1792620187.26655,
+      "external_end_unix": 1792620214.9028008,
+      "external_clock_includes": "child startup/imports, all data transforms, search, strict checks, raw artifact serialization and child exit; parent final JSON write follows clock",
+      "sha256": "c9fde117562555c96c29dbba118f8ed748cb2aaca24ff5d1a830f77db9b13e8e"
+    },
+    "stable_sensor_lower_lr": {
+      "status": "PARTIAL_OR_FAILED",
+      "external_process_wall_s": 80.4593456670409,
+      "external_start_unix": 1792620247.1998038,
+      "external_end_unix": 1792620327.654829,
+      "external_clock_includes": "child startup/imports, all data transforms, search, strict checks, raw artifact serialization and child exit; parent final JSON write follows clock",
+      "sha256": "6f12fd144b69455e8cc669cd0c91e982963bd51f34d62daa69627b011030b8bf"
+    }
+  },
+  "numerical_stability_search_external_sum_s": 280.31928183406126,
+  "current_study_phases": {
+    "pilot": {
+      "phase": "pilot",
+      "seconds": 76.58902812498854,
+      "start_unix": 1792620478.78025,
+      "end_unix": 1792620555.365164,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "pilot.log"
+    },
+    "preflight": {
+      "phase": "preflight",
+      "seconds": 33.906409417046234,
+      "start_unix": 1792620412.930047,
+      "end_unix": 1792620446.8346372,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "preflight.log"
+    },
+    "main": {
+      "phase": "main",
+      "seconds": 950.9578155829804,
+      "start_unix": 1792620574.002971,
+      "end_unix": 1792621524.99764,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "main.log"
+    },
+    "quick_2": {
+      "phase": "quick",
+      "seconds": 5.01203645800706,
+      "start_unix": 1792620453.217619,
+      "end_unix": 1792620458.229391,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "quick_2.log"
+    },
+    "quick": {
+      "phase": "quick",
+      "seconds": 8.70092658395879,
+      "start_unix": 1792620462.505929,
+      "end_unix": 1792620471.206393,
+      "returncode": 0,
+      "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+      "log": "quick.log"
+    }
+  },
+  "recorded_nonoverlapping_components": [
+    {
+      "component": "prior_rejected/initial_preflight",
+      "seconds": 32.8018521250342,
+      "source": "prior_rejected/initial_preflight_wall.json",
+      "scope": "External complete phase process; inner workers/loops/stages are not added"
+    },
+    {
+      "component": "prior_rejected/main",
+      "seconds": 980.1370484589715,
+      "source": "prior_rejected/main_wall.json",
+      "scope": "External complete phase process; inner workers/loops/stages are not added"
+    },
+    {
+      "component": "prior_rejected/pilot",
+      "seconds": 91.36860433296533,
+      "source": "prior_rejected/pilot_wall.json",
+      "scope": "External complete phase process; inner workers/loops/stages are not added"
+    },
+    {
+      "component": "prior_rejected/preflight",
+      "seconds": 32.55151791701792,
+      "source": "prior_rejected/preflight_wall.json",
+      "scope": "External complete phase process; inner workers/loops/stages are not added"
+    },
+    {
+      "component": "prior_rejected/quick",
+      "seconds": 11.840269042004365,
+      "source": "prior_rejected/quick_wall.json",
+      "scope": "External complete phase process; inner workers/loops/stages are not added"
+    },
+    {
+      "component": "prior_rejected/quick_2",
+      "seconds": 7.1569252500194125,
+      "source": "prior_rejected/quick_2_wall.json",
+      "scope": "External complete phase process; inner workers/loops/stages are not added"
+    },
+    {
+      "component": "current/main",
+      "seconds": 950.9578155829804,
+      "source": "current/main_wall.json",
+      "scope": "External complete phase process; inner workers/loops/stages are not added"
+    },
+    {
+      "component": "current/pilot",
+      "seconds": 76.58902812498854,
+      "source": "current/pilot_wall.json",
+      "scope": "External complete phase process; inner workers/loops/stages are not added"
+    },
+    {
+      "component": "current/preflight",
+      "seconds": 33.906409417046234,
+      "source": "current/preflight_wall.json",
+      "scope": "External complete phase process; inner workers/loops/stages are not added"
+    },
+    {
+      "component": "current/quick",
+      "seconds": 8.70092658395879,
+      "source": "current/quick_wall.json",
+      "scope": "External complete phase process; inner workers/loops/stages are not added"
+    },
+    {
+      "component": "current/quick_2",
+      "seconds": 5.01203645800706,
+      "source": "current/quick_2_wall.json",
+      "scope": "External complete phase process; inner workers/loops/stages are not added"
+    },
+    {
+      "component": "stability_search/stable_sensor_pilot",
+      "seconds": 172.22220358299091,
+      "source": "stable_sensor_pilot.json",
+      "scope": "External process duration; per-candidate and inner-search times are nested and excluded"
+    },
+    {
+      "component": "stability_search/stable_sensor_confirmation",
+      "seconds": 27.637732584029436,
+      "source": "stable_sensor_confirmation.json",
+      "scope": "External process duration; per-candidate and inner-search times are nested and excluded"
+    },
+    {
+      "component": "stability_search/stable_sensor_lower_lr",
+      "seconds": 80.4593456670409,
+      "source": "stable_sensor_lower_lr.json",
+      "scope": "External process duration; per-candidate and inner-search times are nested and excluded"
+    },
+    {
+      "component": "original_representation_search_inner",
+      "seconds": 28.01353370799916,
+      "source": "sensor_improved_design.json",
+      "scope": "Recorded inner search only; unmeasured imports/startup are explicitly excluded"
+    },
+    {
+      "component": "historical_common_acquisition_components",
+      "seconds": 29.555855,
+      "source": "original prepared-data timing receipt",
+      "scope": "Sum of download/extraction/parse/write components; not an observed whole acquisition wall"
+    }
+  ],
+  "recorded_nonoverlapping_components_sum_s": 2568.9111038350543,
+  "verified_external_phase_intervals": 14,
+  "focused_test_excluded_for_overlap": {
+    "status": "PASS",
+    "tests_passed": 51,
+    "reported_pytest_seconds": 3.85,
+    "timing_scope": "Pytest internal clock, imports/external full process not separately captured",
+    "overlap": "Briefly overlapped final full correctness preflight; not additive in study-wall accounting. No benchmark attempts ran concurrently.",
+    "suite_protocol_commit": "9c50b3d"
+  },
+  "reporting_helper_costs_separate": {},
+  "accounting_rule": "Add external phase processes once, the original inner representation search once, and historical acquisition components once. Do not add nested attempt process, parent-loop, worker, application, fit, validation, or candidate timings. The3.85s focused test overlaps full preflight and is not additive. Reporting/package receipts remain separate.",
+  "interpretation": "Partial sum of recorded nonoverlapping components, not complete end-to-end elapsed study wall or fully loaded development cost. External intervals were checked for overlap; search/acquisition components have distinct earlier scopes without complete enclosing clocks.",
+  "unmeasured_or_not_added": [
+    "Original representation-search imports/startup",
+    "Installation/runtime setup",
+    "Human and AI development time",
+    "Idle/orchestration gaps between phases",
+    "Historical sensor collection and author feature extraction",
+    "Unmeasured reporting/packaging or other helper work",
+    "Separately displayed report/package costs whose overlap is not certified"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PACKAGED",
+  "frozen_commit": "e3ccfcc10fa08d0a34e0d0bb586b5b4791d032e6",
+  "planned_attempts": 100,
+  "raw_attempts": 100,
+  "raw_shards": 4,
+  "frozen_source_files": 89,
+  "preflight_pilot_members": 64,
+  "helper_files": 10,
+  "package_seconds": 24.19179441704182,
+  "phase_scope": "Archive/copy work through receipt creation; later rendering/manifest work is separate",
+  "raw_attempts_byte_preserved": true,
+  "source_from_frozen_git": true,
+  "raw_dataset_included": false
+}

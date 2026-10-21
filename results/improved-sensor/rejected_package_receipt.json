@@ -1,0 +1,66 @@
+{
+  "archives": [
+    {
+      "bytes": 97852,
+      "checksummed_members": 39,
+      "file": "rejected_initial_run.zip",
+      "internal_manifest_verified": true,
+      "members": 40,
+      "privacy_scan_passed": true,
+      "sha256": "646ee4889e311247ab2e0da4312b80fcd17ad3e664a44c81ca4faea91b07d7c4"
+    },
+    {
+      "bytes": 374297,
+      "checksummed_members": 83,
+      "file": "rejected_source_snapshot.zip",
+      "internal_manifest_verified": true,
+      "members": 84,
+      "privacy_scan_passed": true,
+      "sha256": "7fb2ecb4d5cb88350ddea65e151c666be3cf0f0d36229c3ea1d14ef088aa93d0"
+    },
+    {
+      "bytes": 29208090,
+      "checksummed_members": 26,
+      "file": "rejected_attempts_00000_00024.zip",
+      "internal_manifest_verified": true,
+      "members": 27,
+      "privacy_scan_passed": true,
+      "sha256": "62a6191467ec881ebc7e2a053f97825e3a5b7a60214ce237886498d781855464"
+    },
+    {
+      "bytes": 24063401,
+      "checksummed_members": 26,
+      "file": "rejected_attempts_00025_00049.zip",
+      "internal_manifest_verified": true,
+      "members": 27,
+      "privacy_scan_passed": true,
+      "sha256": "a6767f94208fbc3ed57551f31844b17e4bdf544320e0c3f3f730860eb4a567c4"
+    },
+    {
+      "bytes": 21994328,
+      "checksummed_members": 26,
+      "file": "rejected_attempts_00050_00074.zip",
+      "internal_manifest_verified": true,
+      "members": 27,
+      "privacy_scan_passed": true,
+      "sha256": "1e6eb606d40726c6d099f71c2dc91e896a75a855bf7bd5ba5735a10f1252967f"
+    },
+    {
+      "bytes": 29704923,
+      "checksummed_members": 26,
+      "file": "rejected_attempts_00075_00099.zip",
+      "internal_manifest_verified": true,
+      "members": 27,
+      "privacy_scan_passed": true,
+      "sha256": "5aa4b7d0c670b3c6dccd1e3cc2de8dc251a8b98e660e3cd1fccffe1f75f36728"
+    }
+  ],
+  "original_attempts": 100,
+  "original_audit_sha256": "edf69bfc091f42728d16b5f069ade47f564ad96f9c54b8dcb53cdcefeecfd1da",
+  "original_checkpoint_journal_verified": true,
+  "original_revision": "a0f8cb5fc67845c0be30ea08cc51dac782b8ac96",
+  "raw_attempts_unchanged": true,
+  "raw_dataset_included": false,
+  "status": "PACKAGED_REJECTED_EVIDENCE",
+  "verified_original_source_hashes": 32
+}

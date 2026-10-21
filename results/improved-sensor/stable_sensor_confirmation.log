@@ -1,0 +1,1 @@
+{"seed": 956101, "epsilon": 0.0001, "learning_rate": 0.01, "methods": ["group_spectral", "classical_adjoint"], "status": "FAIL", "completed_steps": 458, "max_error": 1.5382618399548131e-10, "seconds": 27.161097917007282}

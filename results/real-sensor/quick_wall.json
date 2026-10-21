@@ -1,0 +1,9 @@
+{
+  "phase": "quick",
+  "seconds": 8.860273041995242,
+  "start_unix": 1792511448.102647,
+  "end_unix": 1792511456.962791,
+  "returncode": 0,
+  "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+  "log": "quick.log"
+}

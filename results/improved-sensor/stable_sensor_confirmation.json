@@ -1,0 +1,3425 @@
+{
+  "status": "FAIL_OR_BUDGET",
+  "tolerance": 1e-10,
+  "validation_only": true,
+  "test_arrays_accessed": false,
+  "test_predictions_computed": false,
+  "source_script_sha256": "79ee97e64626b9e4e2efccb797c8a4be314dd67ace5bcfe259ad60c0d5415076",
+  "source_revision": "a0f8cb5fc67845c0be30ea08cc51dac782b8ac96",
+  "steps": 1000,
+  "n_train": 512,
+  "n_validation": 128,
+  "n_features": 16,
+  "representation": "lda_tiled",
+  "angle_scale": 0.5,
+  "head_l2": 0.0001,
+  "seeds": [
+    956101,
+    956102,
+    956103,
+    956104,
+    956105
+  ],
+  "records": [
+    {
+      "seed": 956101,
+      "epsilon": 0.0001,
+      "learning_rate": 0.01,
+      "methods": [
+        "group_spectral",
+        "classical_adjoint"
+      ],
+      "status": "FAIL",
+      "completed_steps": 458,
+      "errors": [
+        {
+          "step": 1,
+          "gradient": 5.551115123125783e-17,
+          "parameters": 1.3877787807814457e-17,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 0.0
+        },
+        {
+          "step": 2,
+          "gradient": 2.7755575615628914e-17,
+          "parameters": 2.7755575615628914e-17,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 0.0
+        },
+        {
+          "step": 3,
+          "gradient": 2.0816681711721685e-17,
+          "parameters": 1.1102230246251565e-16,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 0.0
+        },
+        {
+          "step": 4,
+          "gradient": 4.85722573273506e-17,
+          "parameters": 1.1102230246251565e-16,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 5,
+          "gradient": 2.7755575615628914e-17,
+          "parameters": 1.1102230246251565e-16,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 0.0
+        },
+        {
+          "step": 6,
+          "gradient": 4.163336342344337e-17,
+          "parameters": 1.1102230246251565e-16,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 0.0
+        },
+        {
+          "step": 7,
+          "gradient": 2.7755575615628914e-17,
+          "parameters": 1.1102230246251565e-16,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 0.0
+        },
+        {
+          "step": 8,
+          "gradient": 2.0816681711721685e-17,
+          "parameters": 1.1102230246251565e-16,
+          "validation_probabilities": 1.1102230246251565e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 9,
+          "gradient": 3.122502256758253e-17,
+          "parameters": 1.3877787807814457e-16,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 0.0
+        },
+        {
+          "step": 10,
+          "gradient": 3.469446951953614e-17,
+          "parameters": 1.6653345369377348e-16,
+          "validation_probabilities": 1.1102230246251565e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 11,
+          "gradient": 3.122502256758253e-17,
+          "parameters": 1.942890293094024e-16,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 12,
+          "gradient": 4.163336342344337e-17,
+          "parameters": 2.220446049250313e-16,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 13,
+          "gradient": 3.469446951953614e-17,
+          "parameters": 2.220446049250313e-16,
+          "validation_probabilities": 1.1102230246251565e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 14,
+          "gradient": 2.0816681711721685e-17,
+          "parameters": 2.220446049250313e-16,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 15,
+          "gradient": 2.7755575615628914e-17,
+          "parameters": 2.220446049250313e-16,
+          "validation_probabilities": 1.1102230246251565e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 16,
+          "gradient": 2.0816681711721685e-17,
+          "parameters": 2.220446049250313e-16,
+          "validation_probabilities": 8.326672684688674e-17,
+          "losses": 0.0
+        },
+        {
+          "step": 17,
+          "gradient": 3.8163916471489756e-17,
+          "parameters": 2.220446049250313e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 18,
+          "gradient": 2.7755575615628914e-17,
+          "parameters": 2.220446049250313e-16,
+          "validation_probabilities": 1.3877787807814457e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 19,
+          "gradient": 2.7755575615628914e-17,
+          "parameters": 2.2898349882893854e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 20,
+          "gradient": 2.7755575615628914e-17,
+          "parameters": 2.3765711620882257e-16,
+          "validation_probabilities": 1.1102230246251565e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 21,
+          "gradient": 3.469446951953614e-17,
+          "parameters": 2.5326962749261384e-16,
+          "validation_probabilities": 1.3877787807814457e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 22,
+          "gradient": 4.85722573273506e-17,
+          "parameters": 2.7755575615628914e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 23,
+          "gradient": 2.7755575615628914e-17,
+          "parameters": 3.0184188481996443e-16,
+          "validation_probabilities": 1.3877787807814457e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 24,
+          "gradient": 3.122502256758253e-17,
+          "parameters": 3.2959746043559335e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 25,
+          "gradient": 6.245004513516506e-17,
+          "parameters": 3.5735303605122226e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 26,
+          "gradient": 3.469446951953614e-17,
+          "parameters": 3.8424124992886277e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 27,
+          "gradient": 3.469446951953614e-17,
+          "parameters": 4.0505793164058446e-16,
+          "validation_probabilities": 1.942890293094024e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 28,
+          "gradient": 2.7755575615628914e-17,
+          "parameters": 4.2327252813834093e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 29,
+          "gradient": 2.7755575615628914e-17,
+          "parameters": 4.40619762898109e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 30,
+          "gradient": 2.42861286636753e-17,
+          "parameters": 4.510281037539698e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 31,
+          "gradient": 4.163336342344337e-17,
+          "parameters": 4.579669976578771e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 32,
+          "gradient": 4.85722573273506e-17,
+          "parameters": 4.649058915617843e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 33,
+          "gradient": 4.163336342344337e-17,
+          "parameters": 4.718447854656915e-16,
+          "validation_probabilities": 1.6653345369377348e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 34,
+          "gradient": 4.163336342344337e-17,
+          "parameters": 4.85722573273506e-16,
+          "validation_probabilities": 1.942890293094024e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 35,
+          "gradient": 3.122502256758253e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.220446049250313e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 36,
+          "gradient": 4.85722573273506e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.220446049250313e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 37,
+          "gradient": 4.5102810375396984e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.7755575615628914e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 38,
+          "gradient": 4.85722573273506e-17,
+          "parameters": 5.134781488891349e-16,
+          "validation_probabilities": 2.220446049250313e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 39,
+          "gradient": 3.469446951953614e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 1.942890293094024e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 40,
+          "gradient": 5.551115123125783e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.220446049250313e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 41,
+          "gradient": 2.7755575615628914e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.498001805406602e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 42,
+          "gradient": 5.551115123125783e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.7755575615628914e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 43,
+          "gradient": 4.163336342344337e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.220446049250313e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 44,
+          "gradient": 4.85722573273506e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.7755575615628914e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 45,
+          "gradient": 4.683753385137379e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.7755575615628914e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 46,
+          "gradient": 6.245004513516506e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.7755575615628914e-16,
+          "losses": 4.440892098500626e-16
+        },
+        {
+          "step": 47,
+          "gradient": 5.551115123125783e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.220446049250313e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 48,
+          "gradient": 4.163336342344337e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.7755575615628914e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 49,
+          "gradient": 4.163336342344337e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 3.885780586188048e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 50,
+          "gradient": 4.163336342344337e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.7755575615628914e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 51,
+          "gradient": 6.245004513516506e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.7755575615628914e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 52,
+          "gradient": 6.245004513516506e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 3.3306690738754696e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 53,
+          "gradient": 5.204170427930421e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 3.885780586188048e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 54,
+          "gradient": 4.2500725161431774e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 3.3306690738754696e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 55,
+          "gradient": 4.0223900599212215e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 2.7755575615628914e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 56,
+          "gradient": 4.369334755116583e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 3.3306690738754696e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 57,
+          "gradient": 8.326672684688674e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 3.885780586188048e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 58,
+          "gradient": 6.245004513516506e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 3.885780586188048e-16,
+          "losses": 4.440892098500626e-16
+        },
+        {
+          "step": 59,
+          "gradient": 3.469446951953614e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 4.440892098500626e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 60,
+          "gradient": 4.336808689942018e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 3.3306690738754696e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 61,
+          "gradient": 5.0306980803327406e-17,
+          "parameters": 4.996003610813204e-16,
+          "validation_probabilities": 4.440892098500626e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 62,
+          "gradient": 5.551115123125783e-17,
+          "parameters": 5.551115123125783e-16,
+          "validation_probabilities": 3.885780586188048e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 63,
+          "gradient": 6.722053469410127e-17,
+          "parameters": 5.551115123125783e-16,
+          "validation_probabilities": 4.440892098500626e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 64,
+          "gradient": 6.245004513516506e-17,
+          "parameters": 5.551115123125783e-16,
+          "validation_probabilities": 3.885780586188048e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 65,
+          "gradient": 4.163336342344337e-17,
+          "parameters": 5.551115123125783e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 66,
+          "gradient": 8.586881206085195e-17,
+          "parameters": 5.551115123125783e-16,
+          "validation_probabilities": 4.996003610813204e-16,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 67,
+          "gradient": 8.326672684688674e-17,
+          "parameters": 5.551115123125783e-16,
+          "validation_probabilities": 4.440892098500626e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 68,
+          "gradient": 6.938893903907228e-17,
+          "parameters": 5.551115123125783e-16,
+          "validation_probabilities": 4.163336342344337e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 69,
+          "gradient": 6.418476861114186e-17,
+          "parameters": 5.555451931815725e-16,
+          "validation_probabilities": 4.996003610813204e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 70,
+          "gradient": 6.516055056637882e-17,
+          "parameters": 5.624840870854797e-16,
+          "validation_probabilities": 4.440892098500626e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 71,
+          "gradient": 6.559423143537302e-17,
+          "parameters": 5.828670879282072e-16,
+          "validation_probabilities": 4.440892098500626e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 72,
+          "gradient": 5.551115123125783e-17,
+          "parameters": 6.106226635438361e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 73,
+          "gradient": 1.5265566588595902e-16,
+          "parameters": 6.38378239159465e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 74,
+          "gradient": 6.245004513516506e-17,
+          "parameters": 6.661338147750939e-16,
+          "validation_probabilities": 4.440892098500626e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 75,
+          "gradient": 1.3162214373974024e-16,
+          "parameters": 6.938893903907228e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 76,
+          "gradient": 9.71445146547012e-17,
+          "parameters": 6.938893903907228e-16,
+          "validation_probabilities": 6.106226635438361e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 77,
+          "gradient": 1.2847795743953228e-16,
+          "parameters": 7.216449660063518e-16,
+          "validation_probabilities": 4.996003610813204e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 78,
+          "gradient": 1.2457482961858446e-16,
+          "parameters": 7.216449660063518e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 79,
+          "gradient": 1.4972832002024816e-16,
+          "parameters": 7.216449660063518e-16,
+          "validation_probabilities": 6.106226635438361e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 80,
+          "gradient": 1.4690939437178585e-16,
+          "parameters": 7.494005416219807e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 81,
+          "gradient": 8.326672684688674e-17,
+          "parameters": 7.632783294297951e-16,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 82,
+          "gradient": 2.295255999151813e-16,
+          "parameters": 7.771561172376096e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 83,
+          "gradient": 7.28583859910259e-17,
+          "parameters": 7.771561172376096e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 84,
+          "gradient": 2.4296970685400154e-16,
+          "parameters": 7.91033905045424e-16,
+          "validation_probabilities": 4.440892098500626e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 85,
+          "gradient": 5.551115123125783e-17,
+          "parameters": 8.049116928532385e-16,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 86,
+          "gradient": 2.080583968999683e-16,
+          "parameters": 8.187894806610529e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 87,
+          "gradient": 7.849623728795052e-17,
+          "parameters": 8.326672684688674e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 88,
+          "gradient": 1.4224732503009818e-16,
+          "parameters": 8.465450562766819e-16,
+          "validation_probabilities": 8.326672684688674e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 89,
+          "gradient": 9.8879238130678e-17,
+          "parameters": 8.604228440844963e-16,
+          "validation_probabilities": 6.106226635438361e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 90,
+          "gradient": 1.6675029412827058e-16,
+          "parameters": 8.604228440844963e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 91,
+          "gradient": 9.020562075079397e-17,
+          "parameters": 8.743006318923108e-16,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 92,
+          "gradient": 1.126486057212439e-16,
+          "parameters": 8.881784197001252e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 93,
+          "gradient": 6.938893903907228e-17,
+          "parameters": 9.020562075079397e-16,
+          "validation_probabilities": 6.106226635438361e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 94,
+          "gradient": 8.565197162635485e-17,
+          "parameters": 9.159339953157541e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 95,
+          "gradient": 1.5471565001368148e-16,
+          "parameters": 9.159339953157541e-16,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 96,
+          "gradient": 1.6111244283134596e-16,
+          "parameters": 9.159339953157541e-16,
+          "validation_probabilities": 5.551115123125783e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 97,
+          "gradient": 1.5514933088267568e-16,
+          "parameters": 9.228728892196614e-16,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 98,
+          "gradient": 3.10623922417097e-16,
+          "parameters": 9.159339953157541e-16,
+          "validation_probabilities": 7.771561172376096e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 99,
+          "gradient": 8.68445940160889e-17,
+          "parameters": 9.159339953157541e-16,
+          "validation_probabilities": 7.771561172376096e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 100,
+          "gradient": 1.8875959822972632e-16,
+          "parameters": 9.228728892196614e-16,
+          "validation_probabilities": 9.992007221626409e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 101,
+          "gradient": 2.5522119140308774e-16,
+          "parameters": 9.228728892196614e-16,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 102,
+          "gradient": 1.5027042110649091e-16,
+          "parameters": 9.298117831235686e-16,
+          "validation_probabilities": 8.881784197001252e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 103,
+          "gradient": 5.833007687972014e-17,
+          "parameters": 9.298117831235686e-16,
+          "validation_probabilities": 7.216449660063518e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 104,
+          "gradient": 1.8030282128433939e-16,
+          "parameters": 9.367506770274758e-16,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 105,
+          "gradient": 9.042246118529107e-17,
+          "parameters": 9.43689570931383e-16,
+          "validation_probabilities": 8.881784197001252e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 106,
+          "gradient": 1.216474837528736e-16,
+          "parameters": 9.506284648352903e-16,
+          "validation_probabilities": 8.881784197001252e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 107,
+          "gradient": 1.7986914041534519e-16,
+          "parameters": 9.506284648352903e-16,
+          "validation_probabilities": 8.881784197001252e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 108,
+          "gradient": 1.3118846287074604e-16,
+          "parameters": 9.506284648352903e-16,
+          "validation_probabilities": 7.771561172376096e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 109,
+          "gradient": 1.5113778284447932e-16,
+          "parameters": 9.506284648352903e-16,
+          "validation_probabilities": 7.771561172376096e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 110,
+          "gradient": 8.716985466783456e-17,
+          "parameters": 9.575673587391975e-16,
+          "validation_probabilities": 7.771561172376096e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 111,
+          "gradient": 8.348356728138384e-17,
+          "parameters": 9.645062526431047e-16,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 112,
+          "gradient": 1.4159680372660688e-16,
+          "parameters": 9.71445146547012e-16,
+          "validation_probabilities": 7.771561172376096e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 113,
+          "gradient": 1.5027042110649091e-16,
+          "parameters": 9.783840404509192e-16,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 114,
+          "gradient": 2.0177002429955238e-16,
+          "parameters": 9.922618282587337e-16,
+          "validation_probabilities": 9.43689570931383e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 115,
+          "gradient": 9.204876444401933e-17,
+          "parameters": 9.992007221626409e-16,
+          "validation_probabilities": 9.992007221626409e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 116,
+          "gradient": 1.2110538266663085e-16,
+          "parameters": 1.0061396160665481e-15,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 117,
+          "gradient": 1.5439038936193583e-16,
+          "parameters": 1.0130785099704553e-15,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 118,
+          "gradient": 2.0383000842727483e-16,
+          "parameters": 1.0130785099704553e-15,
+          "validation_probabilities": 7.771561172376096e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 119,
+          "gradient": 2.47198095326695e-16,
+          "parameters": 1.0269562977782698e-15,
+          "validation_probabilities": 7.771561172376096e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 120,
+          "gradient": 2.690989792109022e-16,
+          "parameters": 1.0408340855860843e-15,
+          "validation_probabilities": 8.881784197001252e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 121,
+          "gradient": 2.2638141361497333e-16,
+          "parameters": 1.0547118733938987e-15,
+          "validation_probabilities": 6.661338147750939e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 122,
+          "gradient": 1.6783449630075609e-16,
+          "parameters": 1.0755285551056204e-15,
+          "validation_probabilities": 9.992007221626409e-16,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 123,
+          "gradient": 1.5634195327240974e-16,
+          "parameters": 1.096345236817342e-15,
+          "validation_probabilities": 8.326672684688674e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 124,
+          "gradient": 1.4289784633358948e-16,
+          "parameters": 1.1171619185290638e-15,
+          "validation_probabilities": 7.771561172376096e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 125,
+          "gradient": 3.5475095083725705e-16,
+          "parameters": 1.124100812432971e-15,
+          "validation_probabilities": 7.771561172376096e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 126,
+          "gradient": 7.979727989493313e-16,
+          "parameters": 1.1449174941446927e-15,
+          "validation_probabilities": 9.992007221626409e-16,
+          "losses": 0.0
+        },
+        {
+          "step": 127,
+          "gradient": 1.3173056395698879e-15,
+          "parameters": 1.1310397063368782e-15,
+          "validation_probabilities": 1.1102230246251565e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 128,
+          "gradient": 1.7143404751340796e-15,
+          "parameters": 1.1587952819525071e-15,
+          "validation_probabilities": 1.5543122344752192e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 129,
+          "gradient": 1.9611048895917804e-15,
+          "parameters": 1.1310397063368782e-15,
+          "validation_probabilities": 1.1102230246251565e-15,
+          "losses": 0.0
+        },
+        {
+          "step": 130,
+          "gradient": 2.114844757650225e-15,
+          "parameters": 1.1726730697603216e-15,
+          "validation_probabilities": 1.3322676295501878e-15,
+          "losses": 0.0
+        },
+        {
+          "step": 131,
+          "gradient": 2.2295533474991913e-15,
+          "parameters": 1.1518563880486e-15,
+          "validation_probabilities": 1.4432899320127035e-15,
+          "losses": 0.0
+        },
+        {
+          "step": 132,
+          "gradient": 2.3436114160446664e-15,
+          "parameters": 1.1934897514720433e-15,
+          "validation_probabilities": 1.4432899320127035e-15,
+          "losses": 0.0
+        },
+        {
+          "step": 133,
+          "gradient": 2.5845211387709455e-15,
+          "parameters": 1.2441219929271163e-15,
+          "validation_probabilities": 1.7763568394002505e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 134,
+          "gradient": 3.0125641564682226e-15,
+          "parameters": 1.4652992361141592e-15,
+          "validation_probabilities": 1.9984014443252818e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 135,
+          "gradient": 3.693009439920125e-15,
+          "parameters": 1.976988451418693e-15,
+          "validation_probabilities": 2.6645352591003757e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 136,
+          "gradient": 4.98060793996391e-15,
+          "parameters": 2.815456201510358e-15,
+          "validation_probabilities": 2.886579864025407e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 137,
+          "gradient": 7.0830927928478005e-15,
+          "parameters": 4.0913453180912995e-15,
+          "validation_probabilities": 4.3298697960381105e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 138,
+          "gradient": 1.0253950466498907e-14,
+          "parameters": 5.5528498466017595e-15,
+          "validation_probabilities": 5.662137425588298e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 139,
+          "gradient": 1.3999218451132833e-14,
+          "parameters": 6.8081391219054765e-15,
+          "validation_probabilities": 7.327471962526033e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 140,
+          "gradient": 1.729649409809575e-14,
+          "parameters": 5.384581669432009e-15,
+          "validation_probabilities": 5.440092820663267e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 141,
+          "gradient": 1.3823577699190182e-14,
+          "parameters": 1.5844530548703162e-15,
+          "validation_probabilities": 1.9984014443252818e-15,
+          "losses": 5.551115123125783e-17
+        },
+        {
+          "step": 142,
+          "gradient": 4.049278273798862e-15,
+          "parameters": 1.3056829922808433e-14,
+          "validation_probabilities": 1.3211653993039363e-14,
+          "losses": 6.661338147750939e-16
+        },
+        {
+          "step": 143,
+          "gradient": 3.340817206209934e-14,
+          "parameters": 1.95889311715991e-14,
+          "validation_probabilities": 1.942890293094024e-14,
+          "losses": 7.771561172376096e-16
+        },
+        {
+          "step": 144,
+          "gradient": 5.092237395643018e-14,
+          "parameters": 1.5153676924395398e-14,
+          "validation_probabilities": 1.587618925213974e-14,
+          "losses": 6.661338147750939e-16
+        },
+        {
+          "step": 145,
+          "gradient": 3.915769618278997e-14,
+          "parameters": 3.1493904706358933e-15,
+          "validation_probabilities": 3.4416913763379853e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 146,
+          "gradient": 8.369173409850106e-15,
+          "parameters": 8.440297072365155e-15,
+          "validation_probabilities": 8.881784197001252e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 147,
+          "gradient": 2.227254838893522e-14,
+          "parameters": 1.2612307032089376e-14,
+          "validation_probabilities": 1.3433698597964394e-14,
+          "losses": 5.551115123125783e-16
+        },
+        {
+          "step": 148,
+          "gradient": 3.305363795169658e-14,
+          "parameters": 7.49227069274383e-15,
+          "validation_probabilities": 8.104628079763643e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 149,
+          "gradient": 1.9815095744779576e-14,
+          "parameters": 1.3322676295501878e-15,
+          "validation_probabilities": 1.887379141862766e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 150,
+          "gradient": 2.798759488054081e-15,
+          "parameters": 6.327403878625404e-15,
+          "validation_probabilities": 7.438494264988549e-15,
+          "losses": 4.440892098500626e-16
+        },
+        {
+          "step": 151,
+          "gradient": 1.6760464544018916e-14,
+          "parameters": 5.2605489408996675e-15,
+          "validation_probabilities": 5.773159728050814e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 152,
+          "gradient": 1.4055163283233085e-14,
+          "parameters": 1.27675647831893e-15,
+          "validation_probabilities": 9.992007221626409e-16,
+          "losses": 5.551115123125783e-17
+        },
+        {
+          "step": 153,
+          "gradient": 1.5139799136587584e-15,
+          "parameters": 2.6680047060523293e-15,
+          "validation_probabilities": 2.9976021664879227e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 154,
+          "gradient": 7.185007797061438e-15,
+          "parameters": 1.97758476261356e-15,
+          "validation_probabilities": 2.4424906541753444e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 155,
+          "gradient": 5.246020631788362e-15,
+          "parameters": 1.3322676295501878e-15,
+          "validation_probabilities": 1.7763568394002505e-15,
+          "losses": 5.551115123125783e-17
+        },
+        {
+          "step": 156,
+          "gradient": 2.7408630920433552e-15,
+          "parameters": 2.261212050935768e-15,
+          "validation_probabilities": 2.9976021664879227e-15,
+          "losses": 1.6653345369377348e-16
+        },
+        {
+          "step": 157,
+          "gradient": 6.2083584800864955e-15,
+          "parameters": 1.27675647831893e-15,
+          "validation_probabilities": 9.992007221626409e-16,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 158,
+          "gradient": 6.175615574477433e-16,
+          "parameters": 3.1580640880157773e-15,
+          "validation_probabilities": 3.774758283725532e-15,
+          "losses": 0.0
+        },
+        {
+          "step": 159,
+          "gradient": 8.584495961305727e-15,
+          "parameters": 4.116498808492963e-15,
+          "validation_probabilities": 4.6629367034256575e-15,
+          "losses": 2.7755575615628914e-16
+        },
+        {
+          "step": 160,
+          "gradient": 1.1461751686647759e-14,
+          "parameters": 1.3322676295501878e-15,
+          "validation_probabilities": 1.5543122344752192e-15,
+          "losses": 5.551115123125783e-17
+        },
+        {
+          "step": 161,
+          "gradient": 3.380976054678797e-15,
+          "parameters": 3.8805764157601175e-15,
+          "validation_probabilities": 4.107825191113079e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 162,
+          "gradient": 1.049681175313566e-14,
+          "parameters": 6.577204059166064e-15,
+          "validation_probabilities": 8.104628079763643e-15,
+          "losses": 4.440892098500626e-16
+        },
+        {
+          "step": 163,
+          "gradient": 1.8239099466854647e-14,
+          "parameters": 4.4157386080989625e-15,
+          "validation_probabilities": 5.551115123125783e-15,
+          "losses": 1.6653345369377348e-16
+        },
+        {
+          "step": 164,
+          "gradient": 1.2049389264134902e-14,
+          "parameters": 1.9203388879063255e-15,
+          "validation_probabilities": 2.1094237467877974e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 165,
+          "gradient": 5.237563854842975e-15,
+          "parameters": 7.575537419590717e-15,
+          "validation_probabilities": 9.2148511043888e-15,
+          "losses": 4.440892098500626e-16
+        },
+        {
+          "step": 166,
+          "gradient": 2.118053996080782e-14,
+          "parameters": 8.433358178461248e-15,
+          "validation_probabilities": 9.103828801926284e-15,
+          "losses": 4.440892098500626e-16
+        },
+        {
+          "step": 167,
+          "gradient": 2.3150968989082976e-14,
+          "parameters": 2.9247437804968968e-15,
+          "validation_probabilities": 3.774758283725532e-15,
+          "losses": 2.7755575615628914e-16
+        },
+        {
+          "step": 168,
+          "gradient": 8.38608696374088e-15,
+          "parameters": 4.786102070220011e-15,
+          "validation_probabilities": 5.995204332975845e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 169,
+          "gradient": 1.3685450342415528e-14,
+          "parameters": 1.0172418463127997e-14,
+          "validation_probabilities": 1.0769163338864018e-14,
+          "losses": 4.440892098500626e-16
+        },
+        {
+          "step": 170,
+          "gradient": 2.822113202849419e-14,
+          "parameters": 8.838416110101832e-15,
+          "validation_probabilities": 1.0325074129013956e-14,
+          "losses": 6.106226635438361e-16
+        },
+        {
+          "step": 171,
+          "gradient": 2.503032503486935e-14,
+          "parameters": 2.1094237467877974e-15,
+          "validation_probabilities": 2.55351295663786e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 172,
+          "gradient": 5.696181373804343e-15,
+          "parameters": 6.513886652292911e-15,
+          "validation_probabilities": 7.327471962526033e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 173,
+          "gradient": 1.8118753025708756e-14,
+          "parameters": 1.1162945567910754e-14,
+          "validation_probabilities": 1.3100631690576847e-14,
+          "losses": 4.996003610813204e-16
+        },
+        {
+          "step": 174,
+          "gradient": 3.1632032063133586e-14,
+          "parameters": 9.488937413593135e-15,
+          "validation_probabilities": 1.021405182655144e-14,
+          "losses": 3.885780586188048e-16
+        },
+        {
+          "step": 175,
+          "gradient": 2.6538341836579438e-14,
+          "parameters": 1.9741153156616065e-15,
+          "validation_probabilities": 2.7755575615628914e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 176,
+          "gradient": 5.717214895950562e-15,
+          "parameters": 6.5867450382839365e-15,
+          "validation_probabilities": 7.549516567451064e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 177,
+          "gradient": 1.8973971699365322e-14,
+          "parameters": 1.1962653090336062e-14,
+          "validation_probabilities": 1.27675647831893e-14,
+          "losses": 4.996003610813204e-16
+        },
+        {
+          "step": 178,
+          "gradient": 3.378363127443107e-14,
+          "parameters": 1.0737938316296436e-14,
+          "validation_probabilities": 1.2545520178264269e-14,
+          "losses": 4.996003610813204e-16
+        },
+        {
+          "step": 179,
+          "gradient": 3.0771283958397344e-14,
+          "parameters": 4.260480856999038e-15,
+          "validation_probabilities": 5.10702591327572e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 180,
+          "gradient": 1.1938583802106884e-14,
+          "parameters": 4.5900783174346316e-15,
+          "validation_probabilities": 5.10702591327572e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 181,
+          "gradient": 1.285657778155036e-14,
+          "parameters": 1.0826409213571253e-14,
+          "validation_probabilities": 1.3211653993039363e-14,
+          "losses": 4.996003610813204e-16
+        },
+        {
+          "step": 182,
+          "gradient": 3.124670661103224e-14,
+          "parameters": 1.2202044930020861e-14,
+          "validation_probabilities": 1.3322676295501878e-14,
+          "losses": 5.551115123125783e-16
+        },
+        {
+          "step": 183,
+          "gradient": 3.4693602157798153e-14,
+          "parameters": 7.637987464725882e-15,
+          "validation_probabilities": 9.325873406851315e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 184,
+          "gradient": 2.2001606266031093e-14,
+          "parameters": 1.6653345369377348e-15,
+          "validation_probabilities": 1.1102230246251565e-15,
+          "losses": 5.551115123125783e-17
+        },
+        {
+          "step": 185,
+          "gradient": 5.200917821412965e-16,
+          "parameters": 7.908604326978264e-15,
+          "validation_probabilities": 8.992806499463768e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 186,
+          "gradient": 2.254555049596707e-14,
+          "parameters": 1.1971326707715946e-14,
+          "validation_probabilities": 1.4654943925052066e-14,
+          "losses": 6.106226635438361e-16
+        },
+        {
+          "step": 187,
+          "gradient": 3.469902316866058e-14,
+          "parameters": 1.136070404417211e-14,
+          "validation_probabilities": 1.2323475573339238e-14,
+          "losses": 5.551115123125783e-16
+        },
+        {
+          "step": 188,
+          "gradient": 3.260174248620462e-14,
+          "parameters": 6.118369699770199e-15,
+          "validation_probabilities": 7.771561172376096e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 189,
+          "gradient": 1.7889010585359078e-14,
+          "parameters": 1.7763568394002505e-15,
+          "validation_probabilities": 1.887379141862766e-15,
+          "losses": 1.6653345369377348e-16
+        },
+        {
+          "step": 190,
+          "gradient": 2.973207617606999e-15,
+          "parameters": 7.632783294297951e-15,
+          "validation_probabilities": 8.548717289613705e-15,
+          "losses": 3.885780586188048e-16
+        },
+        {
+          "step": 191,
+          "gradient": 2.2054623752265634e-14,
+          "parameters": 1.1310397063368782e-14,
+          "validation_probabilities": 1.3433698597964394e-14,
+          "losses": 3.885780586188048e-16
+        },
+        {
+          "step": 192,
+          "gradient": 3.2899139142117395e-14,
+          "parameters": 1.1178558079194545e-14,
+          "validation_probabilities": 1.2323475573339238e-14,
+          "losses": 7.771561172376096e-16
+        },
+        {
+          "step": 193,
+          "gradient": 3.242003020209605e-14,
+          "parameters": 7.370840049425453e-15,
+          "validation_probabilities": 9.2148511043888e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 194,
+          "gradient": 2.1612269265891548e-14,
+          "parameters": 1.8318679906315083e-15,
+          "validation_probabilities": 1.9984014443252818e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 195,
+          "gradient": 4.5392292355450614e-15,
+          "parameters": 4.6542630860457734e-15,
+          "validation_probabilities": 5.329070518200751e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 196,
+          "gradient": 1.3315195300511729e-14,
+          "parameters": 9.077807949786632e-15,
+          "validation_probabilities": 1.1102230246251565e-14,
+          "losses": 5.551115123125783e-16
+        },
+        {
+          "step": 197,
+          "gradient": 2.669750271550031e-14,
+          "parameters": 1.1138659439247078e-14,
+          "validation_probabilities": 1.2878587085651816e-14,
+          "losses": 4.996003610813204e-16
+        },
+        {
+          "step": 198,
+          "gradient": 3.220850235824413e-14,
+          "parameters": 9.816800150552751e-15,
+          "validation_probabilities": 1.176836406102666e-14,
+          "losses": 6.106226635438361e-16
+        },
+        {
+          "step": 199,
+          "gradient": 2.894125911145906e-14,
+          "parameters": 6.418476861114186e-15,
+          "validation_probabilities": 7.216449660063518e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 200,
+          "gradient": 1.8426774862911888e-14,
+          "parameters": 1.887379141862766e-15,
+          "validation_probabilities": 2.3314683517128287e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 201,
+          "gradient": 3.620476314580845e-15,
+          "parameters": 3.913536161803677e-15,
+          "validation_probabilities": 4.9960036108132044e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 202,
+          "gradient": 1.1614732613185463e-14,
+          "parameters": 8.172282295326738e-15,
+          "validation_probabilities": 9.2148511043888e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 203,
+          "gradient": 2.3744135997649796e-14,
+          "parameters": 1.0340686640297747e-14,
+          "validation_probabilities": 1.2434497875801753e-14,
+          "losses": 4.996003610813204e-16
+        },
+        {
+          "step": 204,
+          "gradient": 3.049936605353798e-14,
+          "parameters": 1.065987575987748e-14,
+          "validation_probabilities": 1.1657341758564144e-14,
+          "losses": 5.551115123125783e-16
+        },
+        {
+          "step": 205,
+          "gradient": 3.11932554439287e-14,
+          "parameters": 8.914743943044812e-15,
+          "validation_probabilities": 1.0769163338864018e-14,
+          "losses": 6.106226635438361e-16
+        },
+        {
+          "step": 206,
+          "gradient": 2.6303720486453575e-14,
+          "parameters": 5.878977860085399e-15,
+          "validation_probabilities": 6.328271240363392e-15,
+          "losses": 2.7755575615628914e-16
+        },
+        {
+          "step": 207,
+          "gradient": 1.7141778448082068e-14,
+          "parameters": 1.842276331487369e-15,
+          "validation_probabilities": 2.4424906541753444e-15,
+          "losses": 5.551115123125783e-17
+        },
+        {
+          "step": 208,
+          "gradient": 5.467414715409902e-15,
+          "parameters": 2.2499363483419188e-15,
+          "validation_probabilities": 3.1086244689504383e-15,
+          "losses": 1.6653345369377348e-16
+        },
+        {
+          "step": 209,
+          "gradient": 6.717825080937434e-15,
+          "parameters": 6.0108168442596366e-15,
+          "validation_probabilities": 6.772360450213455e-15,
+          "losses": 2.7755575615628914e-16
+        },
+        {
+          "step": 210,
+          "gradient": 1.7617743201803204e-14,
+          "parameters": 8.76382300063483e-15,
+          "validation_probabilities": 1.099120794378905e-14,
+          "losses": 3.885780586188048e-16
+        },
+        {
+          "step": 211,
+          "gradient": 2.5969244116241796e-14,
+          "parameters": 1.0593956267790361e-14,
+          "validation_probabilities": 1.176836406102666e-14,
+          "losses": 4.996003610813204e-16
+        },
+        {
+          "step": 212,
+          "gradient": 3.107594476886577e-14,
+          "parameters": 1.1041514924592377e-14,
+          "validation_probabilities": 1.3766765505351941e-14,
+          "losses": 6.661338147750939e-16
+        },
+        {
+          "step": 213,
+          "gradient": 3.2689020761089704e-14,
+          "parameters": 1.0597425714742315e-14,
+          "validation_probabilities": 1.1879386363489175e-14,
+          "losses": 3.885780586188048e-16
+        },
+        {
+          "step": 214,
+          "gradient": 3.110814557338859e-14,
+          "parameters": 9.069134332406747e-15,
+          "validation_probabilities": 1.1324274851176597e-14,
+          "losses": 4.996003610813204e-16
+        },
+        {
+          "step": 215,
+          "gradient": 2.6950663922775675e-14,
+          "parameters": 7.164407955784213e-15,
+          "validation_probabilities": 8.548717289613705e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 216,
+          "gradient": 2.1050002019240566e-14,
+          "parameters": 4.713243684228985e-15,
+          "validation_probabilities": 6.328271240363392e-15,
+          "losses": 1.6653345369377348e-16
+        },
+        {
+          "step": 217,
+          "gradient": 1.4058199049316045e-14,
+          "parameters": 2.2516710718178956e-15,
+          "validation_probabilities": 2.7755575615628914e-15,
+          "losses": 1.1102230246251565e-16
+        },
+        {
+          "step": 218,
+          "gradient": 6.641714088428952e-15,
+          "parameters": 1.887379141862766e-15,
+          "validation_probabilities": 1.1102230246251565e-15,
+          "losses": 5.551115123125783e-17
+        },
+        {
+          "step": 219,
+          "gradient": 8.542428917013289e-16,
+          "parameters": 2.7842311789427754e-15,
+          "validation_probabilities": 3.774758283725532e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 220,
+          "gradient": 8.3883637883031e-15,
+          "parameters": 5.381112222480056e-15,
+          "validation_probabilities": 6.328271240363392e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 221,
+          "gradient": 1.5863829347373404e-14,
+          "parameters": 7.771561172376096e-15,
+          "validation_probabilities": 9.547918011776346e-15,
+          "losses": 3.885780586188048e-16
+        },
+        {
+          "step": 222,
+          "gradient": 2.3059679166159697e-14,
+          "parameters": 1.0160275398796159e-14,
+          "validation_probabilities": 1.1546319456101628e-14,
+          "losses": 4.996003610813204e-16
+        },
+        {
+          "step": 223,
+          "gradient": 2.991682422626152e-14,
+          "parameters": 1.2328679743767168e-14,
+          "validation_probabilities": 1.4876988529977098e-14,
+          "losses": 6.661338147750939e-16
+        },
+        {
+          "step": 224,
+          "gradient": 3.6679210016488106e-14,
+          "parameters": 1.4844028783933538e-14,
+          "validation_probabilities": 1.7541523789077473e-14,
+          "losses": 7.771561172376096e-16
+        },
+        {
+          "step": 225,
+          "gradient": 4.400310411184494e-14,
+          "parameters": 1.765254609153999e-14,
+          "validation_probabilities": 2.1316282072803006e-14,
+          "losses": 9.992007221626409e-16
+        },
+        {
+          "step": 226,
+          "gradient": 5.243461914661296e-14,
+          "parameters": 2.1071686062690276e-14,
+          "validation_probabilities": 2.4424906541753444e-14,
+          "losses": 1.1102230246251565e-15
+        },
+        {
+          "step": 227,
+          "gradient": 6.251054361638975e-14,
+          "parameters": 2.523675712851059e-14,
+          "validation_probabilities": 3.008704396734174e-14,
+          "losses": 1.3877787807814457e-15
+        },
+        {
+          "step": 228,
+          "gradient": 7.489711975616764e-14,
+          "parameters": 3.048949981376836e-14,
+          "validation_probabilities": 3.5638159090467525e-14,
+          "losses": 1.7763568394002505e-15
+        },
+        {
+          "step": 229,
+          "gradient": 9.054443392969569e-14,
+          "parameters": 3.7306963074357213e-14,
+          "validation_probabilities": 4.518607710224387e-14,
+          "losses": 2.1649348980190553e-15
+        },
+        {
+          "step": 230,
+          "gradient": 1.1081109987931548e-13,
+          "parameters": 4.623905425216179e-14,
+          "validation_probabilities": 5.46229728115577e-14,
+          "losses": 2.55351295663786e-15
+        },
+        {
+          "step": 231,
+          "gradient": 1.373797993767245e-13,
+          "parameters": 5.804384750618397e-14,
+          "validation_probabilities": 6.905587213168474e-14,
+          "losses": 3.3306690738754696e-15
+        },
+        {
+          "step": 232,
+          "gradient": 1.7233718792308839e-13,
+          "parameters": 7.342217112071836e-14,
+          "validation_probabilities": 8.64863736182997e-14,
+          "losses": 4.163336342344337e-15
+        },
+        {
+          "step": 233,
+          "gradient": 2.1815741487601903e-13,
+          "parameters": 9.361608710456437e-14,
+          "validation_probabilities": 1.1157741397482823e-13,
+          "losses": 5.329070518200751e-15
+        },
+        {
+          "step": 234,
+          "gradient": 2.7813038330770645e-13,
+          "parameters": 1.194409154914311e-13,
+          "validation_probabilities": 1.4155343563970746e-13,
+          "losses": 6.8833827526759706e-15
+        },
+        {
+          "step": 235,
+          "gradient": 3.54979500655217e-13,
+          "parameters": 1.5143268583539538e-13,
+          "validation_probabilities": 1.7996715229173788e-13,
+          "losses": 8.604228440844963e-15
+        },
+        {
+          "step": 236,
+          "gradient": 4.5000982107357146e-13,
+          "parameters": 1.872651339551723e-13,
+          "validation_probabilities": 2.2304380564719395e-13,
+          "losses": 1.0880185641326534e-14
+        },
+        {
+          "step": 237,
+          "gradient": 5.568462357885551e-13,
+          "parameters": 2.2006875488589372e-13,
+          "validation_probabilities": 2.6201263381153694e-13,
+          "losses": 1.2378986724570495e-14
+        },
+        {
+          "step": 238,
+          "gradient": 6.54307771158491e-13,
+          "parameters": 2.2990116754773027e-13,
+          "validation_probabilities": 2.7466917629226373e-13,
+          "losses": 1.3711254354120683e-14
+        },
+        {
+          "step": 239,
+          "gradient": 6.842727339612109e-13,
+          "parameters": 1.8255882916484723e-13,
+          "validation_probabilities": 2.1760371282653068e-13,
+          "losses": 1.0047518372857667e-14
+        },
+        {
+          "step": 240,
+          "gradient": 5.438232329735282e-13,
+          "parameters": 3.36727173921858e-14,
+          "validation_probabilities": 4.0745185003743245e-14,
+          "losses": 1.7763568394002505e-15
+        },
+        {
+          "step": 241,
+          "gradient": 1.020811039864622e-13,
+          "parameters": 2.2244706077145793e-13,
+          "validation_probabilities": 2.630118345336996e-13,
+          "losses": 1.2434497875801753e-14
+        },
+        {
+          "step": 242,
+          "gradient": 6.60970410348849e-13,
+          "parameters": 5.036769612498659e-13,
+          "validation_probabilities": 6.027400800689975e-13,
+          "losses": 3.0753177782116836e-14
+        },
+        {
+          "step": 243,
+          "gradient": 1.4985747018303464e-12,
+          "parameters": 6.670514834938857e-13,
+          "validation_probabilities": 7.943645741192995e-13,
+          "losses": 3.808064974464287e-14
+        },
+        {
+          "step": 244,
+          "gradient": 1.9863143248255444e-12,
+          "parameters": 6.295901300301665e-13,
+          "validation_probabilities": 7.51843032276156e-13,
+          "losses": 3.680389326632394e-14
+        },
+        {
+          "step": 245,
+          "gradient": 1.873972981999983e-12,
+          "parameters": 4.2285966395105845e-13,
+          "validation_probabilities": 5.051514762044462e-13,
+          "losses": 2.5368596112684827e-14
+        },
+        {
+          "step": 246,
+          "gradient": 1.2585969592915358e-12,
+          "parameters": 1.2720206832295133e-13,
+          "validation_probabilities": 1.5265566588595902e-13,
+          "losses": 7.271960811294775e-15
+        },
+        {
+          "step": 247,
+          "gradient": 3.7849844786164155e-13,
+          "parameters": 1.7469012347781643e-13,
+          "validation_probabilities": 2.0905499553691698e-13,
+          "losses": 1.071365218763276e-14
+        },
+        {
+          "step": 248,
+          "gradient": 5.194746542647177e-13,
+          "parameters": 3.8605403596125853e-13,
+          "validation_probabilities": 4.595213098923523e-13,
+          "losses": 2.220446049250313e-14
+        },
+        {
+          "step": 249,
+          "gradient": 1.1496010306893956e-12,
+          "parameters": 4.3362882728992247e-13,
+          "validation_probabilities": 5.186961971048731e-13,
+          "losses": 2.5868196473766147e-14
+        },
+        {
+          "step": 250,
+          "gradient": 1.2904980903338803e-12,
+          "parameters": 3.2194732990653563e-13,
+          "validation_probabilities": 3.8458125573015423e-13,
+          "losses": 1.942890293094024e-14
+        },
+        {
+          "step": 251,
+          "gradient": 9.579469379197847e-13,
+          "parameters": 1.2051644404653672e-13,
+          "validation_probabilities": 1.439959262938828e-13,
+          "losses": 7.216449660063518e-15
+        },
+        {
+          "step": 252,
+          "gradient": 3.582253851192041e-13,
+          "parameters": 8.630249292984615e-14,
+          "validation_probabilities": 1.0436096431476471e-13,
+          "losses": 5.440092820663267e-15
+        },
+        {
+          "step": 253,
+          "gradient": 2.5687221447134867e-13,
+          "parameters": 2.2352952822046745e-13,
+          "validation_probabilities": 2.6567636979279996e-13,
+          "losses": 1.3100631690576847e-14
+        },
+        {
+          "step": 254,
+          "gradient": 6.64935120853194e-13,
+          "parameters": 2.484765865284899e-13,
+          "validation_probabilities": 2.9765079290200447e-13,
+          "losses": 1.4988010832439613e-14
+        },
+        {
+          "step": 255,
+          "gradient": 7.393619137069374e-13,
+          "parameters": 1.7392337570143468e-13,
+          "validation_probabilities": 2.071676163950542e-13,
+          "losses": 1.071365218763276e-14
+        },
+        {
+          "step": 256,
+          "gradient": 5.167418142687508e-13,
+          "parameters": 5.0997400746766175e-14,
+          "validation_probabilities": 6.117328865684613e-14,
+          "losses": 3.1086244689504383e-15
+        },
+        {
+          "step": 257,
+          "gradient": 1.514003766106553e-13,
+          "parameters": 6.083501757903065e-14,
+          "validation_probabilities": 7.338574192772285e-14,
+          "losses": 3.885780586188048e-15
+        },
+        {
+          "step": 258,
+          "gradient": 1.809758939930184e-13,
+          "parameters": 1.1917550279960665e-13,
+          "validation_probabilities": 1.412203687323199e-13,
+          "losses": 6.938893903907228e-15
+        },
+        {
+          "step": 259,
+          "gradient": 3.5423617164576093e-13,
+          "parameters": 1.1119230536316138e-13,
+          "validation_probabilities": 1.3311574065255627e-13,
+          "losses": 6.8833827526759706e-15
+        },
+        {
+          "step": 260,
+          "gradient": 3.306335240316205e-13,
+          "parameters": 5.749914433472725e-14,
+          "validation_probabilities": 6.783462680459706e-14,
+          "losses": 3.6637359812630166e-15
+        },
+        {
+          "step": 261,
+          "gradient": 1.7036426522981651e-13,
+          "parameters": 5.85122228446977e-15,
+          "validation_probabilities": 7.327471962526033e-15,
+          "losses": 3.885780586188048e-16
+        },
+        {
+          "step": 262,
+          "gradient": 1.7271449027911334e-14,
+          "parameters": 4.504556450068975e-14,
+          "validation_probabilities": 5.473399511402022e-14,
+          "losses": 2.886579864025407e-15
+        },
+        {
+          "step": 263,
+          "gradient": 1.342765959186365e-13,
+          "parameters": 4.6389975194571775e-14,
+          "validation_probabilities": 5.473399511402022e-14,
+          "losses": 2.7755575615628914e-15
+        },
+        {
+          "step": 264,
+          "gradient": 1.3756140324061583e-13,
+          "parameters": 1.6002824065886045e-14,
+          "validation_probabilities": 1.942890293094024e-14,
+          "losses": 8.881784197001252e-16
+        },
+        {
+          "step": 265,
+          "gradient": 4.7989173398987894e-14,
+          "parameters": 2.2067417337900963e-14,
+          "validation_probabilities": 2.7422508708241367e-14,
+          "losses": 1.3322676295501878e-15
+        },
+        {
+          "step": 266,
+          "gradient": 6.596372753575608e-14,
+          "parameters": 4.458412805607992e-14,
+          "validation_probabilities": 5.2513549064769904e-14,
+          "losses": 2.7755575615628914e-15
+        },
+        {
+          "step": 267,
+          "gradient": 1.3190707207066943e-13,
+          "parameters": 3.627133315919906e-14,
+          "validation_probabilities": 4.3853809472693683e-14,
+          "losses": 2.3314683517128287e-15
+        },
+        {
+          "step": 268,
+          "gradient": 1.0791346115313072e-13,
+          "parameters": 2.886579864025407e-15,
+          "validation_probabilities": 2.220446049250313e-15,
+          "losses": 5.551115123125783e-17
+        },
+        {
+          "step": 269,
+          "gradient": 3.576891387246928e-15,
+          "parameters": 4.3701153806807724e-14,
+          "validation_probabilities": 5.162537064506978e-14,
+          "losses": 2.7755575615628914e-15
+        },
+        {
+          "step": 270,
+          "gradient": 1.288679449609753e-13,
+          "parameters": 7.427045090047102e-14,
+          "validation_probabilities": 8.915090887740007e-14,
+          "losses": 4.6074255521944e-15
+        },
+        {
+          "step": 271,
+          "gradient": 2.2027562066040396e-13,
+          "parameters": 7.48325013066875e-14,
+          "validation_probabilities": 8.837375276016246e-14,
+          "losses": 4.6074255521944e-15
+        },
+        {
+          "step": 272,
+          "gradient": 2.2112086467407366e-13,
+          "parameters": 4.063416270128073e-14,
+          "validation_probabilities": 4.929390229335695e-14,
+          "losses": 2.6645352591003757e-15
+        },
+        {
+          "step": 273,
+          "gradient": 1.2061163699728095e-13,
+          "parameters": 1.546852923528519e-14,
+          "validation_probabilities": 1.9095836023552692e-14,
+          "losses": 1.2212453270876722e-15
+        },
+        {
+          "step": 274,
+          "gradient": 4.582803320857254e-14,
+          "parameters": 7.23344995012809e-14,
+          "validation_probabilities": 8.593126210598712e-14,
+          "losses": 4.6629367034256575e-15
+        },
+        {
+          "step": 275,
+          "gradient": 2.132274391775102e-13,
+          "parameters": 1.0570710973212272e-13,
+          "validation_probabilities": 1.262323578998803e-13,
+          "losses": 6.8833827526759706e-15
+        },
+        {
+          "step": 276,
+          "gradient": 3.125841599449508e-13,
+          "parameters": 1.0240940040429081e-13,
+          "validation_probabilities": 1.2068124277675452e-13,
+          "losses": 6.439293542825908e-15
+        },
+        {
+          "step": 277,
+          "gradient": 3.0202186238059703e-13,
+          "parameters": 6.07864453217033e-14,
+          "validation_probabilities": 7.316369732279782e-14,
+          "losses": 3.941291737419306e-15
+        },
+        {
+          "step": 278,
+          "gradient": 1.7984626374950574e-13,
+          "parameters": 4.355890648177763e-15,
+          "validation_probabilities": 5.773159728050814e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 279,
+          "gradient": 1.3215990801729305e-14,
+          "parameters": 7.186091999233923e-14,
+          "validation_probabilities": 8.471001677889944e-14,
+          "losses": 4.6629367034256575e-15
+        },
+        {
+          "step": 280,
+          "gradient": 2.1120247477995902e-13,
+          "parameters": 1.1674168576281119e-13,
+          "validation_probabilities": 1.3922196728799463e-13,
+          "losses": 7.66053886991358e-15
+        },
+        {
+          "step": 281,
+          "gradient": 3.444111315586973e-13,
+          "parameters": 1.2493478473984965e-13,
+          "validation_probabilities": 1.4765966227514582e-13,
+          "losses": 7.993605777301127e-15
+        },
+        {
+          "step": 282,
+          "gradient": 3.6756134160625953e-13,
+          "parameters": 9.224912500549465e-14,
+          "validation_probabilities": 1.1035616864774056e-13,
+          "losses": 6.106226635438361e-15
+        },
+        {
+          "step": 283,
+          "gradient": 2.7197764439906846e-13,
+          "parameters": 3.036113027654608e-14,
+          "validation_probabilities": 3.5860203695392556e-14,
+          "losses": 2.0539125955565396e-15
+        },
+        {
+          "step": 284,
+          "gradient": 8.896995553481224e-14,
+          "parameters": 4.2368886177257536e-14,
+          "validation_probabilities": 4.96269692007445e-14,
+          "losses": 2.6645352591003757e-15
+        },
+        {
+          "step": 285,
+          "gradient": 1.2397179637024802e-13,
+          "parameters": 1.0183347221026651e-13,
+          "validation_probabilities": 1.2179146580137967e-13,
+          "losses": 6.8833827526759706e-15
+        },
+        {
+          "step": 286,
+          "gradient": 2.9964225545242584e-13,
+          "parameters": 1.3143479360433474e-13,
+          "validation_probabilities": 1.5520917884259688e-13,
+          "losses": 8.548717289613705e-15
+        },
+        {
+          "step": 287,
+          "gradient": 3.8550965805045356e-13,
+          "parameters": 1.2151911421565131e-13,
+          "validation_probabilities": 1.4488410471358293e-13,
+          "losses": 8.215650382226158e-15
+        },
+        {
+          "step": 288,
+          "gradient": 3.571927909701289e-13,
+          "parameters": 7.731142115385836e-14,
+          "validation_probabilities": 9.114931032172535e-14,
+          "losses": 5.10702591327572e-15
+        },
+        {
+          "step": 289,
+          "gradient": 2.262862206642291e-13,
+          "parameters": 1.0803857808383555e-14,
+          "validation_probabilities": 1.3766765505351941e-14,
+          "losses": 7.771561172376096e-16
+        },
+        {
+          "step": 290,
+          "gradient": 3.2272361866203525e-14,
+          "parameters": 5.704291206054535e-14,
+          "validation_probabilities": 6.794564910705958e-14,
+          "losses": 3.83026943495679e-15
+        },
+        {
+          "step": 291,
+          "gradient": 1.6764215883535716e-13,
+          "parameters": 1.08902470374872e-13,
+          "validation_probabilities": 1.2811973704174306e-13,
+          "losses": 7.327471962526033e-15
+        },
+        {
+          "step": 292,
+          "gradient": 3.184443811074522e-13,
+          "parameters": 1.297330298744015e-13,
+          "validation_probabilities": 1.539879335155092e-13,
+          "losses": 8.770761894538737e-15
+        },
+        {
+          "step": 293,
+          "gradient": 3.8041087207368873e-13,
+          "parameters": 1.167850538497106e-13,
+          "validation_probabilities": 1.3722356584366935e-13,
+          "losses": 7.771561172376096e-15
+        },
+        {
+          "step": 294,
+          "gradient": 3.410162777162107e-13,
+          "parameters": 7.295206105872865e-14,
+          "validation_probabilities": 8.704148513061227e-14,
+          "losses": 5.10702591327572e-15
+        },
+        {
+          "step": 295,
+          "gradient": 2.1384955438408237e-13,
+          "parameters": 1.2495213197460942e-14,
+          "validation_probabilities": 1.432187701766452e-14,
+          "losses": 7.216449660063518e-16
+        },
+        {
+          "step": 296,
+          "gradient": 3.604245808058737e-14,
+          "parameters": 5.0100548709686166e-14,
+          "validation_probabilities": 5.828670879282072e-14,
+          "losses": 3.3306690738754696e-15
+        },
+        {
+          "step": 297,
+          "gradient": 1.4559143821091247e-13,
+          "parameters": 9.748278573251667e-14,
+          "validation_probabilities": 1.1601830607332886e-13,
+          "losses": 6.716849298982197e-15
+        },
+        {
+          "step": 298,
+          "gradient": 2.850277522684075e-13,
+          "parameters": 1.205407301752004e-13,
+          "validation_probabilities": 1.4133139103478243e-13,
+          "losses": 8.215650382226158e-15
+        },
+        {
+          "step": 299,
+          "gradient": 3.5078580665204306e-13,
+          "parameters": 1.1309703173978392e-13,
+          "validation_probabilities": 1.341149413747189e-13,
+          "losses": 7.93809462606987e-15
+        },
+        {
+          "step": 300,
+          "gradient": 3.3017588229461436e-13,
+          "parameters": 8.033157472553398e-14,
+          "validation_probabilities": 9.370282327836321e-14,
+          "losses": 5.384581669432009e-15
+        },
+        {
+          "step": 301,
+          "gradient": 2.334083447352864e-13,
+          "parameters": 2.9519789390697326e-14,
+          "validation_probabilities": 3.5638159090467525e-14,
+          "losses": 2.3314683517128287e-15
+        },
+        {
+          "step": 302,
+          "gradient": 8.656552037689114e-14,
+          "parameters": 2.5080632015672677e-14,
+          "validation_probabilities": 3.008704396734174e-14,
+          "losses": 1.8318679906315083e-15
+        },
+        {
+          "step": 303,
+          "gradient": 7.358111515920474e-14,
+          "parameters": 7.286012071450187e-14,
+          "validation_probabilities": 8.482103908136196e-14,
+          "losses": 4.9404924595819466e-15
+        },
+        {
+          "step": 304,
+          "gradient": 2.109871522285034e-13,
+          "parameters": 1.0169295960871239e-13,
+          "validation_probabilities": 1.2068124277675452e-13,
+          "losses": 7.327471962526033e-15
+        },
+        {
+          "step": 305,
+          "gradient": 2.9588050759477014e-13,
+          "parameters": 1.0827970464699632e-13,
+          "validation_probabilities": 1.2656542480726785e-13,
+          "losses": 7.549516567451064e-15
+        },
+        {
+          "step": 306,
+          "gradient": 3.137623624457908e-13,
+          "parameters": 9.10330838488349e-14,
+          "validation_probabilities": 1.0758061108617767e-13,
+          "losses": 6.494804694057166e-15
+        },
+        {
+          "step": 307,
+          "gradient": 2.648053217674251e-13,
+          "parameters": 5.6827806349524224e-14,
+          "validation_probabilities": 6.561418075534675e-14,
+          "losses": 3.83026943495679e-15
+        },
+        {
+          "step": 308,
+          "gradient": 1.638253335073392e-13,
+          "parameters": 1.1402337407595553e-14,
+          "validation_probabilities": 1.432187701766452e-14,
+          "losses": 8.881784197001252e-16
+        },
+        {
+          "step": 309,
+          "gradient": 3.389259359276586e-14,
+          "parameters": 3.296668493746324e-14,
+          "validation_probabilities": 3.907985046680551e-14,
+          "losses": 2.55351295663786e-15
+        },
+        {
+          "step": 310,
+          "gradient": 9.60183538581405e-14,
+          "parameters": 6.965261700742076e-14,
+          "validation_probabilities": 8.104628079763643e-14,
+          "losses": 4.773959005888173e-15
+        },
+        {
+          "step": 311,
+          "gradient": 2.007667036091343e-13,
+          "parameters": 9.018653879255822e-14,
+          "validation_probabilities": 1.0658141036401503e-13,
+          "losses": 6.494804694057166e-15
+        },
+        {
+          "step": 312,
+          "gradient": 2.613832544504091e-13,
+          "parameters": 9.3718435789647e-14,
+          "validation_probabilities": 1.0891287871572786e-13,
+          "losses": 6.716849298982197e-15
+        },
+        {
+          "step": 313,
+          "gradient": 2.69805553766711e-13,
+          "parameters": 7.84979720114265e-14,
+          "validation_probabilities": 9.248157795127554e-14,
+          "losses": 5.662137425588298e-15
+        },
+        {
+          "step": 314,
+          "gradient": 2.2736294184172445e-13,
+          "parameters": 5.094709376596285e-14,
+          "validation_probabilities": 5.917488721252084e-14,
+          "losses": 3.4416913763379853e-15
+        },
+        {
+          "step": 315,
+          "gradient": 1.4627958132978902e-13,
+          "parameters": 1.478851763270228e-14,
+          "validation_probabilities": 1.8318679906315083e-14,
+          "losses": 1.1657341758564144e-15
+        },
+        {
+          "step": 316,
+          "gradient": 4.3348679680532687e-14,
+          "parameters": 2.101964435841097e-14,
+          "validation_probabilities": 2.5646151868841116e-14,
+          "losses": 1.6653345369377348e-15
+        },
+        {
+          "step": 317,
+          "gradient": 6.12610006126002e-14,
+          "parameters": 5.2371301739739806e-14,
+          "validation_probabilities": 6.150635556423367e-14,
+          "losses": 3.7192471324942744e-15
+        },
+        {
+          "step": 318,
+          "gradient": 1.4996727817906397e-13,
+          "parameters": 7.216623132411115e-14,
+          "validation_probabilities": 8.482103908136196e-14,
+          "losses": 5.218048215738236e-15
+        },
+        {
+          "step": 319,
+          "gradient": 2.081477351589811e-13,
+          "parameters": 7.990309802696771e-14,
+          "validation_probabilities": 9.237055564881302e-14,
+          "losses": 5.6066262743570405e-15
+        },
+        {
+          "step": 320,
+          "gradient": 2.2880840017808213e-13,
+          "parameters": 7.317584038712965e-14,
+          "validation_probabilities": 8.604228440844963e-14,
+          "losses": 5.440092820663267e-15
+        },
+        {
+          "step": 321,
+          "gradient": 2.1077074547487529e-13,
+          "parameters": 5.620330589817257e-14,
+          "validation_probabilities": 6.472600233564663e-14,
+          "losses": 3.941291737419306e-15
+        },
+        {
+          "step": 322,
+          "gradient": 1.6047438985283824e-13,
+          "parameters": 3.0347252488738263e-14,
+          "validation_probabilities": 3.630429290524262e-14,
+          "losses": 2.3314683517128287e-15
+        },
+        {
+          "step": 323,
+          "gradient": 8.788607862297848e-14,
+          "parameters": 2.7755575615628914e-15,
+          "validation_probabilities": 3.1086244689504383e-15,
+          "losses": 5.551115123125783e-17
+        },
+        {
+          "step": 324,
+          "gradient": 6.640413045821969e-15,
+          "parameters": 2.5104918144336352e-14,
+          "validation_probabilities": 2.853273173286652e-14,
+          "losses": 1.6653345369377348e-15
+        },
+        {
+          "step": 325,
+          "gradient": 7.106554927860387e-14,
+          "parameters": 4.6405587705855567e-14,
+          "validation_probabilities": 5.484501741648273e-14,
+          "losses": 3.552713678800501e-15
+        },
+        {
+          "step": 326,
+          "gradient": 1.3353782055830488e-13,
+          "parameters": 6.099461213882051e-14,
+          "validation_probabilities": 7.027711745877241e-14,
+          "losses": 4.496403249731884e-15
+        },
+        {
+          "step": 327,
+          "gradient": 1.7346714342725278e-13,
+          "parameters": 6.49671288988074e-14,
+          "validation_probabilities": 7.616129948928574e-14,
+          "losses": 4.773959005888173e-15
+        },
+        {
+          "step": 328,
+          "gradient": 1.8639202594566973e-13,
+          "parameters": 6.103451077876798e-14,
+          "validation_probabilities": 7.005507285384738e-14,
+          "losses": 4.440892098500626e-15
+        },
+        {
+          "step": 329,
+          "gradient": 1.7327003547229491e-13,
+          "parameters": 4.7873163766531945e-14,
+          "validation_probabilities": 5.6621374255882984e-14,
+          "losses": 3.6637359812630166e-15
+        },
+        {
+          "step": 330,
+          "gradient": 1.3723332366322172e-13,
+          "parameters": 3.0291741337507005e-14,
+          "validation_probabilities": 3.397282455352979e-14,
+          "losses": 2.1094237467877974e-15
+        },
+        {
+          "step": 331,
+          "gradient": 8.569067764391258e-14,
+          "parameters": 8.97025509427607e-15,
+          "validation_probabilities": 1.1102230246251565e-14,
+          "losses": 7.771561172376096e-16
+        },
+        {
+          "step": 332,
+          "gradient": 2.6373434686144392e-14,
+          "parameters": 1.098600377336112e-14,
+          "validation_probabilities": 1.3655743202889425e-14,
+          "losses": 7.771561172376096e-16
+        },
+        {
+          "step": 333,
+          "gradient": 3.205205198475447e-14,
+          "parameters": 2.955101441326491e-14,
+          "validation_probabilities": 3.375077994860476e-14,
+          "losses": 2.220446049250313e-15
+        },
+        {
+          "step": 334,
+          "gradient": 8.313944151183694e-14,
+          "parameters": 4.2217965234847554e-14,
+          "validation_probabilities": 4.9404924595819466e-14,
+          "losses": 3.2751579226442118e-15
+        },
+        {
+          "step": 335,
+          "gradient": 1.205666426071228e-13,
+          "parameters": 5.0161264031345354e-14,
+          "validation_probabilities": 5.750955267558311e-14,
+          "losses": 3.7192471324942744e-15
+        },
+        {
+          "step": 336,
+          "gradient": 1.4169546612430306e-13,
+          "parameters": 5.092280763729917e-14,
+          "validation_probabilities": 5.972999872483342e-14,
+          "losses": 3.941291737419306e-15
+        },
+        {
+          "step": 337,
+          "gradient": 1.449537104930565e-13,
+          "parameters": 4.6813247722710116e-14,
+          "validation_probabilities": 5.3290705182007514e-14,
+          "losses": 3.4416913763379853e-15
+        },
+        {
+          "step": 338,
+          "gradient": 1.3182922635468497e-13,
+          "parameters": 3.6703279304717285e-14,
+          "validation_probabilities": 4.3076653355456074e-14,
+          "losses": 2.7755575615628914e-15
+        },
+        {
+          "step": 339,
+          "gradient": 1.0467191349783356e-13,
+          "parameters": 2.445960101127298e-14,
+          "validation_probabilities": 2.7422508708241367e-14,
+          "losses": 1.7208456881689926e-15
+        },
+        {
+          "step": 340,
+          "gradient": 6.848644915069535e-14,
+          "parameters": 9.412609580650155e-15,
+          "validation_probabilities": 1.2545520178264269e-14,
+          "losses": 9.43689570931383e-16
+        },
+        {
+          "step": 341,
+          "gradient": 2.7314196911210065e-14,
+          "parameters": 4.5900783174346316e-15,
+          "validation_probabilities": 6.328271240363392e-15,
+          "losses": 4.440892098500626e-16
+        },
+        {
+          "step": 342,
+          "gradient": 1.3632324435963739e-14,
+          "parameters": 1.8263168755083825e-14,
+          "validation_probabilities": 2.020605904817785e-14,
+          "losses": 1.3322676295501878e-15
+        },
+        {
+          "step": 343,
+          "gradient": 5.080419591962926e-14,
+          "parameters": 2.825170652975828e-14,
+          "validation_probabilities": 3.3306690738754696e-14,
+          "losses": 2.192690473634684e-15
+        },
+        {
+          "step": 344,
+          "gradient": 8.033265892770647e-14,
+          "parameters": 3.599551212651875e-14,
+          "validation_probabilities": 3.9968028886505635e-14,
+          "losses": 2.581268532253489e-15
+        },
+        {
+          "step": 345,
+          "gradient": 1.0067456850809675e-13,
+          "parameters": 3.8913317013111737e-14,
+          "validation_probabilities": 4.574118861455645e-14,
+          "losses": 3.1363800445660672e-15
+        },
+        {
+          "step": 346,
+          "gradient": 1.1020188667859587e-13,
+          "parameters": 3.9229036685739516e-14,
+          "validation_probabilities": 4.4297898682543746e-14,
+          "losses": 2.886579864025407e-15
+        },
+        {
+          "step": 347,
+          "gradient": 1.0961002071263604e-13,
+          "parameters": 3.510386425986667e-14,
+          "validation_probabilities": 4.085620730620576e-14,
+          "losses": 2.7200464103316335e-15
+        },
+        {
+          "step": 348,
+          "gradient": 9.932126735640034e-14,
+          "parameters": 2.934458231962367e-14,
+          "validation_probabilities": 3.297362383136715e-14,
+          "losses": 2.248201624865942e-15
+        },
+        {
+          "step": 349,
+          "gradient": 8.170157259068667e-14,
+          "parameters": 2.0556473190325164e-14,
+          "validation_probabilities": 2.453592884421596e-14,
+          "losses": 1.7763568394002505e-15
+        },
+        {
+          "step": 350,
+          "gradient": 5.838786485551362e-14,
+          "parameters": 1.1799589083594242e-14,
+          "validation_probabilities": 1.2989609388114332e-14,
+          "losses": 6.661338147750939e-16
+        },
+        {
+          "step": 351,
+          "gradient": 3.2361266444347336e-14,
+          "parameters": 3.552713678800501e-15,
+          "validation_probabilities": 3.1086244689504383e-15,
+          "losses": 2.220446049250313e-16
+        },
+        {
+          "step": 352,
+          "gradient": 5.333190486456196e-15,
+          "parameters": 6.8833827526759706e-15,
+          "validation_probabilities": 8.215650382226158e-15,
+          "losses": 6.106226635438361e-16
+        },
+        {
+          "step": 353,
+          "gradient": 2.0104469304615957e-14,
+          "parameters": 1.5612511283791264e-14,
+          "validation_probabilities": 1.7541523789077473e-14,
+          "losses": 1.1102230246251565e-15
+        },
+        {
+          "step": 354,
+          "gradient": 4.285937924008998e-14,
+          "parameters": 2.152097944296827e-14,
+          "validation_probabilities": 2.55351295663786e-14,
+          "losses": 1.970645868709653e-15
+        },
+        {
+          "step": 355,
+          "gradient": 6.06930955146523e-14,
+          "parameters": 2.6499635819021705e-14,
+          "validation_probabilities": 2.9753977059954195e-14,
+          "losses": 1.915134717478395e-15
+        },
+        {
+          "step": 356,
+          "gradient": 7.313225545979574e-14,
+          "parameters": 2.822395095414265e-14,
+          "validation_probabilities": 3.3084646133829665e-14,
+          "losses": 2.220446049250313e-15
+        },
+        {
+          "step": 357,
+          "gradient": 7.949012541946798e-14,
+          "parameters": 2.925784614582483e-14,
+          "validation_probabilities": 3.26405569239796e-14,
+          "losses": 2.275957200481571e-15
+        },
+        {
+          "step": 358,
+          "gradient": 8.062344195036708e-14,
+          "parameters": 2.714842239903703e-14,
+          "validation_probabilities": 3.141931159689193e-14,
+          "losses": 2.3869795029440866e-15
+        },
+        {
+          "step": 359,
+          "gradient": 7.626809340327556e-14,
+          "parameters": 2.466082893448629e-14,
+          "validation_probabilities": 2.731148640577885e-14,
+          "losses": 1.8596235662471372e-15
+        },
+        {
+          "step": 360,
+          "gradient": 6.785110667761884e-14,
+          "parameters": 1.9848706012126627e-14,
+          "validation_probabilities": 2.3425705819590803e-14,
+          "losses": 1.5543122344752192e-15
+        },
+        {
+          "step": 361,
+          "gradient": 5.601931678950178e-14,
+          "parameters": 1.5567408473415867e-14,
+          "validation_probabilities": 1.687538997430238e-14,
+          "losses": 1.1379786002407855e-15
+        },
+        {
+          "step": 362,
+          "gradient": 4.247654745298535e-14,
+          "parameters": 9.62771529167128e-15,
+          "validation_probabilities": 1.2101430968414206e-14,
+          "losses": 9.159339953157541e-16
+        },
+        {
+          "step": 363,
+          "gradient": 2.757267070913061e-14,
+          "parameters": 4.881511861398735e-15,
+          "validation_probabilities": 5.162537064506978e-15,
+          "losses": 2.7755575615628914e-16
+        },
+        {
+          "step": 364,
+          "gradient": 1.272116093020692e-14,
+          "parameters": 3.9968028886505635e-15,
+          "validation_probabilities": 1.5543122344752192e-15,
+          "losses": 8.326672684688674e-17
+        },
+        {
+          "step": 365,
+          "gradient": 2.0040392956222064e-15,
+          "parameters": 5.2839677078253544e-15,
+          "validation_probabilities": 6.994405055138486e-15,
+          "losses": 6.106226635438361e-16
+        },
+        {
+          "step": 366,
+          "gradient": 1.5461373500946785e-14,
+          "parameters": 1.0325074129013956e-14,
+          "validation_probabilities": 1.1435297153639112e-14,
+          "losses": 7.494005416219807e-16
+        },
+        {
+          "step": 367,
+          "gradient": 2.7709930704167274e-14,
+          "parameters": 1.3367779105877275e-14,
+          "validation_probabilities": 1.5987211554602254e-14,
+          "losses": 1.2212453270876722e-15
+        },
+        {
+          "step": 368,
+          "gradient": 3.7600131341797294e-14,
+          "parameters": 1.6743550990128142e-14,
+          "validation_probabilities": 1.8318679906315083e-14,
+          "losses": 1.2490009027033011e-15
+        },
+        {
+          "step": 369,
+          "gradient": 4.55505858726335e-14,
+          "parameters": 1.8280515989843593e-14,
+          "validation_probabilities": 2.1871393585115584e-14,
+          "losses": 1.5543122344752192e-15
+        },
+        {
+          "step": 370,
+          "gradient": 5.1176077264791786e-14,
+          "parameters": 2.02546313055052e-14,
+          "validation_probabilities": 2.2315482794965646e-14,
+          "losses": 1.609823385706477e-15
+        },
+        {
+          "step": 371,
+          "gradient": 5.493955984592347e-14,
+          "parameters": 2.0136670109138777e-14,
+          "validation_probabilities": 2.3314683517128287e-14,
+          "losses": 1.609823385706477e-15
+        },
+        {
+          "step": 372,
+          "gradient": 5.6156685204755696e-14,
+          "parameters": 2.0521778720805628e-14,
+          "validation_probabilities": 2.2648549702353193e-14,
+          "losses": 1.6375789613221059e-15
+        },
+        {
+          "step": 373,
+          "gradient": 5.559094851115276e-14,
+          "parameters": 1.9002160955849945e-14,
+          "validation_probabilities": 2.275957200481571e-14,
+          "losses": 1.7763568394002505e-15
+        },
+        {
+          "step": 374,
+          "gradient": 5.2890526160143114e-14,
+          "parameters": 1.811398253614982e-14,
+          "validation_probabilities": 1.9761969838327786e-14,
+          "losses": 1.4988010832439613e-15
+        },
+        {
+          "step": 375,
+          "gradient": 4.8910528405166076e-14,
+          "parameters": 1.558128626122368e-14,
+          "validation_probabilities": 1.865174681370263e-14,
+          "losses": 1.3877787807814457e-15
+        },
+        {
+          "step": 376,
+          "gradient": 4.3478350260361953e-14,
+          "parameters": 1.3985340663325019e-14,
+          "validation_probabilities": 1.5210055437364645e-14,
+          "losses": 1.1102230246251565e-15
+        },
+        {
+          "step": 377,
+          "gradient": 3.757671257487161e-14,
+          "parameters": 1.1036310754164447e-14,
+          "validation_probabilities": 1.3433698597964394e-14,
+          "losses": 9.71445146547012e-16
+        },
+        {
+          "step": 378,
+          "gradient": 3.0737565270833045e-14,
+          "parameters": 8.88872309090516e-15,
+          "validation_probabilities": 9.658940314238862e-15,
+          "losses": 6.106226635438361e-16
+        },
+        {
+          "step": 379,
+          "gradient": 2.361218859325831e-14,
+          "parameters": 5.627442956068762e-15,
+          "validation_probabilities": 6.994405055138486e-15,
+          "losses": 4.718447854656915e-16
+        },
+        {
+          "step": 380,
+          "gradient": 1.6061370983200263e-14,
+          "parameters": 4.3298697960381105e-15,
+          "validation_probabilities": 3.885780586188048e-15,
+          "losses": 3.3306690738754696e-16
+        },
+        {
+          "step": 381,
+          "gradient": 8.884711542866963e-15,
+          "parameters": 4.3298697960381105e-15,
+          "validation_probabilities": 1.6653345369377348e-15,
+          "losses": 1.942890293094024e-16
+        },
+        {
+          "step": 382,
+          "gradient": 1.5675395009795423e-15,
+          "parameters": 4.3298697960381105e-15,
+          "validation_probabilities": 2.6645352591003757e-15,
+          "losses": 2.498001805406602e-16
+        },
+        {
+          "step": 383,
+          "gradient": 5.205905151406398e-15,
+          "parameters": 4.624772786954168e-15,
+          "validation_probabilities": 5.10702591327572e-15,
+          "losses": 3.885780586188048e-16
+        },
+        {
+          "step": 384,
+          "gradient": 1.1686289956569507e-14,
+          "parameters": 6.012551567735613e-15,
+          "validation_probabilities": 7.438494264988549e-15,
+          "losses": 6.106226635438361e-16
+        },
+        {
+          "step": 385,
+          "gradient": 1.718872440215069e-14,
+          "parameters": 8.56259507742152e-15,
+          "validation_probabilities": 9.103828801926284e-15,
+          "losses": 6.106226635438361e-16
+        },
+        {
+          "step": 386,
+          "gradient": 2.2443418651318936e-14,
+          "parameters": 9.634654185575187e-15,
+          "validation_probabilities": 1.1879386363489175e-14,
+          "losses": 9.159339953157541e-16
+        },
+        {
+          "step": 387,
+          "gradient": 2.6911741064783445e-14,
+          "parameters": 1.177877240188252e-14,
+          "validation_probabilities": 1.2323475573339238e-14,
+          "losses": 9.43689570931383e-16
+        },
+        {
+          "step": 388,
+          "gradient": 3.1008941074606167e-14,
+          "parameters": 1.2323475573339238e-14,
+          "validation_probabilities": 1.454392162258955e-14,
+          "losses": 1.1102230246251565e-15
+        },
+        {
+          "step": 389,
+          "gradient": 3.415854838567656e-14,
+          "parameters": 1.4020035132844555e-14,
+          "validation_probabilities": 1.4654943925052066e-14,
+          "losses": 9.43689570931383e-16
+        },
+        {
+          "step": 390,
+          "gradient": 3.711289088548231e-14,
+          "parameters": 1.4318407570712566e-14,
+          "validation_probabilities": 1.6764367671839864e-14,
+          "losses": 1.27675647831893e-15
+        },
+        {
+          "step": 391,
+          "gradient": 3.9585847620704495e-14,
+          "parameters": 1.5952517085082718e-14,
+          "validation_probabilities": 1.709743457922741e-14,
+          "losses": 1.1934897514720433e-15
+        },
+        {
+          "step": 392,
+          "gradient": 4.212981959822448e-14,
+          "parameters": 1.6035783811929605e-14,
+          "validation_probabilities": 1.8540724511240114e-14,
+          "losses": 1.3322676295501878e-15
+        },
+        {
+          "step": 393,
+          "gradient": 4.4158795543813856e-14,
+          "parameters": 1.7534584895173566e-14,
+          "validation_probabilities": 1.8762769116165146e-14,
+          "losses": 1.304512053934559e-15
+        },
+        {
+          "step": 394,
+          "gradient": 4.649958803421006e-14,
+          "parameters": 1.7801732310473994e-14,
+          "validation_probabilities": 2.120525977034049e-14,
+          "losses": 1.5543122344752192e-15
+        },
+        {
+          "step": 395,
+          "gradient": 4.8896433776923764e-14,
+          "parameters": 1.9605844725489874e-14,
+          "validation_probabilities": 2.1538326677728037e-14,
+          "losses": 1.609823385706477e-15
+        },
+        {
+          "step": 396,
+          "gradient": 5.178073681638695e-14,
+          "parameters": 1.9911156057261792e-14,
+          "validation_probabilities": 2.2870594307278225e-14,
+          "losses": 1.8041124150158794e-15
+        },
+        {
+          "step": 397,
+          "gradient": 5.456117328772603e-14,
+          "parameters": 2.1926904736346842e-14,
+          "validation_probabilities": 2.4091839634365897e-14,
+          "losses": 1.7486012637846216e-15
+        },
+        {
+          "step": 398,
+          "gradient": 5.781968870702259e-14,
+          "parameters": 2.2350177264485183e-14,
+          "validation_probabilities": 2.631228568361621e-14,
+          "losses": 2.0816681711721685e-15
+        },
+        {
+          "step": 399,
+          "gradient": 6.094023939987037e-14,
+          "parameters": 2.445960101127298e-14,
+          "validation_probabilities": 2.731148640577885e-14,
+          "losses": 1.942890293094024e-15
+        },
+        {
+          "step": 400,
+          "gradient": 6.460728219775946e-14,
+          "parameters": 2.5205532105943007e-14,
+          "validation_probabilities": 2.864375403532904e-14,
+          "losses": 2.3037127760972e-15
+        },
+        {
+          "step": 401,
+          "gradient": 6.838442572626446e-14,
+          "parameters": 2.7575164374127326e-14,
+          "validation_probabilities": 3.086420008457935e-14,
+          "losses": 2.275957200481571e-15
+        },
+        {
+          "step": 402,
+          "gradient": 7.275045366475497e-14,
+          "parameters": 2.856048730848215e-14,
+          "validation_probabilities": 3.3306690738754696e-14,
+          "losses": 2.525757381022231e-15
+        },
+        {
+          "step": 403,
+          "gradient": 7.727428722945073e-14,
+          "parameters": 3.1339514316997e-14,
+          "validation_probabilities": 3.4638958368304884e-14,
+          "losses": 2.6645352591003757e-15
+        },
+        {
+          "step": 404,
+          "gradient": 8.259148573386277e-14,
+          "parameters": 3.272382365082649e-14,
+          "validation_probabilities": 3.8191672047105385e-14,
+          "losses": 2.942091015256665e-15
+        },
+        {
+          "step": 405,
+          "gradient": 8.841457297195654e-14,
+          "parameters": 3.626959843572308e-14,
+          "validation_probabilities": 4.063416270128073e-14,
+          "losses": 3.0808688933348094e-15
+        },
+        {
+          "step": 406,
+          "gradient": 9.559188293359333e-14,
+          "parameters": 3.854902508315661e-14,
+          "validation_probabilities": 4.4075854077618715e-14,
+          "losses": 3.3584246494910985e-15
+        },
+        {
+          "step": 407,
+          "gradient": 1.0374269802590486e-13,
+          "parameters": 4.3087061696311935e-14,
+          "validation_probabilities": 4.8405723873656825e-14,
+          "losses": 3.635980405647388e-15
+        },
+        {
+          "step": 408,
+          "gradient": 1.1361256987280077e-13,
+          "parameters": 4.659814201168899e-14,
+          "validation_probabilities": 5.384581669432009e-14,
+          "losses": 4.274358644806853e-15
+        },
+        {
+          "step": 409,
+          "gradient": 1.245985736461619e-13,
+          "parameters": 5.2045173726256166e-14,
+          "validation_probabilities": 5.806466418789569e-14,
+          "losses": 4.496403249731884e-15
+        },
+        {
+          "step": 410,
+          "gradient": 1.3711731403076577e-13,
+          "parameters": 5.661096591502712e-14,
+          "validation_probabilities": 6.52811138479592e-14,
+          "losses": 4.9960036108132044e-15
+        },
+        {
+          "step": 411,
+          "gradient": 1.5108254274379118e-13,
+          "parameters": 6.361924875797342e-14,
+          "validation_probabilities": 7.083222897108499e-14,
+          "losses": 5.384581669432009e-15
+        },
+        {
+          "step": 412,
+          "gradient": 1.6753487703038972e-13,
+          "parameters": 7.004119506603956e-14,
+          "validation_probabilities": 7.893685705084863e-14,
+          "losses": 6.2727600891321345e-15
+        },
+        {
+          "step": 413,
+          "gradient": 1.8613680475426664e-13,
+          "parameters": 7.892644870999277e-14,
+          "validation_probabilities": 8.815170815523743e-14,
+          "losses": 6.855627177060342e-15
+        },
+        {
+          "step": 414,
+          "gradient": 2.0769074394327847e-13,
+          "parameters": 8.762782166549243e-14,
+          "validation_probabilities": 9.936496070395151e-14,
+          "losses": 7.66053886991358e-15
+        },
+        {
+          "step": 415,
+          "gradient": 2.3252986992503e-13,
+          "parameters": 9.967374148267538e-14,
+          "validation_probabilities": 1.1213252548714081e-13,
+          "losses": 8.520961713998076e-15
+        },
+        {
+          "step": 416,
+          "gradient": 2.6205979660604006e-13,
+          "parameters": 1.1205966710114978e-13,
+          "validation_probabilities": 1.2856382625159313e-13,
+          "losses": 1.0075273948473296e-14
+        },
+        {
+          "step": 417,
+          "gradient": 2.96292450210206e-13,
+          "parameters": 1.281023898069833e-13,
+          "validation_probabilities": 1.4499512701604544e-13,
+          "losses": 1.1213252548714081e-14
+        },
+        {
+          "step": 418,
+          "gradient": 3.3649965409596194e-13,
+          "parameters": 1.453351328173369e-13,
+          "validation_probabilities": 1.6542323066914832e-13,
+          "losses": 1.2850831510036187e-14
+        },
+        {
+          "step": 419,
+          "gradient": 3.835886144311351e-13,
+          "parameters": 1.675638794385037e-13,
+          "validation_probabilities": 1.892930256985892e-13,
+          "losses": 1.4627188349436437e-14
+        },
+        {
+          "step": 420,
+          "gradient": 4.39760857937066e-13,
+          "parameters": 1.922836889711732e-13,
+          "validation_probabilities": 2.2015722578316854e-13,
+          "losses": 1.709743457922741e-14
+        },
+        {
+          "step": 421,
+          "gradient": 5.058499192439614e-13,
+          "parameters": 2.2282869993617282e-13,
+          "validation_probabilities": 2.533528942194607e-13,
+          "losses": 1.965094753586527e-14
+        },
+        {
+          "step": 422,
+          "gradient": 5.83863957615699e-13,
+          "parameters": 2.5737398323677496e-13,
+          "validation_probabilities": 2.949862576429041e-13,
+          "losses": 2.2676305277968822e-14
+        },
+        {
+          "step": 423,
+          "gradient": 6.757491159518902e-13,
+          "parameters": 3.000343029579966e-13,
+          "validation_probabilities": 3.4217073618947325e-13,
+          "losses": 2.6506574712925612e-14
+        },
+        {
+          "step": 424,
+          "gradient": 7.849829185106738e-13,
+          "parameters": 3.490784050708129e-13,
+          "validation_probabilities": 3.993472219576688e-13,
+          "losses": 3.1252778143198157e-14
+        },
+        {
+          "step": 425,
+          "gradient": 9.142737023189185e-13,
+          "parameters": 4.088916705224932e-13,
+          "validation_probabilities": 4.669598041573408e-13,
+          "losses": 3.6359804056473877e-14
+        },
+        {
+          "step": 426,
+          "gradient": 1.0679807732616453e-12,
+          "parameters": 4.784922458256347e-13,
+          "validation_probabilities": 5.476730180475897e-13,
+          "losses": 4.268807529683727e-14
+        },
+        {
+          "step": 427,
+          "gradient": 1.2505909393993597e-12,
+          "parameters": 5.632404265210056e-13,
+          "validation_probabilities": 6.428191312579656e-13,
+          "losses": 5.012656956182582e-14
+        },
+        {
+          "step": 428,
+          "gradient": 1.4686125037431663e-12,
+          "parameters": 6.628864124280653e-13,
+          "validation_probabilities": 7.599476603559197e-13,
+          "losses": 5.94246873930615e-14
+        },
+        {
+          "step": 429,
+          "gradient": 1.7286764467799864e-12,
+          "parameters": 7.837272497646097e-13,
+          "validation_probabilities": 8.965050923848139e-13,
+          "losses": 7.008282842946301e-14
+        },
+        {
+          "step": 430,
+          "gradient": 2.0398291888067133e-12,
+          "parameters": 9.269529588351588e-13,
+          "validation_probabilities": 1.063815702195825e-12,
+          "losses": 8.315570454442422e-14
+        },
+        {
+          "step": 431,
+          "gradient": 2.4124770649051885e-12,
+          "parameters": 1.100917967900017e-12,
+          "validation_probabilities": 1.2622125566963405e-12,
+          "losses": 9.886536034287019e-14
+        },
+        {
+          "step": 432,
+          "gradient": 2.8603157711283578e-12,
+          "parameters": 1.3087066152994709e-12,
+          "validation_probabilities": 1.503464019947387e-12,
+          "losses": 1.1785017406396037e-13
+        },
+        {
+          "step": 433,
+          "gradient": 3.3989793943832447e-12,
+          "parameters": 1.5610186754333455e-12,
+          "validation_probabilities": 1.7917889394425401e-12,
+          "losses": 1.405264793419292e-13
+        },
+        {
+          "step": 434,
+          "gradient": 4.0481535224651255e-12,
+          "parameters": 1.8640054777474546e-12,
+          "validation_probabilities": 2.1430635044339397e-12,
+          "losses": 1.6806001035263307e-13
+        },
+        {
+          "step": 435,
+          "gradient": 4.831546512699958e-12,
+          "parameters": 2.232429519022361e-12,
+          "validation_probabilities": 2.566835632933362e-12,
+          "losses": 2.015887456963128e-13
+        },
+        {
+          "step": 436,
+          "gradient": 5.778719462581211e-12,
+          "parameters": 2.677233434944526e-12,
+          "validation_probabilities": 3.080757871032347e-12,
+          "losses": 2.4197310821705287e-13
+        },
+        {
+          "step": 437,
+          "gradient": 6.925509373877786e-12,
+          "parameters": 3.2183387899120675e-12,
+          "validation_probabilities": 3.7057024115938475e-12,
+          "losses": 2.917110997202599e-13
+        },
+        {
+          "step": 438,
+          "gradient": 8.315108692737161e-12,
+          "parameters": 3.873873444248943e-12,
+          "validation_probabilities": 4.464317804320217e-12,
+          "losses": 3.509692536596276e-13
+        },
+        {
+          "step": 439,
+          "gradient": 1.0001053208242433e-11,
+          "parameters": 4.671280723345106e-12,
+          "validation_probabilities": 5.385247803246784e-12,
+          "losses": 4.247713292215849e-13
+        },
+        {
+          "step": 440,
+          "gradient": 1.204646869453277e-11,
+          "parameters": 5.639336220220059e-12,
+          "validation_probabilities": 6.507572258840355e-12,
+          "losses": 5.120903701083535e-13
+        },
+        {
+          "step": 441,
+          "gradient": 1.4530344538254275e-11,
+          "parameters": 6.8147223974968085e-12,
+          "validation_probabilities": 7.868483642425872e-12,
+          "losses": 6.218914272437814e-13
+        },
+        {
+          "step": 442,
+          "gradient": 1.7540875815649087e-11,
+          "parameters": 8.239211396476875e-12,
+          "validation_probabilities": 9.51849710162378e-12,
+          "losses": 7.494282971975963e-13
+        },
+        {
+          "step": 443,
+          "gradient": 2.1187629179342943e-11,
+          "parameters": 9.957062951926332e-12,
+          "validation_probabilities": 1.1510903341616086e-11,
+          "losses": 9.120204591539505e-13
+        },
+        {
+          "step": 444,
+          "gradient": 2.5580913689399187e-11,
+          "parameters": 1.202061714056235e-11,
+          "validation_probabilities": 1.390354498198576e-11,
+          "losses": 1.0949574580365606e-12
+        },
+        {
+          "step": 445,
+          "gradient": 3.085104372489711e-11,
+          "parameters": 1.446398556481654e-11,
+          "validation_probabilities": 1.6743273434371986e-11,
+          "losses": 1.3298251388960125e-12
+        },
+        {
+          "step": 446,
+          "gradient": 3.7090463458813033e-11,
+          "parameters": 1.732482213245845e-11,
+          "validation_probabilities": 2.0058843475112553e-11,
+          "losses": 1.5783485629583538e-12
+        },
+        {
+          "step": 447,
+          "gradient": 4.437854364590724e-11,
+          "parameters": 2.055951936474898e-11,
+          "validation_probabilities": 2.3824164863128772e-11,
+          "losses": 1.897620949264933e-12
+        },
+        {
+          "step": 448,
+          "gradient": 5.262569481752355e-11,
+          "parameters": 2.4087169758768567e-11,
+          "validation_probabilities": 2.7911117861378898e-11,
+          "losses": 2.1916912729125215e-12
+        },
+        {
+          "step": 449,
+          "gradient": 6.158386767120966e-11,
+          "parameters": 2.7577013589352717e-11,
+          "validation_probabilities": 3.198685760708031e-11,
+          "losses": 2.5547619575405633e-12
+        },
+        {
+          "step": 450,
+          "gradient": 7.046660759242596e-11,
+          "parameters": 3.053586203338732e-11,
+          "validation_probabilities": 3.539835091714849e-11,
+          "losses": 2.766981088697662e-12
+        },
+        {
+          "step": 451,
+          "gradient": 7.793183036831214e-11,
+          "parameters": 3.189193700792181e-11,
+          "validation_probabilities": 3.7001846031614605e-11,
+          "losses": 2.9582170046893452e-12
+        },
+        {
+          "step": 452,
+          "gradient": 8.137000752014845e-11,
+          "parameters": 3.028207198885191e-11,
+          "validation_probabilities": 3.508748847025345e-11,
+          "losses": 2.7171320748919925e-12
+        },
+        {
+          "step": 453,
+          "gradient": 7.716861481418813e-11,
+          "parameters": 2.3669417120730785e-11,
+          "validation_probabilities": 2.7407520697408927e-11,
+          "losses": 2.1744828160308316e-12
+        },
+        {
+          "step": 454,
+          "gradient": 6.034314215842829e-11,
+          "parameters": 1.0464726307723993e-11,
+          "validation_probabilities": 1.2036038832263785e-11,
+          "losses": 8.909539772616881e-13
+        },
+        {
+          "step": 455,
+          "gradient": 2.66885014522239e-11,
+          "parameters": 9.933786432325675e-12,
+          "validation_probabilities": 1.1721956738597328e-11,
+          "losses": 9.948708523666028e-13
+        },
+        {
+          "step": 456,
+          "gradient": 2.5135854985966488e-11,
+          "parameters": 3.533890888252067e-11,
+          "validation_probabilities": 4.115263685378068e-11,
+          "losses": 3.2408520311832945e-12
+        },
+        {
+          "step": 457,
+          "gradient": 8.962489409479468e-11,
+          "parameters": 6.06530797808702e-11,
+          "validation_probabilities": 7.065670271089175e-11,
+          "losses": 5.682260217909629e-12
+        },
+        {
+          "step": 458,
+          "gradient": 1.5382618399548131e-10,
+          "parameters": 7.959644748867234e-11,
+          "validation_probabilities": 9.256972965943078e-11,
+          "losses": 7.237904720014399e-12
+        }
+      ],
+      "max_error": 1.5382618399548131e-10,
+      "max_errors": {
+        "gradient": 1.5382618399548131e-10,
+        "parameters": 7.959644748867234e-11,
+        "validation_probabilities": 9.256972965943078e-11,
+        "losses": 7.237904720014399e-12
+      },
+      "initial_probability_maxerror": 8.326672684688674e-17,
+      "first_failing_step": 458,
+      "worst_component_index": 8,
+      "witness_values": [
+        -0.0011683115842950017,
+        -0.0011683117381211857
+      ],
+      "common_point_max_errors": {
+        "features": 1.4432899320127035e-15,
+        "jacobian": 1.7763568394002505e-15,
+        "gradient": 8.841668716619289e-17
+      },
+      "selected_checkpoints": [
+        {
+          "method": "group_spectral",
+          "step": 458,
+          "validation_metrics": {
+            "accuracy": 0.9453125,
+            "balanced_accuracy": 0.9458874458874459,
+            "log_loss": 0.20234020951274145,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                2,
+                19,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                19,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                21,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              22,
+              21,
+              22,
+              21
+            ]
+          }
+        },
+        {
+          "method": "classical_adjoint",
+          "step": 458,
+          "validation_metrics": {
+            "accuracy": 0.9453125,
+            "balanced_accuracy": 0.9458874458874459,
+            "log_loss": 0.20234020950550355,
+            "confusion_matrix": [
+              [
+                21,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                20,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                2,
+                19,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                19,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                21,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                21
+              ]
+            ],
+            "class_support": [
+              21,
+              21,
+              22,
+              21,
+              22,
+              21
+            ]
+          }
+        }
+      ],
+      "selected_params_maxerror": 7.959644748867234e-11,
+      "selected_validation_probability_maxerror": 9.256972965943078e-11,
+      "selected_steps_match": true,
+      "trace_artifact": {
+        "path": "work/stable_sensor_pilot_traces/seed956101_eps0.0001_lr0.01_classical_adjoint.npz",
+        "sha256": "398dd23627153c2e8f9d5b763ac64c98639a5ec55804c31cbc4cdb560615f491",
+        "bytes": 6697122
+      },
+      "seconds": 27.161097917007282,
+      "engine_checks_maxerror": [
+        1.887379141862766e-15,
+        0.0
+      ]
+    }
+  ],
+  "numerical_policy": "Independent Adam states, no rounding; raw absolute error <=1e-10 at every step",
+  "timing_scope": "Shared exploratory process; not final per-method timing. External parent launch includes imports.",
+  "trace_layout": "train_loss,validation_log_loss,gradient[70],updated_parameters[70],validation_probabilities[128,6]",
+  "inner_wall_s": 27.273225166951306,
+  "selected_candidate": {
+    "epsilon": 0.0001,
+    "learning_rate": 0.01
+  },
+  "external_process_wall_s": 27.637732584029436,
+  "external_start_unix": 1792620187.26655,
+  "external_end_unix": 1792620214.9028008,
+  "returncode": 0,
+  "external_clock_includes": "child startup/imports, all data transforms, search, strict checks, raw artifact serialization and child exit; parent final JSON write follows clock"
+}

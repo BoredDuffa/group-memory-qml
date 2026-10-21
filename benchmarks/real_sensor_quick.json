@@ -1,0 +1,13 @@
+[
+  {
+    "id": "har-smoke",
+    "experiment": "uci_har",
+    "config": {
+      "n_train": 24,
+      "n_qubits": 8,
+      "n_validation": 24,
+      "n_test": 24,
+      "steps": 2
+    }
+  }
+]

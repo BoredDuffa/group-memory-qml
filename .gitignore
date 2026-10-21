@@ -8,6 +8,12 @@ build/
 dist/
 .DS_Store
 /results/*
+/data/
 !/results/reference/
 !/results/release-validation/
+!/results/eight-experiments/
+!/results/parameter-response/
+!/results/deep-response/
+!/results/multi-parameter/
+!/results/real-sensor/
 

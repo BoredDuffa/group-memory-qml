@@ -1,0 +1,541 @@
+condition,experiment,config,seed,repeat,method,status,process_wall_s,application_s,metric_value,evaluations,total_cx
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,2,group_memory_previous,SUCCESS,1.0763090829714201,0.8430523339775391,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,2,group_memory_response,SUCCESS,0.4018783750361763,0.2375226670410484,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,2,qiskit_symmetry,SUCCESS,0.6722334169899113,0.5187448750366457,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,2,qiskit_response,SUCCESS,0.4160800839890726,0.2612659999867901,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,2,classical,SUCCESS,2.5198718330357224,2.2639738750294782,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,2,classical_same_model,SUCCESS,0.13414287503110245,0.012161291961092502,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,0,qiskit_symmetry,SUCCESS,11.632226125046145,11.283252707973588,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,0,classical,SUCCESS,1.6328487920109183,1.3822134590009227,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,0,group_memory_previous,SUCCESS,9.780930165958125,9.448745667003095,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,0,classical_same_model,SUCCESS,1.9146907500107773,1.5923016669694334,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,0,group_memory_response,SUCCESS,2.2109518329962157,1.9050483329920098,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,0,qiskit_response,SUCCESS,2.2411779580288567,1.8397388749872334,1.0,96,1920
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,2,group_memory_previous,SUCCESS,0.5993027919903398,0.3153115419554524,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,2,qiskit_symmetry,SUCCESS,0.47498266701586545,0.3110595000325702,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,2,group_memory_response,SUCCESS,0.47521104203769937,0.29300200002035126,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,2,classical_same_model,SUCCESS,0.12261729099554941,0.011006500048097223,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,2,classical,SUCCESS,1.4761032499955036,1.256285207986366,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,2,qiskit_response,SUCCESS,0.41130129201337695,0.24345858296146616,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,1,group_memory_response,SUCCESS,0.42416387499542907,0.27037450001807883,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,1,qiskit_symmetry,SUCCESS,0.4654927089577541,0.3242857499863021,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,1,classical,SUCCESS,1.31433779199142,1.0990543750231154,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,1,qiskit_response,SUCCESS,0.41675308300182223,0.24984550004592165,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,1,group_memory_previous,SUCCESS,0.4745085409958847,0.326496166002471,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,1,classical_same_model,SUCCESS,0.11180950002744794,0.011950083018746227,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,0,group_memory_response,SUCCESS,0.39227387501159683,0.24074895901139826,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,0,classical_same_model,SUCCESS,0.11433137499261647,0.010437291988637298,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,0,group_memory_previous,SUCCESS,0.45790070795919746,0.3201120000449009,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,0,classical,SUCCESS,1.663488749996759,1.4495025420328602,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,0,qiskit_response,SUCCESS,0.4048570420127362,0.239354541990906,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,0,qiskit_symmetry,SUCCESS,0.4795604589744471,0.3291630000458099,1.0,132,2112
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,0,group_memory_previous,SUCCESS,0.45164358301553875,0.286766458011698,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,0,qiskit_response,SUCCESS,0.39404004195239395,0.24033933301689103,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,0,classical_same_model,SUCCESS,0.11025287501979619,0.010538708011154085,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,0,group_memory_response,SUCCESS,0.39369687502039596,0.25025462498888373,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,0,qiskit_symmetry,SUCCESS,0.39705999998841435,0.2533717079786584,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,0,classical,SUCCESS,1.512642749992665,1.2843840420246124,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,0,qiskit_symmetry,SUCCESS,0.7705474170506932,0.5826292500132695,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,0,classical,SUCCESS,1.3910349169746041,1.1559877090039663,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,0,group_memory_response,SUCCESS,0.39888829103438184,0.24242758401669562,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,0,classical_same_model,SUCCESS,0.1116229590261355,0.010581500013358891,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,0,group_memory_previous,SUCCESS,0.7821707089897245,0.6222457499825396,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,0,qiskit_response,SUCCESS,0.4343561250134371,0.26851324999006465,1.0,48,768
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,2,classical_same_model,SUCCESS,1.80973300000187,1.579523375025019,0.75,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,2,classical,SUCCESS,1.3432017500163056,1.1154150829534046,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,2,qiskit_response,SUCCESS,2.0512629579752684,1.7676825000089593,0.75,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,2,group_memory_previous,SUCCESS,2.018206292006653,1.7243730829795823,0.75,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,2,group_memory_response,SUCCESS,1.780188167002052,1.4911337499506772,0.75,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,2,qiskit_symmetry,SUCCESS,2.3165814999956638,2.0386640839860775,0.75,48,960
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,1,classical_same_model,SUCCESS,0.1228485829778947,0.011987750011030585,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,1,qiskit_symmetry,SUCCESS,0.6176123329787515,0.38199783401796594,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,1,group_memory_response,SUCCESS,0.4707872910075821,0.3007033749599941,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,1,group_memory_previous,SUCCESS,0.5173674169927835,0.36217170796589926,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,1,classical,SUCCESS,1.4074974579853006,1.183750708005391,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,1,qiskit_response,SUCCESS,0.38032499997643754,0.24386995797976851,1.0,48,768
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,2,qiskit_response,SUCCESS,1.7410985830356367,1.4710317080025561,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,2,qiskit_symmetry,SUCCESS,9.458215916005429,9.156298916961532,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,2,classical_same_model,SUCCESS,1.6145730419666506,1.3298721669707447,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,2,group_memory_response,SUCCESS,1.9152389170485549,1.6501849589985795,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,2,classical,SUCCESS,1.311392750008963,1.0913980419863947,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,2,group_memory_previous,SUCCESS,9.040725708997343,8.754927916044835,1.0,352,7040
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,0,group_memory_previous,SUCCESS,2.191241207998246,1.9209068329655565,0.75,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,0,qiskit_symmetry,SUCCESS,1.948869250016287,1.6775355840218253,0.75,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,0,classical_same_model,SUCCESS,1.3152157079894096,1.1034369579865597,0.75,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,0,group_memory_response,SUCCESS,1.6730061660055071,1.4129185000201687,0.75,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,0,qiskit_response,SUCCESS,1.7182258749962784,1.431945500022266,0.75,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,0,classical,SUCCESS,1.2438820829847828,1.0398582500056364,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,1,qiskit_symmetry,SUCCESS,1.9581971250008792,1.6807593749836087,0.875,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,1,classical,SUCCESS,1.7047005000058562,1.4932532079983503,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,1,group_memory_previous,SUCCESS,2.161972958012484,1.8610172920161858,0.875,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,1,qiskit_response,SUCCESS,1.9357117919716984,1.6491372089949436,0.875,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,1,group_memory_response,SUCCESS,1.780533499957528,1.5019857499864884,0.875,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,1,classical_same_model,SUCCESS,1.4731664159917273,1.1831505419686437,0.875,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,2,classical,SUCCESS,1.6838349999743514,1.185093667008914,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,2,qiskit_response,SUCCESS,1.8925367920310237,1.5883506670361385,0.875,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,2,classical_same_model,SUCCESS,1.3637017500004731,1.1339513750281185,0.875,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,2,group_memory_previous,SUCCESS,3.7099297500099055,3.431884666031692,0.875,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,2,qiskit_symmetry,SUCCESS,3.975485416012816,3.6743515410344116,0.875,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,2,group_memory_response,SUCCESS,1.7479911249829456,1.4831760419765487,0.875,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,0,group_memory_response,SUCCESS,1.7260566250188276,1.4647716250037774,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,0,qiskit_symmetry,SUCCESS,9.51935274997959,9.169629459036514,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,0,qiskit_response,SUCCESS,2.132574666000437,1.8132116670021787,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,0,classical,SUCCESS,1.3888217500061728,1.1699592919903807,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,0,classical_same_model,SUCCESS,1.2778159999870695,1.0704133749823086,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,0,group_memory_previous,SUCCESS,9.628941542003304,9.241749458014965,1.0,352,7040
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,2,qiskit_symmetry,SUCCESS,1.0297949999803677,0.8059319580206648,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,2,qiskit_response,SUCCESS,0.37805474997730926,0.24105458304984495,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,2,classical_same_model,SUCCESS,0.1118521659518592,0.010490540997125208,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,2,group_memory_previous,SUCCESS,0.6271297500352375,0.48764204198960215,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,2,classical,SUCCESS,1.6291216670069844,1.4097752909874544,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,2,group_memory_response,SUCCESS,0.3827182920067571,0.23765683401143178,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,1,classical,SUCCESS,1.5151841669576243,1.297476249979809,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,1,group_memory_response,SUCCESS,0.41373533400474116,0.23859300004551187,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,1,classical_same_model,SUCCESS,0.10618720797356218,0.010176209034398198,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,1,group_memory_previous,SUCCESS,0.4634481249959208,0.294549125013873,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,1,qiskit_symmetry,SUCCESS,0.410983124980703,0.266139084007591,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,1,qiskit_response,SUCCESS,0.416716541047208,0.24333558301441371,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,1,qiskit_response,SUCCESS,0.39492308301851153,0.2529773329733871,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,1,classical_same_model,SUCCESS,0.10602454200852662,0.010350249998737127,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,1,classical,SUCCESS,1.5631852080114186,1.3403579579899088,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,1,qiskit_symmetry,SUCCESS,0.4616244579665363,0.3168262079707347,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,1,group_memory_previous,SUCCESS,0.46192625002004206,0.31733512500068173,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,1,group_memory_response,SUCCESS,0.3856326669920236,0.24497687496477738,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,0,classical_same_model,SUCCESS,0.10967541602440178,0.01046287501230836,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,0,group_memory_previous,SUCCESS,0.7884779169689864,0.6226962499786168,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,0,qiskit_symmetry,SUCCESS,0.6911497500259429,0.5230761670391075,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,0,classical,SUCCESS,1.6836012919666246,1.4652184590231627,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,0,qiskit_response,SUCCESS,0.3851904579787515,0.24085737497080117,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,0,group_memory_response,SUCCESS,0.3800065410323441,0.2446242079604417,1.0,48,768
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,1,qiskit_symmetry,SUCCESS,9.534350708010606,9.162046875047963,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,1,classical,SUCCESS,1.5001940419897437,1.2896479580085725,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,1,group_memory_previous,SUCCESS,9.918699999980163,9.63360979204299,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,1,group_memory_response,SUCCESS,2.283336833002977,2.0123466669465415,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,1,qiskit_response,SUCCESS,2.080289416015148,1.786865415982902,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941101,1,classical_same_model,SUCCESS,1.508423707971815,1.2658999590203166,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,2,classical_same_model,SUCCESS,0.1186244580312632,0.014928582997526973,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,2,group_memory_response,SUCCESS,0.5352092090179212,0.39187991694780067,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,2,group_memory_previous,SUCCESS,0.716932250012178,0.5612580419983715,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,2,qiskit_response,SUCCESS,0.4002693329821341,0.25127312500262633,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,2,classical,SUCCESS,1.6930226249969564,1.4800787499989383,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,2,qiskit_symmetry,SUCCESS,0.6640943750389852,0.4841339169652201,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,1,qiskit_response,SUCCESS,0.40664054203080013,0.2533927080221474,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,1,classical_same_model,SUCCESS,0.15743908297736198,0.012650583987124264,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,1,group_memory_response,SUCCESS,0.39428762503666803,0.25371558405458927,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,1,qiskit_symmetry,SUCCESS,0.8807389579596929,0.7042578750406392,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,1,group_memory_previous,SUCCESS,0.7729407500009984,0.5914459590567276,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,1,classical,SUCCESS,1.8359754999983124,1.588751457980834,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,2,classical,SUCCESS,1.2869613340008073,1.0748260419932194,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,2,group_memory_previous,SUCCESS,2.1618939590407535,1.8766580420196988,0.9375,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,2,group_memory_response,SUCCESS,1.8687055829796009,1.5882262499653734,0.9375,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,2,classical_same_model,SUCCESS,1.3376739170053042,1.1117491250042804,0.9375,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,2,qiskit_symmetry,SUCCESS,1.9901709589757957,1.713518708012998,0.9375,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,2,qiskit_response,SUCCESS,1.9228311250335537,1.6504367080051452,0.9375,96,1920
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,2,group_memory_response,SUCCESS,0.5052600839990191,0.3059863749658689,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,2,classical_same_model,SUCCESS,0.11867424997035414,0.011060916993301362,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,2,group_memory_previous,SUCCESS,0.451344707980752,0.30968791601480916,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,2,qiskit_response,SUCCESS,0.44298016699030995,0.28302379202796146,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,2,classical,SUCCESS,1.3874784169602208,1.1580951659707353,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,2,qiskit_symmetry,SUCCESS,0.4541664579883218,0.2871652090107091,1.0,60,960
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,0,group_memory_previous,SUCCESS,3.7426802089903504,3.4310417079832405,1.0,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,0,classical,SUCCESS,1.6963450839975849,1.4251762499916367,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,0,classical_same_model,SUCCESS,1.416708834003657,1.1685336669906974,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,0,qiskit_symmetry,SUCCESS,3.548977290978655,3.269086124957539,1.0,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,0,qiskit_response,SUCCESS,2.064810874988325,1.7499362499802373,1.0,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,0,group_memory_response,SUCCESS,1.9646967920125462,1.663145458966028,1.0,96,1920
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,0,group_memory_response,SUCCESS,0.5479495829786174,0.34412487503141165,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,0,classical_same_model,SUCCESS,0.23879212501924485,0.018774583004415035,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,0,group_memory_previous,SUCCESS,0.8200247500208206,0.38211245799902827,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,0,qiskit_response,SUCCESS,0.5286885420209728,0.3252390830311924,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,0,qiskit_symmetry,SUCCESS,0.4784287079819478,0.28529666701797396,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,0,classical,SUCCESS,3.7041110409772955,3.4440653329947963,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,2,classical,SUCCESS,1.533652667014394,1.3092271250206977,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,2,qiskit_response,SUCCESS,0.5110194580047391,0.36408808396663517,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,2,classical_same_model,SUCCESS,0.11099216697039083,0.009694874985143542,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,2,group_memory_response,SUCCESS,0.3815107920090668,0.24227304197847843,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,2,qiskit_symmetry,SUCCESS,0.450044583005365,0.29361195798264816,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,2,group_memory_previous,SUCCESS,0.4232162919943221,0.26846350001869723,1.0,60,960
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,2,classical,SUCCESS,1.6673914169659838,1.3831023330567405,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,2,group_memory_response,SUCCESS,3.2298818330164067,2.8531738750170916,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,2,classical_same_model,SUCCESS,2.002350958005991,1.76264520798577,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,2,qiskit_response,SUCCESS,2.692579124995973,2.392262125038542,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,2,group_memory_previous,SUCCESS,10.955423415987752,10.597805458004586,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,2,qiskit_symmetry,SUCCESS,13.23923929198645,12.51881737500662,1.0,352,7040
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,1,qiskit_symmetry,SUCCESS,1.9034850830212235,1.0553650840301998,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,1,classical_same_model,SUCCESS,0.28388645901577547,0.024323207966517657,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,1,classical,SUCCESS,3.225100875017233,2.7279745840351097,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,1,qiskit_response,SUCCESS,1.6130205840454437,1.091257249994669,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,1,group_memory_response,SUCCESS,1.3927025420125574,1.0425427909940481,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,1,group_memory_previous,SUCCESS,2.2288661249913275,1.553943250037264,1.0,312,4992
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,2,classical,SUCCESS,3.4203000830020756,2.9821745840017684,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,2,group_memory_response,SUCCESS,3.776658749964554,3.2101158339646645,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,2,qiskit_response,SUCCESS,3.671385875029955,3.19550812500529,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,2,group_memory_previous,SUCCESS,6.039133541984484,5.341275500017218,0.9375,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,2,classical_same_model,SUCCESS,2.3423018750036135,1.9476117920130491,0.9375,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,2,qiskit_symmetry,SUCCESS,5.745779999997467,5.326379666978028,0.9375,112,2240
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,2,qiskit_symmetry,SUCCESS,12.617346582992468,12.065211749984883,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,2,group_memory_response,SUCCESS,3.174364415986929,2.665672999981325,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,2,group_memory_previous,SUCCESS,12.592196458019316,12.049609874957241,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,2,classical,SUCCESS,2.796218042029068,2.3790554580045864,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,2,classical_same_model,SUCCESS,2.4953270829864778,2.0910491670365445,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,2,qiskit_response,SUCCESS,3.3941630420158617,2.9998373750131577,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,1,group_memory_previous,SUCCESS,11.395589459047187,11.040341457992326,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,1,classical,SUCCESS,1.7529822080396116,1.5033728750422597,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,1,classical_same_model,SUCCESS,1.5901223749970086,1.3337019580067135,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,1,qiskit_response,SUCCESS,2.2660827079671435,1.8760067079565488,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,1,qiskit_symmetry,SUCCESS,9.533804917009547,9.171828958962578,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,1,group_memory_response,SUCCESS,2.33497979096137,1.9864246670040302,1.0,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,0,classical,SUCCESS,1.5879205000237562,1.2880666250130162,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,0,qiskit_response,SUCCESS,2.159814250015188,1.773687374952715,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,0,classical_same_model,SUCCESS,1.2901405000011437,1.0735635419841856,0.9375,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,0,group_memory_response,SUCCESS,1.8533902080380358,1.5963985419948585,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,0,group_memory_previous,SUCCESS,3.5798822499928065,3.315722957951948,0.9375,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,0,qiskit_symmetry,SUCCESS,4.0097379589569755,3.719739542051684,0.9375,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,0,qiskit_response,SUCCESS,1.8540743329795077,1.5773388749803416,0.875,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,0,group_memory_response,SUCCESS,1.675885249977,1.413573957979679,0.875,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,0,qiskit_symmetry,SUCCESS,3.3909053329844028,3.130471042008139,0.875,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,0,classical_same_model,SUCCESS,1.2549548749811947,1.0474485420272686,0.875,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,0,group_memory_previous,SUCCESS,3.3541656250017695,3.1021975000039674,0.875,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,0,classical,SUCCESS,1.2903397920308635,1.082276750006713,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,1,group_memory_response,SUCCESS,0.3950160840176977,0.2563750409753993,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,1,classical_same_model,SUCCESS,0.11442495801020414,0.01049683301243931,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,1,group_memory_previous,SUCCESS,0.6584809999912977,0.5175076659652404,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,1,classical,SUCCESS,1.2568502079811879,1.0500794170075096,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,1,qiskit_symmetry,SUCCESS,0.6332187080406584,0.4874019999988377,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,1,qiskit_response,SUCCESS,0.3795924159931019,0.2329707919852808,1.0,48,768
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,1,classical,SUCCESS,1.266946540970821,1.063085166970268,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,1,qiskit_response,SUCCESS,1.7467587499995716,1.4944010410108604,0.875,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,1,classical_same_model,SUCCESS,1.248951708956156,1.037357457971666,0.875,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,1,qiskit_symmetry,SUCCESS,3.3844845840358175,3.126424957998097,0.875,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,1,group_memory_response,SUCCESS,1.6984326250385493,1.4184426669962704,0.875,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941104,1,group_memory_previous,SUCCESS,3.3355684999842197,3.0808203750057146,0.875,112,2240
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,2,group_memory_response,SUCCESS,0.3862135829986073,0.23719187499955297,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,2,qiskit_response,SUCCESS,0.38516345905372873,0.2479712920030579,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,2,classical,SUCCESS,1.238783000037074,1.0364003750146367,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,2,group_memory_previous,SUCCESS,0.4561248329700902,0.31206441699760035,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,2,classical_same_model,SUCCESS,0.10286695801187307,0.010233332985080779,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,2,qiskit_symmetry,SUCCESS,0.44759416696615517,0.3124867919832468,1.0,132,2112
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,0,classical,SUCCESS,1.2698762079817243,1.059668249974493,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,0,classical_same_model,SUCCESS,1.3559102499857545,1.0713096670224331,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,0,group_memory_response,SUCCESS,1.6988905420294032,1.4490753340069205,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,0,qiskit_symmetry,SUCCESS,9.101656874991022,8.799092792032752,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,0,group_memory_previous,SUCCESS,8.871877084020525,8.543552250019275,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,0,qiskit_response,SUCCESS,1.7426160000031814,1.4722115829936229,1.0,96,1920
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,0,classical_same_model,SUCCESS,0.10543608403531834,0.01098679198184982,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,0,qiskit_symmetry,SUCCESS,0.44776479195570573,0.3148062500404194,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,0,classical,SUCCESS,1.2726393329794519,1.0469549999688752,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,0,qiskit_response,SUCCESS,0.39284491701982915,0.2482014590059407,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,0,group_memory_response,SUCCESS,0.3730789589462802,0.23212891700677574,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,0,group_memory_previous,SUCCESS,0.4538247910095379,0.3178065419779159,1.0,132,2112
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,2,qiskit_symmetry,SUCCESS,1.9488913750392385,1.68663024995476,0.875,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,2,qiskit_response,SUCCESS,1.6964604170061648,1.4298594589927234,0.875,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,2,classical,SUCCESS,1.256768082967028,1.0393124999827705,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,2,group_memory_previous,SUCCESS,1.9390393329667859,1.6678442499833182,0.875,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,2,group_memory_response,SUCCESS,1.687502124987077,1.4229667499894276,0.875,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,2,classical_same_model,SUCCESS,1.2275691249524243,1.02365774998907,0.875,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,1,classical_same_model,SUCCESS,0.10931279201759025,0.010861458024010062,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,1,group_memory_previous,SUCCESS,0.6185545410262421,0.48371654096990824,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,1,qiskit_response,SUCCESS,0.38853912497870624,0.24550662498222664,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,1,group_memory_response,SUCCESS,0.3816099159885198,0.23703095800010487,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,1,classical,SUCCESS,1.2662889170460403,1.065294084022753,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,1,qiskit_symmetry,SUCCESS,0.6247832499793731,0.48429562500678003,1.0,312,4992
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,0,classical,SUCCESS,1.2418512500007637,1.0426173330051824,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,0,group_memory_response,SUCCESS,0.45415029098512605,0.297001792001538,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,0,classical_same_model,SUCCESS,0.12001325003802776,0.011461875052191317,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,0,qiskit_response,SUCCESS,0.3893110419739969,0.24123083404265344,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,0,qiskit_symmetry,SUCCESS,0.46961779199773446,0.322617124998942,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,0,group_memory_previous,SUCCESS,0.48489145800704136,0.32748262502718717,1.0,132,2112
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,1,qiskit_symmetry,SUCCESS,9.294399667007383,8.966113708040211,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,1,group_memory_response,SUCCESS,4.039537750009913,3.5922726249555126,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,1,group_memory_previous,SUCCESS,9.50765316595789,9.113053083012346,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,1,classical_same_model,SUCCESS,1.6560528330155648,1.3315924160415307,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,1,qiskit_response,SUCCESS,1.9955255000386387,1.6883452080073766,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941105,1,classical,SUCCESS,1.2820711659733206,1.061302916961722,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,0,classical,SUCCESS,1.4129823329858482,1.1969935839879327,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,0,qiskit_symmetry,SUCCESS,2.2001417499850504,1.9279135830001906,0.75,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,0,group_memory_previous,SUCCESS,2.0399807909852825,1.7829898330383003,0.75,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,0,group_memory_response,SUCCESS,1.841455165995285,1.565760749974288,0.75,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,0,qiskit_response,SUCCESS,1.7673124590073712,1.5095497500151396,0.75,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,0,classical_same_model,SUCCESS,1.2343415000359528,1.0372121669934131,0.75,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,0,classical,SUCCESS,1.3016777080483735,1.0957202920108102,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,0,qiskit_response,SUCCESS,0.4441572920186445,0.30826050002360716,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,0,classical_same_model,SUCCESS,0.10513462498784065,0.010123124986421317,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,0,qiskit_symmetry,SUCCESS,0.604897000011988,0.47601083299377933,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,0,group_memory_previous,SUCCESS,0.609831582987681,0.47408491699025035,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941105,0,group_memory_response,SUCCESS,0.39796208404004574,0.23155791696626693,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,0,qiskit_response,SUCCESS,0.3652724999701604,0.23278349998872727,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,0,classical_same_model,SUCCESS,0.10371900000609457,0.010205500002484769,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,0,group_memory_response,SUCCESS,0.37726204202044755,0.23826224997173995,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,0,classical,SUCCESS,1.2455767499632202,1.0366100420360453,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,0,group_memory_previous,SUCCESS,0.4412637089844793,0.30904616601765156,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941103,0,qiskit_symmetry,SUCCESS,0.437552041024901,0.306876040995121,1.0,132,2112
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,2,classical,SUCCESS,1.2350634589674883,1.0286189580219798,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,2,group_memory_response,SUCCESS,1.6935900410171598,1.4398630000068806,1.0,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,2,qiskit_symmetry,SUCCESS,3.392335542012006,3.1273823339724913,1.0,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,2,classical_same_model,SUCCESS,1.2433409999939613,1.041931834013667,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,2,group_memory_previous,SUCCESS,3.3404037919826806,3.0887125830049627,1.0,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,2,qiskit_response,SUCCESS,1.6201921669999138,1.3791184169822372,1.0,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,2,group_memory_response,SUCCESS,1.6921882090391591,1.4176617920165882,1.0,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,2,qiskit_response,SUCCESS,1.7370393329765648,1.472822708019521,1.0,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,2,group_memory_previous,SUCCESS,3.3823104579932988,3.117665499972645,1.0,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,2,classical,SUCCESS,1.4884057499584742,1.2659385000006296,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,2,classical_same_model,SUCCESS,1.3377108330023475,1.1138272910029627,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,2,qiskit_symmetry,SUCCESS,3.6966020830441266,3.4219035410205834,1.0,112,2240
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,2,group_memory_response,SUCCESS,2.1561613749945536,1.7900644580367953,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,2,qiskit_symmetry,SUCCESS,9.406601583003066,9.117317166004796,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,2,classical_same_model,SUCCESS,1.6771642499952577,1.4205884999828413,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,2,group_memory_previous,SUCCESS,9.317795415990986,8.957476417010184,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,2,classical,SUCCESS,1.3981170000042766,1.1418293750029989,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,2,qiskit_response,SUCCESS,1.8448998749954626,1.5683462499873713,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,1,group_memory_response,SUCCESS,1.859175875026267,1.601311957987491,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,1,group_memory_previous,SUCCESS,9.051824125053827,8.765078084019478,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,1,classical,SUCCESS,1.2977093340014108,1.0681640830007382,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,1,qiskit_symmetry,SUCCESS,9.371259875013493,9.03360254096333,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,1,classical_same_model,SUCCESS,1.4028442080016248,1.177374500024598,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941103,1,qiskit_response,SUCCESS,2.0485420409822837,1.7932274999911897,1.0,96,1920
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,2,group_memory_response,SUCCESS,0.40177204099018127,0.25264087499817833,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,2,qiskit_symmetry,SUCCESS,0.6062824999680743,0.47373074997449294,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,2,group_memory_previous,SUCCESS,0.6220560419606045,0.47256816702429205,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,2,classical,SUCCESS,1.3535652090213262,1.1423223330057226,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,2,qiskit_response,SUCCESS,0.3608830419834703,0.23113349999766797,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941101,2,classical_same_model,SUCCESS,0.10438729199813679,0.010673957993276417,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,1,qiskit_response,SUCCESS,0.36838450003415346,0.23291083303047344,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,1,group_memory_previous,SUCCESS,0.3776368339895271,0.24340325000230223,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,1,classical_same_model,SUCCESS,0.11265120800817385,0.010013499995693564,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,1,classical,SUCCESS,1.296234417008236,1.0691173339728266,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,1,qiskit_symmetry,SUCCESS,0.39569295797264203,0.25228254101239145,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,1,group_memory_response,SUCCESS,0.3709988340269774,0.23471762501867488,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,1,group_memory_previous,SUCCESS,0.38827245897846296,0.24955204199068248,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,1,classical_same_model,SUCCESS,0.10787370899925008,0.01006895798491314,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,1,group_memory_response,SUCCESS,0.3716827500029467,0.23767487501027063,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,1,qiskit_response,SUCCESS,0.36488204199122265,0.23244908300694078,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,1,qiskit_symmetry,SUCCESS,0.3787884170305915,0.2469670829595998,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941104,1,classical,SUCCESS,1.3454607499879785,1.139034542022273,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,2,group_memory_previous,SUCCESS,0.4690829170285724,0.322729125036858,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,2,classical_same_model,SUCCESS,0.10611008299747482,0.010313082952052355,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,2,classical,SUCCESS,1.2630880000069737,1.065763708029408,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,2,group_memory_response,SUCCESS,0.3623679170268588,0.2294071659562178,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,2,qiskit_symmetry,SUCCESS,0.4481945830048062,0.3159412909881212,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941102,2,qiskit_response,SUCCESS,0.3621758340159431,0.2285002910066396,1.0,48,768
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,1,qiskit_symmetry,SUCCESS,2.005673083011061,1.7371585000073537,0.75,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,1,group_memory_previous,SUCCESS,1.9230992090306245,1.6674659159616567,0.75,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,1,classical,SUCCESS,1.254272749996744,1.0467272080131806,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,1,classical_same_model,SUCCESS,1.2545770830474794,1.0517157090362161,0.75,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,1,group_memory_response,SUCCESS,1.6384457910316996,1.3838487910106778,0.75,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,1,qiskit_response,SUCCESS,1.68490033299895,1.4135888330056332,0.75,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,1,classical_same_model,SUCCESS,1.2751146249938756,1.0723915839917026,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,1,group_memory_previous,SUCCESS,3.4497925830073655,3.1854437080328353,1.0,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,1,classical,SUCCESS,1.2429576250142418,1.0356203750125133,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,1,qiskit_response,SUCCESS,1.7115423330105841,1.4375709589803591,1.0,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,1,qiskit_symmetry,SUCCESS,3.449405166960787,3.1824706249753945,1.0,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,1,group_memory_response,SUCCESS,1.714218917011749,1.4593862500041723,1.0,96,1920
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,2,group_memory_response,SUCCESS,0.37535608402686194,0.23604758398141712,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,2,group_memory_previous,SUCCESS,0.3790989999542944,0.24567083298461512,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,2,classical_same_model,SUCCESS,0.10530158301116899,0.009944999997969717,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,2,classical,SUCCESS,1.2500807920005172,1.046143125044182,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,2,qiskit_response,SUCCESS,0.37822620797669515,0.23695383296580985,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,2,qiskit_symmetry,SUCCESS,0.3968962079961784,0.2505450830212794,1.0,60,960
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,2,group_memory_previous,SUCCESS,0.6243427079753019,0.48816262499894947,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,2,qiskit_symmetry,SUCCESS,0.617159667017404,0.47981979098403826,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,2,classical_same_model,SUCCESS,0.10331500001484528,0.01011575001757592,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,2,qiskit_response,SUCCESS,0.3582825420307927,0.2295198329957202,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,2,classical,SUCCESS,1.2227432920481078,1.027345874987077,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,2,group_memory_response,SUCCESS,0.3709517079987563,0.23200845799874514,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,0,group_memory_response,SUCCESS,0.37597879202803597,0.23026687500532717,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,0,classical_same_model,SUCCESS,0.12947083299513906,0.013643209007568657,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,0,qiskit_symmetry,SUCCESS,0.39952949999133125,0.2545929169864394,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,0,classical,SUCCESS,1.2533093750244007,1.0539455409743823,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,0,group_memory_previous,SUCCESS,0.41903254203498363,0.2680743329692632,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941101,0,qiskit_response,SUCCESS,0.3987286670017056,0.25083224999252707,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,2,group_memory_response,SUCCESS,0.37237300002016127,0.2362403339939192,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,2,qiskit_response,SUCCESS,0.39887741702841595,0.2541649590129964,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,2,group_memory_previous,SUCCESS,0.4464179579517804,0.3120651670033112,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,2,classical,SUCCESS,1.3965260409750044,1.1854905410436913,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,2,classical_same_model,SUCCESS,0.11893229198176414,0.010377124999649823,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,2,qiskit_symmetry,SUCCESS,0.45741329196607694,0.32580341695575044,1.0,132,2112
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,0,classical,SUCCESS,1.270703166956082,1.054246166953817,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,0,qiskit_response,SUCCESS,1.7387180000077933,1.4734754170058295,0.875,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,0,classical_same_model,SUCCESS,1.2562778749852441,1.0410077920532785,0.875,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,0,group_memory_response,SUCCESS,1.693617999961134,1.4354936659801751,0.875,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,0,qiskit_symmetry,SUCCESS,1.938838834001217,1.6933521250030026,0.875,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941102,0,group_memory_previous,SUCCESS,2.005552332964726,1.7472001249552704,0.875,48,960
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,2,group_memory_previous,SUCCESS,9.256494832981844,8.876900999981444,0.9375,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,2,qiskit_symmetry,SUCCESS,9.524316249997355,9.177941791946068,0.9375,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,2,classical_same_model,SUCCESS,1.572437416005414,1.3017399579985067,0.9375,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,2,group_memory_response,SUCCESS,1.993033250037115,1.691765374969691,0.9375,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,2,classical,SUCCESS,1.4881349169882014,1.2253931250306778,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,2,qiskit_response,SUCCESS,2.6944830419961363,1.8661963339545764,0.9375,96,1920
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,2,qiskit_symmetry,SUCCESS,0.7640712920110673,0.515297207981348,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,2,classical,SUCCESS,1.366099499980919,1.1639972919947468,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,2,group_memory_previous,SUCCESS,0.5711467909859493,0.4288620839943178,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,2,qiskit_response,SUCCESS,0.37506375001976267,0.23941925005055964,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,2,group_memory_response,SUCCESS,0.366123209008947,0.2325449159834534,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,2,classical_same_model,SUCCESS,0.1119490839773789,0.010346124996431172,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,1,qiskit_symmetry,SUCCESS,0.4564478329848498,0.314848207985051,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,1,group_memory_previous,SUCCESS,0.5626238330150954,0.31000449997372925,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,1,qiskit_response,SUCCESS,0.49071316700428724,0.23730837501352653,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,1,classical,SUCCESS,1.6294142919941805,1.4021894999896176,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,1,group_memory_response,SUCCESS,0.40821179101476446,0.22965325001860037,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,1,classical_same_model,SUCCESS,0.10773254104424268,0.01027591695310548,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,1,qiskit_response,SUCCESS,1.867086875019595,1.6163905420107767,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,1,group_memory_response,SUCCESS,1.8292177499970421,1.5613972499850206,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,1,classical,SUCCESS,1.3480593750136904,1.1360531669924967,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,1,classical_same_model,SUCCESS,1.4311253329506144,1.218348791997414,0.9375,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,1,group_memory_previous,SUCCESS,3.80399916699389,3.527758290991187,0.9375,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,1,qiskit_symmetry,SUCCESS,3.628919832990505,3.3484014999703504,0.9375,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,0,qiskit_symmetry,SUCCESS,3.819723874970805,3.5252745840116404,0.9375,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,0,group_memory_response,SUCCESS,1.855755832977593,1.5910551669658162,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,0,classical,SUCCESS,1.3041132910293527,1.1007572500384413,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,0,group_memory_previous,SUCCESS,3.6495090420357883,3.388378667004872,0.9375,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,0,qiskit_response,SUCCESS,1.8037807079963386,1.5366002910304815,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941102,0,classical_same_model,SUCCESS,1.3543661669827998,1.0817570830113254,0.9375,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,1,classical,SUCCESS,1.4120529160136357,1.175267290964257,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,1,group_memory_previous,SUCCESS,3.542250792030245,3.2552761250408366,1.0,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,1,group_memory_response,SUCCESS,1.9540744590340182,1.6736135840183124,1.0,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,1,classical_same_model,SUCCESS,1.292184250021819,1.077408125041984,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,1,qiskit_symmetry,SUCCESS,3.560392292041797,3.2983803750248626,1.0,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941103,1,qiskit_response,SUCCESS,1.686866999953054,1.4352832500007935,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,0,qiskit_response,SUCCESS,1.6858790410333313,1.4215081249712966,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,0,group_memory_response,SUCCESS,1.705254500033334,1.429624332988169,1.0,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,0,qiskit_symmetry,SUCCESS,8.85542441700818,8.530893624993041,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,0,classical,SUCCESS,1.4279191250097938,1.195638500037603,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,0,classical_same_model,SUCCESS,1.384505124995485,1.1694067500066012,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941102,0,group_memory_previous,SUCCESS,9.860318417020608,8.77166725002462,1.0,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,0,qiskit_symmetry,SUCCESS,9.853328875033185,9.492318917007651,0.9375,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,0,classical_same_model,SUCCESS,2.141256291011814,1.732079709006939,0.9375,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,0,group_memory_response,SUCCESS,2.4353616250446066,2.115641584037803,0.9375,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,0,group_memory_previous,SUCCESS,9.182336208992638,8.85857575002592,0.9375,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,0,classical,SUCCESS,1.6885065410169773,1.4363746250164695,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,0,qiskit_response,SUCCESS,2.333980249997694,1.9722519170027226,0.9375,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,1,qiskit_response,SUCCESS,2.171586250013206,1.855655166960787,0.75,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,1,classical,SUCCESS,1.4537282080273144,1.173066875024233,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,1,group_memory_response,SUCCESS,1.8556884580175392,1.584931207995396,0.75,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,1,classical_same_model,SUCCESS,1.2802630829974078,1.0517859170213342,0.75,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,1,qiskit_symmetry,SUCCESS,2.1504447080078535,1.8512897919863462,0.75,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941105,1,group_memory_previous,SUCCESS,1.9639124589739367,1.6832149170222692,0.75,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,2,group_memory_previous,SUCCESS,1.9705772090237588,1.6912679160013795,0.75,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,2,qiskit_symmetry,SUCCESS,1.9981302499654703,1.7165107500040904,0.75,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,2,qiskit_response,SUCCESS,1.7427700000116602,1.4455088750110008,0.75,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,2,classical_same_model,SUCCESS,1.2889094169950113,1.0707876249798574,0.75,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,2,classical,SUCCESS,1.2522918750182725,1.0360108749591745,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941104,2,group_memory_response,SUCCESS,1.9342839169548824,1.6331065410049632,0.75,96,1920
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,1,qiskit_response,SUCCESS,0.4086986670154147,0.2491327919997275,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,1,classical_same_model,SUCCESS,0.10656379198189825,0.010114292032085359,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,1,classical,SUCCESS,1.2699990830151364,1.0548613750142977,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,1,group_memory_previous,SUCCESS,0.38072466698940843,0.24579870799789205,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,1,qiskit_symmetry,SUCCESS,0.39818120800191537,0.25930458400398493,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,1,group_memory_response,SUCCESS,0.3799019579892047,0.23884000000543892,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,2,classical,SUCCESS,1.3177264170371927,1.1183046670048498,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,2,qiskit_symmetry,SUCCESS,0.39943291700910777,0.24651516700396314,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,2,qiskit_response,SUCCESS,0.36453537503257394,0.23454400000628084,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,2,classical_same_model,SUCCESS,0.10574062500381842,0.010120457969605923,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,2,group_memory_previous,SUCCESS,0.37650958297308534,0.24657020799349993,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941105,2,group_memory_response,SUCCESS,0.36349016695749015,0.23149379197275266,1.0,48,768
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,0,classical_same_model,SUCCESS,1.2792429580003954,1.0556154579971917,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,0,group_memory_response,SUCCESS,1.7122870829771273,1.4565476250136271,1.0,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,0,qiskit_response,SUCCESS,1.741915832972154,1.4792562499642372,1.0,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,0,group_memory_previous,SUCCESS,3.417996625008527,3.149707291042432,1.0,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,0,qiskit_symmetry,SUCCESS,3.457441666047089,3.193986083031632,1.0,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941101,0,classical,SUCCESS,1.2547764999908395,1.054288458020892,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,1,group_memory_previous,SUCCESS,1.950536916963756,1.695848917006515,0.9375,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,1,group_memory_response,SUCCESS,1.6902789170271717,1.4240920000011101,0.9375,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,1,classical_same_model,SUCCESS,1.439922249992378,1.1936046670307405,0.9375,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,1,qiskit_symmetry,SUCCESS,2.001747499976773,1.7382745000068098,0.9375,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,1,classical,SUCCESS,1.2519599160295911,1.0443139169947244,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,1,qiskit_response,SUCCESS,1.9352690409868956,1.666934458015021,0.9375,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,0,group_memory_previous,SUCCESS,1.941458083980251,1.6828157089767046,0.9375,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,0,qiskit_response,SUCCESS,1.667985583015252,1.4070991250337102,0.9375,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,0,group_memory_response,SUCCESS,1.643123249989003,1.3894578329636715,0.9375,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,0,qiskit_symmetry,SUCCESS,1.9700239159865305,1.6893184169894084,0.9375,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,0,classical,SUCCESS,1.2763692499720491,1.0661469579790719,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941103,0,classical_same_model,SUCCESS,1.2370370419812389,1.0368653330369852,0.9375,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,2,qiskit_symmetry,SUCCESS,1.9217582079581916,1.6616950000170618,1.0,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,2,group_memory_previous,SUCCESS,1.9341750419698656,1.6680320409941487,1.0,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,2,classical_same_model,SUCCESS,1.2908568749553524,1.0860120829893276,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,2,group_memory_response,SUCCESS,1.6701325839967467,1.409207041026093,1.0,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,2,qiskit_response,SUCCESS,1.6863285829895176,1.4292130410321988,1.0,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,2,classical,SUCCESS,1.237284249975346,1.0255682080169208,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,1,qiskit_response,SUCCESS,1.6727012080373242,1.4095063750282861,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,1,classical,SUCCESS,1.2587052919552661,1.0488295419490896,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,1,classical_same_model,SUCCESS,1.2416370830032974,1.0404320000088774,0.9375,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,1,group_memory_previous,SUCCESS,3.3802961250185035,3.107344458985608,0.9375,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,1,group_memory_response,SUCCESS,1.72278966603335,1.4501972089638002,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,1,qiskit_symmetry,SUCCESS,3.4697152909939177,3.2031275409972295,0.9375,112,2240
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,0,classical,SUCCESS,1.2595094160060398,1.0450449169729836,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,0,classical_same_model,SUCCESS,1.232700541964732,1.0313921250053681,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,0,group_memory_response,SUCCESS,1.8009257079684176,1.5319806250045076,1.0,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,0,qiskit_symmetry,SUCCESS,1.91808020794997,1.6488087920006365,1.0,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,0,qiskit_response,SUCCESS,1.8210958749987185,1.4580256670014933,1.0,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,0,group_memory_previous,SUCCESS,1.908688792027533,1.6460894579649903,1.0,48,960
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,1,qiskit_response,SUCCESS,0.3886344169732183,0.23825579200638458,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,1,group_memory_response,SUCCESS,0.3592711250530556,0.22748800000408664,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,1,group_memory_previous,SUCCESS,0.6141995830112137,0.48107387498021126,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,1,classical_same_model,SUCCESS,0.13913841696921736,0.010933000012300909,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,1,classical,SUCCESS,1.2774493329925463,1.0678354580304585,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941102,1,qiskit_symmetry,SUCCESS,0.6817345839808695,0.47612883301917464,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,0,qiskit_symmetry,SUCCESS,0.6161321250256151,0.4749950830009766,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,0,classical_same_model,SUCCESS,0.19143025000812486,0.010672541975509375,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,0,qiskit_response,SUCCESS,0.3799430420040153,0.24403337499825284,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,0,group_memory_previous,SUCCESS,0.6147730409866199,0.4801288329763338,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,0,classical,SUCCESS,1.3030438339919783,1.0636042089900002,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941104,0,group_memory_response,SUCCESS,0.37099629198201,0.23769674997311085,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,1,qiskit_symmetry,SUCCESS,0.4483275830280036,0.31616520800162107,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,1,classical_same_model,SUCCESS,0.11428533296566457,0.011041040997952223,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,1,classical,SUCCESS,1.371035291987937,1.1652748339693062,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,1,group_memory_response,SUCCESS,0.3826894590165466,0.24767829099437222,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,1,qiskit_response,SUCCESS,0.3799220420187339,0.24352608399931341,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941101,1,group_memory_previous,SUCCESS,0.45167041599052027,0.31896775000495836,1.0,132,2112
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,2,classical_same_model,SUCCESS,1.441379625000991,1.1637676249956712,0.9375,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,2,group_memory_response,SUCCESS,1.9604717079782858,1.6913419170305133,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,2,classical,SUCCESS,1.4450890829903074,1.229629457986448,1.0,0,0
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,2,group_memory_previous,SUCCESS,3.539857041032519,3.2773928330279887,0.9375,112,2240
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,2,qiskit_response,SUCCESS,1.8833067499799654,1.585322791012004,0.9375,96,1920
+sensor-5,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 5, ""views"": 8}",941105,2,qiskit_symmetry,SUCCESS,4.7650881669833325,4.499431083037052,0.9375,112,2240
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,0,classical_same_model,SUCCESS,0.11429137497907504,0.011247499962337315,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,0,group_memory_previous,SUCCESS,0.6194220830220729,0.48155120795127004,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,0,group_memory_response,SUCCESS,0.4888261249870993,0.23881329101277515,1.0,48,768
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,0,qiskit_symmetry,SUCCESS,0.6261755829909816,0.4916813329909928,1.0,312,4992
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,0,classical,SUCCESS,1.259694791981019,1.053170791012235,1.0,0,0
+spin-8,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 8}",941103,0,qiskit_response,SUCCESS,0.36530137504450977,0.23317595798289403,1.0,48,768
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,1,group_memory_previous,SUCCESS,8.732017750036903,8.460139458009508,0.9375,352,7040
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,1,qiskit_response,SUCCESS,1.7467245829757303,1.492072332999669,0.9375,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,1,classical_same_model,SUCCESS,1.2643003750126809,1.053038333018776,0.9375,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,1,classical,SUCCESS,1.2674492079531774,1.0595924999797717,1.0,0,0
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,1,group_memory_response,SUCCESS,1.7852494160179049,1.5118507919833064,0.9375,96,1920
+sensor-20,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 20, ""views"": 8}",941104,1,qiskit_symmetry,SUCCESS,8.906537542003207,8.61092208296759,0.9375,352,7040
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,0,classical,SUCCESS,1.2841002080240287,1.066556165984366,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,0,group_memory_previous,SUCCESS,0.3775408340152353,0.2465760839986615,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,0,qiskit_response,SUCCESS,0.3734587079961784,0.23653729201760143,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,0,qiskit_symmetry,SUCCESS,0.3839097910095006,0.24572345800697803,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,0,group_memory_response,SUCCESS,0.4496754999854602,0.2367139589623548,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941103,0,classical_same_model,SUCCESS,0.10440329200355336,0.010023290989920497,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,0,classical_same_model,SUCCESS,0.10565554100321606,0.010033166967332363,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,0,qiskit_symmetry,SUCCESS,0.39120025001466274,0.2550662500434555,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,0,group_memory_previous,SUCCESS,0.374720208987128,0.24404020904330537,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,0,qiskit_response,SUCCESS,0.3773240839946084,0.23652520799078047,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,0,classical,SUCCESS,1.250282499997411,1.0455464579863474,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,0,group_memory_response,SUCCESS,0.38628370803780854,0.24419774999842048,1.0,48,768
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,1,classical,SUCCESS,1.2704129589837976,1.0567593750311062,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,1,group_memory_previous,SUCCESS,1.9503115830011666,1.6883668749942444,1.0,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,1,classical_same_model,SUCCESS,1.254897540959064,1.0490135829895735,1.0,0,0
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,1,group_memory_response,SUCCESS,1.6957230829866603,1.432850624958519,1.0,96,1920
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,1,qiskit_symmetry,SUCCESS,1.9681569170206785,1.7042090420145541,1.0,48,960
+sensor-1,1A,"{""bases"": 16, ""n_qubits"": 10, ""updates"": 1, ""views"": 8}",941101,1,qiskit_response,SUCCESS,1.6769749580416828,1.4196432500029914,1.0,96,1920
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,2,qiskit_response,SUCCESS,0.37423562502954155,0.24261495796963573,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,2,group_memory_response,SUCCESS,0.36454208299983293,0.23156129202106968,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,2,classical,SUCCESS,1.2346614159760065,1.0340433749952354,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,2,group_memory_previous,SUCCESS,0.44176545803202316,0.30666058300994337,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,2,classical_same_model,SUCCESS,0.10386670898878947,0.009975833003409207,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941105,2,qiskit_symmetry,SUCCESS,0.4421282080002129,0.3130131249781698,1.0,132,2112
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,1,qiskit_symmetry,SUCCESS,0.3724638330168091,0.24232933297753334,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,1,classical,SUCCESS,1.2458325830521062,1.0263211249839514,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,1,qiskit_response,SUCCESS,0.4012486250139773,0.2483522500260733,1.0,48,768
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,1,group_memory_previous,SUCCESS,0.47590966703137383,0.3130216670106165,1.0,60,960
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,1,classical_same_model,SUCCESS,0.12945891701383516,0.010898958018515259,1.0,0,0
+spin-1,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 1}",941102,1,group_memory_response,SUCCESS,0.40544666699133813,0.25732320797396824,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,0,classical_same_model,SUCCESS,0.10755516699282452,0.010057332983706146,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,0,qiskit_symmetry,SUCCESS,0.4590712909703143,0.3292993340292014,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,0,group_memory_previous,SUCCESS,0.4503016250091605,0.31059695803560317,1.0,132,2112
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,0,classical,SUCCESS,1.4271728749736212,1.2006547499913722,1.0,0,0
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,0,qiskit_response,SUCCESS,0.37797941599274054,0.23276279197307304,1.0,48,768
+spin-3,2A,"{""n_test"": 12, ""n_train"": 12, ""steps"": 3}",941104,0,group_memory_response,SUCCESS,0.36317262501688674,0.23050841700751334,1.0,48,768

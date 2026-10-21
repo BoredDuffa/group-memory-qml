@@ -1,0 +1,7 @@
+{
+  "completed_attempts": 180,
+  "latest": "checkpoint-0.json",
+  "previous": "checkpoint-1.json",
+  "latest_sha256": "0d2fa92166e72565eb2b4577f03462b07eceaff749df5a63e826126cf612db55",
+  "deadline_unix": 1792513444.560838
+}

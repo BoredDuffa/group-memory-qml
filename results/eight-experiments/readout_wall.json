@@ -1,0 +1,8 @@
+{
+  "notebook_execution_and_html_export_s": 3.0373084169696085,
+  "prior_readout_execution_and_export_s": 3.183196166995913,
+  "reason_for_rerun": "Use identical x-axis limits for the two paired-ratio panels; no measured results changed.",
+  "executed_code_cells": 8,
+  "embedded_png_outputs": 2,
+  "scope": "Includes this readout process imports, notebook execution, validation, source save and two HTML writes. Excludes interpreter startup before first clock and final receipt write."
+}

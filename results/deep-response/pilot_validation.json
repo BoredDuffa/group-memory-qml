@@ -1,0 +1,17 @@
+{
+  "planned": 36,
+  "successful": 36,
+  "validation_planned": 6,
+  "validation_passed": 6,
+  "maximum_absolute_error": 5.995204332975845e-14,
+  "status": {
+    "status": "COMPLETE",
+    "completed_attempts": 36,
+    "planned_attempts": 36,
+    "deadline_unix": 1792502844.454987,
+    "last_invocation_wall_s": 62.61078833299689,
+    "elapsed_since_first_start_s": 78.07096910476685,
+    "unattempted": 0
+  },
+  "sum_process_wall_s": 66.01550395903178
+}

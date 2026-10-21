@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "process_wall_s": 9.471230625000317,
+  "command": "python -m pytest -q",
+  "scope": "all existing and eight-experiment correctness tests"
+}

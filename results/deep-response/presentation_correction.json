@@ -1,0 +1,7 @@
+{
+  "scope": "Post-measurement presentation-only correction; no algorithm or timing changes. Frozen source archive remains the exact measured revision.",
+  "file": "deep_report.py",
+  "change": "Table header Aer evaluations renamed Native-basis Aer evaluations only. Dense-block Aer calls are separately recorded in raw diagnostics.",
+  "measured_sha256": "69dd40489fc565f7516a9703bc8a26bb06849ca4a5c77fecc51f7a1e4b475e74",
+  "published_sha256": "e21b566ee30b09111dc3eece126918a43882f1fe993c4c1e86f2f47fd5412b86"
+}

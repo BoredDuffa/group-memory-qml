@@ -1,0 +1,17 @@
+# Measured CPython 3.13.5 environment; notebook rendering included
+numpy==2.5.4
+scipy==1.18.1
+qiskit==2.6.0
+qiskit-aer==0.17.2
+qiskit-algorithms==0.4.0
+rustworkx==0.18.1
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+pandas==3.0.6
+threadpoolctl==3.7.0
+pytest==9.1.1
+nbformat==5.11.1
+nbclient==0.11.0
+nbconvert==7.17.2
+ipykernel==7.4.0

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sensor-smoke",
+    "experiment": "multi_sensor",
+    "config": {
+      "n_qubits": 6,
+      "n_parameters": 2,
+      "occurrences": 2,
+      "updates": 2,
+      "bases": 4,
+      "views": 1
+    }
+  },
+  {
+    "id": "shared-smoke",
+    "experiment": "multi_shared",
+    "config": {
+      "n_qubits": 6,
+      "n_parameters": 2,
+      "occurrences": 2,
+      "updates": 2,
+      "n_train": 4,
+      "n_test": 4
+    }
+  }
+]

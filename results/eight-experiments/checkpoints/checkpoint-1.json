@@ -1,0 +1,17 @@
+{
+  "completed_attempts": 959,
+  "next_spec": {
+    "condition": "4A-scaled",
+    "experiment": "4A",
+    "config": {
+      "patch_side": 3
+    },
+    "seed": 930102,
+    "repeat": 0,
+    "method": "qiskit_symmetry"
+  },
+  "config_sha256": "985e99a534577c6379c95a3be6af0c90ec932f00c108242742e332d5618dd7a9",
+  "deadline_unix": 1792497128.036979,
+  "journal_last_index": 958,
+  "last_result_sha256": "39f244f4c48e490b737a89ec733eaf4a8973ab65563d9e0fc91d4eae9c1fbdd7"
+}

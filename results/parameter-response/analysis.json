@@ -1,0 +1,771 @@
+{
+  "planned": 540,
+  "successful": 540,
+  "validation_planned": 90,
+  "validation_passed": 90,
+  "maximum_absolute_error": 3.624878175401136e-14,
+  "tolerance": 1e-10,
+  "conditions": [
+    {
+      "id": "sensor-1",
+      "experiment": "1A",
+      "config": {
+        "n_qubits": 10,
+        "bases": 16,
+        "views": 8,
+        "updates": 1
+      }
+    },
+    {
+      "id": "sensor-5",
+      "experiment": "1A",
+      "config": {
+        "n_qubits": 10,
+        "bases": 16,
+        "views": 8,
+        "updates": 5
+      }
+    },
+    {
+      "id": "sensor-20",
+      "experiment": "1A",
+      "config": {
+        "n_qubits": 10,
+        "bases": 16,
+        "views": 8,
+        "updates": 20
+      }
+    },
+    {
+      "id": "spin-1",
+      "experiment": "2A",
+      "config": {
+        "n_train": 12,
+        "n_test": 12,
+        "steps": 1
+      }
+    },
+    {
+      "id": "spin-3",
+      "experiment": "2A",
+      "config": {
+        "n_train": 12,
+        "n_test": 12,
+        "steps": 3
+      }
+    },
+    {
+      "id": "spin-8",
+      "experiment": "2A",
+      "config": {
+        "n_train": 12,
+        "n_test": 12,
+        "steps": 8
+      }
+    }
+  ],
+  "status": {
+    "status": "COMPLETE",
+    "completed_attempts": 540,
+    "planned_attempts": 540,
+    "deadline_unix": 1792501486.3393369,
+    "last_invocation_wall_s": 943.6180067919777,
+    "elapsed_since_first_start_s": 943.4605441093445,
+    "unattempted": 0
+  },
+  "sum_process_wall_s": 942.1246452853084,
+  "summary": [
+    {
+      "condition": "sensor-1",
+      "method": "group_memory_response",
+      "seeds": 5,
+      "process_wall_s": 1.6957230829866603,
+      "application_s": 1.4354936659801751,
+      "accuracy": 0.8625,
+      "evaluations": 96,
+      "total_cx": 1920
+    },
+    {
+      "condition": "sensor-1",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 1.7427700000116602,
+      "application_s": 1.4734754170058295,
+      "accuracy": 0.8625,
+      "evaluations": 96,
+      "total_cx": 1920
+    },
+    {
+      "condition": "sensor-1",
+      "method": "group_memory_previous",
+      "seeds": 5,
+      "process_wall_s": 1.9705772090237588,
+      "application_s": 1.695848917006515,
+      "accuracy": 0.8625,
+      "evaluations": 48,
+      "total_cx": 960
+    },
+    {
+      "condition": "sensor-1",
+      "method": "qiskit_symmetry",
+      "seeds": 5,
+      "process_wall_s": 1.9901709589757957,
+      "application_s": 1.713518708012998,
+      "accuracy": 0.8625,
+      "evaluations": 48,
+      "total_cx": 960
+    },
+    {
+      "condition": "sensor-1",
+      "method": "classical_same_model",
+      "seeds": 5,
+      "process_wall_s": 1.2562778749852441,
+      "application_s": 1.0517157090362161,
+      "accuracy": 0.8625,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-1",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.270703166956082,
+      "application_s": 1.054246166953817,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-5",
+      "method": "group_memory_response",
+      "seeds": 5,
+      "process_wall_s": 1.8533902080380358,
+      "application_s": 1.5910551669658162,
+      "accuracy": 0.95,
+      "evaluations": 96,
+      "total_cx": 1920
+    },
+    {
+      "condition": "sensor-5",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 1.8540743329795077,
+      "application_s": 1.5773388749803416,
+      "accuracy": 0.95,
+      "evaluations": 96,
+      "total_cx": 1920
+    },
+    {
+      "condition": "sensor-5",
+      "method": "group_memory_previous",
+      "seeds": 5,
+      "process_wall_s": 3.539857041032519,
+      "application_s": 3.2552761250408366,
+      "accuracy": 0.95,
+      "evaluations": 112,
+      "total_cx": 2240
+    },
+    {
+      "condition": "sensor-5",
+      "method": "qiskit_symmetry",
+      "seeds": 5,
+      "process_wall_s": 3.560392292041797,
+      "application_s": 3.2983803750248626,
+      "accuracy": 0.95,
+      "evaluations": 112,
+      "total_cx": 2240
+    },
+    {
+      "condition": "sensor-5",
+      "method": "classical_same_model",
+      "seeds": 5,
+      "process_wall_s": 1.2901405000011437,
+      "application_s": 1.0735635419841856,
+      "accuracy": 0.95,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-5",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.3480593750136904,
+      "application_s": 1.1360531669924967,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-20",
+      "method": "group_memory_response",
+      "seeds": 5,
+      "process_wall_s": 2.1561613749945536,
+      "application_s": 1.7900644580367953,
+      "accuracy": 0.9875,
+      "evaluations": 96,
+      "total_cx": 1920
+    },
+    {
+      "condition": "sensor-20",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 2.080289416015148,
+      "application_s": 1.7932274999911897,
+      "accuracy": 0.9875,
+      "evaluations": 96,
+      "total_cx": 1920
+    },
+    {
+      "condition": "sensor-20",
+      "method": "group_memory_previous",
+      "seeds": 5,
+      "process_wall_s": 9.628941542003304,
+      "application_s": 8.957476417010184,
+      "accuracy": 0.9875,
+      "evaluations": 352,
+      "total_cx": 7040
+    },
+    {
+      "condition": "sensor-20",
+      "method": "qiskit_symmetry",
+      "seeds": 5,
+      "process_wall_s": 9.51935274997959,
+      "application_s": 9.162046875047963,
+      "accuracy": 0.9875,
+      "evaluations": 352,
+      "total_cx": 7040
+    },
+    {
+      "condition": "sensor-20",
+      "method": "classical_same_model",
+      "seeds": 5,
+      "process_wall_s": 1.5901223749970086,
+      "application_s": 1.3298721669707447,
+      "accuracy": 0.9875,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "sensor-20",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.4279191250097938,
+      "application_s": 1.195638500037603,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "spin-1",
+      "method": "group_memory_response",
+      "seeds": 5,
+      "process_wall_s": 0.39369687502039596,
+      "application_s": 0.23884000000543892,
+      "accuracy": 1.0,
+      "evaluations": 48,
+      "total_cx": 768
+    },
+    {
+      "condition": "spin-1",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 0.4012486250139773,
+      "application_s": 0.24333558301441371,
+      "accuracy": 1.0,
+      "evaluations": 48,
+      "total_cx": 768
+    },
+    {
+      "condition": "spin-1",
+      "method": "group_memory_previous",
+      "seeds": 5,
+      "process_wall_s": 0.451344707980752,
+      "application_s": 0.286766458011698,
+      "accuracy": 1.0,
+      "evaluations": 60,
+      "total_cx": 960
+    },
+    {
+      "condition": "spin-1",
+      "method": "qiskit_symmetry",
+      "seeds": 5,
+      "process_wall_s": 0.39705999998841435,
+      "application_s": 0.2550662500434555,
+      "accuracy": 1.0,
+      "evaluations": 60,
+      "total_cx": 960
+    },
+    {
+      "condition": "spin-1",
+      "method": "classical_same_model",
+      "seeds": 5,
+      "process_wall_s": 0.11025287501979619,
+      "application_s": 0.010176209034398198,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "spin-1",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.2841002080240287,
+      "application_s": 1.066556165984366,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "spin-3",
+      "method": "group_memory_response",
+      "seeds": 5,
+      "process_wall_s": 0.3862135829986073,
+      "application_s": 0.2362403339939192,
+      "accuracy": 1.0,
+      "evaluations": 48,
+      "total_cx": 768
+    },
+    {
+      "condition": "spin-3",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 0.38516345905372873,
+      "application_s": 0.24123083404265344,
+      "accuracy": 1.0,
+      "evaluations": 48,
+      "total_cx": 768
+    },
+    {
+      "condition": "spin-3",
+      "method": "group_memory_previous",
+      "seeds": 5,
+      "process_wall_s": 0.45790070795919746,
+      "application_s": 0.31733512500068173,
+      "accuracy": 1.0,
+      "evaluations": 132,
+      "total_cx": 2112
+    },
+    {
+      "condition": "spin-3",
+      "method": "qiskit_symmetry",
+      "seeds": 5,
+      "process_wall_s": 0.4564478329848498,
+      "application_s": 0.31616520800162107,
+      "accuracy": 1.0,
+      "evaluations": 132,
+      "total_cx": 2112
+    },
+    {
+      "condition": "spin-3",
+      "method": "classical_same_model",
+      "seeds": 5,
+      "process_wall_s": 0.10773254104424268,
+      "application_s": 0.010346124996431172,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "spin-3",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.371035291987937,
+      "application_s": 1.1652748339693062,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "spin-8",
+      "method": "group_memory_response",
+      "seeds": 5,
+      "process_wall_s": 0.3950160840176977,
+      "application_s": 0.23769674997311085,
+      "accuracy": 1.0,
+      "evaluations": 48,
+      "total_cx": 768
+    },
+    {
+      "condition": "spin-8",
+      "method": "qiskit_response",
+      "seeds": 5,
+      "process_wall_s": 0.38853912497870624,
+      "application_s": 0.24403337499825284,
+      "accuracy": 1.0,
+      "evaluations": 48,
+      "total_cx": 768
+    },
+    {
+      "condition": "spin-8",
+      "method": "group_memory_previous",
+      "seeds": 5,
+      "process_wall_s": 0.6271297500352375,
+      "application_s": 0.48816262499894947,
+      "accuracy": 1.0,
+      "evaluations": 312,
+      "total_cx": 4992
+    },
+    {
+      "condition": "spin-8",
+      "method": "qiskit_symmetry",
+      "seeds": 5,
+      "process_wall_s": 0.6817345839808695,
+      "application_s": 0.4874019999988377,
+      "accuracy": 1.0,
+      "evaluations": 312,
+      "total_cx": 4992
+    },
+    {
+      "condition": "spin-8",
+      "method": "classical_same_model",
+      "seeds": 5,
+      "process_wall_s": 0.1118521659518592,
+      "application_s": 0.010672541975509375,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    },
+    {
+      "condition": "spin-8",
+      "method": "classical",
+      "seeds": 5,
+      "process_wall_s": 1.3030438339919783,
+      "application_s": 1.0678354580304585,
+      "accuracy": 1.0,
+      "evaluations": 0,
+      "total_cx": 0
+    }
+  ],
+  "comparisons": [
+    {
+      "condition": "sensor-1",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.026629381624247,
+      "minimum_seed_speedup": 0.946409140007334,
+      "maximum_seed_speedup": 1.1522731113473939,
+      "median_paired_saving": 0.02593865137788709,
+      "application_speedup": 1.0264590168008298,
+      "descriptive_win": false
+    },
+    {
+      "condition": "sensor-1",
+      "baseline": "group_memory_previous",
+      "matched_seeds": 5,
+      "paired_speedup": 1.1406196338161665,
+      "minimum_seed_speedup": 1.0701195692476635,
+      "maximum_seed_speedup": 1.1841822258683776,
+      "median_paired_saving": 0.12328354663306651,
+      "application_speedup": 1.164135334094884,
+      "descriptive_win": true
+    },
+    {
+      "condition": "sensor-1",
+      "baseline": "qiskit_symmetry",
+      "matched_seeds": 5,
+      "paired_speedup": 1.1507266544663333,
+      "minimum_seed_speedup": 1.0891783411555491,
+      "maximum_seed_speedup": 1.207987305987623,
+      "median_paired_saving": 0.13098389081483042,
+      "application_speedup": 1.174947887215584,
+      "descriptive_win": true
+    },
+    {
+      "condition": "sensor-1",
+      "baseline": "classical_same_model",
+      "matched_seeds": 5,
+      "paired_speedup": 0.74003683357829,
+      "minimum_seed_speedup": 0.6812965670925771,
+      "maximum_seed_speedup": 0.7913924166775848,
+      "median_paired_saving": -0.3512840910427575,
+      "application_speedup": 0.7321164988987896,
+      "descriptive_win": false
+    },
+    {
+      "condition": "sensor-1",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7502891248116416,
+      "minimum_seed_speedup": 0.6811312993975742,
+      "maximum_seed_speedup": 0.7551234515880382,
+      "median_paired_saving": -0.3328195317385787,
+      "application_speedup": 0.7344136668370201,
+      "descriptive_win": false
+    },
+    {
+      "condition": "sensor-5",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0061058905706475,
+      "minimum_seed_speedup": 0.8889320081668008,
+      "maximum_seed_speedup": 1.0916384351351152,
+      "median_paired_saving": 0.00606883492868171,
+      "application_speedup": 0.9930620389010039,
+      "descriptive_win": false
+    },
+    {
+      "condition": "sensor-5",
+      "baseline": "group_memory_previous",
+      "matched_seeds": 5,
+      "paired_speedup": 1.9748593942168533,
+      "minimum_seed_speedup": 1.812751185428896,
+      "maximum_seed_speedup": 2.049838184202448,
+      "median_paired_saving": 0.4936348365213321,
+      "application_speedup": 2.16244717093474,
+      "descriptive_win": true
+    },
+    {
+      "condition": "sensor-5",
+      "baseline": "qiskit_symmetry",
+      "matched_seeds": 5,
+      "paired_speedup": 2.0145016576095167,
+      "minimum_seed_speedup": 1.8220351203003031,
+      "maximum_seed_speedup": 2.1634612838499936,
+      "median_paired_saving": 0.5035993163755261,
+      "application_speedup": 2.2069774935897146,
+      "descriptive_win": true
+    },
+    {
+      "condition": "sensor-5",
+      "baseline": "classical_same_model",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7388899956821726,
+      "minimum_seed_speedup": 0.6845751587499048,
+      "maximum_seed_speedup": 0.7711819127920232,
+      "median_paired_saving": -0.3533814313952921,
+      "application_speedup": 0.724738031128447,
+      "descriptive_win": false
+    },
+    {
+      "condition": "sensor-5",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7597238612874483,
+      "minimum_seed_speedup": 0.7259049241048589,
+      "maximum_seed_speedup": 0.779700398072164,
+      "median_paired_saving": -0.31626772694143557,
+      "application_speedup": 0.761171245230504,
+      "descriptive_win": false
+    },
+    {
+      "condition": "sensor-20",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 0.9409021874510953,
+      "minimum_seed_speedup": 0.6718115460405975,
+      "maximum_seed_speedup": 1.1710693988443142,
+      "median_paired_saving": -0.06280973021117187,
+      "application_speedup": 0.937963297328266,
+      "descriptive_win": false
+    },
+    {
+      "condition": "sensor-20",
+      "baseline": "group_memory_previous",
+      "matched_seeds": 5,
+      "paired_speedup": 4.573089255457753,
+      "minimum_seed_speedup": 3.0333447204452764,
+      "maximum_seed_speedup": 4.86872933682293,
+      "median_paired_saving": 0.7813294374679982,
+      "application_speedup": 5.003996574980352,
+      "descriptive_win": true
+    },
+    {
+      "condition": "sensor-20",
+      "baseline": "qiskit_symmetry",
+      "matched_seeds": 5,
+      "paired_speedup": 4.362661205275893,
+      "minimum_seed_speedup": 2.998821654513779,
+      "maximum_seed_speedup": 5.040545115120479,
+      "median_paired_saving": 0.7707821091423118,
+      "application_speedup": 5.093289867340289,
+      "descriptive_win": true
+    },
+    {
+      "condition": "sensor-20",
+      "baseline": "classical_same_model",
+      "matched_seeds": 5,
+      "paired_speedup": 0.7374783694012815,
+      "minimum_seed_speedup": 0.5216958786065172,
+      "maximum_seed_speedup": 0.7889669758274888,
+      "median_paired_saving": -0.35597197353984145,
+      "application_speedup": 0.7352561717607528,
+      "descriptive_win": false
+    },
+    {
+      "condition": "sensor-20",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 0.6785285955129677,
+      "minimum_seed_speedup": 0.4375117560579067,
+      "maximum_seed_speedup": 0.7466683844639767,
+      "median_paired_saving": -0.4737772388855621,
+      "application_speedup": 0.6679304170693872,
+      "descriptive_win": false
+    },
+    {
+      "condition": "spin-1",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.007205589654648,
+      "minimum_seed_speedup": 0.9896458836164251,
+      "maximum_seed_speedup": 1.0712637114750394,
+      "median_paired_saving": 0.007154040573899678,
+      "application_speedup": 1.0095272263723571,
+      "descriptive_win": false
+    },
+    {
+      "condition": "spin-1",
+      "baseline": "group_memory_previous",
+      "matched_seeds": 5,
+      "paired_speedup": 1.1132036460676946,
+      "minimum_seed_speedup": 0.9979394422487539,
+      "maximum_seed_speedup": 1.147186100961916,
+      "median_paired_saving": 0.10169176724095152,
+      "application_speedup": 1.145898734236924,
+      "descriptive_win": false
+    },
+    {
+      "condition": "spin-1",
+      "baseline": "qiskit_symmetry",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0085424223086459,
+      "minimum_seed_speedup": 0.964862414377722,
+      "maximum_seed_speedup": 1.0573858394360673,
+      "median_paired_saving": 0.008470067415797367,
+      "application_speedup": 1.0748342438805738,
+      "descriptive_win": false
+    },
+    {
+      "condition": "spin-1",
+      "baseline": "classical_same_model",
+      "matched_seeds": 5,
+      "paired_speedup": 0.2800450854838114,
+      "minimum_seed_speedup": 0.25665491739785834,
+      "maximum_seed_speedup": 0.3001182418562106,
+      "median_paired_saving": -2.5708535940646144,
+      "application_speedup": 0.042355130360483606,
+      "descriptive_win": false
+    },
+    {
+      "condition": "spin-1",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 3.365829315762872,
+      "minimum_seed_speedup": 3.0837163103972975,
+      "maximum_seed_speedup": 3.7493395138557606,
+      "median_paired_saving": 0.7028964019902038,
+      "application_speedup": 4.490270131569911,
+      "descriptive_win": true
+    },
+    {
+      "condition": "spin-3",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 1.0320775045260595,
+      "minimum_seed_speedup": 0.8374430392887134,
+      "maximum_seed_speedup": 1.052980629433983,
+      "median_paired_saving": 0.031080519036009613,
+      "application_speedup": 1.0336552361658409,
+      "descriptive_win": false
+    },
+    {
+      "condition": "spin-3",
+      "baseline": "group_memory_previous",
+      "matched_seeds": 5,
+      "paired_speedup": 1.1810170668485656,
+      "minimum_seed_speedup": 1.067689413905764,
+      "maximum_seed_speedup": 1.2616688553299387,
+      "median_paired_saving": 0.1532721854152309,
+      "application_speedup": 1.3387578609015622,
+      "descriptive_win": true
+    },
+    {
+      "condition": "spin-3",
+      "baseline": "qiskit_symmetry",
+      "matched_seeds": 5,
+      "paired_speedup": 1.1635947792122425,
+      "minimum_seed_speedup": 1.0340581109814042,
+      "maximum_seed_speedup": 1.2608445643642752,
+      "median_paired_saving": 0.1405942877493801,
+      "application_speedup": 1.3383201871436532,
+      "descriptive_win": true
+    },
+    {
+      "condition": "spin-3",
+      "baseline": "classical_same_model",
+      "matched_seeds": 5,
+      "paired_speedup": 0.27463603341175286,
+      "minimum_seed_speedup": 0.2642588861447153,
+      "maximum_seed_speedup": 0.30633014868608704,
+      "median_paired_saving": -2.6411827959251526,
+      "application_speedup": 0.044376660984299904,
+      "descriptive_win": false
+    },
+    {
+      "condition": "spin-3",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 3.674919903980307,
+      "minimum_seed_speedup": 2.78121147355676,
+      "maximum_seed_speedup": 4.153767038261241,
+      "median_paired_saving": 0.7278852257659005,
+      "application_speedup": 4.932582062804315,
+      "descriptive_win": true
+    },
+    {
+      "condition": "spin-8",
+      "baseline": "qiskit_response",
+      "matched_seeds": 5,
+      "paired_speedup": 0.9769275866645054,
+      "minimum_seed_speedup": 0.7948411615458569,
+      "maximum_seed_speedup": 1.1160794202041375,
+      "median_paired_saving": -0.02361732194938826,
+      "application_speedup": 1.026927182144684,
+      "descriptive_win": false
+    },
+    {
+      "condition": "spin-8",
+      "baseline": "group_memory_previous",
+      "matched_seeds": 5,
+      "paired_speedup": 1.6669726287950242,
+      "minimum_seed_speedup": 1.2671623944780368,
+      "maximum_seed_speedup": 1.960347474585631,
+      "median_paired_saving": 0.4001101261495501,
+      "application_speedup": 2.104072537741662,
+      "descriptive_win": true
+    },
+    {
+      "condition": "spin-8",
+      "baseline": "qiskit_symmetry",
+      "matched_seeds": 5,
+      "paired_speedup": 1.7529075378961418,
+      "minimum_seed_speedup": 1.2809781453630513,
+      "maximum_seed_speedup": 2.5876711407430024,
+      "median_paired_saving": 0.42951925393611423,
+      "application_speedup": 2.0681133572580075,
+      "descriptive_win": true
+    },
+    {
+      "condition": "spin-8",
+      "baseline": "classical_same_model",
+      "matched_seeds": 5,
+      "paired_speedup": 0.2810623685964109,
+      "minimum_seed_speedup": 0.2338078288718536,
+      "maximum_seed_speedup": 0.33958838755814436,
+      "median_paired_saving": -2.5579291706458975,
+      "application_speedup": 0.04489982289079129,
+      "descriptive_win": false
+    },
+    {
+      "condition": "spin-8",
+      "baseline": "classical",
+      "matched_seeds": 5,
+      "paired_speedup": 3.443707915200728,
+      "minimum_seed_speedup": 2.5904689874737343,
+      "maximum_seed_speedup": 4.269982583932358,
+      "median_paired_saving": 0.7096153260890851,
+      "application_speedup": 4.602571247795777,
+      "descriptive_win": true
+    }
+  ]
+}

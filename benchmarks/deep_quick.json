@@ -1,0 +1,24 @@
+[
+  {
+    "id": "sensor-smoke",
+    "experiment": "deep_sensor",
+    "config": {
+      "n_qubits": 6,
+      "layers": 2,
+      "updates": 2,
+      "bases": 4,
+      "views": 1
+    }
+  },
+  {
+    "id": "shared-smoke",
+    "experiment": "deep_shared",
+    "config": {
+      "n_qubits": 6,
+      "layers": 3,
+      "updates": 2,
+      "n_train": 4,
+      "n_test": 4
+    }
+  }
+]

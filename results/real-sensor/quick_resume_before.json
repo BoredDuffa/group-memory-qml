@@ -1,0 +1,11 @@
+{
+  "authorization": {
+    "start_unix": 1792511411.91699,
+    "deadline_unix": 1792512011.91699,
+    "scope": "Local CPU-only benchmark; no remote VM or QPU"
+  },
+  "rows": {
+    "00000.json": "dc8ad94c2d990cff58bae864ddbea0fca84b33e795f5b0355e3c4dcdeed95f8a",
+    "00001.json": "1f8fbc9ecb2db076902a3627047b59a90a2e2ee23e062b5e659bb5ea95e23c0b"
+  }
+}

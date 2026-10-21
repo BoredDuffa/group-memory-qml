@@ -1,0 +1,77 @@
+{
+  "status": "PARTIAL_STABLE_CANDIDATE",
+  "selected_candidate": {
+    "learning_rate": 0.003,
+    "adam_epsilon": 0.0001
+  },
+  "external_process_wall_s": 280.31928183406126,
+  "measured_compute_budget_s": 300,
+  "validation_only": true,
+  "test_arrays_read": false,
+  "test_predictions_computed": false,
+  "strict_absolute_tolerance": 1e-10,
+  "quantization": false,
+  "accepted_pilot_checks": [
+    {
+      "seed": 956101,
+      "methods": [
+        "group_spectral",
+        "classical_adjoint"
+      ],
+      "completed_steps": 1000,
+      "max_error": 3.552713678800501e-15
+    },
+    {
+      "seed": 956101,
+      "methods": [
+        "group_spectral",
+        "qiskit_response"
+      ],
+      "completed_steps": 1000,
+      "max_error": 5.773159728050814e-15
+    },
+    {
+      "seed": 956102,
+      "methods": [
+        "group_spectral",
+        "qiskit_response"
+      ],
+      "completed_steps": 1000,
+      "max_error": 2.6645352591003757e-15
+    }
+  ],
+  "outstanding": "Production-module checks on all five seeds and final complete trajectory audit; no candidate is fully validated yet.",
+  "rejected_candidates": [
+    {
+      "learning_rate": 0.03,
+      "adam_epsilon": 1e-08,
+      "reason": "Qiskit trajectory divergence beyond 1e-10"
+    },
+    {
+      "learning_rate": 0.03,
+      "adam_epsilon": 1e-06,
+      "reason": "Qiskit trajectory divergence beyond 1e-10"
+    },
+    {
+      "learning_rate": 0.03,
+      "adam_epsilon": 0.0001,
+      "reason": "Qiskit trajectory divergence beyond 1e-10"
+    },
+    {
+      "learning_rate": 0.01,
+      "adam_epsilon": 1e-06,
+      "reason": "Qiskit seed 956101 failed"
+    },
+    {
+      "learning_rate": 0.01,
+      "adam_epsilon": 0.0001,
+      "reason": "All five Qiskit passed, but adjoint seed 956101 failed"
+    }
+  ],
+  "receipts": {
+    "stable_sensor_pilot.json": "1218de5f4f261a49b6bd46e13b067d244b69754a605aa31800490d8be51dc9ac",
+    "stable_sensor_confirmation.json": "c9fde117562555c96c29dbba118f8ed748cb2aaca24ff5d1a830f77db9b13e8e",
+    "stable_sensor_lower_lr.json": "6f12fd144b69455e8cc669cd0c91e982963bd51f34d62daa69627b011030b8bf"
+  },
+  "interpretation": "This search repairs numerical trajectory stability, using training and validation only. It does not select on test metrics. Original failed results and all unsuccessful candidates remain preserved. The eventual benchmark is a numerical repair retest of the same held-out rows."
+}

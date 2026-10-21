@@ -1,0 +1,36 @@
+{
+  "scope": "One independent diagnostic seed; dependencies imported before timing functions. Not pooled with the frozen campaign and not statistical performance evidence. Each run constructs a fresh model/cache. Interpreter startup is excluded.",
+  "seed": 938001,
+  "import_stage_s": 3.159167208999861,
+  "measurements": [
+    {
+      "experiment": "2A",
+      "method": "classical",
+      "application_after_dependency_import_s": 0.027889082964975387,
+      "metric_name": "heldout_accuracy",
+      "metric_value": 1.0
+    },
+    {
+      "experiment": "2A",
+      "method": "group_memory",
+      "application_after_dependency_import_s": 0.41035374999046326,
+      "metric_name": "heldout_accuracy",
+      "metric_value": 1.0
+    },
+    {
+      "experiment": "2B",
+      "method": "classical",
+      "application_after_dependency_import_s": 0.01771687500877306,
+      "metric_name": "heldout_mse",
+      "metric_value": 0.0012059373780265827
+    },
+    {
+      "experiment": "2B",
+      "method": "group_memory",
+      "application_after_dependency_import_s": 0.6296902080066502,
+      "metric_name": "heldout_mse",
+      "metric_value": 0.01989885476692973
+    }
+  ],
+  "diagnostic_clock_s": 4.3121482920250855
+}

@@ -1,0 +1,16 @@
+{
+  "main_external_wall_s": 943.857140875014,
+  "main_worker_wall_sum_s": 942.1246452853084,
+  "main_parent_overhead_s": 1.7324955897056498,
+  "main_loop_wall_s": 943.6180067919777,
+  "preflight_external_s": 14.005273083981592,
+  "additional_protocol_tests_external_s": 1.068035208,
+  "pilot_elapsed_including_resume_pause_s": 95.7171151638031,
+  "pilot_worker_wall_sum_s": 75.86834908364108,
+  "main_report_s": 0.7837737079826184,
+  "pilot_report_s": 0.4211260420270264,
+  "scope": "Main external clock includes parent and every fresh worker launch through exit. Each method pays its own imports, data, setup, native compilation, all probes/checks, cache planning, training, predictions, serialization and shutdown. Tests and separate pilot are not pooled. Installation, human/agent authoring and exploratory development checks excluded. Notebook/export and packaging receipts are separate.",
+  "quick_command_loop_wall_s": 14.734213124960661,
+  "quick_report_s": 0.44780758302658796,
+  "initial_packaging_s": 0.28467716701561585
+}

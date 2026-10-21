@@ -1,0 +1,13 @@
+[
+  {
+    "id": "har-train512-p16",
+    "experiment": "uci_har",
+    "config": {
+      "n_train": 512,
+      "n_qubits": 16,
+      "n_validation": 128,
+      "n_test": 256,
+      "steps": 60
+    }
+  }
+]

@@ -42,15 +42,19 @@ def worker(spec, output, data_dir):
     with threadpool_limits(limits=1):
         tick = time.perf_counter()
         result = module.run(spec["seed"], spec["method"], spec.get("config", {}), data_dir)
-        application_s = time.perf_counter()-tick
+        application_ended = time.perf_counter()
+        application_s = application_ended-tick
     try:
         import resource
         peak_rss_bytes = int(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss) * (
             1 if sys.platform == "darwin" else 1024)
     except ImportError:
         peak_rss_bytes = None  # Windows: resource is unavailable.
+    worker_ended = time.perf_counter()
     result.update(spec=spec, import_and_setup_s=import_s, application_s=application_s,
-                  worker_before_write_s=time.perf_counter()-started,
+                  worker_before_write_s=worker_ended-started,
+                  worker_start_monotonic_s=started, worker_end_monotonic_s=worker_ended,
+                  application_start_monotonic_s=tick, application_end_monotonic_s=application_ended,
                   python=platform.python_version(), source_hashes=hashes,
                   peak_rss_bytes=peak_rss_bytes)
     # The parent timer includes this serialization and the interpreter shutdown.
@@ -82,6 +86,7 @@ def build_plan(conditions, seeds, repeats):
 
 def campaign(output, conditions, seeds, repeats, budget_s, limit=None,
              hard_deadline_unix=None, data_dir=None):
+    invocation_started = time.perf_counter()
     if not math.isfinite(budget_s) or budget_s <= 0:
         raise ValueError("Budget must be finite and positive")
     if hard_deadline_unix is not None:
@@ -97,7 +102,8 @@ def campaign(output, conditions, seeds, repeats, budget_s, limit=None,
     plan = build_plan(conditions, seeds, repeats)
     config = {"conditions": conditions, "seeds": seeds, "repeats": repeats,
               "budget_s": budget_s, "plan": plan, "source_hashes": source_hashes(),
-              "data_sha256": data_hashes, "method_timeout_s": 240}
+              "data_sha256": data_hashes, "method_timeout_s": 240, "clock_receipt_version": 2,
+              "attempt_cost_receipt_version": 1}
     if hard_deadline_unix is not None:
         config["hard_deadline_unix"] = hard_deadline_unix
     config_path = output/"config.json"
@@ -121,6 +127,8 @@ def campaign(output, conditions, seeds, repeats, budget_s, limit=None,
                          ["numpy", "qiskit", "qiskit-aer", "scikit-learn", "threadpoolctl"]},
             "threads_per_worker": 1,
             "clock": "Parent perf_counter around subprocess.run; includes interpreter startup, imports, application, JSON write and shutdown",
+            "clock_receipt_version": 2,
+            "clock_scope": "Elapsed-time enclosure uses only perf_counter timestamps. UTC timestamps record deadline placement and may differ after wall-clock correction.",
             "exclusions": "Package installation; correctness preflight and reporting are separately timed."})
     deadline = authorization["deadline_unix"]
     manifest_path = output/"checkpoints"/"manifest.json"
@@ -146,6 +154,19 @@ def campaign(output, conditions, seeds, repeats, budget_s, limit=None,
         last_result = output/"attempts"/f"{cursor-1:05d}.json"
         if hashlib.sha256(last_result.read_bytes()).hexdigest() != checkpoint["last_result_sha256"]:
             raise RuntimeError("Last result hash mismatch")
+    cost_dir = output/"attempt_costs"
+    cost_dir.mkdir(exist_ok=True)
+    cost_manifest_path = cost_dir/"manifest.json"
+    if cursor:
+        for i in range(cursor):
+            receipt = json.loads((cost_dir/f"{i:05d}.json").read_text())
+            if receipt["spec"] != plan[i] or receipt["result_sha256"] != hashlib.sha256((output/"attempts"/f"{i:05d}.json").read_bytes()).hexdigest():
+                raise RuntimeError("Attempt cost receipt does not match the frozen journal")
+        if cost_manifest_path.exists():
+            old_costs = json.loads(cost_manifest_path.read_text())
+            for name, expected in old_costs["sidecar_sha256"].items():
+                if hashlib.sha256((cost_dir/name).read_bytes()).hexdigest() != expected:
+                    raise RuntimeError("Attempt cost receipt hash mismatch")
     start_cursor = cursor
     environment = os.environ.copy()
     environment.update(OMP_NUM_THREADS="1", OPENBLAS_NUM_THREADS="1",
@@ -153,10 +174,14 @@ def campaign(output, conditions, seeds, repeats, budget_s, limit=None,
                        NUMEXPR_NUM_THREADS="1", PYTHONHASHSEED="0",
                        RAYON_NUM_THREADS="1")
     run_started = time.perf_counter()
+    previous_loop_end = run_started
+    loop_gap_s = 0.0
     for i in range(cursor, len(plan)):
         remaining = deadline-time.time()
         if remaining <= 1 or (limit is not None and i-start_cursor >= limit):
             break
+        loop_started = time.perf_counter()
+        loop_gap_s += loop_started-previous_loop_end
         spec = plan[i]
         attempt_dir = output/"attempts"
         attempt_dir.mkdir(exist_ok=True)
@@ -168,7 +193,8 @@ def campaign(output, conditions, seeds, repeats, budget_s, limit=None,
         try:
             completed = subprocess.run(cmd, env=environment, capture_output=True,
                                        text=True, timeout=min(240, remaining))
-            wall = time.perf_counter()-started
+            process_ended = time.perf_counter()
+            wall = process_ended-started
             if completed.returncode or not raw.exists():
                 row = {"spec": spec, "status": "ERROR", "process_wall_s": wall,
                        "stderr": completed.stderr[-5000:], "stdout": completed.stdout[-2000:]}
@@ -180,10 +206,19 @@ def campaign(output, conditions, seeds, repeats, budget_s, limit=None,
                            stderr=completed.stderr[-1500:])
                 raw.unlink()
         except subprocess.TimeoutExpired as error:
+            process_ended = time.perf_counter()
             row = {"spec": spec, "status": "TIMEOUT",
-                   "process_wall_s": time.perf_counter()-started,
+                   "process_wall_s": process_ended-started,
                    "timeout_s": min(240, remaining)}
-        row.update(attempt_start_unix=attempt_start_unix, attempt_end_unix=time.time())
+        attempt_ended_unix = time.time()
+        attempt_ended_monotonic = time.perf_counter()
+        row.update(attempt_start_unix=attempt_start_unix, attempt_end_unix=attempt_ended_unix,
+                   attempt_start_monotonic_s=started, process_end_monotonic_s=process_ended,
+                   attempt_end_monotonic_s=attempt_ended_monotonic,
+                   attempt_wall_monotonic_s=attempt_ended_monotonic-started,
+                   utc_elapsed_s=attempt_ended_unix-attempt_start_unix,
+                   utc_minus_monotonic_s=(attempt_ended_unix-attempt_start_unix)-(attempt_ended_monotonic-started),
+                   clock_receipt_version=2)
         atomic(attempt_dir/f"{i:05d}.json", row)
         checkpoint = {"completed_attempts": i+1, "next_spec": plan[i+1] if i+1 < len(plan) else None,
                       "config_sha256": hashlib.sha256(config_path.read_bytes()).hexdigest(),
@@ -206,10 +241,45 @@ def campaign(output, conditions, seeds, repeats, budget_s, limit=None,
                           "experiment": spec["experiment"], "condition": spec["condition"],
                           "method": spec["method"], "seconds": round(row["process_wall_s"], 3)}),
               flush=True)
+        # A separate sidecar avoids a circular hash with the main result/journal.
+        # Its own write and later accounting fall in the next gap or remainder.
+        loop_ended = time.perf_counter()
+        atomic(cost_dir/f"{i:05d}.json", {
+            "version": 1, "attempt_index": i, "spec": spec,
+            "result_sha256": checkpoint["last_result_sha256"],
+            "config_sha256": checkpoint["config_sha256"],
+            "loop_start_monotonic_s": loop_started, "loop_end_monotonic_s": loop_ended,
+            "parent_loop_wall_s": loop_ended-loop_started,
+            "process_wall_s": row["process_wall_s"],
+            "pre_launch_parent_s": started-loop_started,
+            "post_process_parent_s": loop_ended-process_ended,
+            "parent_overhead_s": (loop_ended-loop_started)-row["process_wall_s"],
+            "scope": "Through result, checkpoint, RUNNING status and progress writes; sidecar/terminal writes are charged in invocation gaps/remainder and the enclosing caller timer."})
+        previous_loop_end = loop_ended
+    costs = {f"{i:05d}.json": json.loads((cost_dir/f"{i:05d}.json").read_text()) for i in range(cursor)}
+    atomic(cost_manifest_path, {
+        "version": 1, "completed_attempts": cursor,
+        "config_sha256": hashlib.sha256(config_path.read_bytes()).hexdigest(),
+        "sidecar_sha256": {name: hashlib.sha256((cost_dir/name).read_bytes()).hexdigest() for name in costs}})
+    invocation_loop_s = sum(costs[f"{i:05d}.json"]["parent_loop_wall_s"] for i in range(start_cursor, cursor))
+    terminal_measured = time.perf_counter()
     state = "COMPLETE" if cursor == len(plan) else "BUDGET_EXHAUSTED" if time.time() >= deadline-1 else "CHECKPOINTED"
     atomic(output/"status.json", {"status": state, "completed_attempts": cursor,
                                   "planned_attempts": len(plan), "deadline_unix": deadline,
-                                  "last_invocation_wall_s": time.perf_counter()-run_started,
+                                  "last_invocation_wall_s": terminal_measured-run_started,
+                                  "last_invocation_start_monotonic_s": invocation_started,
+                                  "last_invocation_end_monotonic_s": terminal_measured,
+                                  "last_invocation_measured_s": terminal_measured-invocation_started,
+                                  "last_invocation_setup_s": run_started-invocation_started,
+                                  "last_invocation_loop_s": invocation_loop_s,
+                                  "last_invocation_gap_s": loop_gap_s,
+                                  "last_invocation_after_loop_s": terminal_measured-previous_loop_end,
+                                  "last_invocation_parent_remainder_s": (terminal_measured-run_started)-invocation_loop_s,
+                                  "last_invocation_start_cursor": start_cursor,
+                                  "attempt_cost_manifest_sha256": hashlib.sha256(cost_manifest_path.read_bytes()).hexdigest(),
+                                  "summed_parent_loop_s": sum(c["parent_loop_wall_s"] for c in costs.values()),
+                                  "summed_parent_loop_overhead_s": sum(c["parent_overhead_s"] for c in costs.values()),
+                                  "timing_scope": "Internal monotonic accounting ends before this terminal status write; enclosing phase/process timing includes final serialization and return.",
                                   "elapsed_since_first_start_s": time.time()-authorization["start_unix"],
                                   "unattempted": len(plan)-cursor})
     return state

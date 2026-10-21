@@ -1,0 +1,5 @@
+{"completed": 3, "planned": 7, "status": "SUCCESS", "experiment": "improved_uci_har", "condition": "quick", "method": "classical_adjoint", "seconds": 1.787}
+{"completed": 4, "planned": 7, "status": "SUCCESS", "experiment": "improved_uci_har", "condition": "quick", "method": "classical_logistic", "seconds": 1.577}
+{"completed": 5, "planned": 7, "status": "SUCCESS", "experiment": "improved_uci_har", "condition": "quick", "method": "qiskit_response", "seconds": 2.119}
+{"completed": 6, "planned": 7, "status": "SUCCESS", "experiment": "improved_uci_har", "condition": "quick", "method": "classical_mlp", "seconds": 1.694}
+{"completed": 7, "planned": 7, "status": "SUCCESS", "experiment": "improved_uci_har", "condition": "quick", "method": "frozen_quantum", "seconds": 1.403}

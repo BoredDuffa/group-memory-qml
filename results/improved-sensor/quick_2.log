@@ -1,0 +1,2 @@
+{"completed": 1, "planned": 7, "status": "SUCCESS", "experiment": "improved_uci_har", "condition": "quick", "method": "group_spectral", "seconds": 3.019}
+{"completed": 2, "planned": 7, "status": "SUCCESS", "experiment": "improved_uci_har", "condition": "quick", "method": "classical_rbf", "seconds": 1.764}

@@ -1,0 +1,9 @@
+{
+  "status": "PACKAGED",
+  "seconds": 63.290210791048594,
+  "public_files": 187,
+  "raw_attempts": 100,
+  "frozen_commit": "e3ccfcc10fa08d0a34e0d0bb586b5b4791d032e6",
+  "content_scan": "PASS",
+  "scope": "First complete archive, copy and content-scan pass before presentation-only timing-label refinement. Separate study publication cost, not added to benchmark attempt times. Preserved from the successful tool return."
+}

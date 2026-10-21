@@ -1,0 +1,5 @@
+numpy==2.5.4
+qiskit==2.6.0
+qiskit-aer==0.17.2
+scikit-learn==1.9.1
+threadpoolctl==3.7.0

@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "completed_attempts": 100,
+  "planned_attempts": 100,
+  "deadline_unix": 1792622374.098878,
+  "last_invocation_wall_s": 950.7153107079794,
+  "last_invocation_start_monotonic_s": 436053.248739375,
+  "last_invocation_end_monotonic_s": 437004.055197166,
+  "last_invocation_measured_s": 950.8064577910118,
+  "last_invocation_setup_s": 0.09114708303241059,
+  "last_invocation_loop_s": 950.6518959978712,
+  "last_invocation_gap_s": 0.038148169114720076,
+  "last_invocation_after_loop_s": 0.0252665409934707,
+  "last_invocation_parent_remainder_s": 0.06341471010819077,
+  "last_invocation_start_cursor": 0,
+  "attempt_cost_manifest_sha256": "118badf1f42414f2f2e9363fb63341ea6041f00d2df64e3f4030d13dbf609988",
+  "summed_parent_loop_s": 950.6518959978712,
+  "summed_parent_loop_overhead_s": 17.78720833483385,
+  "timing_scope": "Internal monotonic accounting ends before this terminal status write; enclosing phase/process timing includes final serialization and return.",
+  "elapsed_since_first_start_s": 950.8077690601349,
+  "unattempted": 0
+}

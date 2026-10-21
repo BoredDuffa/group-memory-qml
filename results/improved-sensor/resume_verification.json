@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": {
+    "authorization.json": true,
+    "attempts/00000.json": true,
+    "attempts/00001.json": true,
+    "attempt_costs/00000.json": true,
+    "attempt_costs/00001.json": true,
+    "expanded_cost_manifest_preserves_first_two": true
+  },
+  "note": "Cost manifest legitimately expands to seven sidecars; existing sidecar/result/auth bytes are unchanged."
+}

@@ -1,0 +1,110 @@
+{
+  "dataset": "UCI HAR",
+  "dataset_id": 240,
+  "dataset_url": "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+  "citation": "Reyes-Ortiz, J., Anguita, D., Ghio, A., Oneto, L., & Parra, X. (2013). Human Activity Recognition Using Smartphones [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C54S4K",
+  "doi": "10.24432/C54S4K",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+  "license_verified_utc": "2026-10-20",
+  "archive_sha256": "c00b803081a5c797cd5e4b83700a9810b38d53d9d84e01917e090e1fdbc81031",
+  "acquisition": {
+    "source_url": "https://archive.ics.uci.edu/static/public/240/human+activity+recognition+using+smartphones.zip",
+    "archive_name": "uci_har_official.zip",
+    "archive_sha256": "c00b803081a5c797cd5e4b83700a9810b38d53d9d84e01917e090e1fdbc81031",
+    "archive_bytes": 61005872,
+    "download_seconds": 26.66435937496135,
+    "downloaded_utc": "2026-10-20T15:42:23.385912+00:00"
+  },
+  "released_file_sha256": {
+    "train/X_train.txt": "9c1246099c8d5463779eec5a3845cc3898df9d8c715441ab2a1232d4421fc42f",
+    "train/y_train.txt": "415b3357e2e2d5e70a45c781947c6bdd80e0410a579d862eedcd6bbce3c694ef",
+    "train/subject_train.txt": "66e1e2fbe9b396fa5155f531dc3348c803f503be663e2318772d49947db9153a",
+    "test/X_test.txt": "99035209add50d17650e847d8a4658d784a5707466ebb7c2deb97c28e5250a78",
+    "test/y_test.txt": "2a94cb53ca46b956c1b2aebd4a09a72badd8a8e9ea9cdfe9f31b3306a08666bb",
+    "test/subject_test.txt": "63b8c577f4a85431c06bd87f6384608c90a9f72f05c7956dd21255dc63515c07",
+    "README.txt": "eaee53f45825f349681a1a1b92a997a0082648f9b5bf93ddb3290caeede4b3a8",
+    "features.txt": "b384889885b1c8680ecf250e0e605b4c79536cdf09ce9f2fa7225a3c6773b5c7",
+    "features_info.txt": "5d7e7d1f204dcfba846043029ef7a15a07c2b3711ee0a122da031f5971b3b585",
+    "activity_labels.txt": "f6e6b292704438261f0283b2a82659ab0661447dc16520938bdf379ed1bf8de0"
+  },
+  "npz_name": "har_features.npz",
+  "npz_sha256": "a6c10fb8b4a5896910fe18b257a17e97b6eddfb323dda3f7e79608579163e1e8",
+  "npz_bytes": 40064823,
+  "official_shapes": {
+    "X_train": [
+      7352,
+      561
+    ],
+    "y_train": [
+      7352
+    ],
+    "subjects_train": [
+      7352
+    ],
+    "X_test": [
+      2947,
+      561
+    ],
+    "y_test": [
+      2947
+    ],
+    "subjects_test": [
+      2947
+    ]
+  },
+  "official_train_subjects": [
+    1,
+    3,
+    5,
+    6,
+    7,
+    8,
+    11,
+    14,
+    15,
+    16,
+    17,
+    19,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "official_test_subjects": [
+    2,
+    4,
+    9,
+    10,
+    12,
+    13,
+    18,
+    20,
+    24
+  ],
+  "class_names": [
+    "WALKING",
+    "WALKING_UPSTAIRS",
+    "WALKING_DOWNSTAIRS",
+    "SITTING",
+    "STANDING",
+    "LAYING"
+  ],
+  "labels": "Zero-based0..5, original labels1..6",
+  "common_setup_timings": {
+    "download_s": 26.66435937496135,
+    "extraction_s": 0.4240258340141736,
+    "raw_text_parse_s": 0.7328417079988867,
+    "npz_write_s": 1.7346278749755584
+  },
+  "preparation_scope": "Raw released561-feature arrays only; no fitted preprocessing or train/validation/test selection",
+  "caveat": "Released windows overlap50%; subjects, not windows, define independent split units",
+  "bundled_readme_license": "Attribution required; commercial use prohibited",
+  "license_discrepancy": "Current UCI landing page lists CC BY4.0; bundled2013 README states commercial use is prohibited. Both source statements are preserved; no legal conclusion about the discrepancy is made."
+}

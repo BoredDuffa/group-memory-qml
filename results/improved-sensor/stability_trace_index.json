@@ -1,0 +1,66 @@
+{
+  "artifacts": {
+    "seed956102_eps1e-08_lr0.03_qiskit_response.npz": {
+      "sha256": "94389e121aa142b54e11a74b2c7db9212dd3dd90fba362a985589485c53a5423",
+      "bytes": 11531042
+    },
+    "seed956102_eps1e-06_lr0.03_qiskit_response.npz": {
+      "sha256": "35a686dcf49c2978fc7f1c8186f9e1af53f8ef827b5bc52c169ad79e2d0c0f9b",
+      "bytes": 11516482
+    },
+    "seed956102_eps0.0001_lr0.03_qiskit_response.npz": {
+      "sha256": "54bcfbed725735f4e594a4059c58f3888f78bd75e5c116d5bffd6d28112d43a7",
+      "bytes": 13088962
+    },
+    "seed956102_eps1e-06_lr0.01_qiskit_response.npz": {
+      "sha256": "a67962947a24c56ecf90af81bcb8224c6ca9fd093d5fad5ac998a6ceb75f6576",
+      "bytes": 14588642
+    },
+    "seed956101_eps1e-06_lr0.01_qiskit_response.npz": {
+      "sha256": "8a120e956d544e47921c11b1b7591571f27b34c9468b2d0c51f11a5f014bd7bc",
+      "bytes": 7425122
+    },
+    "seed956102_eps0.0001_lr0.01_qiskit_response.npz": {
+      "sha256": "c4b1fddbb0e1a88a4afcf563a99c986aaad53a9241d3b36fa73d68bc67a68517",
+      "bytes": 14588642
+    },
+    "seed956101_eps0.0001_lr0.01_qiskit_response.npz": {
+      "sha256": "fd4bdd44250bf642808d0f45dd1db360fbd0b9c43101c85d8f1e6af3a467810d",
+      "bytes": 14588642
+    },
+    "seed956103_eps0.0001_lr0.01_qiskit_response.npz": {
+      "sha256": "09147c38956612cbad6ee15a9965b978b41392de5c1c4ea71a7782cb178776f9",
+      "bytes": 14588642
+    },
+    "seed956104_eps0.0001_lr0.01_qiskit_response.npz": {
+      "sha256": "6ad0bf6abc093d62670c566d0addf7868975fd86da185cd5814f2f3b64c8c8c7",
+      "bytes": 14588642
+    },
+    "seed956105_eps0.0001_lr0.01_qiskit_response.npz": {
+      "sha256": "77693ff9f45c52b3d6c6d36ad9621c58e527cea1b3b6e03562f57aa9abc58446",
+      "bytes": 14588642
+    },
+    "seed956102_eps0.0001_lr0.01_classical_adjoint.npz": {
+      "sha256": "f9066a75eb6f2f30d2da66d5442c283b96c47d213802294ed5640977a990c751",
+      "bytes": 14588642
+    },
+    "seed956101_eps0.0001_lr0.01_classical_adjoint.npz": {
+      "sha256": "398dd23627153c2e8f9d5b763ac64c98639a5ec55804c31cbc4cdb560615f491",
+      "bytes": 6697122
+    },
+    "seed956101_eps0.0001_lr0.003_classical_adjoint.npz": {
+      "sha256": "965ef54b1fe9f879ba433ffebc4970dbea5c1a94f6e896987b5b936bb963c704",
+      "bytes": 14588642
+    },
+    "seed956101_eps0.0001_lr0.003_qiskit_response.npz": {
+      "sha256": "e69898fc4094349d856d6441df3defe0f718d610deed48706ea456423156d2d0",
+      "bytes": 14588642
+    },
+    "seed956102_eps0.0001_lr0.003_qiskit_response.npz": {
+      "sha256": "c3d9103e2f1a3a3d672d0611a88c2228c41a992c61c6d0a003cdca3e1ca6b13c",
+      "bytes": 14588642
+    }
+  },
+  "bundled": false,
+  "scope": "Local derived gradients, parameters and validation probabilities only; no sensor input arrays or labels. Raw arrays are not redistributed. Public JSON ledgers retain errors and exact hashes; scripts reproduce them."
+}

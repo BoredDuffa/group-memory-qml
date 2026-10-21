@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "files_scanned": 191,
+  "archive_members_scanned": 499,
+  "checks": [
+    "Private-key blocks",
+    "Recognizable GitHub/OpenAI/AWS credential patterns",
+    "Absolute user-home paths",
+    "Unexpected raw dataset/model binaries",
+    "Safe ZIP member paths"
+  ],
+  "limitation": "Pattern scan and explicit file allowlist; not a proof that every possible secret is absent"
+}

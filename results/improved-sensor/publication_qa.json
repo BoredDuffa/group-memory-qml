@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "existing_manifest_hashes_verified": 188,
+  "executed_notebook_cells": 9,
+  "notebook_sha256": "e1f3adf023eab21132b52e572dfd1223fa6c91f3294a3eb4cf5fc82eb3e4d966",
+  "max_file_bytes": 29704923,
+  "second_full_package_seconds": 56.197430667001754,
+  "timing_scope": "Publication cost, separate from model timings; final manifest refresh and Git operations are not included in this interval."
+}

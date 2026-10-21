@@ -1,0 +1,10 @@
+{
+  "before": {
+    "authorization.json": "46d10578cc0be0a98c5fa0ba5e38a2e95fde1f5d1f4639e03c417213a2e49e15",
+    "attempts/00000.json": "a5590da0562eca4c1b4e2578d5abe555adb77c651d10f18401f9f407656153e9",
+    "attempts/00001.json": "579e233ae972a6189b20dd826c539ff0dfb5ea8ba2d8f2edf5ceab2ccc601c8c",
+    "attempt_costs/00000.json": "defcb603c17b1ab18dbae221cf9c692e0d1caff1b0049505c74f9e7f0a0d5567",
+    "attempt_costs/00001.json": "dde6b3151ba6616e9e44d17b7f5505c5398a52720cbe0f57a540e507e0576032",
+    "attempt_costs/manifest.json": "4001b753d3e062c4e2d7ff803b333a0827e5f0f492f13b25b9df89e0f71e8b4f"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "machdep.cpu.brand_string": "Apple M1",
+  "hw.physicalcpu": "8",
+  "hw.logicalcpu": "8",
+  "hw.memsize": "8589934592",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "timed_workers_threads": 1,
+  "scope": "Local CPU ideal simulation; ordinary desktop OS activity not controlled"
+}

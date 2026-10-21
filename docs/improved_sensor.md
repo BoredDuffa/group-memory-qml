@@ -43,7 +43,9 @@ same model. The physics and exact response functions are unchanged.
   view within each family; all fits and predictions are charged. MLP has a
   1,000-iteration limit, with warnings retained.
 
-Three GroupMemory-only quality ablations use the original PCA encoding for 60
+All four conditions use the same repaired optimizer. "Original PCA" names the
+input encoding; it does not reproduce the earlier study's different learning
+rate. Three GroupMemory-only quality ablations use that PCA encoding for 60
 and 1,000 updates and shifted PCA for 1,000 updates. Their runtime is not used as
 an equally informed Qiskit comparison. The full main plan has five matched
 training/split seeds, two timing repetitions and seven methods; the ablations
@@ -109,16 +111,22 @@ The controller uses fresh serial subprocesses, one computational thread, a
 fixed deadline and interruption-safe journal checkpoints. Resume checks source,
 data, plan, deadline and all recorded results. A completed attempt is the resume
 unit; an unfinished short fit restarts. A per-method timeout is 240 seconds.
+The resume smoke validates a graceful stage-boundary stop. There is a narrow
+hard-interruption window between committing a checkpoint and writing its timing
+sidecar: recovery then fails closed on the missing receipt and requires manual
+inspection. It does not invent missing timing evidence.
 Expired budgets are not silently extended. Errors and missing coverage remain
 visible. These commands use local CPU simulation, no paid QPU or remote instance.
 
 ## Timing and claims
 
-The primary timer encloses interpreter startup, imports, dataset read/hash,
+The primary per-attempt timer includes the worker and parent result/journal/
+checkpoint/status writes. The worker component encloses interpreter startup, imports, dataset read/hash,
 training-only preprocessing, construction/compilation/response calibration,
 training, every validation evaluation, selection, final test, serialization and
-process exit. Controller/journal time, development search, preflight and report
-production are separately reported study costs. Common acquisition components
+process exit. Both clocks are reported. Sidecar writes, controller setup and
+remaining campaign overhead are covered by the enclosing campaign clock;
+development search, preflight and report production are separate study costs. Common acquisition components
 from the original dataset preparation are separate and are not a directly
 measured complete acquisition wall time. Installation, human/AI development and
 the data owner's sensor collection/feature extraction are unmeasured.

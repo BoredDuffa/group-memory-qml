@@ -1,0 +1,22 @@
+{
+  "freeze_unix": 1792620384.2840052,
+  "purpose": "Common numerical-stability repair; no test-score selection",
+  "initial_source_commit": "a0f8cb5fc67845c0be30ea08cc51dac782b8ac96",
+  "initial_audit_status": "FAIL",
+  "trajectory_threshold": 1e-10,
+  "selected": {
+    "learning_rate": 0.003,
+    "adam_epsilon": 0.0001,
+    "steps": 1000
+  },
+  "pilot_receipt_sha256": {
+    "stable_sensor_pilot": "1218de5f4f261a49b6bd46e13b067d244b69754a605aa31800490d8be51dc9ac",
+    "stable_sensor_confirmation": "c9fde117562555c96c29dbba118f8ed748cb2aaca24ff5d1a830f77db9b13e8e",
+    "stable_sensor_lower_lr": "6f12fd144b69455e8cc669cd0c91e982963bd51f34d62daa69627b011030b8bf"
+  },
+  "recorded_stability_search_external_s": 280.31928183406126,
+  "pilot_coverage": "Chosen recipe: full1000steps GM vs adjoint seed956101, GM vs Qiskit seeds956101,956102 PASS; other seeds not attempted within bounded search. Production validation-only pilot and complete main audit still required.",
+  "holdout_status": "Reused fixed256-row holdout for numerical-repair retest; not newly untouched",
+  "no_rounding_or_relaxed_checks": true,
+  "all_conditions_plan_sha256": "63202965794bbae4820ebc8ebd2d921f49c6122826fdca7982665769ed23d105"
+}

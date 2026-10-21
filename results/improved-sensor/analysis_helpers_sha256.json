@@ -1,0 +1,12 @@
+{
+  "analysis_helpers/audit_improved_sensor.py": "57cdc4f630afe2e026319a0ed32cf48d780fd4a143e3c9cdd04db498ecf9e9e0",
+  "analysis_helpers/build_improved_sensor_report.py": "b75b5127855683923dc0779c2228f84bb241911cdc75f8066aac79414edf4fc1",
+  "analysis_helpers/package_improved_sensor.py": "faf0c0f3ce2983bf627fd21a22dab5c7f782793d3033b993eb257f76f2dc992e",
+  "analysis_helpers/package_rejected_sensor.py": "2f7985e0b6be51701818bfa85ec89deb9b3bef25807fcc78f2b5b5176132c3d7",
+  "analysis_helpers/run_improved_sensor_phase.py": "263dec7d1c16396b3abcaf8918c2cdd9d7ea867e6357fb7814637bfe906a20df",
+  "analysis_helpers/sensor_improved_design.py": "b09a338c86cb55d36826b693cd306bacd1ec895e9be67a7bf74c7d726d61b107",
+  "analysis_helpers/stable_sensor_confirmation.py": "79ee97e64626b9e4e2efccb797c8a4be314dd67ace5bcfe259ad60c0d5415076",
+  "analysis_helpers/stable_sensor_lower_lr.py": "9e973a0caa044d49bdd12905ee261691420c859ccb24f9f9c26d57809096a217",
+  "analysis_helpers/stable_sensor_pilot.py": "72fc21bb9c458c81392471b784fd5ac0de5562e483eddacbcb4d428001d83e39",
+  "analysis_helpers/summarize_improved_sensor.py": "7b47d6832677639adb760fc922e33ba08b1702d201e6285819d55cdfb1b1e81b"
+}

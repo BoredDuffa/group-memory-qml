@@ -46,6 +46,72 @@ The command writes a new results directory with `summary.md`, `summary.csv`, acc
 
 Use `--broken-symmetry` with a new output directory to make the circuit's site gains unequal and verify that orbit reuse is disabled. `python -m group_memory_qml.demo --help` lists the bounded run options.
 
+## Improved sensor learning — 2026-10-21
+
+**The longer-trained hybrid model comes close to the classical models’ accuracy,
+but the classical classifiers remain faster.** GroupMemory preserves the same
+model as equally informed Qiskit and saves **46.5%** of the paired prepared-data
+runtime in this measured condition.
+
+Training-only supervised LDA supplies five input axes, repeated across sixteen
+independently trained quantum angles in eight two-qubit patches. A joint softmax
+head and the angles receive **1,000 Adam updates**, using 512 training examples,
+128 subject-disjoint validation examples and a fixed 256-row test set. LDA is
+classical supervised learning; this improvement does not come from GroupMemory
+changing the model’s predictions. Classical models get the same input axes,
+encoded angles and all 561 sensor features, and pay for fitting all three views.
+
+| Method | Balanced test accuracy | Complete attempt time |
+|---|---:|---:|
+| GroupMemory | 92.65% | 5.911 s |
+| Equally informed Qiskit response | 92.65% | 11.236 s |
+| Same-model classical adjoint | 92.65% | 50.613 s |
+| Logistic regression | 92.88% | 2.683 s |
+| Classical MLP | 92.73% | 2.644 s |
+| RBF SVM | 91.72% | 2.360 s |
+| Frozen quantum angles | 90.93% | 2.494 s |
+
+These are five-seed descriptive averages for accuracy and medians of paired seed
+medians for runtime, with two fresh-process repetitions. GroupMemory is 0.23
+percentage points below logistic regression and 0.08 below the MLP on average;
+this is not a statistical equivalence result. It has **no qualifying combined
+accuracy/runtime win over any classical classifier**. Training the angles adds
+1.72 points on average over frozen angles, but costs more and does not improve
+every seed.
+
+The primary clock includes imports, data reads and verification, train-only
+preprocessing, compilation/calibration, training, validation selection, test
+prediction, serialization, shutdown and parent result/checkpoint/status writes.
+The complete 100-attempt campaign took **950.958 s**, including **17.787 s** of
+parent overhead and **0.306 s** of remaining setup/gap/terminal overhead.
+The same recorded acquisition/preparation components add **29.556 s** to every
+method: derived sums are **35.467 s** for GroupMemory, **40.792 s** for Qiskit
+and **32.239 s** for logistic regression. These sums are not directly measured
+complete first-use walls. Installation and the original search’s import clock
+were not measured. Rejected runs, preflight and search costs are retained in the
+separate study ledger, not hidden or pooled with accepted trials.
+
+All **100/100 attempts** passed the independent audit; ten complete matched QML
+blocks agree within **2.51e-14**, against the unchanged **1e-10** threshold.
+Local validation: **603 tests passed**. The first 100-attempt recipe failed its
+full-trajectory check; a common lower learning rate and larger Adam epsilon
+were selected for numerical stability using validation-only runs. Every failed
+candidate and the original source/attempts remain in rejected evidence archives.
+The corrected run reuses the already evaluated holdout. Its nine test subjects
+also appeared in earlier studies: this is neither a fresh external cohort nor
+QPU/finite-shot evidence. All selected joint checkpoints reach the 1,000-update
+limit, so convergence is not established.
+
+- [Run the improved experiment](docs/improved_sensor.md)
+- [Executed results notebook](examples/improved_sensor_benchmark.ipynb)
+- [Portable HTML report](results/improved-sensor/Improved_sensor_benchmark.html)
+- [Accepted full-cost results](results/improved-sensor/summary_all_overhead.csv), [paired comparisons](results/improved-sensor/comparisons_all_overhead.csv), and [audit](results/improved-sensor/audit.json)
+- [Reproducibility package and rejected evidence](results/improved-sensor/README.md)
+- [Study cost ledger](results/improved-sensor/study_cost_ledger.json)
+
+The earlier results below remain frozen and use different optimizer/data
+conditions. Their timings and accuracies are not pooled with this follow-up.
+
 ## Real smartphone sensor data — 2026-10-20
 
 **GroupMemory beats equally informed Qiskit in all three measured conditions,

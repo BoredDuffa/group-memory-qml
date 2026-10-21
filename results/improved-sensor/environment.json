@@ -1,0 +1,20 @@
+{
+  "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "executable_name": "python",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "processor": "arm",
+  "cpu_count": 8,
+  "packages": {
+    "numpy": "2.5.4",
+    "qiskit": "2.6.0",
+    "qiskit-aer": "0.17.2",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "threads_per_worker": 1,
+  "clock": "Parent perf_counter around subprocess.run; includes interpreter startup, imports, application, JSON write and shutdown",
+  "clock_receipt_version": 2,
+  "clock_scope": "Elapsed-time enclosure uses only perf_counter timestamps. UTC timestamps record deadline placement and may differ after wall-clock correction.",
+  "exclusions": "Package installation; correctness preflight and reporting are separately timed."
+}

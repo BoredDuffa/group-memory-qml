@@ -1,0 +1,9 @@
+{
+  "phase": "pilot",
+  "seconds": 76.58902812498854,
+  "start_unix": 1792620478.78025,
+  "end_unix": 1792620555.365164,
+  "returncode": 0,
+  "scope": "Local CPU only; includes parent startup and complete child lifecycle",
+  "log": "pilot.log"
+}
